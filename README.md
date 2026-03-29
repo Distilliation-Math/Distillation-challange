@@ -25,11 +25,16 @@ A [magma](https://en.wikipedia.org/wiki/Magma_(algebra)) is a set with a single 
 ```
 ├── Plan.md                  # Project plan (phases, architecture, costs, timeline)
 ├── Meetings_Notes.md        # Team meeting notes and decisions
-├── Training_data/           # Public problem sets (JSONL)
+├── Training_data/           # Official problem sets (JSONL)
 │   ├── normal.jsonl         # 1000 problems (500 TRUE / 500 FALSE)
 │   ├── hard1.jsonl          # 69 problems (deduplicated hard set)
 │   ├── hard2.jsonl          # 200 problems (100 TRUE / 100 FALSE)
 │   └── hard3.jsonl          # 400 problems (195 TRUE / 205 FALSE)
+├── Extra_training_data/     # Community-contributed datasets
+│   ├── SAIRCommunityBench_v1.jsonl  # 199 problems (order 4-6, harder distribution)
+│   ├── Hard5_order5.jsonl           # 654 problems (order-5 equations)
+│   ├── full_2000_equations.jsonl    # 1999 problems (full community set)
+│   └── verification_data_with_citations.jsonl  # 199 problems with Lean proof citations
 ├── Research/
 │   ├── equations.txt        # All 4694 equational laws
 │   └── Raw_implication_graph.csv  # Per-equation implication statistics
@@ -65,11 +70,27 @@ All model inference runs in the cloud via [OpenRouter](https://openrouter.ai/). 
 
 ## Key Resources
 
+**Competition:**
 - [Competition page](https://competition.sair.foundation/competitions/mathematics-distillation-challenge-equational-theories-stage1/overview)
-- [Equational Theories Project](https://teorth.github.io/equational_theories/) -- full implication graph and equation explorer
-- [Tao's AlphaEvolve predictors](https://github.com/teorth/equational_theories/tree/main/scripts/predictor) -- Python-based implication predictors
-- [Reference paper](https://arxiv.org/abs/2509.20820) -- Honda et al. (2025), "Distilling Many-Shot In-Context Learning into a Cheat Sheet"
+- [SAIR Playground](https://competition.sair.foundation/) -- test prompts against models (10 credits/day)
 - [SAIR Zulip](https://zulip.sair.foundation/) -- community discussion forum
+
+**Equational Theories Project:**
+- [ETP main page](https://teorth.github.io/equational_theories/) -- full implication graph and equation explorer
+- [Graphiti visualization](https://teorth.github.io/equational_theories/graphiti/) -- 22M-edge implication graph
+- [Tao's AlphaEvolve predictors](https://github.com/teorth/equational_theories/tree/main/scripts/predictor) -- Python-based implication predictors
+- [Hard implications blueprint](https://teorth.github.io/equational_theories/blueprint/hard-implications-chapter.html) -- annotated hardest cases
+- [Order-5 ETP branch](https://github.com/vlad902/equational_theories/tree/order5) -- extended equation data
+
+**Papers:**
+- [Honda et al. (2025)](https://arxiv.org/abs/2509.20820) -- "Distilling Many-Shot In-Context Learning into a Cheat Sheet"
+- [ETP paper (2025)](https://arxiv.org/abs/2512.07087) -- "The Equational Theories Project: Advancing Collaborative Mathematical Research at Scale"
+- [Vampire on ETP (2025)](https://arxiv.org/abs/2508.15856) -- ATP performance analysis on these implications
+
+**Tools:**
+- [CyberAgentAILab/cheat-sheet-icl](https://github.com/CyberAgentAILab/cheat-sheet-icl) -- reference implementation of the distillation paper
+- [Knuckledragger](https://github.com/philzook58/knuckledragger) -- Python proof assistant with Z3/Vampire/Prover9 ([blog](https://www.philipzucker.com/tao_algebra/))
+- [adamtopaz equational_dataset](https://huggingface.co/datasets/adamtopaz/equational_dataset) -- HuggingFace ETP implications dataset
 
 ## Timeline
 

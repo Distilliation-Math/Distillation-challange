@@ -1,0 +1,200 @@
+{"id": "saircommunity_0001", "index": 1, "difficulty": "wide2k_v2", "equation1": "x = y * (((x * y) * x) * y)", "equation2": "x = x * (((y * x) * y) * x)", "answer": false}
+{"id": "saircommunity_0002", "index": 2, "difficulty": "wide2k_v2", "equation1": "x = ((y * ((z * y) * x)) * y) * z", "equation2": "x = (y * ((z * x) * z)) * (z * y)", "answer": true}
+{"id": "saircommunity_0003", "index": 3, "difficulty": "wide2k_v2", "equation1": "x = (x * ((y * x) * y)) * y", "equation2": "x = (x * y) * ((x * x) * x)", "answer": false}
+{"id": "saircommunity_0004", "index": 4, "difficulty": "wide2k_v2", "equation1": "x = (y * ((z * x) * (y * z))) * y", "equation2": "x = y * ((z * (x * (z * y))) * z)", "answer": true}
+{"id": "saircommunity_0005", "index": 5, "difficulty": "wide2k_v2", "equation1": "x = y * (x * (x * (y * y)))", "equation2": "x = (x * y) * (x * (y * y))", "answer": false}
+{"id": "saircommunity_0006", "index": 6, "difficulty": "wide2k_v2", "equation1": "x = y * ((z * (x * (z * y))) * z)", "equation2": "x = (y * ((z * y) * (x * z))) * y", "answer": true}
+{"id": "saircommunity_0007", "index": 7, "difficulty": "wide2k_v2", "equation1": "x = y * ((y * (y * x)) * x)", "equation2": "x = x * ((y * (x * x)) * x)", "answer": false}
+{"id": "saircommunity_0008", "index": 8, "difficulty": "wide2k_v2", "equation1": "x = x * ((x * (x * y)) * x)", "equation2": "x = x * ((x * x) * x)", "answer": true}
+{"id": "saircommunity_0009", "index": 9, "difficulty": "wide2k_v2", "equation1": "x = ((x * (x * y)) * y) * y", "equation2": "x = x * ((y * y) * x)", "answer": false}
+{"id": "saircommunity_0010", "index": 10, "difficulty": "wide2k_v2", "equation1": "x = y * ((z * y) * ((x * y) * z))", "equation2": "x = ((y * ((z * y) * x)) * y) * z", "answer": true}
+{"id": "saircommunity_0011", "index": 11, "difficulty": "wide2k_v2", "equation1": "x = (x * ((x * y) * y)) * y", "equation2": "x = (x * y) * ((x * y) * y)", "answer": false}
+{"id": "saircommunity_0012", "index": 12, "difficulty": "wide2k_v2", "equation1": "x = x * ((x * (y * z)) * z)", "equation2": "x = x * (x * y)", "answer": true}
+{"id": "saircommunity_0013", "index": 13, "difficulty": "wide2k_v2", "equation1": "x = y * (y * ((y * x) * x))", "equation2": "x = (x * (x * (x * y))) * x", "answer": false}
+{"id": "saircommunity_0014", "index": 14, "difficulty": "wide2k_v2", "equation1": "x = y * (((y * z) * (x * z)) * y)", "equation2": "x = y * (x * ((y * (z * y)) * z))", "answer": true}
+{"id": "saircommunity_0015", "index": 15, "difficulty": "wide2k_v2", "equation1": "x = (((x * y) * y) * x) * y", "equation2": "x = (x * y) * (x * (x * x))", "answer": false}
+{"id": "saircommunity_0016", "index": 16, "difficulty": "wide2k_v2", "equation1": "x = (y * z) * ((y * (x * y)) * z)", "equation2": "x = (y * (((y * z) * x) * y)) * z", "answer": true}
+{"id": "saircommunity_0017", "index": 17, "difficulty": "wide2k_v2", "equation1": "x = y * (y * ((x * y) * x))", "equation2": "x = ((x * y) * y) * (y * y)", "answer": false}
+{"id": "saircommunity_0018", "index": 18, "difficulty": "wide2k_v2", "equation1": "x = x * (((x * y) * x) * z)", "equation2": "x = x * ((x * x) * y)", "answer": true}
+{"id": "saircommunity_0019", "index": 19, "difficulty": "wide2k_v2", "equation1": "x = y * ((y * (x * x)) * y)", "equation2": "x = (x * x) * (x * (y * y))", "answer": false}
+{"id": "saircommunity_0020", "index": 20, "difficulty": "wide2k_v2", "equation1": "x = (y * (((y * z) * x) * y)) * z", "equation2": "x = y * (((y * z) * (x * z)) * y)", "answer": true}
+{"id": "saircommunity_0021", "index": 21, "difficulty": "wide2k_v2", "equation1": "x = (y * x) * (x * z)", "equation2": "x = (x * x) * x", "answer": false}
+{"id": "saircommunity_0022", "index": 22, "difficulty": "wide2k_v2", "equation1": "x = x * (((y * x) * z) * y)", "equation2": "x = x * ((y * x) * y)", "answer": true}
+{"id": "saircommunity_0023", "index": 23, "difficulty": "wide2k_v2", "equation1": "x = (((y * y) * x) * x) * y", "equation2": "x = ((x * y) * x) * (y * y)", "answer": false}
+{"id": "saircommunity_0024", "index": 24, "difficulty": "wide2k_v2", "equation1": "x = (y * ((x * (y * z)) * y)) * z", "equation2": "x = (((y * x) * z) * (y * z)) * y", "answer": true}
+{"id": "saircommunity_0025", "index": 25, "difficulty": "wide2k_v2", "equation1": "x = (y * x) * (x * z)", "equation2": "x = x * (x * x)", "answer": false}
+{"id": "saircommunity_0026", "index": 26, "difficulty": "wide2k_v2", "equation1": "x = ((y * (x * y)) * z) * (y * z)", "equation2": "x = (y * ((x * (y * z)) * y)) * z", "answer": true}
+{"id": "saircommunity_0027", "index": 27, "difficulty": "wide2k_v2", "equation1": "x = y * (x * (x * (y * (z * z))))", "equation2": "x = y * (x * (x * (x * (x * z))))", "answer": false}
+{"id": "saircommunity_0028", "index": 28, "difficulty": "wide2k_v2", "equation1": "x = (y * x) * ((x * x) * y)", "equation2": "x = (((x * x) * x) * x) * x", "answer": true}
+{"id": "saircommunity_0029", "index": 29, "difficulty": "wide2k_v2", "equation1": "x = y * ((x * (y * x)) * y)", "equation2": "x = x * ((y * (x * y)) * x)", "answer": false}
+{"id": "saircommunity_0030", "index": 30, "difficulty": "wide2k_v2", "equation1": "x = (y * x) * (z * (w * u))", "equation2": "x = y * ((y * (y * y)) * y)", "answer": true}
+{"id": "saircommunity_0031", "index": 31, "difficulty": "wide2k_v2", "equation1": "x = ((((y * y) * z) * x) * x) * z", "equation2": "x = y * (x * (z * (y * (z * w))))", "answer": false}
+{"id": "saircommunity_0032", "index": 32, "difficulty": "wide2k_v2", "equation1": "x = (x * (y * (z * y))) * x", "equation2": "x = (x * (y * y)) * x", "answer": true}
+{"id": "saircommunity_0033", "index": 33, "difficulty": "wide2k_v2", "equation1": "x = y * (((x * (z * z)) * y) * y)", "equation2": "x = y * (y * (y * (y * (x * z))))", "answer": false}
+{"id": "saircommunity_0034", "index": 34, "difficulty": "wide2k_v2", "equation1": "x = (y * (x * (x * x))) * z", "equation2": "x = (y * (x * x)) * z", "answer": true}
+{"id": "saircommunity_0035", "index": 35, "difficulty": "wide2k_v2", "equation1": "x = y * ((x * (y * y)) * x)", "equation2": "x = (x * (x * (y * y))) * y", "answer": false}
+{"id": "saircommunity_0036", "index": 36, "difficulty": "wide2k_v2", "equation1": "x = ((y * (z * (x * y))) * z) * y", "equation2": "x = y * ((((z * x) * y) * z) * z)", "answer": true}
+{"id": "saircommunity_0037", "index": 37, "difficulty": "wide2k_v2", "equation1": "x = (y * (y * ((z * z) * x))) * y", "equation2": "x = y * (y * (z * (w * (z * w))))", "answer": false}
+{"id": "saircommunity_0038", "index": 38, "difficulty": "wide2k_v2", "equation1": "x = (y * (x * (z * x))) * x", "equation2": "x = (y * (x * x)) * x", "answer": true}
+{"id": "saircommunity_0039", "index": 39, "difficulty": "wide2k_v2", "equation1": "x = y * (x * ((x * y) * x))", "equation2": "x = (x * x) * (x * (x * x))", "answer": false}
+{"id": "saircommunity_0040", "index": 40, "difficulty": "wide2k_v2", "equation1": "x = (y * ((x * (z * z)) * y)) * y", "equation2": "x = ((y * (x * y)) * y) * (z * z)", "answer": true}
+{"id": "saircommunity_0041", "index": 41, "difficulty": "wide2k_v2", "equation1": "x = (x * x) * x", "equation2": "x = y * (x * y)", "answer": false}
+{"id": "saircommunity_0042", "index": 42, "difficulty": "wide2k_v2", "equation1": "x = y * (z * (((x * z) * y) * y))", "equation2": "x = (y * (y * ((x * y) * z))) * z", "answer": true}
+{"id": "saircommunity_0043", "index": 43, "difficulty": "wide2k_v2", "equation1": "x = (y * z) * (x * (z * (z * z)))", "equation2": "x = y * (z * (x * (w * (u * y))))", "answer": false}
+{"id": "saircommunity_0044", "index": 44, "difficulty": "wide2k_v2", "equation1": "x = (y * (z * (x * y))) * x", "equation2": "x = (y * (x * y)) * x", "answer": true}
+{"id": "saircommunity_0045", "index": 45, "difficulty": "wide2k_v2", "equation1": "x = y * (((y * x) * y) * y)", "equation2": "x = x * ((x * (x * x)) * x)", "answer": false}
+{"id": "saircommunity_0046", "index": 46, "difficulty": "wide2k_v2", "equation1": "x = y * (x * (y * (z * (w * w))))", "equation2": "x = y", "answer": true}
+{"id": "saircommunity_0047", "index": 47, "difficulty": "wide2k_v2", "equation1": "x = (((y * y) * y) * x) * (y * z)", "equation2": "x = y * (z * (z * (x * (x * w))))", "answer": false}
+{"id": "saircommunity_0048", "index": 48, "difficulty": "wide2k_v2", "equation1": "x = (y * (x * (x * y))) * z", "equation2": "x = (y * ((x * y) * y)) * z", "answer": true}
+{"id": "saircommunity_0049", "index": 49, "difficulty": "wide2k_v2", "equation1": "x = ((x * (y * x)) * x) * y", "equation2": "x = (x * ((x * x) * x)) * x", "answer": false}
+{"id": "saircommunity_0050", "index": 50, "difficulty": "wide2k_v2", "equation1": "x = y * (x * (z * (x * (w * w))))", "equation2": "x = y", "answer": true}
+{"id": "saircommunity_0051", "index": 51, "difficulty": "wide2k_v2", "equation1": "x = (y * y) * ((z * (x * x)) * z)", "equation2": "x = y * (z * (w * (x * (z * y))))", "answer": false}
+{"id": "saircommunity_0052", "index": 52, "difficulty": "wide2k_v2", "equation1": "x = (y * ((z * y) * z)) * x", "equation2": "x = (((y * z) * y) * z) * x", "answer": true}
+{"id": "saircommunity_0053", "index": 53, "difficulty": "wide2k_v2", "equation1": "x * x = y * x", "equation2": "x * (y * z) = (x * y) * z", "answer": false}
+{"id": "saircommunity_0054", "index": 54, "difficulty": "wide2k_v2", "equation1": "x = y * (y * (x * (z * (w * w))))", "equation2": "x = y", "answer": true}
+{"id": "saircommunity_0055", "index": 55, "difficulty": "wide2k_v2", "equation1": "x = (y * ((x * x) * y)) * (z * z)", "equation2": "x = y * (z * (w * (w * (y * w))))", "answer": false}
+{"id": "saircommunity_0056", "index": 56, "difficulty": "wide2k_v2", "equation1": "x * y = x * (x * (y * z))", "equation2": "x * x = x * y", "answer": true}
+{"id": "saircommunity_0057", "index": 57, "difficulty": "wide2k_v2", "equation1": "x = y * ((x * y) * (x * y))", "equation2": "x = y * (((x * x) * x) * y)", "answer": false}
+{"id": "saircommunity_0058", "index": 58, "difficulty": "wide2k_v2", "equation1": "x = y * (y * (y * (y * (y * y))))", "equation2": "x = y", "answer": true}
+{"id": "saircommunity_0059", "index": 59, "difficulty": "wide2k_v2", "equation1": "x * (y * z) = (w * u) * v", "equation2": "x * x = y * y", "answer": false}
+{"id": "saircommunity_0060", "index": 60, "difficulty": "wide2k_v2", "equation1": "x = ((y * (x * y)) * y) * (z * z)", "equation2": "x = (y * ((x * (z * z)) * y)) * y", "answer": true}
+{"id": "saircommunity_0061", "index": 61, "difficulty": "wide2k_v2", "equation1": "x = y * (x * (x * (y * (z * z))))", "equation2": "x = y", "answer": false}
+{"id": "saircommunity_0062", "index": 62, "difficulty": "wide2k_v2", "equation1": "x * x = y * ((y * y) * y)", "equation2": "x * x = y * ((z * z) * y)", "answer": true}
+{"id": "saircommunity_0063", "index": 63, "difficulty": "wide2k_v2", "equation1": "x = y * (x * ((y * x) * y))", "equation2": "x = (x * x) * ((x * x) * x)", "answer": false}
+{"id": "saircommunity_0064", "index": 64, "difficulty": "wide2k_v2", "equation1": "x = y * (y * (y * (z * (y * y))))", "equation2": "x = y", "answer": true}
+{"id": "saircommunity_0065", "index": 65, "difficulty": "wide2k_v2", "equation1": "x = (y * (x * x)) * ((y * z) * y)", "equation2": "x = y * (x * (x * ((z * z) * z)))", "answer": false}
+{"id": "saircommunity_0066", "index": 66, "difficulty": "wide2k_v2", "equation1": "x * x = y * (z * (x * y))", "equation2": "x * x = y * (z * (w * y))", "answer": true}
+{"id": "saircommunity_0067", "index": 67, "difficulty": "wide2k_v2", "equation1": "x * x = ((y * x) * x) * y", "equation2": "(x * y) * x = (y * x) * x", "answer": false}
+{"id": "saircommunity_0068", "index": 68, "difficulty": "wide2k_v2", "equation1": "x = (y * (y * ((x * y) * z))) * z", "equation2": "x = y * (y * (((x * z) * y) * z))", "answer": true}
+{"id": "saircommunity_0069", "index": 69, "difficulty": "wide2k_v2", "equation1": "x = (y * (z * y)) * ((x * x) * y)", "equation2": "x = y * (x * (z * ((w * y) * u)))", "answer": false}
+{"id": "saircommunity_0070", "index": 70, "difficulty": "wide2k_v2", "equation1": "x = y * (y * (z * (x * (y * y))))", "equation2": "x = y", "answer": true}
+{"id": "saircommunity_0071", "index": 71, "difficulty": "wide2k_v2", "equation1": "x * x = y * y", "equation2": "x * (y * z) = (x * y) * z", "answer": false}
+{"id": "saircommunity_0072", "index": 72, "difficulty": "wide2k_v2", "equation1": "x * y = (z * (x * x)) * z", "equation2": "x * x = y * z", "answer": true}
+{"id": "saircommunity_0073", "index": 73, "difficulty": "wide2k_v2", "equation1": "x = ((((y * y) * z) * x) * x) * z", "equation2": "x = y * (z * (x * ((y * z) * w)))", "answer": false}
+{"id": "saircommunity_0074", "index": 74, "difficulty": "wide2k_v2", "equation1": "x * y = ((z * y) * x) * x", "equation2": "x * y = y * (y * (y * y))", "answer": true}
+{"id": "saircommunity_0075", "index": 75, "difficulty": "wide2k_v2", "equation1": "x = (((x * x) * x) * y) * y", "equation2": "x = y", "answer": false}
+{"id": "saircommunity_0076", "index": 76, "difficulty": "wide2k_v2", "equation1": "x = y * (z * (x * (x * (z * z))))", "equation2": "x = y", "answer": true}
+{"id": "saircommunity_0077", "index": 77, "difficulty": "wide2k_v2", "equation1": "x = (y * x) * (y * (x * y))", "equation2": "x = x * (y * ((y * x) * x))", "answer": false}
+{"id": "saircommunity_0078", "index": 78, "difficulty": "wide2k_v2", "equation1": "x = y", "equation2": "x = y * (y * (y * (x * (z * y))))", "answer": true}
+{"id": "saircommunity_0079", "index": 79, "difficulty": "wide2k_v2", "equation1": "x = y * (((x * (z * z)) * y) * y)", "equation2": "x = y", "answer": false}
+{"id": "saircommunity_0080", "index": 80, "difficulty": "wide2k_v2", "equation1": "x * y = y * (x * (z * x))", "equation2": "x * y = (y * (z * x)) * y", "answer": true}
+{"id": "saircommunity_0081", "index": 81, "difficulty": "wide2k_v2", "equation1": "x * y = ((y * x) * x) * y", "equation2": "x * x = x * (x * (y * y))", "answer": false}
+{"id": "saircommunity_0082", "index": 82, "difficulty": "wide2k_v2", "equation1": "x = y * (x * ((z * (z * z)) * y))", "equation2": "x = ((y * (z * (z * z))) * x) * y", "answer": true}
+{"id": "saircommunity_0083", "index": 83, "difficulty": "wide2k_v2", "equation1": "x = (y * (y * ((z * z) * x))) * y", "equation2": "x = y", "answer": false}
+{"id": "saircommunity_0084", "index": 84, "difficulty": "wide2k_v2", "equation1": "x * y = (y * x) * z", "equation2": "x * y = z * ((w * y) * y)", "answer": true}
+{"id": "saircommunity_0085", "index": 85, "difficulty": "wide2k_v2", "equation1": "x = y * (((x * x) * y) * y)", "equation2": "x = x * (((y * x) * x) * x)", "answer": false}
+{"id": "saircommunity_0086", "index": 86, "difficulty": "wide2k_v2", "equation1": "x = y * (z * (x * (z * (w * w))))", "equation2": "x = y", "answer": true}
+{"id": "saircommunity_0087", "index": 87, "difficulty": "wide2k_v2", "equation1": "x * x = y * x", "equation2": "x * (y * z) = (x * y) * w", "answer": false}
+{"id": "saircommunity_0088", "index": 88, "difficulty": "wide2k_v2", "equation1": "x = y * ((x * (z * x)) * y)", "equation2": "x = y", "answer": true}
+{"id": "saircommunity_0089", "index": 89, "difficulty": "wide2k_v2", "equation1": "x = (y * z) * (x * (z * (z * z)))", "equation2": "x = y * (z * (w * ((y * u) * z)))", "answer": false}
+{"id": "saircommunity_0090", "index": 90, "difficulty": "wide2k_v2", "equation1": "x = y * (y * (((x * z) * y) * z))", "equation2": "x = ((y * (y * (x * z))) * z) * y", "answer": true}
+{"id": "saircommunity_0091", "index": 91, "difficulty": "wide2k_v2", "equation1": "(x * y) * z = (y * w) * z", "equation2": "x * y = (y * (y * x)) * x", "answer": false}
+{"id": "saircommunity_0092", "index": 92, "difficulty": "wide2k_v2", "equation1": "x = y * (z * (y * (y * (y * y))))", "equation2": "x = y", "answer": true}
+{"id": "saircommunity_0093", "index": 93, "difficulty": "wide2k_v2", "equation1": "x = (((y * y) * y) * x) * (y * z)", "equation2": "x = y * (z * (w * ((u * w) * y)))", "answer": false}
+{"id": "saircommunity_0094", "index": 94, "difficulty": "wide2k_v2", "equation1": "x * y = y * ((x * y) * z)", "equation2": "x * x = y * (y * (y * y))", "answer": true}
+{"id": "saircommunity_0095", "index": 95, "difficulty": "wide2k_v2", "equation1": "x * x = y * (x * (x * y))", "equation2": "x * y = y * (x * (x * x))", "answer": false}
+{"id": "saircommunity_0096", "index": 96, "difficulty": "wide2k_v2", "equation1": "x = (((y * y) * x) * z) * y", "equation2": "x = y", "answer": true}
+{"id": "saircommunity_0097", "index": 97, "difficulty": "wide2k_v2", "equation1": "x = (y * y) * ((z * (x * x)) * z)", "equation2": "x = y * (z * ((x * (y * y)) * y))", "answer": false}
+{"id": "saircommunity_0098", "index": 98, "difficulty": "wide2k_v2", "equation1": "x * y = y * ((z * w) * x)", "equation2": "(x * x) * y = (z * y) * x", "answer": true}
+{"id": "saircommunity_0099", "index": 99, "difficulty": "wide2k_v2", "equation1": "x = x * (((y * z) * y) * z)", "equation2": "x = y", "answer": false}
+{"id": "saircommunity_0100", "index": 100, "difficulty": "wide2k_v2", "equation1": "x = y * (z * (y * (z * (y * y))))", "equation2": "x = y", "answer": true}
+{"id": "saircommunity_0101", "index": 101, "difficulty": "wide2k_v2", "equation1": "x = (y * ((x * x) * y)) * (z * z)", "equation2": "x = y * (z * ((y * (z * x)) * z))", "answer": false}
+{"id": "saircommunity_0102", "index": 102, "difficulty": "wide2k_v2", "equation1": "x * y = ((z * w) * x) * u", "equation2": "x * (y * y) = (x * x) * x", "answer": true}
+{"id": "saircommunity_0103", "index": 103, "difficulty": "wide2k_v2", "equation1": "x = y * (((y * x) * x) * y)", "equation2": "x = x * (((y * y) * x) * x)", "answer": false}
+{"id": "saircommunity_0104", "index": 104, "difficulty": "wide2k_v2", "equation1": "x = ((y * (z * (z * z))) * x) * y", "equation2": "x = (y * x) * ((z * (z * z)) * y)", "answer": true}
+{"id": "saircommunity_0105", "index": 105, "difficulty": "wide2k_v2", "equation1": "x = ((((y * y) * z) * x) * x) * z", "equation2": "x = y", "answer": false}
+{"id": "saircommunity_0106", "index": 106, "difficulty": "wide2k_v2", "equation1": "x * y = y * ((y * z) * x)", "equation2": "x * y = ((z * x) * y) * x", "answer": true}
+{"id": "saircommunity_0107", "index": 107, "difficulty": "wide2k_v2", "equation1": "x = (((y * y) * x) * z) * x", "equation2": "x = y", "answer": false}
+{"id": "saircommunity_0108", "index": 108, "difficulty": "wide2k_v2", "equation1": "x = ((y * (y * (x * z))) * z) * y", "equation2": "x = (y * (z * ((y * x) * x))) * z", "answer": true}
+{"id": "saircommunity_0109", "index": 109, "difficulty": "wide2k_v2", "equation1": "x = (y * x) * (y * (y * x))", "equation2": "x = (y * ((z * x) * w)) * (x * w)", "answer": false}
+{"id": "saircommunity_0110", "index": 110, "difficulty": "wide2k_v2", "equation1": "x = y * ((x * (z * z)) * y)", "equation2": "x * (y * x) = y * (z * z)", "answer": true}
+{"id": "saircommunity_0111", "index": 111, "difficulty": "wide2k_v2", "equation1": "x * y = y * ((x * x) * x)", "equation2": "x * x = (x * (x * x)) * x", "answer": false}
+{"id": "saircommunity_0112", "index": 112, "difficulty": "wide2k_v2", "equation1": "x = y * (z * (y * (w * (z * z))))", "equation2": "x = y", "answer": true}
+{"id": "saircommunity_0113", "index": 113, "difficulty": "wide2k_v2", "equation1": "x = (y * y) * ((z * (x * x)) * z)", "equation2": "x = y", "answer": false}
+{"id": "saircommunity_0114", "index": 114, "difficulty": "wide2k_v2", "equation1": "x = (y * (y * (y * z))) * x", "equation2": "x * y = z * (w * (w * y))", "answer": true}
+{"id": "saircommunity_0115", "index": 115, "difficulty": "wide2k_v2", "equation1": "x * (y * z) = (w * u) * v", "equation2": "x * y = z * w", "answer": false}
+{"id": "saircommunity_0116", "index": 116, "difficulty": "wide2k_v2", "equation1": "x = y * ((x * (x * x)) * y)", "equation2": "x * (y * x) = z * (y * z)", "answer": true}
+{"id": "saircommunity_0117", "index": 117, "difficulty": "wide2k_v2", "equation1": "x = y * (y * x)", "equation2": "x = (((y * y) * y) * x) * (y * z)", "answer": false}
+{"id": "saircommunity_0118", "index": 118, "difficulty": "wide2k_v2", "equation1": "x = y * (z * (z * (z * (w * w))))", "equation2": "x = y", "answer": true}
+{"id": "saircommunity_0119", "index": 119, "difficulty": "wide2k_v2", "equation1": "x * x = (x * x) * (y * y)", "equation2": "x * y = x * (y * (y * y))", "answer": false}
+{"id": "saircommunity_0120", "index": 120, "difficulty": "wide2k_v2", "equation1": "x = x * ((y * (z * w)) * w)", "equation2": "x * y = (x * (z * w)) * u", "answer": true}
+{"id": "saircommunity_0121", "index": 121, "difficulty": "wide2k_v2", "equation1": "x = (y * (x * x)) * ((y * z) * y)", "equation2": "x = y * (z * ((z * (z * z)) * y))", "answer": false}
+{"id": "saircommunity_0122", "index": 122, "difficulty": "wide2k_v2", "equation1": "x * y = z * (y * (x * x))", "equation2": "x * y = (x * (y * y)) * y", "answer": true}
+{"id": "saircommunity_0123", "index": 123, "difficulty": "wide2k_v2", "equation1": "x = (((y * y) * y) * x) * (y * z)", "equation2": "x = y", "answer": false}
+{"id": "saircommunity_0124", "index": 124, "difficulty": "wide2k_v2", "equation1": "x = (y * (z * ((y * x) * x))) * z", "equation2": "x = ((y * (z * x)) * z) * (x * y)", "answer": true}
+{"id": "saircommunity_0125", "index": 125, "difficulty": "wide2k_v2", "equation1": "x * y = x * ((y * x) * x)", "equation2": "x = y * ((x * (x * z)) * z)", "answer": false}
+{"id": "saircommunity_0126", "index": 126, "difficulty": "wide2k_v2", "equation1": "x = y * (x * (x * (x * (x * z))))", "equation2": "x = y", "answer": true}
+{"id": "saircommunity_0127", "index": 127, "difficulty": "wide2k_v2", "equation1": "x = ((y * (x * x)) * x) * y", "equation2": "x * (x * x) = (x * x) * x", "answer": false}
+{"id": "saircommunity_0128", "index": 128, "difficulty": "wide2k_v2", "equation1": "x * x = ((y * y) * z) * x", "equation2": "x * x = (y * y) * x", "answer": true}
+{"id": "saircommunity_0129", "index": 129, "difficulty": "wide2k_v2", "equation1": "x = (y * (z * y)) * ((x * x) * y)", "equation2": "x = y * (z * ((w * (y * w)) * z))", "answer": false}
+{"id": "saircommunity_0130", "index": 130, "difficulty": "wide2k_v2", "equation1": "x = (((y * x) * y) * z) * x", "equation2": "x * y = z * (w * (z * y))", "answer": true}
+{"id": "saircommunity_0131", "index": 131, "difficulty": "wide2k_v2", "equation1": "x * y = (x * z) * (w * y)", "equation2": "x = y * (y * (y * (x * (z * y))))", "answer": false}
+{"id": "saircommunity_0132", "index": 132, "difficulty": "wide2k_v2", "equation1": "x = y * (x * (x * (y * (y * z))))", "equation2": "x = y", "answer": true}
+{"id": "saircommunity_0133", "index": 133, "difficulty": "wide2k_v2", "equation1": "x * y = x * ((y * z) * x)", "equation2": "x * x = y * ((y * z) * z)", "answer": false}
+{"id": "saircommunity_0134", "index": 134, "difficulty": "wide2k_v2", "equation1": "x = ((y * (z * x)) * z) * (x * y)", "equation2": "x = y * (x * ((y * (z * x)) * z))", "answer": true}
+{"id": "saircommunity_0135", "index": 135, "difficulty": "wide2k_v2", "equation1": "(x * y) * z = (z * y) * x", "equation2": "x = x * ((x * x) * (x * x))", "answer": false}
+{"id": "saircommunity_0136", "index": 136, "difficulty": "wide2k_v2", "equation1": "x = (((y * y) * z) * x) * w", "equation2": "x * y = ((y * x) * y) * y", "answer": true}
+{"id": "saircommunity_0137", "index": 137, "difficulty": "wide2k_v2", "equation1": "x = (y * z) * (x * (z * (z * z)))", "equation2": "x = y", "answer": false}
+{"id": "saircommunity_0138", "index": 138, "difficulty": "wide2k_v2", "equation1": "x * y = y * (z * (z * x))", "equation2": "x * y = y * (z * (x * z))", "answer": true}
+{"id": "saircommunity_0139", "index": 139, "difficulty": "wide2k_v2", "equation1": "x * y = (x * z) * y", "equation2": "x = y * (y * (y * (x * (z * y))))", "answer": false}
+{"id": "saircommunity_0140", "index": 140, "difficulty": "wide2k_v2", "equation1": "x = y * (x * (x * (z * (y * z))))", "equation2": "x = y", "answer": true}
+{"id": "saircommunity_0141", "index": 141, "difficulty": "wide2k_v2", "equation1": "(x * x) * y = (z * z) * y", "equation2": "x * y = ((z * w) * w) * y", "answer": false}
+{"id": "saircommunity_0142", "index": 142, "difficulty": "wide2k_v2", "equation1": "x = (x * y) * (z * z)", "equation2": "x * x = x * ((y * z) * w)", "answer": true}
+{"id": "saircommunity_0143", "index": 143, "difficulty": "wide2k_v2", "equation1": "x = y * (x * (x * (y * (z * z))))", "equation2": "x = y * (y * (z * ((y * x) * y)))", "answer": false}
+{"id": "saircommunity_0144", "index": 144, "difficulty": "wide2k_v2", "equation1": "x = (((y * x) * z) * (x * y)) * z", "equation2": "x = y * ((((y * x) * z) * y) * z)", "answer": true}
+{"id": "saircommunity_0145", "index": 145, "difficulty": "wide2k_v2", "equation1": "x * (x * y) = x * (x * z)", "equation2": "x = y * (((y * x) * z) * x)", "answer": false}
+{"id": "saircommunity_0146", "index": 146, "difficulty": "wide2k_v2", "equation1": "x * y = y * (y * (z * x))", "equation2": "x * y = (x * (z * z)) * z", "answer": true}
+{"id": "saircommunity_0147", "index": 147, "difficulty": "wide2k_v2", "equation1": "x = (y * ((x * x) * y)) * x", "equation2": "x * (x * x) = y * (x * y)", "answer": false}
+{"id": "saircommunity_0148", "index": 148, "difficulty": "wide2k_v2", "equation1": "x = y * (x * (x * (z * (w * z))))", "equation2": "x = y", "answer": true}
+{"id": "saircommunity_0149", "index": 149, "difficulty": "wide2k_v2", "equation1": "x * y = x * z", "equation2": "x = (((y * y) * y) * x) * (y * z)", "answer": false}
+{"id": "saircommunity_0150", "index": 150, "difficulty": "wide2k_v2", "equation1": "x * y = (x * z) * (z * y)", "equation2": "x * y = x * ((z * z) * y)", "answer": true}
+{"id": "saircommunity_0151", "index": 151, "difficulty": "wide2k_v2", "equation1": "x = y * (((x * (z * z)) * y) * y)", "equation2": "x = y * (z * (y * ((z * z) * y)))", "answer": false}
+{"id": "saircommunity_0152", "index": 152, "difficulty": "wide2k_v2", "equation1": "x = (y * (y * x)) * (z * x)", "equation2": "x * y = z * (y * (w * y))", "answer": true}
+{"id": "saircommunity_0153", "index": 153, "difficulty": "wide2k_v2", "equation1": "x = x * ((x * (x * x)) * x)", "equation2": "x = y", "answer": false}
+{"id": "saircommunity_0154", "index": 154, "difficulty": "wide2k_v2", "equation1": "x = (y * (z * (z * z))) * (x * y)", "equation2": "x = y * (x * ((z * (z * z)) * y))", "answer": true}
+{"id": "saircommunity_0155", "index": 155, "difficulty": "wide2k_v2", "equation1": "x * (y * z) = (z * x) * y", "equation2": "x = (y * ((z * x) * w)) * (x * w)", "answer": false}
+{"id": "saircommunity_0156", "index": 156, "difficulty": "wide2k_v2", "equation1": "x = y * (x * (y * (x * (z * w))))", "equation2": "x = y", "answer": true}
+{"id": "saircommunity_0157", "index": 157, "difficulty": "wide2k_v2", "equation1": "x * (y * z) = y * (x * z)", "equation2": "x * y = (z * (w * w)) * y", "answer": false}
+{"id": "saircommunity_0158", "index": 158, "difficulty": "wide2k_v2", "equation1": "x = y * (x * ((z * z) * w))", "equation2": "x * y = ((y * x) * y) * y", "answer": true}
+{"id": "saircommunity_0159", "index": 159, "difficulty": "wide2k_v2", "equation1": "x = (y * (y * ((z * z) * x))) * y", "equation2": "x = y * (z * (z * ((z * w) * w)))", "answer": false}
+{"id": "saircommunity_0160", "index": 160, "difficulty": "wide2k_v2", "equation1": "x * y = (z * x) * (z * y)", "equation2": "x * y = ((z * z) * x) * y", "answer": true}
+{"id": "saircommunity_0161", "index": 161, "difficulty": "wide2k_v2", "equation1": "x = x * x", "equation2": "x * (y * (z * y)) = ((x * y) * z) * y", "answer": false}
+{"id": "saircommunity_0162", "index": 162, "difficulty": "wide2k_v2", "equation1": "x = y * (x * (y * (z * (x * w))))", "equation2": "x = y", "answer": true}
+{"id": "saircommunity_0163", "index": 163, "difficulty": "wide2k_v2", "equation1": "(x * y) * z = (x * z) * y", "equation2": "x = (y * (x * (x * z))) * y", "answer": false}
+{"id": "saircommunity_0164", "index": 164, "difficulty": "wide2k_v2", "equation1": "x = y * ((((y * x) * z) * y) * z)", "equation2": "x = (y * (z * ((x * y) * y))) * z", "answer": true}
+{"id": "saircommunity_0165", "index": 165, "difficulty": "wide2k_v2", "equation1": "(x * y) * y = (z * y) * y", "equation2": "x = y * ((x * (x * y)) * y)", "answer": false}
+{"id": "saircommunity_0166", "index": 166, "difficulty": "wide2k_v2", "equation1": "x * (y * z) = (x * y) * z", "equation2": "x * (y * (x * z)) = (x * (y * x)) * z", "answer": true}
+{"id": "saircommunity_0167", "index": 167, "difficulty": "wide2k_v2", "equation1": "x = (y * ((x * x) * y)) * (z * z)", "equation2": "x = y", "answer": false}
+{"id": "saircommunity_0168", "index": 168, "difficulty": "wide2k_v2", "equation1": "x = (x * (x * (y * y))) * z", "equation2": "x * x = ((x * y) * z) * w", "answer": true}
+{"id": "saircommunity_0169", "index": 169, "difficulty": "wide2k_v2", "equation1": "(x * x) * y = (y * x) * y", "equation2": "x = ((x * (y * y)) * x) * x", "answer": false}
+{"id": "saircommunity_0170", "index": 170, "difficulty": "wide2k_v2", "equation1": "x = (y * (z * ((x * y) * y))) * z", "equation2": "x = (((y * (y * x)) * z) * y) * z", "answer": true}
+{"id": "saircommunity_0171", "index": 171, "difficulty": "wide2k_v2", "equation1": "x * y = y * x", "equation2": "x * (y * (x * z)) = ((x * y) * x) * z", "answer": false}
+{"id": "saircommunity_0172", "index": 172, "difficulty": "wide2k_v2", "equation1": "x = y * (x * (z * (x * (y * z))))", "equation2": "x = y", "answer": true}
+{"id": "saircommunity_0173", "index": 173, "difficulty": "wide2k_v2", "equation1": "x = x * (((x * x) * x) * x)", "equation2": "x * y = y * (z * (w * y))", "answer": false}
+{"id": "saircommunity_0174", "index": 174, "difficulty": "wide2k_v2", "equation1": "x * (y * z) = (x * y) * z", "equation2": "x * ((y * z) * x) = (x * y) * (z * x)", "answer": true}
+{"id": "saircommunity_0175", "index": 175, "difficulty": "wide2k_v2", "equation1": "x = (y * (z * y)) * ((x * x) * y)", "equation2": "x = y * ((x * (z * (y * y))) * y)", "answer": false}
+{"id": "saircommunity_0176", "index": 176, "difficulty": "wide2k_v2", "equation1": "x = (((y * y) * z) * x) * x", "equation2": "x * x = (y * x) * (x * x)", "answer": true}
+{"id": "saircommunity_0177", "index": 177, "difficulty": "wide2k_v2", "equation1": "x = y * (y * (y * (x * y)))", "equation2": "x * (y * x) = (x * y) * x", "answer": false}
+{"id": "saircommunity_0178", "index": 178, "difficulty": "wide2k_v2", "equation1": "x = y * (x * (z * (y * (y * z))))", "equation2": "x = y", "answer": true}
+{"id": "saircommunity_0179", "index": 179, "difficulty": "wide2k_v2", "equation1": "x * y = x * ((y * z) * x)", "equation2": "x = y * ((z * (w * x)) * z)", "answer": false}
+{"id": "saircommunity_0180", "index": 180, "difficulty": "wide2k_v2", "equation1": "x * (y * z) = (x * y) * z", "equation2": "x * ((y * z) * y) = ((x * y) * z) * y", "answer": true}
+{"id": "saircommunity_0181", "index": 181, "difficulty": "wide2k_v2", "equation1": "x = (y * (x * x)) * ((y * z) * y)", "equation2": "x = y * ((y * ((y * z) * w)) * u)", "answer": false}
+{"id": "saircommunity_0182", "index": 182, "difficulty": "wide2k_v2", "equation1": "x = y * (x * (z * (y * (w * u))))", "equation2": "x = y", "answer": true}
+{"id": "saircommunity_0183", "index": 183, "difficulty": "wide2k_v2", "equation1": "x * (y * z) = z * (y * x)", "equation2": "x = (x * (x * x)) * (x * x)", "answer": false}
+{"id": "saircommunity_0184", "index": 184, "difficulty": "wide2k_v2", "equation1": "x * (y * z) = (x * y) * z", "equation2": "(x * y) * (z * x) = (x * (y * z)) * x", "answer": true}
+{"id": "saircommunity_0185", "index": 185, "difficulty": "wide2k_v2", "equation1": "x * y = (y * y) * (x * y)", "equation2": "x = (y * ((x * y) * y)) * (x * (z * y))", "answer": false}
+{"id": "saircommunity_0186", "index": 186, "difficulty": "wide2k_v2", "equation1": "x = y * (x * (z * (z * (z * w))))", "equation2": "x = y", "answer": true}
+{"id": "saircommunity_0187", "index": 187, "difficulty": "wide2k_v2", "equation1": "x = (x * (y * (y * z))) * z", "equation2": "x * x = (x * (y * y)) * x", "answer": false}
+{"id": "saircommunity_0188", "index": 188, "difficulty": "wide2k_v2", "equation1": "x = y", "equation2": "x = (((y * y) * y) * x) * ((y * y) * z)", "answer": true}
+{"id": "saircommunity_0189", "index": 189, "difficulty": "wide2k_v2", "equation1": "x = y * (((x * y) * y) * y)", "equation2": "x = x * (y * (y * (z * (z * w))))", "answer": false}
+{"id": "saircommunity_0190", "index": 190, "difficulty": "wide2k_v2", "equation1": "x * (y * z) = (x * y) * z", "equation2": "x * (y * (x * z)) = ((x * y) * x) * z", "answer": true}
+{"id": "saircommunity_0191", "index": 191, "difficulty": "wide2k_v2", "equation1": "x = x * (((x * x) * y) * x)", "equation2": "x * x = y * ((z * y) * x)", "answer": false}
+{"id": "saircommunity_0192", "index": 192, "difficulty": "wide2k_v2", "equation1": "x = y * (x * (z * (w * (x * w))))", "equation2": "x = y", "answer": true}
+{"id": "saircommunity_0193", "index": 193, "difficulty": "wide2k_v2", "equation1": "x * (x * y) = (z * z) * y", "equation2": "x = (y * ((y * y) * x)) * y", "answer": false}
+{"id": "saircommunity_0194", "index": 194, "difficulty": "wide2k_v2", "equation1": "x * y = ((z * z) * y) * x", "equation2": "x * y = x * (y * (z * z))", "answer": true}
+{"id": "saircommunity_0195", "index": 195, "difficulty": "wide2k_v2", "equation1": "x = y * (x * (y * (y * x)))", "equation2": "x * x = (x * x) * x", "answer": false}
+{"id": "saircommunity_0196", "index": 196, "difficulty": "wide2k_v2", "equation1": "x * y = z * (w * (z * u))", "equation2": "x * y = z * (w * (z * w))", "answer": true}
+{"id": "saircommunity_0197", "index": 197, "difficulty": "wide2k_v2", "equation1": "x = x * (((x * y) * x) * x)", "equation2": "x * y = z * ((y * w) * w)", "answer": false}
+{"id": "saircommunity_0198", "index": 198, "difficulty": "wide2k_v2", "equation1": "x * (y * z) = (x * y) * z", "equation2": "x * (y * (z * y)) = ((x * y) * z) * y", "answer": true}
+{"id": "saircommunity_0199", "index": 199, "difficulty": "wide2k_v2", "equation1": "x * (y * z) = (z * y) * x", "equation2": "x * x = x * ((x * x) * x)", "answer": false}
+{"id": "saircommunity_0200", "index": 200, "difficulty": "wide2k_v2", "equation1": "x = y * (x * (z * (w * (z * y))))", "equation2": "x = y", "answer": true}
