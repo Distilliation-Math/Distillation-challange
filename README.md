@@ -24,7 +24,16 @@ A [magma](https://en.wikipedia.org/wiki/Magma_(algebra)) is a set with a single 
 
 ```
 ├── Plan.md                  # Project plan (phases, architecture, costs, timeline)
-├── Meetings_Notes.md        # Team meeting notes and decisions
+├── Meetings_Notes_*.md      # Team meeting notes and decisions
+├── eval_harness.py          # Evaluation harness (JSONL → model API → CSV + accuracy)
+├── config/
+│   ├── models.yaml          # Model configuration for eval harness
+│   └── prompts/             # Prompt templates (v0_baseline.txt, etc.)
+├── cheatsheets/             # Versioned prompt+cheatsheet files
+│   └── v1_cheatsheet.txt    # Current best cheatsheet (4.6KB)
+├── results/
+│   ├── baselines/           # Baseline (no cheatsheet) results per model/dataset + SUMMARY.md
+│   └── iterations/          # Per-iteration results: v{N}_{model}_{dataset}.csv
 ├── Training_data/           # Official problem sets (JSONL)
 │   ├── normal.jsonl         # 1000 problems (500 TRUE / 500 FALSE)
 │   ├── hard1.jsonl          # 69 problems (deduplicated hard set)
@@ -68,6 +77,36 @@ All model inference runs in the cloud via [OpenRouter](https://openrouter.ai/). 
 | Evaluation | `eval_harness.py` | Batch evaluation: substitute equations → call model → parse verdict → score |
 | Inference | OpenRouter API | GPT-OSS-120b, Llama 3.3 70b, Gemini Flash Lite, Grok 4.1 Fast |
 
+## Results
+
+### Baseline (no cheatsheet)
+
+| Model | normal (1000) | hard1 (69) | hard2 (200) | hard3 (400) |
+|-------|:---:|:---:|:---:|:---:|
+| grok-4.1-fast | 32.0% | 55.1% | 39.0% | 62.0% |
+| gpt-oss-120b | 51.9% | 50.7% | 45.5% | 46.5% |
+| llama-3.3-70b | 36.7% | 46.4% | 36.5% | 34.8% |
+| gemini-flash-lite | 49.8% | 65.2% | 50.0% | 51.2% |
+
+### v1 Cheatsheet (4.6KB)
+
+| Model | Dataset | v1 Accuracy | Baseline | Delta | Parse Fails | Confabulations |
+|---|---|---|---|---|---|---|
+| **grok-4.1-fast** | normal | 840/1000 (84.0%) | 320/1000 (32.0%) | **+52.0pp** | 150 (15.0%) | 4 (0.4%) |
+| gpt-oss-120b | normal | 629/1000 (62.9%) | 519/1000 (51.9%) | +11.0pp | 24 (2.4%) | 313 (31.3%) |
+| llama-3.3-70b | normal | 500/1000 (50.0%) | 367/1000 (36.7%) | +13.3pp | 0 (0%) | 500 (50.0%) |
+| gemini-flash-lite | normal | 502/1000 (50.2%) | 498/1000 (49.8%) | +0.4pp | 0 (0%) | 498 (49.8%) |
+| gpt-oss-120b | hard2_30 | 19/30 (63.3%) | 18/30 (60.0%) | +3.3pp | 2 (6.7%) | 6 (20.0%) |
+| llama-3.3-70b | hard2_30 | 15/30 (50.0%) | 11/30 (36.7%) | +13.4pp | 0 (0%) | 15 (50.0%) |
+| grok-4.1-fast | hard2_30 | 12/30 (40.0%) | 11/30 (36.7%) | +3.4pp | 13 (43.3%) | 2 (6.7%) |
+| gemini-flash-lite | hard2_30 | 15/30 (50.0%) | 15/30 (50.0%) | +0.0pp | 0 (0%) | 15 (50.0%) |
+
+**Key findings:**
+- **Grok is the strongest model** -- 84% on normal with the v1 cheatsheet (+52pp over baseline)
+- **Confabulation is the dominant failure mode** -- models fabricate counterexamples to claim FALSE when the implication actually holds. Gemini and Llama confabulate on 100% of TRUE problems
+- **Grok almost never confabulates** (<1%) but suffers from parse failures/timeouts (15%)
+- **All models improved** over baseline with the v1 cheatsheet
+
 ## Key Resources
 
 **Competition:**
@@ -94,11 +133,13 @@ All model inference runs in the cloud via [OpenRouter](https://openrouter.ai/). 
 
 ## Timeline
 
-| Date | Milestone |
-|------|-----------|
-| Apr 2 | Baselines + error analysis complete |
-| Apr 9 | Cheatsheet candidates ready |
-| Apr 10 | Evaluation models announced by SAIR |
-| Apr 11 | Model-specific optimization begins |
-| Apr 18 | Final review |
-| **Apr 20** | **Submission deadline (23:59 AoE)** |
+| Date | Milestone | Status |
+|------|-----------|--------|
+| Mar 30 | Baselines + eval harness complete | Done |
+| Mar 30 | v1 cheatsheet evaluated (84% grok normal) | Done |
+| Apr 2 | Error analysis + v2 cheatsheet iteration | |
+| Apr 9 | Cheatsheet candidates ready | |
+| Apr 10 | Evaluation models announced by SAIR | |
+| Apr 11 | Model-specific optimization begins | |
+| Apr 18 | Final review | |
+| **Apr 20** | **Submission deadline (23:59 AoE)** | |
