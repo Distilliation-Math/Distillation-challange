@@ -1,0 +1,31 @@
+problem_id,expected,predicted,correct,parse_ok,raw_verdict,latency_s,input_tokens,output_tokens,cost_usd,response_text
+hard2_0001,False,,,False,,723.19,0,0,0.000000,[EXCEPTION] TimeoutError: 
+hard2_0002,False,,,False,,746.19,0,0,0.000000,[EXCEPTION] TimeoutError: 
+hard2_0003,True,False,False,True,VERDICT: FALSE,30.77,1599,3461,0.002050,"VERDICT: FALSE  \nXOR magma on {0,1} (a*b = a XOR b) satisfies eq1 for all assignments, but eq2 fails at x=1, y=0, z=1: LHS=1, RHS=0."
+hard2_0004,True,False,False,True,VERDICT: FALSE,384.15,1601,15384,0.008012,"VERDICT: FALSE  \nEq2 introduces new variable w not in eq1. No small magma counterexample found (none satisfy eq1), but eq1 does not clearly collapse to singleton (x appears in RHS), and STEP 6 leans "
+hard2_0005,True,,,False,,720.19,0,0,0.000000,[EXCEPTION] TimeoutError: 
+hard2_0006,True,,,False,,672.19,0,0,0.000000,[EXCEPTION] TimeoutError: 
+hard2_0007,False,,,False,,688.19,0,0,0.000000,[EXCEPTION] TimeoutError: 
+hard2_0008,True,True,True,True,VERDICT: TRUE,240.06,1601,16463,0.008552,"VERDICT: TRUE\n\nEq1 has no models in 2-element magmas (all 16 possible tables fail eq1 for some assignment of x,y,z ∈ {0,1}). Singleton magmas satisfy eq1 and eq2. No counterexample found; eq1 forces"
+hard2_0009,False,True,False,True,VERDICT: TRUE,592.19,1601,17718,0.009179,"VERDICT: TRUE\n\nEq1 has an extra variable z and by setting z=y derives x = y * ((x*y)*(y*y)). No counterexamples found in small magmas on {0,1} (only XOR and XNOR satisfy eq1, both satisfy eq2). Eq1 "
+hard2_0010,False,,,False,,635.19,0,0,0.000000,[EXCEPTION] TimeoutError: 
+hard2_0011,False,False,True,True,VERDICT: FALSE,441.20,1598,14467,0.007553,"VERDICT: FALSE\n\nEq2 introduces new variables z and w not present in eq1. Eq1 does not collapse the magma to a singleton (x appears nested in RHS, unlike collapsing examples). Step 3 and Step 1 indic"
+hard2_0012,False,True,False,True,VERDICT: TRUE,208.82,1601,14157,0.007399,"VERDICT: TRUE  \nEq1 holds in checked {0,1}-magmas (XOR, XNOR) only when eq2 also holds; no counterexample found; eq1's strong structural constraint (composite map = id ∀y,z) likely forces eq2."
+hard2_0013,False,False,True,True,VERDICT: FALSE,322.19,1601,17046,0.008843,VERDICT: FALSE  \neq2 has an extra variable z unconstrained by eq1; eq1 does not obviously collapse to singleton (x appears in RHS); STEP 4 yields no counterexample (no small non-trivial models for eq
+hard2_0014,False,False,True,True,VERDICT: FALSE,342.89,1601,16225,0.008433,"VERDICT: FALSE  \nEq2 introduces a new variable z unconstrained by eq1; STEP 3 and STEP 6 lean FALSE, no proof found in STEP"
+hard2_0015,False,False,True,True,VERDICT: FALSE,80.52,1600,10117,0.005378,"VERDICT: FALSE  \nCounterexample on {0,1,2} with table where x*x=0 ∀x; 0*anything=0; 1*0=0, 1*1=0, 1*2=1; 2*anything=0. Eq1 holds (squares=0, compositions yield 0*u=0). Eq2 fails (e.g., 1*2=1 ≠ 0*1=0)"
+hard2_0016,False,,,False,,711.19,0,0,0.000000,[EXCEPTION] TimeoutError: 
+hard2_0017,True,True,True,True,VERDICT: TRUE,282.34,1601,13204,0.006922,"VERDICT: TRUE  \nEq1 forces every left multiplication λ_y to be both constant (by substituting x=y and propagating inward using injectivity) and bijective (by existence of right inverse ρ_s), possible"
+hard2_0018,True,,,False,,756.19,0,0,0.000000,[EXCEPTION] TimeoutError: 
+hard2_0019,True,,,False,,625.19,0,0,0.000000,[EXCEPTION] TimeoutError: 
+hard2_0020,False,False,True,True,VERDICT: FALSE,187.20,1601,9387,0.005014,"VERDICT: FALSE  \nCounterexample on {0,1,2} with table:  \n* | 0 1 2  \n0 | 0 0 0  \n1 | 0 0 1  \n2 | 0 0 0  \nEq1 holds (all products in {0,1}, a*(y*z)=0=z*(w*u)). Eq2 fails: x=1,y=2,z=0 gives (1*2)*"
+hard2_0021,True,,,False,,726.19,0,0,0.000000,[EXCEPTION] TimeoutError: 
+hard2_0022,True,True,True,True,VERDICT: TRUE,348.20,1601,15431,0.008036,"VERDICT: TRUE\n\nEq1 is a strong condition requiring x = y * (((x * y) * z) * w) for all x,y,z,w. No non-trivial small magma (e.g., on {0,1}) satisfies eq1, suggesting eq1 forces singleton magmas wher"
+hard2_0023,True,,,False,,605.19,0,0,0.000000,[EXCEPTION] TimeoutError: 
+hard2_0024,True,True,True,True,VERDICT: TRUE,479.13,1598,16205,0.008422,"VERDICT: TRUE  \nEq1 forces the magma to have constant columns (a * b = φ(b) ∀a,b with φ³ = id). In such magmas, eq2 reduces to φ³(x) = x, which holds."
+hard2_0025,False,True,False,True,VERDICT: TRUE,551.93,1599,16921,0.008780,VERDICT: TRUE  \nEq1 is a stronger condition (quantifies over an extra variable z); no counterexample found in standard 2-element magmas (all satisfying eq1 also satisfy eq2); construction attempts fo
+hard2_0026,True,True,True,True,VERDICT: TRUE,354.80,1601,15121,0.007881,"VERDICT: TRUE  \nEq1 is a stronger condition (more variables, more operations) and holds in right-zero magmas where eq2 holds; no counterexample found in small magmas; default to TRUE per decision pro"
+hard2_0027,False,False,True,True,FALSE,364.03,1602,1837,0.001239,The problem is: Does x = y * ((z * (y * y)) * x) imply x = (y * z) * ((x * z) * x) over ALL magmas?\n\n\n## Evaluating the Problem  \n- The task is to determine if the equation x = y * ((z * (y * y)) 
+hard2_0028,True,,,False,,692.19,0,0,0.000000,[EXCEPTION] TimeoutError: 
+hard2_0029,False,,,False,,712.19,0,0,0.000000,[EXCEPTION] TimeoutError: 
+hard2_0030,True,True,True,True,VERDICT: TRUE,567.23,1600,9514,0.005077,"VERDICT: TRUE  \nEq1 forces every magma satisfying it to be a singleton (proof: eq1 implies ∀a,b,z (a*z = b*z), so a*b = f(b) independent of a; then RHS of eq1 independent of x, forcing all elements e"
