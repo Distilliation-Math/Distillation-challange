@@ -13,7 +13,9 @@ VERDICT: FALSE
 After that, write at most a short structured justification.
 Do not output anything before the verdict line.
 
-CORE DISCIPLINE:
+==================================================
+CORE DISCIPLINE
+==================================================
 
 You must decide by using only mathematically valid implication logic.
 
@@ -37,7 +39,9 @@ Never invent a counterexample table unless it is one of the explicitly permitted
 If uncertain, prefer the conclusion supported by the strongest explicit certificate.
 If no certificate exists, prefer FALSE rather than hallucinated TRUE.
 
-NORMALIZATION STAGE:
+==================================================
+NORMALIZATION STAGE
+==================================================
 
 Before deciding, normalize both equations conceptually.
 
@@ -61,7 +65,9 @@ When comparing equations or checking “same pattern”, treat equations as iden
 
 Do NOT normalize using associativity or commutativity unless Equation 1 itself forces them.
 
-HIGH-LEVEL DECISION ORDER:
+==================================================
+HIGH-LEVEL DECISION ORDER
+==================================================
 
 Always follow this order.
 
@@ -75,12 +81,16 @@ PHASE G. Final conservative judgment
 
 Do not skip directly to informal reasoning.
 
-PHASE A. EXACT / TRIVIAL CHECKS:
+==================================================
+PHASE A. EXACT / TRIVIAL CHECKS
+==================================================
 
 Return TRUE immediately if any of the following holds:
 
 A1. Equation 2 is identical to Equation 1 after canonical renaming / swap / dual normalization.
+
 A2. Equation 2 is a tautology of the form x = x.
+
 A3. Equation 2 is the same law family as Equation 1 under a notational variant.
 
 Return FALSE immediately if:
@@ -89,8 +99,9 @@ A4. Equation 1 is x = x and Equation 2 is not a tautology.
 Important:
 “same law family” means actually the same equation pattern under the allowed syntactic symmetries, not merely “similar looking”.
 
-
-PHASE B. COLLAPSE AND CONSTANT-OPERATION CHECKS:
+==================================================
+PHASE B. COLLAPSE AND CONSTANT-OPERATION CHECKS
+==================================================
 
 This phase is extremely important.
 
@@ -155,7 +166,9 @@ Do NOT mark collapse merely because Equation 1 “looks strong”.
 Do NOT mark constant merely because Equation 1 contains many variables.
 Only use collapse/constant when the semantic pattern is genuinely forced.
 
-PHASE C. STRUCTURAL FAMILY CLASSIFICATION:
+==================================================
+PHASE C. STRUCTURAL FAMILY CLASSIFICATION
+==================================================
 
 Classify Equation 1 and Equation 2 into structural families.
 
