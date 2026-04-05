@@ -1,0 +1,83 @@
+{
+  "channel": "general",
+  "channel_id": 9,
+  "topic": "new channels",
+  "message_count": 3,
+  "messages": [
+    {
+      "id": 80,
+      "sender_id": 15,
+      "content": "<p><span class=\"user-mention silent\" data-user-id=\"25\">YZ</span> created a new channel <a class=\"stream\" data-stream-id=\"13\" href=\"/#narrow/channel/13-competition\">#competition</a>.</p>",
+      "recipient_id": 24,
+      "timestamp": 1771823666,
+      "client": "Internal",
+      "subject": "new channels",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Notification Bot",
+      "sender_email": "notification-bot@zulip.com",
+      "sender_realm_str": "zulipinternal",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "https://zulip.sair.foundation/static/images/static_avatars/notification-bot.36f721bad3d0.png",
+      "content_type": "text/html"
+    },
+    {
+      "id": 82,
+      "sender_id": 15,
+      "content": "<p><span class=\"user-mention silent\" data-user-id=\"25\">YZ</span> created a new channel <a class=\"stream\" data-stream-id=\"14\" href=\"/#narrow/channel/14-Galois-project\">#Galois project</a>.</p>",
+      "recipient_id": 24,
+      "timestamp": 1771823851,
+      "client": "Internal",
+      "subject": "new channels",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Notification Bot",
+      "sender_email": "notification-bot@zulip.com",
+      "sender_realm_str": "zulipinternal",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "https://zulip.sair.foundation/static/images/static_avatars/notification-bot.36f721bad3d0.png",
+      "content_type": "text/html"
+    },
+    {
+      "id": 1416,
+      "sender_id": 15,
+      "content": "<p><span class=\"user-mention silent\" data-user-id=\"166\">chris j handel</span> created a new channel <a class=\"stream\" data-stream-id=\"18\" href=\"/#narrow/channel/18-Scaling-the-Science-of-Intelligence\">#Scaling the Science of Intelligence</a>.</p>",
+      "recipient_id": 24,
+      "timestamp": 1775170403,
+      "client": "Internal",
+      "subject": "new channels",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Notification Bot",
+      "sender_email": "notification-bot@zulip.com",
+      "sender_realm_str": "zulipinternal",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "https://zulip.sair.foundation/static/images/static_avatars/notification-bot.36f721bad3d0.png",
+      "content_type": "text/html"
+    }
+  ]
+}

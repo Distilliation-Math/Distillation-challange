@@ -1,0 +1,40 @@
+{
+  "channel": "Math Distillation Challenge - equational theories",
+  "channel_id": 13,
+  "topic": "New model support: Gemma 4 by Google",
+  "message_count": 1,
+  "messages": [
+    {
+      "id": 1421,
+      "sender_id": 25,
+      "content": "<p>SAIR Playground now supports Gemma 4, the latest open model family from Google DeepMind.</p>\n<p>You can now use Gemma 4 to participate in the Math Distillation Challenge and test your cheatsheets directly on SAIR Playground.</p>\n<p>Try Gemma 4 on SAIR Playground:<br>\n<a href=\"https://playground.sair.foundation/\">https://playground.sair.foundation/</a></p>",
+      "recipient_id": 43,
+      "timestamp": 1775192619,
+      "client": "ZulipElectron",
+      "subject": "New model support: Gemma 4 by Google",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "heart",
+          "emoji_code": "2764",
+          "reaction_type": "unicode_emoji",
+          "user_id": 50
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html"
+    }
+  ]
+}

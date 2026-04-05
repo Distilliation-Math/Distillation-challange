@@ -1,0 +1,405 @@
+{
+  "channel": "Math Distillation Challenge - equational theories",
+  "channel_id": 13,
+  "topic": "dataset",
+  "message_count": 10,
+  "messages": [
+    {
+      "id": 402,
+      "sender_id": 97,
+      "content": "<p>Hello!</p>\n<p>I would like to report an issue with the <a href=\"https://huggingface.co/datasets/SAIRfoundation/equational-theories-selected-problems/blob/main/data/hard.jsonl\">Hard dataset</a>: only 69 out of 200 entries form unique <code>(equation1, equation2)</code> pairs.</p>\n<p>Here are a few dupe examples (<a href=\"/user_uploads/5/c7/jglNSkwuY-W5aFFJbwylvOoq/hard_problems_unique_pairs.txt\">see full list file, one row per unique equation pair</a>):</p>\n<ul>\n<li>hard_0024, hard_0076, hard_0128, hard_0180</li>\n<li>hard_0047, hard_0099, hard_0151</li>\n<li>hard_0060, hard_0112, hard_0164</li>\n<li>hard_0020, hard_0072, hard_0124, hard_0176</li>\n<li>hard_0031, hard_0083, hard_0135, hard_0187</li>\n</ul>\n<p>NB: no such finding for the \"Normal\" dataset</p>",
+      "recipient_id": 43,
+      "timestamp": 1773603931,
+      "client": "website",
+      "subject": "Dataset",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "folded_hands",
+          "emoji_code": "1f64f",
+          "reaction_type": "unicode_emoji",
+          "user_id": 25
+        },
+        {
+          "emoji_name": "folded_hands",
+          "emoji_code": "1f64f",
+          "reaction_type": "unicode_emoji",
+          "user_id": 28
+        },
+        {
+          "emoji_name": "folded_hands",
+          "emoji_code": "1f64f",
+          "reaction_type": "unicode_emoji",
+          "user_id": 113
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Baptiste Polchlopek",
+      "sender_email": "user97@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "https://secure.gravatar.com/avatar/924fcbbfe75b5819d696c850561f1f01?d=identicon&version=1",
+      "content_type": "text/html"
+    },
+    {
+      "id": 416,
+      "sender_id": 25,
+      "content": "<p><span class=\"user-mention\" data-user-id=\"97\">@Baptiste Polchlopek</span> Thank you for reporting the issue. We are looking into it.</p>",
+      "recipient_id": 43,
+      "timestamp": 1773606711,
+      "client": "ZulipElectron",
+      "subject": "Dataset",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 97
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html"
+    },
+    {
+      "id": 432,
+      "sender_id": 28,
+      "content": "<p>Oops, it appears we did not code a certain random number generator correctly.  We have generated a fresh set of 200 \"hard\" implications and will deploy these shortly after some testing.</p>",
+      "recipient_id": 43,
+      "timestamp": 1773613106,
+      "client": "website",
+      "subject": "Dataset",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "folded_hands",
+          "emoji_code": "1f64f",
+          "reaction_type": "unicode_emoji",
+          "user_id": 71
+        },
+        {
+          "emoji_name": "folded_hands",
+          "emoji_code": "1f64f",
+          "reaction_type": "unicode_emoji",
+          "user_id": 52
+        },
+        {
+          "emoji_name": "folded_hands",
+          "emoji_code": "1f64f",
+          "reaction_type": "unicode_emoji",
+          "user_id": 50
+        },
+        {
+          "emoji_name": "folded_hands",
+          "emoji_code": "1f64f",
+          "reaction_type": "unicode_emoji",
+          "user_id": 97
+        },
+        {
+          "emoji_name": "folded_hands",
+          "emoji_code": "1f64f",
+          "reaction_type": "unicode_emoji",
+          "user_id": 25
+        },
+        {
+          "emoji_name": "folded_hands",
+          "emoji_code": "1f64f",
+          "reaction_type": "unicode_emoji",
+          "user_id": 113
+        },
+        {
+          "emoji_name": "folded_hands",
+          "emoji_code": "1f64f",
+          "reaction_type": "unicode_emoji",
+          "user_id": 79
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Terence Tao",
+      "sender_email": "user28@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "https://secure.gravatar.com/avatar/66522e6c0b7fca709255b9abd0120b10?d=identicon&version=1",
+      "content_type": "text/html"
+    },
+    {
+      "id": 541,
+      "sender_id": 25,
+      "content": "<p>We have uploaded two new public problem subsets to Hugging Face:</p>\n<ul>\n<li>\n<p>hard2 is now available as a new 200-problem subset. It contains 100 problems with ground-truth TRUE labels and 100 problems with ground-truth FALSE labels.<br>\n  Link: <a href=\"https://huggingface.co/datasets/SAIRfoundation/equational-theories-selected-problems/viewer/hard2/train\">https://huggingface.co/datasets/SAIRfoundation/equational-theories-selected-problems/viewer/hard2/train</a></p>\n</li>\n<li>\n<p>hard1 is also now available as the deduplicated version of the previous hard subset. It contains 69 problems total, with 24 ground-truth TRUE labels and 45 ground-truth FALSE labels.<br>\n  Link: <a href=\"https://huggingface.co/datasets/SAIRfoundation/equational-theories-selected-problems/viewer/hard1/train\">https://huggingface.co/datasets/SAIRfoundation/equational-theories-selected-problems/viewer/hard1/train</a></p>\n</li>\n</ul>\n<p>Both subsets are now publicly available.</p>\n<p>Thanks to <span class=\"user-mention\" data-user-id=\"97\">@Baptiste Polchlopek</span>  for pointing out the issue.</p>",
+      "recipient_id": 43,
+      "timestamp": 1773649127,
+      "client": "ZulipElectron",
+      "subject": "Dataset",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "tada",
+          "emoji_code": "1f389",
+          "reaction_type": "unicode_emoji",
+          "user_id": 50
+        },
+        {
+          "emoji_name": "tada",
+          "emoji_code": "1f389",
+          "reaction_type": "unicode_emoji",
+          "user_id": 119
+        },
+        {
+          "emoji_name": "tada",
+          "emoji_code": "1f389",
+          "reaction_type": "unicode_emoji",
+          "user_id": 113
+        },
+        {
+          "emoji_name": "tada",
+          "emoji_code": "1f389",
+          "reaction_type": "unicode_emoji",
+          "user_id": 98
+        },
+        {
+          "emoji_name": "folded_hands",
+          "emoji_code": "1f64f",
+          "reaction_type": "unicode_emoji",
+          "user_id": 71
+        },
+        {
+          "emoji_name": "folded_hands",
+          "emoji_code": "1f64f",
+          "reaction_type": "unicode_emoji",
+          "user_id": 52
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html"
+    },
+    {
+      "id": 554,
+      "sender_id": 113,
+      "content": "<ol>\n<li>Can assume the playground @ sair foundation 200 hard problems updated as well?</li>\n</ol>",
+      "recipient_id": 43,
+      "timestamp": 1773668522,
+      "client": "website",
+      "subject": "Dataset",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Stacey Szmy",
+      "sender_email": "user113@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "https://secure.gravatar.com/avatar/21e44e00230533d40a9a9209cc063b5a?d=identicon&version=1",
+      "content_type": "text/html"
+    },
+    {
+      "id": 555,
+      "sender_id": 25,
+      "content": "<p>hard1.jsonl (69 problems) is the deduped version of the previous 200 hard problems. <br>\nhard2.jsonl is a new hard problem set with 200 new hard problems<br>\nYou can use both. Thanks!</p>",
+      "recipient_id": 43,
+      "timestamp": 1773668758,
+      "client": "ZulipFlutter",
+      "subject": "Dataset",
+      "topic_links": [],
+      "last_edit_timestamp": 1773668777,
+      "edit_history": [
+        {
+          "user_id": 25,
+          "timestamp": 1773668777,
+          "prev_content": "hard1.jsonl (69 problems) is the deduped version of the previous 200 hard problems. \nhard2.jsonl is a new hard problem with 200 new hard problems\nYou can use both. Thanks!",
+          "prev_rendered_content": "<p>hard1.jsonl (69 problems) is the deduped version of the previous 200 hard problems. <br>\nhard2.jsonl is a new hard problem with 200 new hard problems<br>\nYou can use both. Thanks!</p>"
+        }
+      ],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html"
+    },
+    {
+      "id": 570,
+      "sender_id": 113,
+      "content": "<p>Wonderful I see them both there now tyvm</p>",
+      "recipient_id": 43,
+      "timestamp": 1773674416,
+      "client": "website",
+      "subject": "Dataset",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "tada",
+          "emoji_code": "1f389",
+          "reaction_type": "unicode_emoji",
+          "user_id": 25
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Stacey Szmy",
+      "sender_email": "user113@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "https://secure.gravatar.com/avatar/21e44e00230533d40a9a9209cc063b5a?d=identicon&version=1",
+      "content_type": "text/html"
+    },
+    {
+      "id": 1216,
+      "sender_id": 118,
+      "content": "<p>I found that there are many records in <code>hard</code> with duplicate <code>eq1_id</code> and <code>eq2_id</code>, as shown in the screenshot below (54, 2,695). Is this normal? Could someone help clarify? Thank you.<br>\n<a href=\"/user_uploads/5/d0/xB0e1eqI4sHDXLSTEENprXTa/screenshot-20260325-222531.png\">screenshot-20260325-222531.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/5/d0/xB0e1eqI4sHDXLSTEENprXTa/screenshot-20260325-222531.png\" title=\"screenshot-20260325-222531.png\"><img data-original-content-type=\"image/png\" data-original-dimensions=\"1118x851\" src=\"/user_uploads/thumbnail/5/d0/xB0e1eqI4sHDXLSTEENprXTa/screenshot-20260325-222531.png/840x560.webp\"></a></div>",
+      "recipient_id": 43,
+      "timestamp": 1774448971,
+      "client": "website",
+      "subject": "dataset",
+      "topic_links": [],
+      "edit_history": [
+        {
+          "stream": 13,
+          "user_id": 28,
+          "timestamp": 1774567681,
+          "prev_stream": 9
+        }
+      ],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "last_moved_timestamp": 1774567681,
+      "sender_full_name": "Wu Bing",
+      "sender_email": "user118@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "https://secure.gravatar.com/avatar/edcb27a070d233301727d29f81896b6a?d=identicon&version=1",
+      "content_type": "text/html"
+    },
+    {
+      "id": 1220,
+      "sender_id": 25,
+      "content": "<p>Please use hard1 which is the dedupe version of hard.</p>",
+      "recipient_id": 43,
+      "timestamp": 1774455588,
+      "client": "ZulipFlutter",
+      "subject": "dataset",
+      "topic_links": [],
+      "edit_history": [
+        {
+          "user_id": 28,
+          "timestamp": 1774567681,
+          "prev_stream": 9,
+          "stream": 13
+        }
+      ],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "ok",
+          "emoji_code": "1f44c",
+          "reaction_type": "unicode_emoji",
+          "user_id": 118
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "last_moved_timestamp": 1774567681,
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html"
+    },
+    {
+      "id": 1260,
+      "sender_id": 15,
+      "content": "<p>2 messages were moved here from <a class=\"stream-topic\" data-stream-id=\"9\" href=\"/#narrow/channel/9-general/topic/dataset\">#general &gt; dataset</a> by <span class=\"user-mention silent\" data-user-id=\"28\">Terence Tao</span>.</p>",
+      "recipient_id": 43,
+      "timestamp": 1774567681,
+      "client": "Internal",
+      "subject": "dataset",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Notification Bot",
+      "sender_email": "notification-bot@zulip.com",
+      "sender_realm_str": "zulipinternal",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "https://zulip.sair.foundation/static/images/static_avatars/notification-bot.36f721bad3d0.png",
+      "content_type": "text/html"
+    }
+  ]
+}

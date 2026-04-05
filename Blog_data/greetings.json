@@ -1,0 +1,158 @@
+{
+  "channel": "general",
+  "channel_id": 9,
+  "topic": "greetings",
+  "message_count": 4,
+  "messages": [
+    {
+      "id": 22,
+      "sender_id": 16,
+      "content": "<p><span aria-label=\"point right\" class=\"emoji emoji-1f449\" role=\"img\" title=\"point right\">:point_right:</span> Click on this message to start a new message in the same conversation.</p>",
+      "recipient_id": 24,
+      "timestamp": 1771678725,
+      "client": "Internal",
+      "subject": "greetings",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Welcome Bot",
+      "sender_email": "welcome-bot@zulip.com",
+      "sender_realm_str": "zulipinternal",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "https://zulip.sair.foundation/static/images/static_avatars/welcome-bot.0c86744b0caf.png",
+      "content_type": "text/html"
+    },
+    {
+      "id": 350,
+      "sender_id": 83,
+      "content": "<p>I know it!</p>",
+      "recipient_id": 24,
+      "timestamp": 1773589740,
+      "client": "website",
+      "subject": "greetings",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Yinzhang Lu",
+      "sender_email": "user83@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "https://secure.gravatar.com/avatar/a95cefa4b46557cdd0db13dad894cb54?d=identicon&version=1",
+      "content_type": "text/html"
+    },
+    {
+      "id": 381,
+      "sender_id": 93,
+      "content": "<p>Greetings one and all, let the games commence!</p>",
+      "recipient_id": 24,
+      "timestamp": 1773597359,
+      "client": "website",
+      "subject": "greetings",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "heart",
+          "emoji_code": "2764",
+          "reaction_type": "unicode_emoji",
+          "user_id": 98
+        },
+        {
+          "emoji_name": "heart",
+          "emoji_code": "2764",
+          "reaction_type": "unicode_emoji",
+          "user_id": 38
+        },
+        {
+          "emoji_name": "heart",
+          "emoji_code": "2764",
+          "reaction_type": "unicode_emoji",
+          "user_id": 25
+        },
+        {
+          "emoji_name": "heart",
+          "emoji_code": "2764",
+          "reaction_type": "unicode_emoji",
+          "user_id": 172
+        },
+        {
+          "emoji_name": "heart",
+          "emoji_code": "2764",
+          "reaction_type": "unicode_emoji",
+          "user_id": 233
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Paul Buchanan",
+      "sender_email": "user93@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "/user_avatars/5/20ec1a798f5ef3a63cff177c632faddd9b418afd.png",
+      "content_type": "text/html"
+    },
+    {
+      "id": 739,
+      "sender_id": 153,
+      "content": "<p>Very cool competition idea :)</p>",
+      "recipient_id": 24,
+      "timestamp": 1773762057,
+      "client": "website",
+      "subject": "greetings",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "tada",
+          "emoji_code": "1f389",
+          "reaction_type": "unicode_emoji",
+          "user_id": 25
+        },
+        {
+          "emoji_name": "tada",
+          "emoji_code": "1f389",
+          "reaction_type": "unicode_emoji",
+          "user_id": 50
+        },
+        {
+          "emoji_name": "tada",
+          "emoji_code": "1f389",
+          "reaction_type": "unicode_emoji",
+          "user_id": 172
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Hitaishi Chillara",
+      "sender_email": "user153@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "https://secure.gravatar.com/avatar/46dd9ae8ab7b120724e3b31ec27371e1?d=identicon&version=1",
+      "content_type": "text/html"
+    }
+  ]
+}

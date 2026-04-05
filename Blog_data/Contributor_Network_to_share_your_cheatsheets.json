@@ -1,0 +1,79 @@
+{
+  "channel": "Math Distillation Challenge - equational theories",
+  "channel_id": 13,
+  "topic": "Contributor Network to share your cheatsheets",
+  "message_count": 1,
+  "messages": [
+    {
+      "id": 1361,
+      "sender_id": 25,
+      "content": "<p><strong>SAIR Contributor Network is now live.</strong></p>\n<p>We’ve officially launched the SAIR Contributor Network, a new space for the community to share cheatsheets, exchange ideas, and learn from each other across the SAIR competition platform.<br>\n<a href=\"https://competition.sair.foundation/contributor-network\">https://competition.sair.foundation/contributor-network</a></p>\n<p>If you’ve developed a useful cheatsheet, found a promising strategy, or discovered something others may benefit from, we encourage you to share it with the community. Our hope is that the SAIR Contributor Network will help strong ideas spread faster and make collaboration easier across the platform.</p>\n<p>Next step: if you share a cheatsheet, we will benchmark it and display the results on the leaderboard. This feature will be available soon.</p>\n<p>We are also considering how adopted community-shared cheatsheets should be reflected in the final evaluation policy. We will publish the relevant rules once that part of the policy is finalized.</p>\n<p>Video tutorial:<br>\n<a href=\"https://youtu.be/0pTLiD-2qjQ\">https://youtu.be/0pTLiD-2qjQ</a></p>\n<div class=\"youtube-video message_inline_image\"><a data-id=\"0pTLiD-2qjQ\" href=\"https://youtu.be/0pTLiD-2qjQ\"><img src=\"/external_content/6864016aa3b0fe6f50e86c1f87f152722fab4e27/68747470733a2f2f692e7974696d672e636f6d2f76692f3070544c69442d32716a512f6d7164656661756c742e6a7067\"></a></div><p>If you have any questions or thoughts while using it, you are very welcome to discuss them in this topic.</p>",
+      "recipient_id": 43,
+      "timestamp": 1775006723,
+      "client": "ZulipElectron",
+      "subject": "Contributor Network to share your cheatsheets",
+      "topic_links": [],
+      "last_edit_timestamp": 1775006782,
+      "edit_history": [
+        {
+          "topic": "Contributor Network to share your cheatsheets",
+          "user_id": 165,
+          "timestamp": 1775083939,
+          "prev_topic": "✔ Contributor Network to share your cheatsheets"
+        },
+        {
+          "topic": "✔ Contributor Network to share your cheatsheets",
+          "user_id": 165,
+          "timestamp": 1775083884,
+          "prev_topic": "Contributor Network to share your cheatsheets"
+        },
+        {
+          "user_id": 25,
+          "timestamp": 1775006782,
+          "prev_content": "**SAIR Contributor Network is now live.**\n\nWe’ve officially launched the SAIR Contributor Network, a new space for the community to share cheatsheets, exchange ideas, and learn from each other across the SAIR competition platform.\n\nIf you’ve developed a useful cheatsheet, found a promising strategy, or discovered something others may benefit from, we encourage you to share it with the community. Our hope is that the SAIR Contributor Network will help strong ideas spread faster and make collaboration easier across the platform.\n\nNext step: if you share a cheatsheet, we will benchmark it and display the results on the leaderboard. This feature will be available soon.\n\nWe are also considering how adopted community-shared cheatsheets should be reflected in the final evaluation policy. We will publish the relevant rules once that part of the policy is finalized.\n\nVideo tutorial:\nhttps://youtu.be/0pTLiD-2qjQ\n\nIf you have any questions or thoughts while using it, you are very welcome to discuss them in this topic.",
+          "prev_rendered_content": "<p><strong>SAIR Contributor Network is now live.</strong></p>\n<p>We’ve officially launched the SAIR Contributor Network, a new space for the community to share cheatsheets, exchange ideas, and learn from each other across the SAIR competition platform.</p>\n<p>If you’ve developed a useful cheatsheet, found a promising strategy, or discovered something others may benefit from, we encourage you to share it with the community. Our hope is that the SAIR Contributor Network will help strong ideas spread faster and make collaboration easier across the platform.</p>\n<p>Next step: if you share a cheatsheet, we will benchmark it and display the results on the leaderboard. This feature will be available soon.</p>\n<p>We are also considering how adopted community-shared cheatsheets should be reflected in the final evaluation policy. We will publish the relevant rules once that part of the policy is finalized.</p>\n<p>Video tutorial:<br>\n<a href=\"https://youtu.be/0pTLiD-2qjQ\">https://youtu.be/0pTLiD-2qjQ</a></p>\n<div class=\"youtube-video message_inline_image\"><a data-id=\"0pTLiD-2qjQ\" href=\"https://youtu.be/0pTLiD-2qjQ\"><img src=\"/external_content/6864016aa3b0fe6f50e86c1f87f152722fab4e27/68747470733a2f2f692e7974696d672e636f6d2f76692f3070544c69442d32716a512f6d7164656661756c742e6a7067\"></a></div><p>If you have any questions or thoughts while using it, you are very welcome to discuss them in this topic.</p>"
+        }
+      ],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "tada",
+          "emoji_code": "1f389",
+          "reaction_type": "unicode_emoji",
+          "user_id": 71
+        },
+        {
+          "emoji_name": "tada",
+          "emoji_code": "1f389",
+          "reaction_type": "unicode_emoji",
+          "user_id": 117
+        },
+        {
+          "emoji_name": "tada",
+          "emoji_code": "1f389",
+          "reaction_type": "unicode_emoji",
+          "user_id": 177
+        },
+        {
+          "emoji_name": "tada",
+          "emoji_code": "1f389",
+          "reaction_type": "unicode_emoji",
+          "user_id": 50
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html"
+    }
+  ]
+}
