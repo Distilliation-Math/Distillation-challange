@@ -1,0 +1,67 @@
+{
+  "fetched_at": "2026-04-05T20:31:58.888026+00:00",
+  "publicCode": "EQT01-000013",
+  "source_url": "https://server-9527.sair.foundation/api/contributor-network/by-code/EQT01-000013",
+  "data": {
+    "canComment": false,
+    "canDelete": false,
+    "cheatsheetContent": "Decide whether source law A ({{ equation1 }}) implies target law B ({{ equation2 }}) over all magmas (binary op `*`). Follow this protocol exactly.\n\nIMPORTANT\n\n- Never override a rule with free-form algebra.\n- If a separator, guard, or FALSE rule fires, stop and answer FALSE.\n- Only use extra algebra for the source-collapse lemmas in STEP 0.\n- If no listed rule proves TRUE, answer FALSE.\n\nSTEP 0: SOURCE-COLLAPSE LEMMAS\n\nFirst check whether A is a bare law: one side is a single variable and the other side is a product term.\n\nOnly for bare laws, normalize A as follows:\n- swap the sides if needed so the single variable is on the LEFT\n- rename that bare variable to `x`\n- on the product side, keep full bracketing\n- every occurrence of the bare variable stays `x`\n- rename the OTHER variables by first appearance on the product side to `y`, then `z`, then `w`, ...\n\nAfter this normalization, compare A to exactly one of these canonical source laws:\n- `x = x*(y*(z*(x*y)))`  -> LEFT PROJECTION: `p*q = p`\n- `x = x*((y*z)*(z*z))` -> LEFT PROJECTION: `p*q = p`\n- `x = (((y*z)*x)*z)*x` -> RIGHT PROJECTION: `p*q = q`\n\nExamples:\n- `a = a*((b*c)*(c*c))` normalizes to `x = x*((y*z)*(z*z))`\n- `m = (((n*p)*m)*p)*m` normalizes to `x = (((y*z)*x)*z)*x`\n\nIf a collapse lemma fires, evaluate B under that projection and stop:\n- under LEFT PROJECTION, every product collapses to its leftmost variable\n- under RIGHT PROJECTION, every product collapses to its rightmost variable\n- if both sides of B collapse to the same variable, answer TRUE; otherwise FALSE\n\nSTEP 1: COMPUTE FEATURES EXACTLY\n\nFor each equation `E: L = R`, count variable letters on each side separately.\n\nWORKED EXAMPLE: `x = y * (y * ((x * y) * x))`\n- left side variables: `[x]` so left count = 1\n- right side variables: `[y, y, x, y, x]` so right count = 5\n- `size(E) = 1 + 5 = 6`\n- `vars(E) = 2` because only `{x, y}`\n- `imb(E) = |1-2| + |0-3| = 4`\n- `bare(E) = TRUE` because one side is a single variable\n- `LP(E) = FALSE` because leftmost vars are `x` and `y`\n- `RP(E) = TRUE` because rightmost vars are both `x`\n- `SET(E) = FALSE` because left uses `{x}` and right uses `{x,y}`\n- `XOR(E) = FALSE` because parity does not match\n- `AB(E) = FALSE` because exact counts do not match\n\nCompute for both A and B:\n- `size(E)` = total variable occurrences on both sides\n- `vars(E)` = number of distinct variables\n- `imb(E)` = sum of absolute left/right count differences\n- `bare(E)` = one side is a single variable\n- `LP(E)` = leftmost variable matches across the two sides\n- `RP(E)` = rightmost variable matches across the two sides\n- `SET(E)` = both sides use the same variable set\n- `XOR(E)` = every variable has the same parity on both sides\n- `AB(E)` = every variable has exactly the same count on both sides\n\nReminder for `vars(E)`:\n- count distinct variable LETTERS only\n- multiplicity does not matter\n- example: `x*y = (x*(x*z))*x` has `vars = 3` because the set is `{x,y,z}`\n\nSTEP 2: SEPARATOR TESTS\n\nIf `LP(A)` and not `LP(B)`: FALSE.\nIf `RP(A)` and not `RP(B)`: FALSE.\nIf `SET(A)` and not `SET(B)`: FALSE.\nIf `XOR(A)` and not `XOR(B)`: FALSE.\nIf `AB(A)` and not `AB(B)`: FALSE.\n\nOne separator means FALSE immediately.\n\nSTEP 3: FALSE GUARD\n\nG1: If all of these hold, answer FALSE:\n- `bare(A)` is true\n- `bare(B)` is false\n- `size(A) = size(B)`\n- `vars(B) < vars(A)`\n- `imb(B) > imb(A)`\n- `XOR(A)` is true\n\nSTEP 4: STRUCTURAL RULES\n\nLet `sA=size(A)`, `sB=size(B)`, `vA=vars(A)`, `vB=vars(B)`, `iA=imb(A)`, `iB=imb(B)`.\n\nApply in order, stopping at the first match:\n- F1: if `vB = vA`, answer FALSE.\n- F2: if `iB < iA`, answer FALSE.\n- F3: if `sB < sA`, answer FALSE.\n- T1: if `sB > sA`, answer TRUE.\n- T2: if `vB > vA` and `iB > iA`, answer TRUE.\n- T3: if `vB > vA` and `bare(B)` is false, answer TRUE.\n- T5: if `vB < vA` and `iB > iA`, answer TRUE.\n\nSTEP 5: EXTENDED RULES\n\nApply only if nothing above fired.\n\n- D1: if `vA >= 5`, answer TRUE.\n- D2: if `vB >= 5`, answer TRUE.\n- D3: if every variable in A appears the same TOTAL number of times across both sides, and `vB < vA`, and B is a bare law of the form `x = x * (...)`, answer TRUE.\n- D4: otherwise FALSE.\n\nExample for D3:\n- `x = ((y*x)*y)*(z*z)` has total counts `x:2, y:2, z:2`, so the totals are uniform\n\nREASONING STYLE\n\nState:\n- the computed features,\n- whether a source-collapse lemma fired,\n- whether any separator or guard fired,\n- and which final rule decided the verdict.\n\nBe concise. If no listed rule proves TRUE, answer FALSE.\n\nOUTPUT FORMAT (use exact headers, no extra formatting):\nVERDICT: TRUE or FALSE\nREASONING: non-empty explanation\nPROOF: required if VERDICT is TRUE, empty otherwise\nCOUNTEREXAMPLE: required if VERDICT is FALSE, empty otherwise",
+    "cheatsheetTitle": "99_hard69",
+    "cnItemId": "cn_ae700e9990054a9a96f964fa7d034c66",
+    "commentCount": 0,
+    "competitionId": "mathematics-distillation-challenge-equational-theories-stage1",
+    "competitionTitle": "Mathematics Distillation Challenge - Equational Theories",
+    "entityAvatarUrl": "https://lh3.googleusercontent.com/a/ACg8ocJRrn-2cMJMQDKXS3v5LFGF440lzxYwvwGhJbO-U4SBXg9P7BCi=s96-c",
+    "entityId": "U-1ee623bbbf3d30c5f32bb9aabddf3396da0a7673",
+    "entityName": "Adam Betka",
+    "entityType": "individual",
+    "favoriteCount": 0,
+    "isDerived": false,
+    "itemType": "Original",
+    "likeCount": 0,
+    "lineageDepth": 0,
+    "lineageNodes": [
+      {
+        "cheatsheetTitle": "99_hard69",
+        "cnItemId": "cn_ae700e9990054a9a96f964fa7d034c66",
+        "competitionId": "mathematics-distillation-challenge-equational-theories-stage1",
+        "entityAvatarUrl": "https://lh3.googleusercontent.com/a/ACg8ocJRrn-2cMJMQDKXS3v5LFGF440lzxYwvwGhJbO-U4SBXg9P7BCi=s96-c",
+        "entityId": "U-1ee623bbbf3d30c5f32bb9aabddf3396da0a7673",
+        "entityName": "Adam Betka",
+        "entityType": "individual",
+        "isDerived": false,
+        "itemType": "Original",
+        "lineageDepth": 0,
+        "parentCnItemId": null,
+        "parentShareItemId": null,
+        "publicCode": "EQT01-000013",
+        "publishedAt": "2026-04-03T14:31:01Z",
+        "rootCnItemId": "cn_ae700e9990054a9a96f964fa7d034c66",
+        "rootShareItemId": "cn_ae700e9990054a9a96f964fa7d034c66",
+        "shareItemId": "cn_ae700e9990054a9a96f964fa7d034c66",
+        "visibilityStatus": "active"
+      }
+    ],
+    "lineagePathSnapshot": [
+      {
+        "cnItemId": "cn_ae700e9990054a9a96f964fa7d034c66",
+        "entityName": "Adam Betka",
+        "publishedAt": "2026-04-03T14:31:01Z",
+        "shareItemId": "cn_ae700e9990054a9a96f964fa7d034c66"
+      }
+    ],
+    "parentCnItemId": null,
+    "parentShareItemId": null,
+    "publicCode": "EQT01-000013",
+    "publishedAt": "2026-04-03T14:31:01Z",
+    "referencedCount": 0,
+    "remark": "Cheatsheet scoring 99% on hard_69, using GPT-OSS-120b. Method: turn GPT's reasoning into generalized solver, rather than algebraic one.",
+    "rootCnItemId": "cn_ae700e9990054a9a96f964fa7d034c66",
+    "rootShareItemId": "cn_ae700e9990054a9a96f964fa7d034c66",
+    "shareItemId": "cn_ae700e9990054a9a96f964fa7d034c66",
+    "sourceCheatsheetId": "cs_077cfed9-8b2f-49b4-bac7-4441799caf5e",
+    "viewerHasFavorited": false,
+    "viewerHasLiked": false,
+    "visibilityStatus": "active"
+  }
+}

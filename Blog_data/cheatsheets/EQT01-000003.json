@@ -1,0 +1,67 @@
+{
+  "fetched_at": "2026-04-05T20:31:51.081532+00:00",
+  "publicCode": "EQT01-000003",
+  "source_url": "https://server-9527.sair.foundation/api/contributor-network/by-code/EQT01-000003",
+  "data": {
+    "canComment": false,
+    "canDelete": false,
+    "cheatsheetContent": "You are checking a one-direction implication only.\nDo not confuse equivalence with implication.\nEquation 1:\n{{ equation1 }}\nEquation 2:\n{{ equation2 }}\nDecision policy:\n- The question is whether Equation 1 implies Equation 2, not whether the two equations look similar.\n- Even if Equation 2 could imply Equation 1, the correct verdict is still `FALSE` unless Equation 1 implies Equation 2.\n- If the implication holds, provide a direct proof.\n- If it fails, provide a concrete counterexample or interpretation.\nRequired response:\nVERDICT: TRUE or FALSE\nREASONING: explain the one-way logic clearly and briefly\nPROOF:\nfill only when VERDICT is TRUE\nCOUNTEREXAMPLE:\nfill only when VERDICT is FALSE\n\nStrict format:\n- Plain text only.\n- `VERDICT:` must be exactly `TRUE` or `FALSE`.\n- `REASONING:` must not be empty.\n- Only one of `PROOF:` or `COUNTEREXAMPLE:` may be non-empty.",
+    "cheatsheetTitle": "one-way-implication-guard",
+    "cnItemId": "cn_349a31b56940496a937b9f8fe2ffbe8e",
+    "commentCount": 0,
+    "competitionId": "mathematics-distillation-challenge-equational-theories-stage1",
+    "competitionTitle": "Mathematics Distillation Challenge - Equational Theories",
+    "entityAvatarUrl": "https://avatars.githubusercontent.com/u/239915274?v=4",
+    "entityId": "U-0158e64c578d5a22a8aca2330a61eda8a49fb7eb",
+    "entityName": "owen",
+    "entityType": "individual",
+    "favoriteCount": 2,
+    "isDerived": false,
+    "itemType": "Original",
+    "likeCount": 0,
+    "lineageDepth": 0,
+    "lineageNodes": [
+      {
+        "cheatsheetTitle": "one-way-implication-guard",
+        "cnItemId": "cn_349a31b56940496a937b9f8fe2ffbe8e",
+        "competitionId": "mathematics-distillation-challenge-equational-theories-stage1",
+        "entityAvatarUrl": "https://avatars.githubusercontent.com/u/239915274?v=4",
+        "entityId": "U-0158e64c578d5a22a8aca2330a61eda8a49fb7eb",
+        "entityName": "owen",
+        "entityType": "individual",
+        "isDerived": false,
+        "itemType": "Original",
+        "lineageDepth": 0,
+        "parentCnItemId": null,
+        "parentShareItemId": null,
+        "publicCode": "EQT01-000003",
+        "publishedAt": "2026-04-01T01:09:53Z",
+        "rootCnItemId": "cn_349a31b56940496a937b9f8fe2ffbe8e",
+        "rootShareItemId": "cn_349a31b56940496a937b9f8fe2ffbe8e",
+        "shareItemId": "cn_349a31b56940496a937b9f8fe2ffbe8e",
+        "visibilityStatus": "active"
+      }
+    ],
+    "lineagePathSnapshot": [
+      {
+        "cnItemId": "cn_349a31b56940496a937b9f8fe2ffbe8e",
+        "entityName": "owen",
+        "publishedAt": "2026-04-01T01:09:53Z",
+        "shareItemId": "cn_349a31b56940496a937b9f8fe2ffbe8e"
+      }
+    ],
+    "parentCnItemId": null,
+    "parentShareItemId": null,
+    "publicCode": "EQT01-000003",
+    "publishedAt": "2026-04-01T01:09:53Z",
+    "referencedCount": 0,
+    "remark": "A one-way implication evaluator for equations that strictly separates implication from equivalence, deciding only whether Equation 1 entails Equation 2 and returning either a direct proof or a concrete counterexample in a fixed response format.",
+    "rootCnItemId": "cn_349a31b56940496a937b9f8fe2ffbe8e",
+    "rootShareItemId": "cn_349a31b56940496a937b9f8fe2ffbe8e",
+    "shareItemId": "cn_349a31b56940496a937b9f8fe2ffbe8e",
+    "sourceCheatsheetId": "cs_09a869e8-88b4-459f-b48f-7a8175946a28",
+    "viewerHasFavorited": false,
+    "viewerHasLiked": false,
+    "visibilityStatus": "active"
+  }
+}

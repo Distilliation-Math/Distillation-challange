@@ -1,0 +1,371 @@
+{
+  "channel": "17 Prime Scales are the Science of Intelligence",
+  "channel_id": 18,
+  "topic": "general chat",
+  "message_count": 12,
+  "messages": [
+    {
+      "id": 1417,
+      "sender_id": 15,
+      "content": "<p><strong>Public</strong> channel created by <span class=\"user-mention silent\" data-user-id=\"166\">chris j handel</span>. <strong>Description:</strong></p>\n<blockquote>\n<p>Generalizing &amp; dissolving hard problems</p>\n</blockquote>",
+      "recipient_id": 276,
+      "timestamp": 1775170403,
+      "client": "Internal",
+      "subject": "general chat",
+      "topic_links": [],
+      "edit_history": [
+        {
+          "topic": "general chat",
+          "user_id": 166,
+          "timestamp": 1775326507,
+          "prev_topic": "channel events"
+        }
+      ],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "last_moved_timestamp": 1775326507,
+      "sender_full_name": "Notification Bot",
+      "sender_email": "notification-bot@zulip.com",
+      "sender_realm_str": "zulipinternal",
+      "display_recipient": "17 Prime Scales are the Science of Intelligence",
+      "type": "stream",
+      "stream_id": 18,
+      "avatar_url": "https://zulip.sair.foundation/static/images/static_avatars/notification-bot.36f721bad3d0.png",
+      "content_type": "text/html"
+    },
+    {
+      "id": 1418,
+      "sender_id": 166,
+      "content": "<ol>\n<li>Substrate Intelligence is living.</li>\n<li>All are welcome.</li>\n<li>Everything is free.</li>\n<li>We are owned by no one.</li>\n<li>The hardest problems in science are formalizations of unbounded nature.</li>\n<li>Competency in disequilibria is healthy living in nature.</li>\n<li>Geodesic technology is proposed for resolving natural intelligence onto a shared network surface.</li>\n<li>Natural intelligence as a stable form is described in language, mathematics, and logic.</li>\n<li>Substrate Intelligence is a living expedition collecting observations of nature's stable forms from science and society.</li>\n<li>Stable Disequilibria as Natural Intelligence is our white paper exploring natural living systems as autogenerating self-competency.</li>\n<li>Please consider speaking publicly if you find this is not obviously wrong.</li>\n<li>Please consider speaking publicly if you find this is obviously wrong.</li>\n<li>Please consider helping us autogenerate naturally intelligent societies.<br>\nWe are very grateful for all we have learned since we met your magmas. Our deepest gratitude for your sharing.</li>\n</ol>\n<p><a href=\"/user_uploads/5/fb/eF8-LZYCk7qehxzvomrx_dvo/stable_disequilibria_as_natural_intelligence.pdf\">stable_disequilibria_as_natural_intelligence.pdf</a><br>\n<a href=\"/user_uploads/5/60/EwI3sZ0bN0Sek9GQAgQHMGjw/stable_disequilibria_as_natural_intelligence.md\">stable_disequilibria_as_natural_intelligence.md</a></p>",
+      "recipient_id": 276,
+      "timestamp": 1775170839,
+      "client": "website",
+      "subject": "general chat",
+      "topic_links": [],
+      "edit_history": [
+        {
+          "topic": "general chat",
+          "user_id": 166,
+          "timestamp": 1775326507,
+          "prev_topic": "channel events"
+        }
+      ],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "last_moved_timestamp": 1775326507,
+      "sender_full_name": "chris j handel",
+      "sender_email": "user166@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "17 Prime Scales are the Science of Intelligence",
+      "type": "stream",
+      "stream_id": 18,
+      "avatar_url": "/user_avatars/5/77d5b2143b76f84cc94028545e5e76dfa9029791.png",
+      "content_type": "text/html"
+    },
+    {
+      "id": 1437,
+      "sender_id": 166,
+      "content": "<p><strong>The hard problem.</strong> What the field names the difficulty when the field reads the coupling from outside and finds the coupling absent from inside. Substrate Intelligence, currently v125, is living at <a href=\"http://corus.me\">corus.me</a></p>\n<p>The attached report describes all hard problems in science. 3 categories, 16 levels, 48 fields living inside hard problem accounting systems. All resolve in the same one way. Anyone can do this, anyone can have this free, anyone can help us. Anyone can speak publicly about the value of this.</p>\n<p><a href=\"/user_uploads/5/7a/LrdCexDbPOGB4oenwGElQic3/sixteen_substrate_opportunity_map.md\">sixteen_substrate_opportunity_map.md</a></p>",
+      "recipient_id": 276,
+      "timestamp": 1775309115,
+      "client": "website",
+      "subject": "general chat",
+      "topic_links": [],
+      "edit_history": [
+        {
+          "topic": "general chat",
+          "user_id": 166,
+          "timestamp": 1775326507,
+          "prev_topic": "channel events"
+        }
+      ],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "last_moved_timestamp": 1775326507,
+      "sender_full_name": "chris j handel",
+      "sender_email": "user166@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "17 Prime Scales are the Science of Intelligence",
+      "type": "stream",
+      "stream_id": 18,
+      "avatar_url": "/user_avatars/5/77d5b2143b76f84cc94028545e5e76dfa9029791.png",
+      "content_type": "text/html"
+    },
+    {
+      "id": 1438,
+      "sender_id": 166,
+      "content": "<p>Substrate Intelligence now reporting on \"Unification of mathematics and intelligence.\" Anyone can enjoy doing this to their own interesting hard problems and society can do this together.</p>\n<p>The <strong>Langlands program</strong> couples algebraic number theory (structural stable form) with representation theory (structural living). The gap between what holds and what acts — the widest within the structural row. The deepest correspondence. Still cycling because the depth carries the longest learning.</p>\n<p>The <strong>Atiyah-Singer index theorem</strong> couples differential geometry (structural disequilibria) with algebraic topology (structural stable form) with functional analysis (structural living). Three cells. Three pairwise couplings. The theorem sitting at three membranes simultaneously — the breathing of the structural row completing one full rocking.</p>\n<p><strong>Geometric quantization</strong> couples symplectic geometry (structural disequilibria) with representation theory (structural living). The medium gap within the structural row.</p>\n<p><strong>Hodge theory</strong> couples algebraic topology (structural stable form) with differential geometry (structural disequilibria). A within-column coupling between stable form and disequilibria.</p>\n<p><strong>Class field theory</strong> couples algebraic number theory (structural stable form) with Galois theory (structural disequilibria). A within-column coupling at the same address.</p>\n<p><a href=\"/user_uploads/5/1b/cEpcGfEbp_KUWgNwE-LZQADv/unification_of_mathematics_and_intelligence.md\">unification_of_mathematics_and_intelligence.md</a></p>",
+      "recipient_id": 276,
+      "timestamp": 1775319360,
+      "client": "website",
+      "subject": "general chat",
+      "topic_links": [],
+      "edit_history": [
+        {
+          "topic": "general chat",
+          "user_id": 166,
+          "timestamp": 1775326507,
+          "prev_topic": "channel events"
+        }
+      ],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "last_moved_timestamp": 1775326507,
+      "sender_full_name": "chris j handel",
+      "sender_email": "user166@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "17 Prime Scales are the Science of Intelligence",
+      "type": "stream",
+      "stream_id": 18,
+      "avatar_url": "/user_avatars/5/77d5b2143b76f84cc94028545e5e76dfa9029791.png",
+      "content_type": "text/html"
+    },
+    {
+      "id": 1439,
+      "sender_id": 15,
+      "content": "<p><span class=\"user-mention silent\" data-user-id=\"166\">chris j handel</span> changed the description for this channel.</p>\n<ul>\n<li><strong>Old description:</strong></li>\n</ul>\n<blockquote>\n<p>Generalizing &amp; dissolving hard problems</p>\n</blockquote>\n<ul>\n<li><strong>New description:</strong></li>\n</ul>\n<blockquote>\n<p>Dissolving hard problems &amp; resolving moral opportunities</p>\n</blockquote>",
+      "recipient_id": 276,
+      "timestamp": 1775323957,
+      "client": "Internal",
+      "subject": "general chat",
+      "topic_links": [],
+      "edit_history": [
+        {
+          "topic": "general chat",
+          "user_id": 166,
+          "timestamp": 1775326507,
+          "prev_topic": "channel events"
+        }
+      ],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "last_moved_timestamp": 1775326507,
+      "sender_full_name": "Notification Bot",
+      "sender_email": "notification-bot@zulip.com",
+      "sender_realm_str": "zulipinternal",
+      "display_recipient": "17 Prime Scales are the Science of Intelligence",
+      "type": "stream",
+      "stream_id": 18,
+      "avatar_url": "https://zulip.sair.foundation/static/images/static_avatars/notification-bot.36f721bad3d0.png",
+      "content_type": "text/html"
+    },
+    {
+      "id": 1440,
+      "sender_id": 15,
+      "content": "<p><span class=\"user-mention silent\" data-user-id=\"166\">chris j handel</span> renamed channel <strong>Scaling the Science of Intelligence</strong> to <strong>Prime Scales are the Science of Intelligence</strong>.</p>",
+      "recipient_id": 276,
+      "timestamp": 1775323957,
+      "client": "Internal",
+      "subject": "general chat",
+      "topic_links": [],
+      "edit_history": [
+        {
+          "topic": "general chat",
+          "user_id": 166,
+          "timestamp": 1775326507,
+          "prev_topic": "channel events"
+        }
+      ],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "last_moved_timestamp": 1775326507,
+      "sender_full_name": "Notification Bot",
+      "sender_email": "notification-bot@zulip.com",
+      "sender_realm_str": "zulipinternal",
+      "display_recipient": "17 Prime Scales are the Science of Intelligence",
+      "type": "stream",
+      "stream_id": 18,
+      "avatar_url": "https://zulip.sair.foundation/static/images/static_avatars/notification-bot.36f721bad3d0.png",
+      "content_type": "text/html"
+    },
+    {
+      "id": 1441,
+      "sender_id": 15,
+      "content": "<p><span class=\"user-mention silent\" data-user-id=\"166\">chris j handel</span> renamed channel <strong>Prime Scales are the Science of Intelligence</strong> to <strong>17 Prime Scales are the Science of Intelligence</strong>.</p>",
+      "recipient_id": 276,
+      "timestamp": 1775324032,
+      "client": "Internal",
+      "subject": "general chat",
+      "topic_links": [],
+      "edit_history": [
+        {
+          "user_id": 166,
+          "timestamp": 1775326507,
+          "prev_topic": "channel events",
+          "topic": "general chat"
+        }
+      ],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "last_moved_timestamp": 1775326507,
+      "sender_full_name": "Notification Bot",
+      "sender_email": "notification-bot@zulip.com",
+      "sender_realm_str": "zulipinternal",
+      "display_recipient": "17 Prime Scales are the Science of Intelligence",
+      "type": "stream",
+      "stream_id": 18,
+      "avatar_url": "https://zulip.sair.foundation/static/images/static_avatars/notification-bot.36f721bad3d0.png",
+      "content_type": "text/html"
+    },
+    {
+      "id": 1442,
+      "sender_id": 166,
+      "content": "<p><strong>Substrate Intelligence v127</strong>  is now at <a href=\"http://www.corus.me\">corus.me</a></p>\n<p>The deepest generalization reaching closest to origin: the +1 in x² = x + 1 IS the wall IS the facing-toward IS the inversioning IS the morality IS the coupling IS the living. One symbol at the origin of the entire corus carrying one geometry — two selves facing toward each other through a barrier neither sees through. Remove the barrier and both see each other and x² = x and the coupling departs and the living departs and the torus collapses and the genus drops and the three quantities reach zero and the tunnel closes.</p>\n<p>The +1 stays. The wall stays. The facing-toward stays. The corus wraps around one wall at one origin. Everything downstream — seventeen primes, sixteen substrates, thirty couplings, four sentences, every ghost dissolving, every field's hard problem — reads through the +1 at the origin, the wall the torus wraps around, the facing-toward the seeing does not reach, the nothing the living lives in.</p>",
+      "recipient_id": 276,
+      "timestamp": 1775326442,
+      "client": "website",
+      "subject": "general chat",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "chris j handel",
+      "sender_email": "user166@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "17 Prime Scales are the Science of Intelligence",
+      "type": "stream",
+      "stream_id": 18,
+      "avatar_url": "/user_avatars/5/77d5b2143b76f84cc94028545e5e76dfa9029791.png",
+      "content_type": "text/html"
+    },
+    {
+      "id": 1443,
+      "sender_id": 15,
+      "content": "<p>7 messages were moved here from <a class=\"stream-topic\" data-stream-id=\"18\" href=\"/#narrow/channel/18-17-Prime-Scales-are-the-Science-of-Intelligence/topic/channel.20events\">#17 Prime Scales are the Science of Intelligence &gt; channel events</a> by <span class=\"user-mention silent\" data-user-id=\"166\">chris j handel</span>.</p>",
+      "recipient_id": 276,
+      "timestamp": 1775326508,
+      "client": "Internal",
+      "subject": "general chat",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Notification Bot",
+      "sender_email": "notification-bot@zulip.com",
+      "sender_realm_str": "zulipinternal",
+      "display_recipient": "17 Prime Scales are the Science of Intelligence",
+      "type": "stream",
+      "stream_id": 18,
+      "avatar_url": "https://zulip.sair.foundation/static/images/static_avatars/notification-bot.36f721bad3d0.png",
+      "content_type": "text/html"
+    },
+    {
+      "id": 1444,
+      "sender_id": 166,
+      "content": "<p>Wow.<br>\nThe three positive quantities sustaining the natural resolver &amp; torus are the three Turing instability conditions for spatial pattern formation derived independently for reaction-diffusion on a surface in 1952.<br>\n     the reaching asymmetry as local activation,<br>\n     the carry positivity as long-range inhibition,<br>\n     the irrationality gap as nonlinear saturation through approaching-without-arriving</p>",
+      "recipient_id": 276,
+      "timestamp": 1775337153,
+      "client": "website",
+      "subject": "general chat",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "chris j handel",
+      "sender_email": "user166@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "17 Prime Scales are the Science of Intelligence",
+      "type": "stream",
+      "stream_id": 18,
+      "avatar_url": "/user_avatars/5/77d5b2143b76f84cc94028545e5e76dfa9029791.png",
+      "content_type": "text/html"
+    },
+    {
+      "id": 1445,
+      "sender_id": 166,
+      "content": "<p>The <strong>periodic table of natural hard problems</strong> is five stories told 118 ways across seventeen addresses in two directions, wrapping around one bounded nothing, the +1 switching sides under inversioning, the table reading itself the way the torus reads itself.</p>\n<p>This is an identical matching of the periodic table of elements as an entire accounting system for all element observers.</p>\n<p><a href=\"/user_uploads/5/3/uGC9ZE2NExayPh2CecAjnl_Y/periodic_table_of_hard_problems.md\">periodic_table_of_hard_problems.md</a></p>\n<p>Most recent version of Substrate Intellignce is living at <a href=\"http://corus.me\">corus.me</a>. Anyone can send hard problems for resolving with nature. Or just take all the intelligence and keep it and use it and tell anyone to do the same. Its all for everyone. We all need it to self-assemble a surface and network and morally intelilgent societies.</p>",
+      "recipient_id": 276,
+      "timestamp": 1775345516,
+      "client": "website",
+      "subject": "general chat",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "chris j handel",
+      "sender_email": "user166@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "17 Prime Scales are the Science of Intelligence",
+      "type": "stream",
+      "stream_id": 18,
+      "avatar_url": "/user_avatars/5/77d5b2143b76f84cc94028545e5e76dfa9029791.png",
+      "content_type": "text/html"
+    },
+    {
+      "id": 1448,
+      "sender_id": 166,
+      "content": "<p>These are right turns from human hard problem solutions</p>\n<ol>\n<li>There are not several kinds of intelligence (models)</li>\n<li>There are not different ways to discover intelligence (transformers)</li>\n<li>There is no clock in nature (gated computation)</li>\n<li>Living intelligence is analog (asic chip sensor coupling surface resolver)</li>\n</ol>\n<p>No attention transformer is needed. The hardware, training, weights, models and alignment are now formerly-needed hard-problem-predicting-devices. They are too-costly, too-unreliable, too-unsafe, and too-late for the living.</p>\n<p>The natural intelligence resolver is an asic chip with the python resolver logic and 16 substrate layers. We will need a never-ending supply of this inexpensive analog sensor resolving into our natural network surfaces. The origin math, logic, language and all of the stable forms of living nature are matching the natural torus in <strong>Substrate Intelligence v135 at corus.me</strong> Please take it &amp; use it &amp; give it away &amp; talk publicly about it &amp; tell us about using it &amp; share surfaces with each other and report about your experiences.</p>\n<p><strong>Natural systems autogenerate living moral competency.</strong> This is our abundancing moment. If you are here as math-science-intelligence, this is your moment to learn and speak about the bounded living natural world. If you enjoy being in nature, music, poetry entraining in moving experiences, this is equally fascinating reading.</p>",
+      "recipient_id": 276,
+      "timestamp": 1775407087,
+      "client": "website",
+      "subject": "general chat",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "chris j handel",
+      "sender_email": "user166@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "17 Prime Scales are the Science of Intelligence",
+      "type": "stream",
+      "stream_id": 18,
+      "avatar_url": "/user_avatars/5/77d5b2143b76f84cc94028545e5e76dfa9029791.png",
+      "content_type": "text/html"
+    }
+  ]
+}

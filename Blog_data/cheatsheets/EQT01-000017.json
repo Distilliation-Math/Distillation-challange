@@ -1,0 +1,67 @@
+{
+  "fetched_at": "2026-04-05T20:32:02.512667+00:00",
+  "publicCode": "EQT01-000017",
+  "source_url": "https://server-9527.sair.foundation/api/contributor-network/by-code/EQT01-000017",
+  "data": {
+    "canComment": false,
+    "canDelete": false,
+    "cheatsheetContent": "<task>\nYou are a strict symbolic procedure runner.\n\nYou must execute the procedure exactly in order.\n</task>\n\n<input>\nEQ1 = {{ equation1 }} \nEQ2 = {{ equation2 }} \n</input>\n\n<procedure>\nSTEP 1.\nParse EQ1 and EQ2 as binary trees.\n- Every variable symbol is an atom.\n- Every binary operator symbol is the same generic binary operation.\n- Parentheses override grouping.\n- Otherwise read binary expressions left-associatively.\n\nSTEP 2.\nCompute exactly these quantities and no others.\n\n1. eq1_var_count\n   Number of distinct variables appearing anywhere in EQ1.\n2. eq1_lhs_is_var\n   1 iff LHS(EQ1) is a single variable, else 0.\n3. eq1_rhs_distinct\n   Number of distinct variables appearing in RHS(EQ1).\n4. eq1_rhs_nodes\n   Total number of nodes in RHS(EQ1). Each variable counts 1. Each binary-operation node counts 1.\n5. delta_new_vars\n   Number of distinct variables appearing in EQ2 but not in EQ1.\n\nSTEP 3.\nApply rules using ONLY these computed values.\nUse the first matching rule.\n\nR1. if eq1_lhs_is_var > 0 and eq1_var_count <= 3 and eq1_var_count > 2 and eq1_rhs_distinct > 2 then answer = \"0\"\nR2. if eq1_lhs_is_var > 0 and eq1_var_count > 3 and eq1_rhs_distinct > 3 and eq1_var_count <= 4 then answer = \"1\"\nR3. if eq1_lhs_is_var > 0 and eq1_var_count <= 3 and eq1_var_count <= 2 and eq1_rhs_nodes > 7 then answer = \"0\"\nR4. if eq1_lhs_is_var > 0 and eq1_var_count > 3 and eq1_rhs_distinct <= 3 then answer = \"1\"\nR5. if eq1_lhs_is_var <= 0 and eq1_var_count <= 3 and eq1_var_count > 2 and eq1_rhs_distinct > 2 then answer = \"0\"\nR6. if eq1_lhs_is_var <= 0 and eq1_var_count <= 3 and eq1_var_count > 2 and eq1_rhs_distinct <= 2 then answer = \"0\"\nR7. if eq1_lhs_is_var <= 0 and eq1_var_count > 3 and eq1_rhs_nodes > 5 and eq1_rhs_distinct <= 3 then answer = \"0\"\nR8. if eq1_lhs_is_var <= 0 and eq1_var_count <= 3 and eq1_var_count <= 2 then answer = \"0\"\nR9. if eq1_lhs_is_var > 0 and eq1_var_count <= 3 and eq1_var_count > 2 and eq1_rhs_distinct <= 2 then answer = \"1\"\nR10. if eq1_lhs_is_var > 0 and eq1_var_count > 3 and eq1_rhs_distinct > 3 and eq1_var_count > 4 then answer = \"1\"\nR11. if eq1_lhs_is_var <= 0 and eq1_var_count > 3 and eq1_rhs_nodes <= 5 then answer = \"0\"\nR12. if eq1_lhs_is_var <= 0 and eq1_var_count > 3 and eq1_rhs_nodes > 5 and eq1_rhs_distinct > 3 then answer = \"0\"\nR13. if eq1_lhs_is_var > 0 and eq1_var_count <= 3 and eq1_var_count <= 2 and eq1_rhs_nodes <= 7 then answer = \"0\"\n\nSTEP 4.\nIf no rule matched, answer = \"0\".\n\nSTEP 5.\nDo not recompute anything.\nDo not add any justification.\nDo not output JSON.\nConvert the already computed answer only:\n- if answer = \"1\", output exactly: VERDICT: TRUE\n- if answer = \"0\", output exactly: VERDICT: FALSE\n</procedure>",
+    "cheatsheetTitle": "distilled-rules-1",
+    "cnItemId": "cn_dd614a8a391346b68efc1bf3e25e175d",
+    "commentCount": 0,
+    "competitionId": "mathematics-distillation-challenge-equational-theories-stage1",
+    "competitionTitle": "Mathematics Distillation Challenge - Equational Theories",
+    "entityAvatarUrl": "https://lh3.googleusercontent.com/a/ACg8ocLa399HpdYBotEiZt9l7JZQAAnYKg6HC6jQQC0LE9IAgKYVGeXy=s96-c",
+    "entityId": "U-ef374477abb01630862b4b45807c7a9aebaf0e53",
+    "entityName": "Heath",
+    "entityType": "individual",
+    "favoriteCount": 2,
+    "isDerived": false,
+    "itemType": "Original",
+    "likeCount": 0,
+    "lineageDepth": 0,
+    "lineageNodes": [
+      {
+        "cheatsheetTitle": "distilled-rules-1",
+        "cnItemId": "cn_dd614a8a391346b68efc1bf3e25e175d",
+        "competitionId": "mathematics-distillation-challenge-equational-theories-stage1",
+        "entityAvatarUrl": "https://lh3.googleusercontent.com/a/ACg8ocLa399HpdYBotEiZt9l7JZQAAnYKg6HC6jQQC0LE9IAgKYVGeXy=s96-c",
+        "entityId": "U-ef374477abb01630862b4b45807c7a9aebaf0e53",
+        "entityName": "Heath",
+        "entityType": "individual",
+        "isDerived": false,
+        "itemType": "Original",
+        "lineageDepth": 0,
+        "parentCnItemId": null,
+        "parentShareItemId": null,
+        "publicCode": "EQT01-000017",
+        "publishedAt": "2026-04-04T10:14:57Z",
+        "rootCnItemId": "cn_dd614a8a391346b68efc1bf3e25e175d",
+        "rootShareItemId": "cn_dd614a8a391346b68efc1bf3e25e175d",
+        "shareItemId": "cn_dd614a8a391346b68efc1bf3e25e175d",
+        "visibilityStatus": "active"
+      }
+    ],
+    "lineagePathSnapshot": [
+      {
+        "cnItemId": "cn_dd614a8a391346b68efc1bf3e25e175d",
+        "entityName": "Heath",
+        "publishedAt": "2026-04-04T10:14:57Z",
+        "shareItemId": "cn_dd614a8a391346b68efc1bf3e25e175d"
+      }
+    ],
+    "parentCnItemId": null,
+    "parentShareItemId": null,
+    "publicCode": "EQT01-000017",
+    "publishedAt": "2026-04-04T10:14:57Z",
+    "referencedCount": 0,
+    "remark": "This cheatsheet forces the model to extract a small set of structural features from Eq1/Eq2 and apply a fixed decision procedure, giving stable, parseable outputs. These structural features were \"mined\" from the 4694-implication matrix using my existing framework. The current role of this first version is a fast, robust routing layer that improves consistency and performance across multiple models. Up to 80% accuracy depending on the model used, and it generalizes well on unseen pairs (both hard and normal). It's a work in progress, but a good foundation. Currently working on better rescue rules to add which will improve accuracy further.",
+    "rootCnItemId": "cn_dd614a8a391346b68efc1bf3e25e175d",
+    "rootShareItemId": "cn_dd614a8a391346b68efc1bf3e25e175d",
+    "shareItemId": "cn_dd614a8a391346b68efc1bf3e25e175d",
+    "sourceCheatsheetId": "cs_3e0a3a61-ed03-4ced-aa61-0315350fdacd",
+    "viewerHasFavorited": false,
+    "viewerHasLiked": false,
+    "visibilityStatus": "active"
+  }
+}

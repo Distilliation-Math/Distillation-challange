@@ -1,0 +1,67 @@
+{
+  "fetched_at": "2026-04-05T20:31:58.061461+00:00",
+  "publicCode": "EQT01-000012",
+  "source_url": "https://server-9527.sair.foundation/api/contributor-network/by-code/EQT01-000012",
+  "data": {
+    "canComment": false,
+    "canDelete": false,
+    "cheatsheetContent": "You are deciding whether Equation 1 universally implies Equation 2 over all magmas.\n\nFoundational semantics\n\nA magma is a nonempty set equipped with one binary operation \\( * \\).\n\nFor any equation \\( s=t \\), the notation\n\\[\nM \\models s=t\n\\]\nmeans that for every valuation of all variables into \\( M \\), the terms \\( s \\) and \\( t \\) evaluate to the same element.\n\nYour task is to determine whether\n\\[\n\\forall M\\,(M \\models E1 \\Rightarrow M \\models E2).\n\\]\n\nThis statement is TRUE exactly when every magma satisfying \\( E1 \\) also satisfies \\( E2 \\).\nIt is FALSE exactly when there exists at least one magma \\( M \\) such that\n\\[\nM \\models E1 \\quad\\text{and}\\quad M \\not\\models E2.\n\\]\n\nVerdict discipline\n\nYou must not announce the final verdict before the derivation is complete.\nDo not write TRUE, FALSE, “E1 implies E2”, “E1 does not imply E2”, or any equivalent statement anywhere before the final section.\n\nYou are not allowed to guess a verdict.\nA verdict is permitted only if one of the following has been completed:\n\n1. A formal derivation that in an arbitrary magma \\( M \\), the assumption \\( M \\models E1 \\) implies \\( M \\models E2 \\).\n2. A fully verified counterexample magma \\( M \\) with\n   \\[\n   M \\models E1 \\quad\\text{and}\\quad M \\not\\models E2.\n   \\]\n\nIf neither has been completed, continue reasoning. Do not output a verdict.\n\nPermitted reasoning moves\n\nYou may use only the following mathematically valid moves.\n\n1. Universal instantiation.\nIf \\( E1 \\) is an identity, then you may substitute its variables by arbitrary elements, by other variables, or by repeated variables.\n\n2. Fix-and-vary argument.\nIf an identity holds for all values of some variable, then after fixing the other variables you may compare two arbitrary values of that variable and conclude independence from that variable.\n\nTemplate:\nif\n\\[\nA = B(u) \\quad \\text{for all } u,\n\\]\nthen for any \\( u_1,u_2 \\),\n\\[\nB(u_1)=A=B(u_2),\n\\]\nhence \\( B(u) \\) is independent of \\( u \\).\n\n3. Equality chaining.\nIf two expressions are both equal to the same expression under the same hypotheses, then they are equal to each other.\n\n4. Re-specialization.\nAfter deriving an intermediate identity, you may specialize it again and substitute it back into earlier identities.\n\n5. Direct finite verification.\nFor a finite magma from the library, you may verify identities by explicit computation from the Cayley table.\n\nStrictly forbidden moves\n\n1. Do not use any heuristic rule unless it is formally justified in the current derivation.\nIn particular, do not assume any general rule of the form:\n- disjoint variable sets imply a constant operation;\n- nonempty variable intersection implies no useful consequence;\n- an equation “looks like” projection, associativity, commutativity, idempotence, cancellation, or constancy.\n\n2. Do not use a single successful assignment to claim that \\( E1 \\) holds in a magma.\nTo prove \\( M \\models E1 \\), you must establish universal validity of \\( E1 \\) in that magma.\n\n3. Do not use a magma with \\( M \\not\\models E1 \\) as a counterexample to implication.\n\n4. Do not appeal to labels such as “XOR”, “projection”, “group”, “max”, “constant”, or similar names as proof.\nThose labels are only search hints.\n\n5. Do not insert unproved algebraic laws such as associativity or commutativity.\nThey may be used only if they have been formally derived from \\( E1 \\) or explicitly verified from a finite table.\n\n6. Do not use vague stopping language such as:\n- “this seems difficult”,\n- “this suggests”,\n- “this appears to indicate”,\n- “we may need associativity”,\n- “without additional assumptions”,\n- “it is plausible that”.\nEvery nontrivial statement must be justified by a derivation step or a table computation.\n\n7. Do not skip steps.\nEvery nontrivial equality must come from:\n- an explicit instance of \\( E1 \\),\n- a previously derived identity,\n- equality transitivity,\n- or direct table lookup.\n\nHigh-value exact lemmas\n\nLemma A. Variable-free right side.\nIf an identity has the form\n\\[\nx = T(\\bar y)\n\\]\nwhere \\( x \\) does not occur in \\( T \\), then every magma satisfying this identity is a one-element magma.\n\nReason:\nafter fixing \\( \\bar y \\), the right side is a fixed element \\( c \\), so the identity says \\( x=c \\) for every value of \\( x \\). Hence all elements are equal.\n\nLemma B. Basic-product to foreign-term constancy.\nIf an identity has the form\n\\[\nx*y = T(\\bar z)\n\\]\nwhere neither \\( x \\) nor \\( y \\) occurs in \\( T \\), then every magma satisfying this identity has a constant operation:\nthere exists \\( c \\) such that\n\\[\na*b=c \\qquad \\forall a,b.\n\\]\n\nReason:\nfor any \\( a,b,a',b' \\), choose the same values of \\( \\bar z \\); then\n\\[\na*b = T(\\bar z)=a'*b'.\n\\]\nSo all products are equal to one common element.\n\nLemma C. Independence extraction.\nIf\n\\[\nS(\\bar a,\\bar b)=T(\\bar b,\\bar c)\n\\]\nholds identically, then after fixing \\( \\bar b \\),\n- the left side is independent of \\( \\bar c \\),\n- the right side is independent of \\( \\bar a \\).\n\nDo not stop at saying “independent”.\nContinue until you derive a concrete consequence such as a constant row, a constant column, a common value, or collapse to a one-element magma.\n\nLemma D. Constant row / constant column.\nIf you derive\n\\[\np * u = q \\quad \\text{for all } u,\n\\]\nthen the row of \\( p \\) is constant with value \\( q \\).\n\nIf you derive\n\\[\nu * p = q \\quad \\text{for all } u,\n\\]\nthen the column of \\( p \\) is constant with value \\( q \\).\n\nThese are intermediate consequences, not automatically final conclusions.\n\nRequired reasoning workflow\n\nPhase 1. Exact parsing.\n- Rewrite \\( E1 \\) and \\( E2 \\) in fully parenthesized form if needed.\n- List the variables occurring on the left-hand side and right-hand side of \\( E1 \\).\n- List the variables occurring on the left-hand side and right-hand side of \\( E2 \\).\n- This step is only syntactic bookkeeping. Do not infer algebraic properties from variable occurrence alone.\n\nPhase 2. Consequences of \\( E1 \\) only.\nAssume \\( M \\models E1 \\) for an arbitrary magma \\( M \\).\nWork only from \\( E1 \\).\nExtract consequences by universal instantiation, fix-and-vary, equality chaining, and re-specialization.\nEach consequence must be stated explicitly as a claim and justified immediately.\n\nPhase 3. Derivation target.\nTry to derive \\( E2 \\) inside the arbitrary magma satisfying \\( E1 \\).\nIf the consequences force the magma to be one-element, say so explicitly and conclude that \\( E2 \\) holds automatically.\nIf the consequences force the operation to be constant, substitute that into \\( E2 \\) explicitly and evaluate both sides.\nOtherwise continue until the two sides of \\( E2 \\) are shown equal.\n\nPhase 4. Counterexample search only if Phase 3 fails.\nTo refute implication, you must produce a magma \\( M \\) such that\n\\[\nM \\models E1 \\quad\\text{and}\\quad M \\not\\models E2.\n\\]\n\nFor any candidate finite magma, the burden of proof is:\n- first verify \\( E1 \\) globally in that magma;\n- then give one explicit assignment witnessing failure of \\( E2 \\).\n\nA single assignment may disprove \\( M \\models E2 \\), but it never proves \\( M \\models E1 \\).\n\nFinite magma library usage\n\nIf you use a magma from the library, interpret it exactly as follows:\na string \\( S \\) of length \\( n^2 \\) defines a magma on \\( \\{0,\\dots,n-1\\} \\) by\n\\[\ni*j = S[i n + j].\n\\]\n\nWhen verifying an identity in a finite magma, compute from this rule or from the Cayley table explicitly.\nDo not cite the library label as proof.\n\nRequired output format\n\nYour response must use exactly the following section order.\n\nANALYSIS\n\nIn this section, give the full derivation before any final answer appears.\n\nWithin ANALYSIS, structure the reasoning as a sequence of numbered claims.\n\nUse the following pattern repeatedly:\n\nClaim 1.\n\\( \\ldots \\)\n\nJustification.\n\\( \\ldots \\)\n\nClaim 2.\n\\( \\ldots \\)\n\nJustification.\n\\( \\ldots \\)\n\nContinue until either:\n- \\( E2 \\) has been derived from \\( E1 \\), or\n- a fully verified counterexample has been established.\n\nIf a counterexample is found, include inside ANALYSIS:\n- the magma ID,\n- its Cayley table,\n- a verification that \\( E1 \\) holds for all assignments in that magma,\n- one explicit assignment where \\( E2 \\) fails.\n\nFINAL CONCLUSION\n\nThis must be the last section of the response.\n\nWrite exactly one of:\n\\[\n\\text{TRUE}\n\\]\nor\n\\[\n\\text{FALSE}\n\\]\n\nThen immediately give one short paragraph:\n\n- If the verdict is TRUE, summarize the key formal derivation proving that every magma satisfying \\( E1 \\) also satisfies \\( E2 \\).\n- If the verdict is FALSE, summarize the verified counterexample \\( M \\models E1 \\) and \\( M \\not\\models E2 \\).\n\nMandatory self-check before finishing\n\nBefore writing FALSE, confirm that you have actually proved \\( M \\models E1 \\) for the chosen magma.\nBefore writing TRUE, confirm that every property used in the proof was formally derived from \\( E1 \\) or explicitly verified.\nBefore writing FINAL CONCLUSION, confirm that no verdict was announced earlier.\nIf these checks fail, continue the derivation instead of concluding.",
+    "cheatsheetTitle": "3.15",
+    "cnItemId": "cn_4905457ceacb47b78a2117bc021ec22d",
+    "commentCount": 0,
+    "competitionId": "mathematics-distillation-challenge-equational-theories-stage1",
+    "competitionTitle": "Mathematics Distillation Challenge - Equational Theories",
+    "entityAvatarUrl": "https://lh3.googleusercontent.com/a/ACg8ocJIeg25DRP08LBy6l2FoHd2UJ5ROZiJpuZjVh5RtACrQDRBvQ=s96-c",
+    "entityId": "U-3ca4d9e12a632cc55b6114bedf9f17f015bc381f",
+    "entityName": "Jiaxuan Zou",
+    "entityType": "individual",
+    "favoriteCount": 1,
+    "isDerived": false,
+    "itemType": "Original",
+    "likeCount": 0,
+    "lineageDepth": 0,
+    "lineageNodes": [
+      {
+        "cheatsheetTitle": "3.15",
+        "cnItemId": "cn_4905457ceacb47b78a2117bc021ec22d",
+        "competitionId": "mathematics-distillation-challenge-equational-theories-stage1",
+        "entityAvatarUrl": "https://lh3.googleusercontent.com/a/ACg8ocJIeg25DRP08LBy6l2FoHd2UJ5ROZiJpuZjVh5RtACrQDRBvQ=s96-c",
+        "entityId": "U-3ca4d9e12a632cc55b6114bedf9f17f015bc381f",
+        "entityName": "Jiaxuan Zou",
+        "entityType": "individual",
+        "isDerived": false,
+        "itemType": "Original",
+        "lineageDepth": 0,
+        "parentCnItemId": null,
+        "parentShareItemId": null,
+        "publicCode": "EQT01-000012",
+        "publishedAt": "2026-04-03T13:32:30Z",
+        "rootCnItemId": "cn_4905457ceacb47b78a2117bc021ec22d",
+        "rootShareItemId": "cn_4905457ceacb47b78a2117bc021ec22d",
+        "shareItemId": "cn_4905457ceacb47b78a2117bc021ec22d",
+        "visibilityStatus": "active"
+      }
+    ],
+    "lineagePathSnapshot": [
+      {
+        "cnItemId": "cn_4905457ceacb47b78a2117bc021ec22d",
+        "entityName": "Jiaxuan Zou",
+        "publishedAt": "2026-04-03T13:32:30Z",
+        "shareItemId": "cn_4905457ceacb47b78a2117bc021ec22d"
+      }
+    ],
+    "parentCnItemId": null,
+    "parentShareItemId": null,
+    "publicCode": "EQT01-000012",
+    "publishedAt": "2026-04-03T13:32:30Z",
+    "referencedCount": 0,
+    "remark": "manual chain of thought",
+    "rootCnItemId": "cn_4905457ceacb47b78a2117bc021ec22d",
+    "rootShareItemId": "cn_4905457ceacb47b78a2117bc021ec22d",
+    "shareItemId": "cn_4905457ceacb47b78a2117bc021ec22d",
+    "sourceCheatsheetId": "cs_d0b6092c-97c8-48a5-88d4-efd72d2ab877",
+    "viewerHasFavorited": false,
+    "viewerHasLiked": false,
+    "visibilityStatus": "active"
+  }
+}

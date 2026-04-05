@@ -1,0 +1,67 @@
+{
+  "fetched_at": "2026-04-05T20:31:54.279700+00:00",
+  "publicCode": "EQT01-000007",
+  "source_url": "https://server-9527.sair.foundation/api/contributor-network/by-code/EQT01-000007",
+  "data": {
+    "canComment": false,
+    "canDelete": false,
+    "cheatsheetContent": "You are detecting whether Equation 1 really implies Equation 2 or only almost does.\nEquation 1:\n{{ equation1 }}\nEquation 2:\n{{ equation2 }}\n\nMethod:\n- Compare the two equations carefully and identify whether Equation 2 asks for one extra condition or stronger identity than Equation 1 supplies.\n- If it is a near miss rather than a real implication, answer `FALSE` and give a witness isolating the missing part.\n- If the implication truly holds, answer `TRUE` and give a concise proof.\n- Do not promote a near miss to `TRUE`.\n\nRequired output:\nVERDICT: TRUE or FALSE\nREASONING: name the decisive extra condition or the decisive derivation\nPROOF:\nfill only when VERDICT is TRUE\nCOUNTEREXAMPLE:\nfill only when VERDICT is FALSE\n\nRules:\n- Plain text only.\n- `VERDICT:` must be exactly `TRUE` or `FALSE`.\n- `REASONING:` must not be empty.\n- If `VERDICT: TRUE`, `PROOF:` must be non-empty and `COUNTEREXAMPLE:` empty.\n- If `VERDICT: FALSE`, `COUNTEREXAMPLE:` must be non-empty and `PROOF:` empty.",
+    "cheatsheetTitle": "near-miss-detector",
+    "cnItemId": "cn_c4dbcca67a534b9f9c737d8121326f45",
+    "commentCount": 0,
+    "competitionId": "mathematics-distillation-challenge-equational-theories-stage1",
+    "competitionTitle": "Mathematics Distillation Challenge - Equational Theories",
+    "entityAvatarUrl": "https://avatars.githubusercontent.com/u/239919270?v=4",
+    "entityId": "U-ee1c3a80890934f2e992d2f8fe94b047f642a0f1",
+    "entityName": "Emily",
+    "entityType": "individual",
+    "favoriteCount": 2,
+    "isDerived": false,
+    "itemType": "Original",
+    "likeCount": 0,
+    "lineageDepth": 0,
+    "lineageNodes": [
+      {
+        "cheatsheetTitle": "near-miss-detector",
+        "cnItemId": "cn_c4dbcca67a534b9f9c737d8121326f45",
+        "competitionId": "mathematics-distillation-challenge-equational-theories-stage1",
+        "entityAvatarUrl": "https://avatars.githubusercontent.com/u/239919270?v=4",
+        "entityId": "U-ee1c3a80890934f2e992d2f8fe94b047f642a0f1",
+        "entityName": "Emily",
+        "entityType": "individual",
+        "isDerived": false,
+        "itemType": "Original",
+        "lineageDepth": 0,
+        "parentCnItemId": null,
+        "parentShareItemId": null,
+        "publicCode": "EQT01-000007",
+        "publishedAt": "2026-04-01T01:20:56Z",
+        "rootCnItemId": "cn_c4dbcca67a534b9f9c737d8121326f45",
+        "rootShareItemId": "cn_c4dbcca67a534b9f9c737d8121326f45",
+        "shareItemId": "cn_c4dbcca67a534b9f9c737d8121326f45",
+        "visibilityStatus": "active"
+      }
+    ],
+    "lineagePathSnapshot": [
+      {
+        "cnItemId": "cn_c4dbcca67a534b9f9c737d8121326f45",
+        "entityName": "Emily",
+        "publishedAt": "2026-04-01T01:20:56Z",
+        "shareItemId": "cn_c4dbcca67a534b9f9c737d8121326f45"
+      }
+    ],
+    "parentCnItemId": null,
+    "parentShareItemId": null,
+    "publicCode": "EQT01-000007",
+    "publishedAt": "2026-04-01T01:20:56Z",
+    "referencedCount": 0,
+    "remark": "",
+    "rootCnItemId": "cn_c4dbcca67a534b9f9c737d8121326f45",
+    "rootShareItemId": "cn_c4dbcca67a534b9f9c737d8121326f45",
+    "shareItemId": "cn_c4dbcca67a534b9f9c737d8121326f45",
+    "sourceCheatsheetId": "cs_cccd60c7-8d1f-4e57-a930-d2dc3747fdb8",
+    "viewerHasFavorited": false,
+    "viewerHasLiked": false,
+    "visibilityStatus": "active"
+  }
+}

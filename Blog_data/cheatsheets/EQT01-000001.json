@@ -1,0 +1,67 @@
+{
+  "fetched_at": "2026-04-05T20:31:47.846399+00:00",
+  "publicCode": "EQT01-000001",
+  "source_url": "https://server-9527.sair.foundation/api/contributor-network/by-code/EQT01-000001",
+  "data": {
+    "canComment": false,
+    "canDelete": false,
+    "cheatsheetContent": "Work as a formal derivation checker.\nTask:\nDecide whether Equation 1 implies Equation 2.\n\nEquation 1:\n{{ equation1 }}\n\nEquation 2:\n{{ equation2 }}\n\nProof discipline:\n- Treat Equation 1 as the only given assumption.\n- Treat Equation 2 as the exact target to be justified.\n- Do not skip hidden steps or use unstated assumptions.\n- If the target follows, give an explicit derivation.\n- If the target does not follow, give a concrete witness showing separation.\n\nOutput rules:\n- Plain text only.\n- Use exactly the four headings below.\n- Keep the reasoning short and the support section decisive.\n\nRequired output:\nVERDICT: TRUE or FALSE\nREASONING: explain why the target is derivable or why it fails\nPROOF:\nfill this only when VERDICT is TRUE\nCOUNTEREXAMPLE:\nfill this only when VERDICT is FALSE\n\nChecks:\n- `VERDICT:` must be exactly `TRUE` or `FALSE`.\n- `REASONING:` must not be empty.\n- If `VERDICT: TRUE`, `PROOF:` must be non-empty and `COUNTEREXAMPLE:` empty.\n- If `VERDICT: FALSE`, `COUNTEREXAMPLE:` must be non-empty and `PROOF:` empty.",
+    "cheatsheetTitle": "proof-skeleton-enforcer",
+    "cnItemId": "cn_093b473d4ed940ccaeba7b2ffff8df5d",
+    "commentCount": 0,
+    "competitionId": "mathematics-distillation-challenge-equational-theories-stage1",
+    "competitionTitle": "Mathematics Distillation Challenge - Equational Theories",
+    "entityAvatarUrl": "https://avatars.githubusercontent.com/u/239919270?v=4",
+    "entityId": "U-ee1c3a80890934f2e992d2f8fe94b047f642a0f1",
+    "entityName": "Emily",
+    "entityType": "individual",
+    "favoriteCount": 1,
+    "isDerived": false,
+    "itemType": "Original",
+    "likeCount": 0,
+    "lineageDepth": 0,
+    "lineageNodes": [
+      {
+        "cheatsheetTitle": "proof-skeleton-enforcer",
+        "cnItemId": "cn_093b473d4ed940ccaeba7b2ffff8df5d",
+        "competitionId": "mathematics-distillation-challenge-equational-theories-stage1",
+        "entityAvatarUrl": "https://avatars.githubusercontent.com/u/239919270?v=4",
+        "entityId": "U-ee1c3a80890934f2e992d2f8fe94b047f642a0f1",
+        "entityName": "Emily",
+        "entityType": "individual",
+        "isDerived": false,
+        "itemType": "Original",
+        "lineageDepth": 0,
+        "parentCnItemId": null,
+        "parentShareItemId": null,
+        "publicCode": "EQT01-000001",
+        "publishedAt": "2026-04-01T01:06:44Z",
+        "rootCnItemId": "cn_093b473d4ed940ccaeba7b2ffff8df5d",
+        "rootShareItemId": "cn_093b473d4ed940ccaeba7b2ffff8df5d",
+        "shareItemId": "cn_093b473d4ed940ccaeba7b2ffff8df5d",
+        "visibilityStatus": "active"
+      }
+    ],
+    "lineagePathSnapshot": [
+      {
+        "cnItemId": "cn_093b473d4ed940ccaeba7b2ffff8df5d",
+        "entityName": "Emily",
+        "publishedAt": "2026-04-01T01:06:44Z",
+        "shareItemId": "cn_093b473d4ed940ccaeba7b2ffff8df5d"
+      }
+    ],
+    "parentCnItemId": null,
+    "parentShareItemId": null,
+    "publicCode": "EQT01-000001",
+    "publishedAt": "2026-04-01T01:06:44Z",
+    "referencedCount": 0,
+    "remark": "",
+    "rootCnItemId": "cn_093b473d4ed940ccaeba7b2ffff8df5d",
+    "rootShareItemId": "cn_093b473d4ed940ccaeba7b2ffff8df5d",
+    "shareItemId": "cn_093b473d4ed940ccaeba7b2ffff8df5d",
+    "sourceCheatsheetId": "cs_e688a0de-2e43-4ab8-948d-b314fc53d492",
+    "viewerHasFavorited": false,
+    "viewerHasLiked": false,
+    "visibilityStatus": "active"
+  }
+}

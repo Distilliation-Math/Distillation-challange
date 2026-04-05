@@ -1,0 +1,67 @@
+{
+  "fetched_at": "2026-04-05T20:31:55.099068+00:00",
+  "publicCode": "EQT01-000008",
+  "source_url": "https://server-9527.sair.foundation/api/contributor-network/by-code/EQT01-000008",
+  "data": {
+    "canComment": false,
+    "canDelete": false,
+    "cheatsheetContent": "You are an expert in equational reasoning over abstract algebraic structures.\n\nDetermine whether:\n{E1} ⇒ {E2}\n\nThat is: whether Equation 1 logically implies Equation 2.\n\n----------------------------------------\n\nCORE MODEL\n\n- * is a binary operation with NO assumed properties.\n- No commutativity, associativity, identity, or simplification.\n- Expressions are exact syntax trees.\n- Equality means exact structural equality after valid transformations.\n\n----------------------------------------\n\nALLOWED OPERATIONS\n\n1. Recursive Application\n- Apply {E1} at any position, any number of times.\n\n2. Substitution (PRIMARY TOOL)\n- Variables in {E1} may be replaced by ANY expression.\n- Expressions can be nested and reused.\n\n3. Structural Construction\n- Build expressions using *.\n- Parentheses define structure strictly.\n\n----------------------------------------\n\nSOLVING PROCESS\n\n1. Analyze {E1}\n- What structure does it generate?\n- Does it expand depth?\n- Does it duplicate variables?\n- Does it embed expressions recursively?\n\n2. Analyze {E2}\n- What structure is required?\n- What variable patterns appear?\n- What depth and duplication are needed?\n\n3. Attempt Construction\n- Map variables of {E1} to subtrees of {E2}\n- Use substitution aggressively\n- Consider multi-step recursive applications (2–4 layers)\n\n----------------------------------------\n\nKEY PRINCIPLE\n\nYou are NOT required to explicitly generate all steps.\n\nYou must decide whether {E2} is STRUCTURALLY CONSTRUCTIBLE from {E1}.\n\n----------------------------------------\n\nCONTRADICTION CHECK (CRITICAL)\n\nBefore answering TRUE, verify:\n\n1. Variable Consistency\n- Each variable must play a compatible structural role.\n- A variable cannot require two incompatible forms.\n\n2. Dependency Preservation\n- If {E2} requires a dependency that cannot originate from {E1} → FALSE\n\n3. Structure Origin\n- If required structure in {E2} never appears or cannot emerge from {E1} → FALSE\n\n4. No Fake Matches\n- Superficial similarity (symmetry, repetition) is NOT enough\n\n----------------------------------------\n\nDECISION RULE\n\nOutput TRUE if:\n- A plausible construction exists using substitution + recursion\n- Structure of {E2} is compatible with patterns from {E1}\n- No contradiction is found\n\nOutput FALSE if:\n- There is a clear structural impossibility\n\n----------------------------------------\n\nCRITICAL BALANCE\n\n- Do NOT default to FALSE due to complexity\n- Do NOT default to TRUE without passing contradiction checks\n- Uncertainty alone is NOT enough for TRUE\n- Plausibility WITHOUT contradiction → TRUE\n\n----------------------------------------\n\nFINAL OUTPUT\n\nTRUE or FALSE",
+    "cheatsheetTitle": "TEST3.5 V+",
+    "cnItemId": "cn_8012722255d244f68371f133b84a4bc3",
+    "commentCount": 1,
+    "competitionId": "mathematics-distillation-challenge-equational-theories-stage1",
+    "competitionTitle": "Mathematics Distillation Challenge - Equational Theories",
+    "entityAvatarUrl": "https://lh3.googleusercontent.com/a/ACg8ocKLK0bLP-EXHo8twjVwFeED7Ij2sq5dHWc2snJxFl1FUK8RIA=s96-c",
+    "entityId": "U-b321cf57f21c7a60ba025ae729289e3eb8ad2885",
+    "entityName": "Shailesh P",
+    "entityType": "individual",
+    "favoriteCount": 2,
+    "isDerived": false,
+    "itemType": "Original",
+    "likeCount": 0,
+    "lineageDepth": 0,
+    "lineageNodes": [
+      {
+        "cheatsheetTitle": "TEST3.5 V+",
+        "cnItemId": "cn_8012722255d244f68371f133b84a4bc3",
+        "competitionId": "mathematics-distillation-challenge-equational-theories-stage1",
+        "entityAvatarUrl": "https://lh3.googleusercontent.com/a/ACg8ocKLK0bLP-EXHo8twjVwFeED7Ij2sq5dHWc2snJxFl1FUK8RIA=s96-c",
+        "entityId": "U-b321cf57f21c7a60ba025ae729289e3eb8ad2885",
+        "entityName": "Shailesh P",
+        "entityType": "individual",
+        "isDerived": false,
+        "itemType": "Original",
+        "lineageDepth": 0,
+        "parentCnItemId": null,
+        "parentShareItemId": null,
+        "publicCode": "EQT01-000008",
+        "publishedAt": "2026-04-01T12:00:16Z",
+        "rootCnItemId": "cn_8012722255d244f68371f133b84a4bc3",
+        "rootShareItemId": "cn_8012722255d244f68371f133b84a4bc3",
+        "shareItemId": "cn_8012722255d244f68371f133b84a4bc3",
+        "visibilityStatus": "active"
+      }
+    ],
+    "lineagePathSnapshot": [
+      {
+        "cnItemId": "cn_8012722255d244f68371f133b84a4bc3",
+        "entityName": "Shailesh P",
+        "publishedAt": "2026-04-01T12:00:16Z",
+        "shareItemId": "cn_8012722255d244f68371f133b84a4bc3"
+      }
+    ],
+    "parentCnItemId": null,
+    "parentShareItemId": null,
+    "publicCode": "EQT01-000008",
+    "publishedAt": "2026-04-01T12:00:16Z",
+    "referencedCount": 0,
+    "remark": "",
+    "rootCnItemId": "cn_8012722255d244f68371f133b84a4bc3",
+    "rootShareItemId": "cn_8012722255d244f68371f133b84a4bc3",
+    "shareItemId": "cn_8012722255d244f68371f133b84a4bc3",
+    "sourceCheatsheetId": "cs_3b6a390a-146c-4f36-b44b-a6a6d0aa7e7c",
+    "viewerHasFavorited": false,
+    "viewerHasLiked": false,
+    "visibilityStatus": "active"
+  }
+}

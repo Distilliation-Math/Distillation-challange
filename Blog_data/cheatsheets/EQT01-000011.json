@@ -1,0 +1,67 @@
+{
+  "fetched_at": "2026-04-05T20:31:57.334850+00:00",
+  "publicCode": "EQT01-000011",
+  "source_url": "https://server-9527.sair.foundation/api/contributor-network/by-code/EQT01-000011",
+  "data": {
+    "canComment": false,
+    "canDelete": false,
+    "cheatsheetContent": "NEWLY DISCOVERED THEOREMS THAT MAY APPLY TO YOUR ANALYSIS:\n  The following theorems have been discovered since your knowledge cutoff.  Take them\n  under advisement when solving problems but do not give them undue consideration.\n\n  Thm 1: Spine compatibility: A pure left-spine equation can only imply equations that are themselves pure left-spine of equal or greater depth — it can never force a shallower left-spine, a right-spine, or a mixed-spine identity.",
+    "cheatsheetTitle": "(fragment) enables spine isolation (+32 on hard3)",
+    "cnItemId": "cn_a1488516ffdb411a8f9444e7ffe5c28b",
+    "commentCount": 0,
+    "competitionId": "mathematics-distillation-challenge-equational-theories-stage1",
+    "competitionTitle": "Mathematics Distillation Challenge - Equational Theories",
+    "entityAvatarUrl": "https://avatars.githubusercontent.com/u/3866398?v=4",
+    "entityId": "U-a698e24658f375c4c474833e9b951a00fb85a9f0",
+    "entityName": "Adam McKenna",
+    "entityType": "individual",
+    "favoriteCount": 0,
+    "isDerived": false,
+    "itemType": "Original",
+    "likeCount": 0,
+    "lineageDepth": 0,
+    "lineageNodes": [
+      {
+        "cheatsheetTitle": "(fragment) enables spine isolation (+32 on hard3)",
+        "cnItemId": "cn_a1488516ffdb411a8f9444e7ffe5c28b",
+        "competitionId": "mathematics-distillation-challenge-equational-theories-stage1",
+        "entityAvatarUrl": "https://avatars.githubusercontent.com/u/3866398?v=4",
+        "entityId": "U-a698e24658f375c4c474833e9b951a00fb85a9f0",
+        "entityName": "Adam McKenna",
+        "entityType": "individual",
+        "isDerived": false,
+        "itemType": "Original",
+        "lineageDepth": 0,
+        "parentCnItemId": null,
+        "parentShareItemId": null,
+        "publicCode": "EQT01-000011",
+        "publishedAt": "2026-04-02T04:32:02Z",
+        "rootCnItemId": "cn_a1488516ffdb411a8f9444e7ffe5c28b",
+        "rootShareItemId": "cn_a1488516ffdb411a8f9444e7ffe5c28b",
+        "shareItemId": "cn_a1488516ffdb411a8f9444e7ffe5c28b",
+        "visibilityStatus": "active"
+      }
+    ],
+    "lineagePathSnapshot": [
+      {
+        "cnItemId": "cn_a1488516ffdb411a8f9444e7ffe5c28b",
+        "entityName": "Adam McKenna",
+        "publishedAt": "2026-04-02T04:32:02Z",
+        "shareItemId": "cn_a1488516ffdb411a8f9444e7ffe5c28b"
+      }
+    ],
+    "parentCnItemId": null,
+    "parentShareItemId": null,
+    "publicCode": "EQT01-000011",
+    "publishedAt": "2026-04-02T04:32:02Z",
+    "referencedCount": 0,
+    "remark": "Tells GPT about spine isolation, fixes ~32 problems on hard3",
+    "rootCnItemId": "cn_a1488516ffdb411a8f9444e7ffe5c28b",
+    "rootShareItemId": "cn_a1488516ffdb411a8f9444e7ffe5c28b",
+    "shareItemId": "cn_a1488516ffdb411a8f9444e7ffe5c28b",
+    "sourceCheatsheetId": "cs_d23e3af7-4ccd-4d46-9a6e-233e0dbbe1e1",
+    "viewerHasFavorited": false,
+    "viewerHasLiked": false,
+    "visibilityStatus": "active"
+  }
+}

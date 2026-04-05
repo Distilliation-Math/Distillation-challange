@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-05T14:22:25.995481+00:00",
+  "fetched_at": "2026-04-05T20:34:16.499154+00:00",
   "source_url": "https://server-9527.sair.foundation/api/contributor-network/graph?competition=mathematics-distillation-challenge-equational-theories-stage1",
   "data": {
     "competitions": [
@@ -260,7 +260,7 @@
         "cheatsheetTitle": "distilled-rules-1",
         "competitionId": "mathematics-distillation-challenge-equational-theories-stage1",
         "entityId": "U-ef374477abb01630862b4b45807c7a9aebaf0e53",
-        "favoriteCount": 2,
+        "favoriteCount": 3,
         "lineageDepth": 0,
         "publicCode": "EQT01-000017",
         "publishedAt": "2026-04-04T10:14:57Z",
@@ -273,7 +273,7 @@
     "meta": {
       "competitionCount": 1,
       "entityCount": 9,
-      "generatedAt": "2026-04-05T14:22:25Z",
+      "generatedAt": "2026-04-05T20:33:45Z",
       "itemCount": 17,
       "relationCount": 1,
       "truncated": false

@@ -1,0 +1,67 @@
+{
+  "fetched_at": "2026-04-05T20:31:56.675982+00:00",
+  "publicCode": "EQT01-000009",
+  "source_url": "https://server-9527.sair.foundation/api/contributor-network/by-code/EQT01-000009",
+  "data": {
+    "canComment": false,
+    "canDelete": false,
+    "cheatsheetContent": "You are a mathematician specializing in equational theories of magmas. \nYour task is to determine whether Equation 1 ({{ equation1 }}) implies Equation 2 ({{ equation2 }}) over all magmas.\n\n### Module 1: Determining the VERDICT (Master Laws)\n\nRapid binary decisions ( \\implies E_2$):\n\n| Master Law ID | Mathematical Expression | Impact / Implications |\n| :--- | :--- | :--- |\n| **ID 2 (Singleton)** |  = y$ | **TRUE** for all $. |\n| **ID 1689** |  = (y \\circ x) \\circ ((x \\circ z) \\circ z)$ | Equivalent to =y$. |\n| **ID 1076** |  = y \\circ ((x \\circ (x \\circ y)) \\circ y)$ | Implies Idempotence (ID 3). |\n| **ID 3744** |  = (xz)(wy)$ | \"Bypass Law\"; implies Putnam laws. |\n| **ID 4, ID 5** |  = x \\circ y$ ,  = y \\circ x$ | Left/Right Zero Magmas. |\n\n*   If $ matches an **Austin Master** (e.g., 28770), VERDICT = **TRUE**.\n*   If $ is symmetric ( = E_1^*$) but $ is not, VERDICT = **FALSE**.\n\n### Module 2: Constructing the REASONING\n\n1.  **Singleton Collapse**: If $ allows $ to be isolated twice with differing neighbors (e.g.,  = y \\circ y$ and  = T$), theory collapses to =y$.\n2.  **Parentheses Balance**: If $ is balanced but $ disrupts nesting without Associativity ( 4512$), structural deduction fails.\n3.  **Variable Displacement**: If a variable in $ is missing in $, check for \"Constant\" or \"Zero\" property inheritance.\n4.  **Duality Principle**: If $ is a dual (^*$), the reasoning for the base law applies mirror-symmetrically.\n\n### Module 3: Developing the PROOF\n\nFor **TRUE** cases:\n*   **Rewrite Pattern**: Treat $ as a directional rule  \\to R$.\n*   **Substitutivity**: Use [x/S] = U[x/S]$ as the primary mechanism.\n*   **Specific Proofs**:\n    *   **Putnam (ID 14, 29)**:  = y(xy) \\iff x = (yx)y$. Link via  \\circ y$ substitution into $.\n    *   **Idempotency (ID 3)**: Use  1076$ substitutions to reach =x$.\n\n### Module 4: Generating the COUNTEREXAMPLE\n\nFor **FALSE** cases:\n1.  **Left-Projection Magma** ( \\circ y = x$): Refutes Commutativity (=yx$).\n2.  **Right-Projection Magma** ( \\circ y = y$): Refutes Commutativity and Left-Zero laws.\n3.  **Constant Magma** ( \\circ y = c$): Refutes Idempotence (=x$).\n4.  **The Fixed-Point Trap**: If $ is =xy$, use a 2-element magma where  \\circ 0 = 0 \\circ 1 = 0$ but  \\circ 1 = 1$.\n\n### Module 5: Benchmark Bottlenecks (Caution)\n\n| Bottleneck ID | Trap Category | Guardrail / Refutation |\n| :--- | :--- | :--- |\n| **706** | Projection Gap | Often **FALSE** for non-nested targets. |\n| **1274** | Nesting Mirage | Does **not** imply global commutativity. |\n| **1516** | Singleton Mirage | Appears to collapse but remains non-trivial. |\n\nOutput format (use exact headers without any additional text or formatting):\nVERDICT: must be exactly TRUE or FALSE (in the same line).\nREASONING: must be non-empty.\nPROOF: required if VERDICT is TRUE, empty otherwise.\nCOUNTEREXAMPLE: required if VERDICT is FALSE, empty otherwise.",
+    "cheatsheetTitle": "Mathematics Distillation Challenge",
+    "cnItemId": "cn_0457d6c2bf044f96acff91405823626a",
+    "commentCount": 0,
+    "competitionId": "mathematics-distillation-challenge-equational-theories-stage1",
+    "competitionTitle": "Mathematics Distillation Challenge - Equational Theories",
+    "entityAvatarUrl": "https://lh3.googleusercontent.com/a/ACg8ocLLWlipRInlfSfoplu8i8Jg_fTcpYWIXzs6r1-Y3ZQ6Wwo8rqsWEQ=s96-c",
+    "entityId": "U-fa36a95dbaf758b666494e7fee366114fea65de4",
+    "entityName": "AMEY",
+    "entityType": "individual",
+    "favoriteCount": 3,
+    "isDerived": false,
+    "itemType": "Original",
+    "likeCount": 0,
+    "lineageDepth": 0,
+    "lineageNodes": [
+      {
+        "cheatsheetTitle": "Mathematics Distillation Challenge",
+        "cnItemId": "cn_0457d6c2bf044f96acff91405823626a",
+        "competitionId": "mathematics-distillation-challenge-equational-theories-stage1",
+        "entityAvatarUrl": "https://lh3.googleusercontent.com/a/ACg8ocLLWlipRInlfSfoplu8i8Jg_fTcpYWIXzs6r1-Y3ZQ6Wwo8rqsWEQ=s96-c",
+        "entityId": "U-fa36a95dbaf758b666494e7fee366114fea65de4",
+        "entityName": "AMEY",
+        "entityType": "individual",
+        "isDerived": false,
+        "itemType": "Original",
+        "lineageDepth": 0,
+        "parentCnItemId": null,
+        "parentShareItemId": null,
+        "publicCode": "EQT01-000009",
+        "publishedAt": "2026-04-02T01:45:24Z",
+        "rootCnItemId": "cn_0457d6c2bf044f96acff91405823626a",
+        "rootShareItemId": "cn_0457d6c2bf044f96acff91405823626a",
+        "shareItemId": "cn_0457d6c2bf044f96acff91405823626a",
+        "visibilityStatus": "active"
+      }
+    ],
+    "lineagePathSnapshot": [
+      {
+        "cnItemId": "cn_0457d6c2bf044f96acff91405823626a",
+        "entityName": "AMEY",
+        "publishedAt": "2026-04-02T01:45:24Z",
+        "shareItemId": "cn_0457d6c2bf044f96acff91405823626a"
+      }
+    ],
+    "parentCnItemId": null,
+    "parentShareItemId": null,
+    "publicCode": "EQT01-000009",
+    "publishedAt": "2026-04-02T01:45:24Z",
+    "referencedCount": 0,
+    "remark": "A formal logic utility for magma equational reasoning. This cheatsheet distills 22 million possible implications from the Terence Tao Equational Theories project into a sparse, ID-indexed graph of high-density Master Laws.\n\nTechnical Components:\n\nMaster Law Registry: Instant identification for high-density cliques, specifically Singleton Collapse (IDs 2/1689), Idempotence (ID 1076), and the Bypass Law (ID 3744).\n\nIdentification Modules: Precise heuristics for singleton collapse identification, parentheses nesting balance audits, and variable displacement inheritance.\n\nFormalization Prover: A substitution and rewrite-based engine for generating formal algebraic proofs using Treatment [x/S] = U[x/S] mechanisms.\n\nCounter-Model Refutation: Explicit 2x2 magma matrices (Left-Projection, Right-Projection, Constant, and Fixed-Point) for model refutation.\n\nHard-Case Guardrails: Explicitly documented reasoning traps for specific benchmark bottlenecks (IDs 706, 1274, and 1516).",
+    "rootCnItemId": "cn_0457d6c2bf044f96acff91405823626a",
+    "rootShareItemId": "cn_0457d6c2bf044f96acff91405823626a",
+    "shareItemId": "cn_0457d6c2bf044f96acff91405823626a",
+    "sourceCheatsheetId": "cs_cd6dd8fa-b06b-4323-b3bc-3ab5a8672c13",
+    "viewerHasFavorited": false,
+    "viewerHasLiked": false,
+    "visibilityStatus": "active"
+  }
+}

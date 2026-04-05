@@ -1,0 +1,67 @@
+{
+  "fetched_at": "2026-04-05T20:31:52.751013+00:00",
+  "publicCode": "EQT01-000004",
+  "source_url": "https://server-9527.sair.foundation/api/contributor-network/by-code/EQT01-000004",
+  "data": {
+    "canComment": false,
+    "canDelete": false,
+    "cheatsheetContent": "Solve the implication by trying syntax first and semantics second.\nEquation 1:\n{{ equation1 }}\nEquation 2:\n{{ equation2 }}\n\nReasoning order:\n- First try a direct syntactic derivation from Equation 1 to Equation 2.\n- If that fails, switch to semantic separation and look for a witness where Equation 1 holds but Equation 2 fails.\n- Use `TRUE` only with an explicit derivation.\n- Use `FALSE` only with a concrete witness.\n\nRequired output:\nVERDICT: TRUE or FALSE\nREASONING: state whether syntax succeeded or semantics separated the equations\nPROOF:\nfill only when VERDICT is TRUE\nCOUNTEREXAMPLE:\nfill only when VERDICT is FALSE\n\nOutput rules:\n- Plain text only.\n- No extra headings or notes.\n- `VERDICT:` must be exactly `TRUE` or `FALSE`.\n- `REASONING:` must always be filled.\n- If `VERDICT: TRUE`, `PROOF:` must be non-empty and `COUNTEREXAMPLE:` empty.\n- If `VERDICT: FALSE`, `COUNTEREXAMPLE:` must be non-empty and `PROOF:` empty.",
+    "cheatsheetTitle": "syntax-then-semantics",
+    "cnItemId": "cn_5baa3aa3f5c0438388f432308587a631",
+    "commentCount": 0,
+    "competitionId": "mathematics-distillation-challenge-equational-theories-stage1",
+    "competitionTitle": "Mathematics Distillation Challenge - Equational Theories",
+    "entityAvatarUrl": "https://avatars.githubusercontent.com/u/239919270?v=4",
+    "entityId": "U-ee1c3a80890934f2e992d2f8fe94b047f642a0f1",
+    "entityName": "Emily",
+    "entityType": "individual",
+    "favoriteCount": 1,
+    "isDerived": false,
+    "itemType": "Original",
+    "likeCount": 0,
+    "lineageDepth": 0,
+    "lineageNodes": [
+      {
+        "cheatsheetTitle": "syntax-then-semantics",
+        "cnItemId": "cn_5baa3aa3f5c0438388f432308587a631",
+        "competitionId": "mathematics-distillation-challenge-equational-theories-stage1",
+        "entityAvatarUrl": "https://avatars.githubusercontent.com/u/239919270?v=4",
+        "entityId": "U-ee1c3a80890934f2e992d2f8fe94b047f642a0f1",
+        "entityName": "Emily",
+        "entityType": "individual",
+        "isDerived": false,
+        "itemType": "Original",
+        "lineageDepth": 0,
+        "parentCnItemId": null,
+        "parentShareItemId": null,
+        "publicCode": "EQT01-000004",
+        "publishedAt": "2026-04-01T01:12:16Z",
+        "rootCnItemId": "cn_5baa3aa3f5c0438388f432308587a631",
+        "rootShareItemId": "cn_5baa3aa3f5c0438388f432308587a631",
+        "shareItemId": "cn_5baa3aa3f5c0438388f432308587a631",
+        "visibilityStatus": "active"
+      }
+    ],
+    "lineagePathSnapshot": [
+      {
+        "cnItemId": "cn_5baa3aa3f5c0438388f432308587a631",
+        "entityName": "Emily",
+        "publishedAt": "2026-04-01T01:12:16Z",
+        "shareItemId": "cn_5baa3aa3f5c0438388f432308587a631"
+      }
+    ],
+    "parentCnItemId": null,
+    "parentShareItemId": null,
+    "publicCode": "EQT01-000004",
+    "publishedAt": "2026-04-01T01:12:16Z",
+    "referencedCount": 0,
+    "remark": "",
+    "rootCnItemId": "cn_5baa3aa3f5c0438388f432308587a631",
+    "rootShareItemId": "cn_5baa3aa3f5c0438388f432308587a631",
+    "shareItemId": "cn_5baa3aa3f5c0438388f432308587a631",
+    "sourceCheatsheetId": "cs_8826bc6d-7d49-4491-91e3-ea0eb27ff3de",
+    "viewerHasFavorited": false,
+    "viewerHasLiked": false,
+    "visibilityStatus": "active"
+  }
+}

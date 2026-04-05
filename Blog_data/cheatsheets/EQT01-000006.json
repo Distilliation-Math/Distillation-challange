@@ -1,0 +1,67 @@
+{
+  "fetched_at": "2026-04-05T20:31:53.563701+00:00",
+  "publicCode": "EQT01-000006",
+  "source_url": "https://server-9527.sair.foundation/api/contributor-network/by-code/EQT01-000006",
+  "data": {
+    "canComment": false,
+    "canDelete": false,
+    "cheatsheetContent": "You are a mathematician specializing in equational theories of magmas. \nYour task is to determine whether Equation 1 ({{ equation1 }}) implies Equation 2 ({{ equation2 }}) over all magmas.\n---\n## CHEAT SHEET: FAST DECISION FILTERS\n\nTask: decide whether Eq1 implies Eq2 over all magmas.\n\nImmediate TRUE checks:\n- Eq2 tautology: L2 == R2.\n- Eq2 is Eq1 up to variable renaming or side swap.\n- Eq1 has very strong collapse/projection behavior forcing trivial structure.\n\nImmediate FALSE check:\n- If any finite magma satisfies Eq1 and violates Eq2, output FALSE immediately.\n\nDecision rule:\n- A verified counterexample is decisive.\n- If no quick filter resolves it, continue with full proof/counterexample workflow.\n---\nOutput format (use exact headers without any additional text or formatting):\nVERDICT: must be exactly TRUE or FALSE (in the same line).\nREASONING: must be non-empty.\nPROOF: required if VERDICT is TRUE, empty otherwise.\nCOUNTEREXAMPLE: required if VERDICT is FALSE, empty otherwise.",
+    "cheatsheetTitle": "liyeen",
+    "cnItemId": "cn_650b1cddcd2a4e45b5f2f01cf5d11acc",
+    "commentCount": 0,
+    "competitionId": "mathematics-distillation-challenge-equational-theories-stage1",
+    "competitionTitle": "Mathematics Distillation Challenge - Equational Theories",
+    "entityAvatarUrl": "https://lh3.googleusercontent.com/a/ACg8ocIJFuwcb5hzR0vGfC7wUMcsXhDxJ_ZnREAqnALgJqht7K0T8w=s96-c",
+    "entityId": "U-79e62a1a4d6f322c2ff3d0960e5c01cbe884f672",
+    "entityName": "dd",
+    "entityType": "individual",
+    "favoriteCount": 0,
+    "isDerived": false,
+    "itemType": "Original",
+    "likeCount": 0,
+    "lineageDepth": 0,
+    "lineageNodes": [
+      {
+        "cheatsheetTitle": "liyeen",
+        "cnItemId": "cn_650b1cddcd2a4e45b5f2f01cf5d11acc",
+        "competitionId": "mathematics-distillation-challenge-equational-theories-stage1",
+        "entityAvatarUrl": "https://lh3.googleusercontent.com/a/ACg8ocIJFuwcb5hzR0vGfC7wUMcsXhDxJ_ZnREAqnALgJqht7K0T8w=s96-c",
+        "entityId": "U-79e62a1a4d6f322c2ff3d0960e5c01cbe884f672",
+        "entityName": "dd",
+        "entityType": "individual",
+        "isDerived": false,
+        "itemType": "Original",
+        "lineageDepth": 0,
+        "parentCnItemId": null,
+        "parentShareItemId": null,
+        "publicCode": "EQT01-000006",
+        "publishedAt": "2026-04-01T01:17:33Z",
+        "rootCnItemId": "cn_650b1cddcd2a4e45b5f2f01cf5d11acc",
+        "rootShareItemId": "cn_650b1cddcd2a4e45b5f2f01cf5d11acc",
+        "shareItemId": "cn_650b1cddcd2a4e45b5f2f01cf5d11acc",
+        "visibilityStatus": "active"
+      }
+    ],
+    "lineagePathSnapshot": [
+      {
+        "cnItemId": "cn_650b1cddcd2a4e45b5f2f01cf5d11acc",
+        "entityName": "dd",
+        "publishedAt": "2026-04-01T01:17:33Z",
+        "shareItemId": "cn_650b1cddcd2a4e45b5f2f01cf5d11acc"
+      }
+    ],
+    "parentCnItemId": null,
+    "parentShareItemId": null,
+    "publicCode": "EQT01-000006",
+    "publishedAt": "2026-04-01T01:17:33Z",
+    "referencedCount": 0,
+    "remark": "",
+    "rootCnItemId": "cn_650b1cddcd2a4e45b5f2f01cf5d11acc",
+    "rootShareItemId": "cn_650b1cddcd2a4e45b5f2f01cf5d11acc",
+    "shareItemId": "cn_650b1cddcd2a4e45b5f2f01cf5d11acc",
+    "sourceCheatsheetId": "cs_7914afbe-0178-4f79-9c51-8b72f61db3df",
+    "viewerHasFavorited": false,
+    "viewerHasLiked": false,
+    "visibilityStatus": "active"
+  }
+}
