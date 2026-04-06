@@ -42,9 +42,7 @@ models:
       model_id: "deepseek/deepseek-v3.2"
       input_cost_per_1m: 0.260
       output_cost_per_1m: 0.380
-    ollama:
-      model_id: "deepseek-v3.2:latest"
-      num_ctx: 131072  # 128K max context
+    # 671B MoE — too large for local inference (~350GB Q4)
 
   gpt-oss-20b:
     display_name: "OpenAI: gpt-oss-20b"
