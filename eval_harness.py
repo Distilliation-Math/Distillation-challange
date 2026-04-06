@@ -707,7 +707,12 @@ def parse_args():
     )
     parser.add_argument(
         "--output", default=None,
-        help="Output CSV path (default: results/<model>_<dataset>_<timestamp>.csv)"
+        help="Output CSV path (default: results/<batch>/<model>_<backend>_<dataset>_<timestamp>.csv)"
+    )
+    parser.add_argument(
+        "--output-dir", default=None,
+        help="Batch output directory (e.g. results/20260407_1530_v4-sweep). "
+             "If omitted, creates results/<YYYYMMDD_HHMM>/ automatically."
     )
     parser.add_argument(
         "--limit", type=int, default=None,
@@ -787,7 +792,12 @@ def main():
             output_path = Path(args.output)
         else:
             ts = time.strftime("%Y%m%d_%H%M%S")
-            output_path = PROJECT_ROOT / "results" / f"{model_name}_{backend}_{args.data}_{ts}.csv"
+            if args.output_dir:
+                batch_dir = Path(args.output_dir)
+            else:
+                batch_dir = PROJECT_ROOT / "results" / time.strftime("%Y%m%d_%H%M")
+            batch_dir.mkdir(parents=True, exist_ok=True)
+            output_path = batch_dir / f"{model_name}_{backend}_{args.data}_{ts}.csv"
         write_csv(summary, output_path)
         write_reasoning_json(summary, backend, backend_cfg, output_path.with_suffix(".json"))
 
