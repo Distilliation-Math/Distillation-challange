@@ -2,7 +2,7 @@
   "channel": "Math Distillation Challenge - equational theories",
   "channel_id": 13,
   "topic": "Bedrock",
-  "message_count": 2,
+  "message_count": 4,
   "messages": [
     {
       "id": 1358,
@@ -77,6 +77,58 @@
       "stream_id": 13,
       "avatar_url": "https://secure.gravatar.com/avatar/1eb4e35f0b3a506d78e314b257c1487f?d=identicon&version=1",
       "content_type": "text/html"
+    },
+    {
+      "id": 1454,
+      "sender_id": 117,
+      "content": "<p><span class=\"user-mention silent\" data-user-id=\"177\">Adam McKenna</span> <a href=\"#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/Bedrock/near/1358\">said</a>:</p>\n<blockquote>\n<p>Just wanted to write a quick note that I've been testing Amazon Bedrock with the gpt-oss-120b model and it's.. quite fast..  We just ran a test on all of hard3 with concurrency=400 and it completed in 00:02:47 with zero throttling or retries :D</p>\n</blockquote>\n<p>Thanks for the sharing :)<br>\nJust want to check, did u set it up directly with Bedrock or did u do BYOK via OpenRouter?</p>",
+      "recipient_id": 43,
+      "timestamp": 1775480651,
+      "client": "ZulipElectron",
+      "subject": "Bedrock",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Gan W.",
+      "sender_email": "user117@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/62f195752f4b8a9ab7928b0e6d43725e586f89c5.png",
+      "content_type": "text/html",
+      "date": "2026-04-06T13:04:11.000Z"
+    },
+    {
+      "id": 1455,
+      "sender_id": 117,
+      "content": "<p>Also just a bit more nuance: if you u OpenAI Python SDK, the SDK by default alr handles 2 retries for you for connection errors, 408, 409, 429, and 5xx. So sometimes it could be that it is doing but not visible, depending on ur set up.</p>",
+      "recipient_id": 43,
+      "timestamp": 1775481036,
+      "client": "ZulipElectron",
+      "subject": "Bedrock",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Gan W.",
+      "sender_email": "user117@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/62f195752f4b8a9ab7928b0e6d43725e586f89c5.png",
+      "content_type": "text/html",
+      "date": "2026-04-06T13:10:36.000Z"
     }
   ]
 }

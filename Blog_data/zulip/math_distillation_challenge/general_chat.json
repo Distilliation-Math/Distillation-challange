@@ -2,7 +2,7 @@
   "channel": "Math Distillation Challenge - equational theories",
   "channel_id": 13,
   "topic": "general chat",
-  "message_count": 54,
+  "message_count": 58,
   "messages": [
     {
       "id": 341,
@@ -839,6 +839,142 @@
       "stream_id": 13,
       "avatar_url": "https://secure.gravatar.com/avatar/1eb4e35f0b3a506d78e314b257c1487f?d=identicon&version=1",
       "content_type": "text/html"
+    },
+    {
+      "id": 1450,
+      "sender_id": 25,
+      "content": "<p>As we discussed before, we will share the parser for evaluation and the evaluation models before April 10th. And currently we suggest you to dive into the math insights of this competition.</p>",
+      "recipient_id": 43,
+      "timestamp": 1775422185,
+      "client": "ZulipElectron",
+      "subject": "general chat",
+      "topic_links": [],
+      "last_edit_timestamp": 1775422199,
+      "edit_history": [
+        {
+          "user_id": 25,
+          "timestamp": 1775422199,
+          "prev_content": "As we discussed before, we will share the parser for evaluation and the evaluation model before April 10th. And currently we suggest you to dive into the math insights of this competition.",
+          "prev_rendered_content": "<p>As we discussed before, we will share the parser for evaluation and the evaluation model before April 10th. And currently we suggest you to dive into the math insights of this competition.</p>"
+        }
+      ],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-04-05T20:49:45.000Z"
+    },
+    {
+      "id": 1465,
+      "sender_id": 117,
+      "content": "<p><span class=\"user-mention silent\" data-user-id=\"25\">YZ</span> <a href=\"#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic//near/1450\">said</a>:</p>\n<blockquote>\n<p>As we discussed before, we will share the parser for evaluation and the evaluation models before April 10th. And currently we suggest you to dive into the math insights of this competition.</p>\n</blockquote>\n<p>Hi I'd like to share a suggestion, for the final eval pipeline of stage 1, to better stick to a fixed model hosted by a fixed provider, instead of letting OpenRouter route the requests, or at least use a fixed inference provider via OpenRouter. Because based on my experience and experiments done, different providers' different inference framework set up and sometimes quantizations sometimes does heavily affect the behaviour of the models.</p>\n<p>Here is an example:<br>\n<a href=\"/user_uploads/5/2f/linQgT_Ukq0QIOX9wHQ_mLc5/image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/5/2f/linQgT_Ukq0QIOX9wHQ_mLc5/image.png\" title=\"image.png\"><img data-original-content-type=\"image/png\" data-original-dimensions=\"822x233\" src=\"/user_uploads/thumbnail/5/2f/linQgT_Ukq0QIOX9wHQ_mLc5/image.png/840x560.webp\"></a></div><p>the 3rd column is done via OpenRouter with BYOK and fixed to route to Groq. You can see that the parse rate does changes alot.</p>\n<p>I also inspected the failure mode at response level, this behaviour of only replying 'VER' in the end(my prompt instruct model to output VERDICT: TRUE or FALSE in the end) also is only associated with some provider (not Groq), while not hitting the max_token wall at all:<br>\n<a href=\"/user_uploads/5/e4/4QR0Sgi4yS0DRIcrQNhfOxAX/image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/5/e4/4QR0Sgi4yS0DRIcrQNhfOxAX/image.png\" title=\"image.png\"><img data-original-content-type=\"image/png\" data-original-dimensions=\"866x165\" src=\"/user_uploads/thumbnail/5/e4/4QR0Sgi4yS0DRIcrQNhfOxAX/image.png/840x560.webp\"></a></div><p>Please consider, thanks!</p>",
+      "recipient_id": 43,
+      "timestamp": 1775500285,
+      "client": "ZulipElectron",
+      "subject": "general chat",
+      "topic_links": [],
+      "last_edit_timestamp": 1775500357,
+      "edit_history": [
+        {
+          "user_id": 117,
+          "timestamp": 1775500357,
+          "prev_content": "@_**YZ|25** [said](https://zulip.sair.foundation/#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic//near/1450):\n```quote\nAs we discussed before, we will share the parser for evaluation and the evaluation models before April 10th. And currently we suggest you to dive into the math insights of this competition.\n```\n\nHi I'd like to share a suggestion, for the final eval pipeline of stage 1, to better stick to a fixed model hosted by a fixed provider, instead of letting OpenRouter route the requests, or at least use a fixed inference provider via OpenRouter. Because based on my experience and experiments done, different providers' different inference framework set up and sometimes quantizations sometimes does heavily affect the behaviour of the models.\n\nHere is an example:\n[image.png](/user_uploads/5/2f/linQgT_Ukq0QIOX9wHQ_mLc5/image.png)\n\nthe 3rd column is done via OpenRouter with BYOK and fixed to route to Groq. You can see that the parse rate does changes alot.\n\nI also inspected the failure mode at response level, this behaviour of only replying 'VER' in the end(my prompt instruct model to output VERDICT: TRUE or FALSE in the end) also is only associated with some provider (not Groq), while not hitting the max_token wall at all:\n[image.png](/user_uploads/5/e4/4QR0Sgi4yS0DRIcrQNhfOxAX/image.png)",
+          "prev_rendered_content": "<p><span class=\"user-mention silent\" data-user-id=\"25\">YZ</span> <a href=\"#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic//near/1450\">said</a>:</p>\n<blockquote>\n<p>As we discussed before, we will share the parser for evaluation and the evaluation models before April 10th. And currently we suggest you to dive into the math insights of this competition.</p>\n</blockquote>\n<p>Hi I'd like to share a suggestion, for the final eval pipeline of stage 1, to better stick to a fixed model hosted by a fixed provider, instead of letting OpenRouter route the requests, or at least use a fixed inference provider via OpenRouter. Because based on my experience and experiments done, different providers' different inference framework set up and sometimes quantizations sometimes does heavily affect the behaviour of the models.</p>\n<p>Here is an example:<br>\n<a href=\"/user_uploads/5/2f/linQgT_Ukq0QIOX9wHQ_mLc5/image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/5/2f/linQgT_Ukq0QIOX9wHQ_mLc5/image.png\" title=\"image.png\"><img data-original-content-type=\"image/png\" data-original-dimensions=\"822x233\" src=\"/user_uploads/thumbnail/5/2f/linQgT_Ukq0QIOX9wHQ_mLc5/image.png/840x560.webp\"></a></div><p>the 3rd column is done via OpenRouter with BYOK and fixed to route to Groq. You can see that the parse rate does changes alot.</p>\n<p>I also inspected the failure mode at response level, this behaviour of only replying 'VER' in the end(my prompt instruct model to output VERDICT: TRUE or FALSE in the end) also is only associated with some provider (not Groq), while not hitting the max_token wall at all:<br>\n<a href=\"/user_uploads/5/e4/4QR0Sgi4yS0DRIcrQNhfOxAX/image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/5/e4/4QR0Sgi4yS0DRIcrQNhfOxAX/image.png\" title=\"image.png\"><img data-original-content-type=\"image/png\" data-original-dimensions=\"866x165\" src=\"/user_uploads/thumbnail/5/e4/4QR0Sgi4yS0DRIcrQNhfOxAX/image.png/840x560.webp\"></a></div>"
+        }
+      ],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 25
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Gan W.",
+      "sender_email": "user117@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/62f195752f4b8a9ab7928b0e6d43725e586f89c5.png",
+      "content_type": "text/html",
+      "date": "2026-04-06T18:31:25.000Z"
+    },
+    {
+      "id": 1466,
+      "sender_id": 258,
+      "content": "<p>I've plotted the accuracy on hard3 as a function of the token budget (I think the exact specification of budget the organizers want to use will be announced later ) . The prompt I used is shared on contributor network as three-element-focus. Used gpt-oss-120b with cerebras. The main black curve is calculated with the assumption that when the strict parser doesn't detect the answer in produces T/F 50-50. The blue curve is the accuracy among parsables. By 22k token budget, they become the same on hard3 around 73% (all are parsable by this point).<br>\n<a href=\"/user_uploads/5/a1/tUzdj4lPQv5NL300QR71-sq6/token_budget_parsable.png\">token_budget_parsable.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/5/a1/tUzdj4lPQv5NL300QR71-sq6/token_budget_parsable.png\" title=\"token_budget_parsable.png\"><img data-original-content-type=\"image/png\" data-original-dimensions=\"1484x928\" src=\"/user_uploads/thumbnail/5/a1/tUzdj4lPQv5NL300QR71-sq6/token_budget_parsable.png/840x560.webp\"></a></div>",
+      "recipient_id": 43,
+      "timestamp": 1775502105,
+      "client": "website",
+      "subject": "general chat",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 25
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Reza Jamei",
+      "sender_email": "user258@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "https://secure.gravatar.com/avatar/e552e979dc9058a756f46160f70cbff6?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-04-06T19:01:45.000Z"
+    },
+    {
+      "id": 1467,
+      "sender_id": 258,
+      "content": "<p>The last graph was with the default medium effort. Below is the comparison of the 3 effort levels. I'll add more points at the end when I get a chance:<br>\n<a href=\"/user_uploads/5/db/lbxeOF18hYDHVXee5jSiz1MC/token_budget_all_efforts.png\">token_budget_all_efforts.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/5/db/lbxeOF18hYDHVXee5jSiz1MC/token_budget_all_efforts.png\" title=\"token_budget_all_efforts.png\"><img data-original-content-type=\"image/png\" data-original-dimensions=\"1475x928\" src=\"/user_uploads/thumbnail/5/db/lbxeOF18hYDHVXee5jSiz1MC/token_budget_all_efforts.png/840x560.webp\"></a></div>",
+      "recipient_id": 43,
+      "timestamp": 1775506854,
+      "client": "website",
+      "subject": "general chat",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Reza Jamei",
+      "sender_email": "user258@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "https://secure.gravatar.com/avatar/e552e979dc9058a756f46160f70cbff6?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-04-06T20:20:54.000Z"
     }
   ]
 }

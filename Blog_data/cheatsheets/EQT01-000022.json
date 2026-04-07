@@ -1,0 +1,67 @@
+{
+  "fetched_at": "2026-04-07T08:18:48.997881+00:00",
+  "publicCode": "EQT01-000022",
+  "source_url": "https://server-9527.sair.foundation/api/contributor-network/by-code/EQT01-000022",
+  "data": {
+    "canComment": false,
+    "canDelete": false,
+    "cheatsheetContent": "You are solving a TRUE or FALSE equivalence problem between two equations.\n\nEach equation has a left-hand side (LHS) and right-hand side (RHS).\n\n## RULES\n\n1. Multiplication is associative:\n   - Remove all parentheses.\n\n2. Multiplication is commutative:\n   - Sort variables alphabetically.\n\n3. For each side, compute:\n   - normalized form (with repeated variables kept)\n   - variable set (distinct variables only)\n\n4. Treat repeated variables as weaker evidence than variable presence.\n   Exact counts matter less than structural compatibility.\n\n## PROCEDURE\n\nFor each equation:\n1. Split into LHS and RHS at \"=\"\n2. Remove parentheses\n3. Sort multiplied variables alphabetically\n4. Record:\n   - normalized form\n   - variable set\n\n## DECISION LOGIC\n\nStep 1 — Strong FALSE rule:\n- If the LHS variable sets are different, answer FALSE.\n\nStep 2 — Strong TRUE rule:\n- If the LHS normalized forms match exactly and the RHS normalized forms match exactly, answer TRUE.\n\nStep 3 — Strong TRUE rule:\n- If the LHS normalized forms match exactly, then check the RHS:\n  - If both RHS contain all variables from that common LHS, and\n  - one RHS variable set is a subset of the other, or the two RHS variable sets are highly overlapping,\n  then answer TRUE.\n\nStep 4 — Strong FALSE rule:\n- If the LHS normalized forms do not match exactly and there is no exact full-equation match, answer FALSE.\n\n## IMPORTANT\n\n- Do not guess.\n- If you do not know or have to guess, answer FALSE.\n- Extra repeated variables alone do not invalidate equivalence.\n- If both equations keep the same exact LHS and one RHS looks like an expanded version of the other, prefer TRUE.\n\n## PROBLEM\n\nEquation 1:\n{{ equation1 }}\n\nEquation 2:\n{{ equation2 }}\n\n## WORKING\n\nEquation 1 LHS normalized:\n[...]\n\nEquation 1 RHS normalized:\n[...]\n\nEquation 1 LHS set:\n[...]\n\nEquation 1 RHS set:\n[...]\n\nEquation 2 LHS normalized:\n[...]\n\nEquation 2 RHS normalized:\n[...]\n\nEquation 2 LHS set:\n[...]\n\nEquation 2 RHS set:\n[...]\n\n## ANSWER\nOutput TRUE or FALSE",
+    "cheatsheetTitle": "Pre 1_edit4",
+    "cnItemId": "cn_49470ec7fbc840d38789cf308fef0a26",
+    "commentCount": 0,
+    "competitionId": "mathematics-distillation-challenge-equational-theories-stage1",
+    "competitionTitle": "Mathematics Distillation Challenge - Equational Theories",
+    "entityAvatarUrl": "https://lh3.googleusercontent.com/a/ACg8ocLzF_2zEL_72ssWIUILC5ailV6ChqUjOZzWyorAcvTX_fVogA8=s96-c",
+    "entityId": "U-e8eb4d6a0c197e85490de17d5d22ca0904d08f10",
+    "entityName": "Jun B",
+    "entityType": "individual",
+    "favoriteCount": 0,
+    "isDerived": false,
+    "itemType": "Original",
+    "likeCount": 0,
+    "lineageDepth": 0,
+    "lineageNodes": [
+      {
+        "cheatsheetTitle": "Pre 1_edit4",
+        "cnItemId": "cn_49470ec7fbc840d38789cf308fef0a26",
+        "competitionId": "mathematics-distillation-challenge-equational-theories-stage1",
+        "entityAvatarUrl": "https://lh3.googleusercontent.com/a/ACg8ocLzF_2zEL_72ssWIUILC5ailV6ChqUjOZzWyorAcvTX_fVogA8=s96-c",
+        "entityId": "U-e8eb4d6a0c197e85490de17d5d22ca0904d08f10",
+        "entityName": "Jun B",
+        "entityType": "individual",
+        "isDerived": false,
+        "itemType": "Original",
+        "lineageDepth": 0,
+        "parentCnItemId": null,
+        "parentShareItemId": null,
+        "publicCode": "EQT01-000022",
+        "publishedAt": "2026-04-06T11:29:19Z",
+        "rootCnItemId": "cn_49470ec7fbc840d38789cf308fef0a26",
+        "rootShareItemId": "cn_49470ec7fbc840d38789cf308fef0a26",
+        "shareItemId": "cn_49470ec7fbc840d38789cf308fef0a26",
+        "visibilityStatus": "active"
+      }
+    ],
+    "lineagePathSnapshot": [
+      {
+        "cnItemId": "cn_49470ec7fbc840d38789cf308fef0a26",
+        "entityName": "Jun B",
+        "publishedAt": "2026-04-06T11:29:19Z",
+        "shareItemId": "cn_49470ec7fbc840d38789cf308fef0a26"
+      }
+    ],
+    "parentCnItemId": null,
+    "parentShareItemId": null,
+    "publicCode": "EQT01-000022",
+    "publishedAt": "2026-04-06T11:29:19Z",
+    "referencedCount": 0,
+    "remark": "",
+    "rootCnItemId": "cn_49470ec7fbc840d38789cf308fef0a26",
+    "rootShareItemId": "cn_49470ec7fbc840d38789cf308fef0a26",
+    "shareItemId": "cn_49470ec7fbc840d38789cf308fef0a26",
+    "sourceCheatsheetId": "cs_117d195b-97f9-4bff-a00e-84e19f1bdb51",
+    "viewerHasFavorited": false,
+    "viewerHasLiked": false,
+    "visibilityStatus": "active"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "fetched_at": "2026-04-07T08:18:49.470688+00:00",
+  "publicCode": "EQT01-000026",
+  "source_url": "https://server-9527.sair.foundation/api/contributor-network/by-code/EQT01-000026",
+  "data": {
+    "canComment": false,
+    "canDelete": false,
+    "cheatsheetContent": "=== MAGMA IMPLICATION CHEATSHEET ===\nGoal: Does Equation 1 (E1) imply Equation 2 (E2) in all magmas?\n\n*** GOLDEN RULE: DEFAULT TO TRUE ***\nSmall models are naturally biased toward \"FALSE\". You MUST output VERDICT: TRUE unless a specific rule below (Rule 3) mathematically proves FALSE.\n\n--- RULE 1: TOTAL COLLAPSE (VERDICT: TRUE) ---\nIf E1 forces all elements in the magma to be equal, it implies EVERY equation.\n- Pattern: ONE side of E1 is a SINGLE variable (e.g., \"x\"), AND that variable does NOT appear on the other side.\n- Examples (Verdict: TRUE):\n  * \"x = y * z\" (LHS is just \"x\", and \"x\" does not appear on RHS)\n  * \"x * y = z\" (RHS is just \"z\", and \"z\" does not appear on LHS)\n  * \"x = y\" (LHS is just \"x\", and \"x\" does not appear on RHS)\n\n--- RULE 2: TAUTOLOGY & SUBSTITUTION (VERDICT: TRUE) ---\n- E2 is a Tautology: LHS and RHS of E2 are identical (e.g., \"x * (y * x) = x * (y * x)\").\n- Renaming: E2 is E1 with variables renamed (e.g., E1: \"x*y=y*x\", E2: \"a*b=b*a\").\n- Substitution: E2 is obtained by replacing variables in E1 with other terms or variables.\n  * E1: \"x * x = x\", E2: \"(y*z) * (y*z) = (y*z)\" (x is replaced by term y*z).\n- Specificity: If E2 is a more specific case of E1, VERDICT: TRUE.\n\n--- RULE 3: THE 3-MODEL TEST (ONLY PATH TO \"FALSE\") ---\nONLY output FALSE if Equation 1 is a TAUTOLOGY in one of these models but Equation 2 is NOT.\n\"Tautology\" means LHS simplifies to the EXACT same result as RHS.\n\n1. Model L (Left-Projection): Every product \"A * B\" simplifies to the first variable \"A\".\n   - Shortcut: The result of any expression is its LEFTMOST variable.\n   - Example: \"(x * y) * (z * w)\" simplifies to \"x\".\n   - Tautology Check: [Leftmost var of LHS] == [Leftmost var of RHS].\n\n2. Model R (Right-Projection): Every product \"A * B\" simplifies to the last variable \"B\".\n   - Shortcut: The result of any expression is its RIGHTMOST variable.\n   - Example: \"(x * y) * (z * w)\" simplifies to \"w\".\n   - Tautology Check: [Rightmost var of LHS] == [Rightmost var of RHS].\n\n3. Model K (Constant Product): Every product \"A * B\" simplifies to a constant \"0\".\n   - Shortcut: All products become \"0\", but single variables stay as they are.\n   - Tautology Check:\n     * (Product = Product) is a Tautology (\"0 = 0\").\n     * (Variable = Same Variable) is a Tautology (\"x = x\").\n     * (Product = Variable) is NOT a Tautology (\"0 = x\").\n     * (Var A = Var B) is NOT a Tautology (\"x = y\").\n\n--- DECISION ALGORITHM ---\n1. Does Rule 1 (Total Collapse) apply? -> VERDICT: TRUE\n2. Does Rule 2 (Substitution/Tautology) apply? -> VERDICT: TRUE\n3. 3-MODEL TEST (Perform for L, R, and K):\n   - Step A: Is E1 a Tautology in the model? (If NO, the model cannot prove FALSE).\n   - Step B: Is E2 a Tautology in the same model?\n   - If Step A is YES and Step B is NO -> VERDICT: FALSE.\n4. If no model proves FALSE -> VERDICT: TRUE (Default)",
+    "cheatsheetTitle": "test2",
+    "cnItemId": "cn_ec1e6e7fcb1b4473b2421237d132bc64",
+    "commentCount": 0,
+    "competitionId": "mathematics-distillation-challenge-equational-theories-stage1",
+    "competitionTitle": "Mathematics Distillation Challenge - Equational Theories",
+    "entityAvatarUrl": "https://lh3.googleusercontent.com/a/ACg8ocLWGuisiKDERQBhCatxtpPtCZAxEmIWNchgpOtd4mJD_sNyYzTW=s96-c",
+    "entityId": "U-2f58026122e9cb05fc666d3b75e11beddbecdf82",
+    "entityName": "Dixing Xu",
+    "entityType": "individual",
+    "favoriteCount": 0,
+    "isDerived": false,
+    "itemType": "Original",
+    "likeCount": 0,
+    "lineageDepth": 0,
+    "lineageNodes": [
+      {
+        "cheatsheetTitle": "test2",
+        "cnItemId": "cn_ec1e6e7fcb1b4473b2421237d132bc64",
+        "competitionId": "mathematics-distillation-challenge-equational-theories-stage1",
+        "entityAvatarUrl": "https://lh3.googleusercontent.com/a/ACg8ocLWGuisiKDERQBhCatxtpPtCZAxEmIWNchgpOtd4mJD_sNyYzTW=s96-c",
+        "entityId": "U-2f58026122e9cb05fc666d3b75e11beddbecdf82",
+        "entityName": "Dixing Xu",
+        "entityType": "individual",
+        "isDerived": false,
+        "itemType": "Original",
+        "lineageDepth": 0,
+        "parentCnItemId": null,
+        "parentShareItemId": null,
+        "publicCode": "EQT01-000026",
+        "publishedAt": "2026-04-07T03:10:32Z",
+        "rootCnItemId": "cn_ec1e6e7fcb1b4473b2421237d132bc64",
+        "rootShareItemId": "cn_ec1e6e7fcb1b4473b2421237d132bc64",
+        "shareItemId": "cn_ec1e6e7fcb1b4473b2421237d132bc64",
+        "visibilityStatus": "active"
+      }
+    ],
+    "lineagePathSnapshot": [
+      {
+        "cnItemId": "cn_ec1e6e7fcb1b4473b2421237d132bc64",
+        "entityName": "Dixing Xu",
+        "publishedAt": "2026-04-07T03:10:32Z",
+        "shareItemId": "cn_ec1e6e7fcb1b4473b2421237d132bc64"
+      }
+    ],
+    "parentCnItemId": null,
+    "parentShareItemId": null,
+    "publicCode": "EQT01-000026",
+    "publishedAt": "2026-04-07T03:10:32Z",
+    "referencedCount": 0,
+    "remark": "weco optimized cheatsheet step2",
+    "rootCnItemId": "cn_ec1e6e7fcb1b4473b2421237d132bc64",
+    "rootShareItemId": "cn_ec1e6e7fcb1b4473b2421237d132bc64",
+    "shareItemId": "cn_ec1e6e7fcb1b4473b2421237d132bc64",
+    "sourceCheatsheetId": "cs_9fb567ec-45d2-4fd8-a671-ed7d9b55bc42",
+    "viewerHasFavorited": false,
+    "viewerHasLiked": false,
+    "visibilityStatus": "active"
+  }
+}

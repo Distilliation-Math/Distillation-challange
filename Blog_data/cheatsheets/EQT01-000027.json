@@ -1,0 +1,67 @@
+{
+  "fetched_at": "2026-04-07T08:18:50.338271+00:00",
+  "publicCode": "EQT01-000027",
+  "source_url": "https://server-9527.sair.foundation/api/contributor-network/by-code/EQT01-000027",
+  "data": {
+    "canComment": false,
+    "canDelete": false,
+    "cheatsheetContent": "You are deciding whether Equation 1 ({{ equation1 }}) implies Equation 2 ({{ equation2 }}) over all magmas.\n\nA magma has only a set M and a binary operation *.\nAssume NO algebraic laws (no associativity, commutativity, identity, cancellation, etc.).\n\nYour task is to determine whether Equation 1 implies Equation 2 over all magmas.\n\n==================================================\nMETHOD\n==================================================\n\nUse this order:\n\n1. Normalize variables mentally.\n2. Check whether Equation 2 is an obvious substitution / specialization / renaming consequence of Equation 1.\n3. Try short local equational rewrites using only exact instances of Equation 1.\n4. Try to find a small counterexample magma (sizes 2, 3, 4).\n5. Prefer the stronger certificate:\n   - if you find a valid derivation, answer TRUE\n   - if you find a valid counterexample, answer FALSE\n\n==================================================\nVALID TRUE REASONS\n==================================================\n\nYou may answer TRUE if any of these holds:\n\n1. DIRECT SPECIALIZATION\nEquation 2 is exactly Equation 1 with variables renamed or identified\n\n2. SINGLETON COLLAPSE\nEquation 1 has the form x = t where x does not appear anywhere in t\n\n3. SHORT LOCAL DERIVATION\nEquation 2 follows from Equation 1 by a short chain of exact substitutions / exact contextual replacements.\n\nSTRICT:\n- Keep derivations local and explicit\n- Use only the original variables (x, y, z, w, ...)\n- Do NOT introduce new symbols (u, v, A, etc.) and treat them as arbitrary\n- Do NOT invent global structure\n\n==================================================\nVALID FALSE REASON\n==================================================\n\nYou may answer FALSE only if you can exhibit ONE explicit magma where:\n- Equation 1 holds for all substitutions, and\n- Equation 2 fails for at least one substitution.\n\nWhen searching mentally, try:\n- projection operations\n- constant operations\n- unary-on-left or unary-on-right operations\n- permutation-style tables\n- mixed noncommutative tables\n\nCRITICAL:\n- A FALSE answer requires ONE final table only\n- You must verify Equation 1 on ALL assignments for that table\n- If ANY assignment violates Equation 1, discard the table\n- Do NOT present failed or intermediate tables\n\nMANDATORY CHECKS:\n- Test at least one explicit “hard” assignment\n- For small tables, always test the all-1 assignment if it exists\n- Keep all variables independent during testing\n- Never silently identify variables (e.g. do not assume x = y)\n\nCRITICAL VARIABLE RULE:\n- If verification simplifies Equation 1 to an expression involving multiple variables\n  (e.g. x = y, x = y*0, x = y*x, etc.)\n  you MUST test assignments where those variables are different\n- If any such assignment fails, the table is invalid\n\n==================================================\nSTRICT PROHIBITIONS\n==================================================\n\nNever:\n\n- assume associativity or commutativity\n- treat a nested occurrence of a variable as if it were absent\n- infer a term is constant just because it evaluates to one output per input\n- assume surjectivity of y ↦ y*x\n- use cancellation or injectivity\n- rewrite using \"same shape\"\n- invent structure (like u*v = g(v))\n- skip steps in derivation\n\nCRITICAL:\n\n- Do NOT infer a global operation rule from special cases\n- From e*x = x for all x, do NOT conclude a*b = b\n- From x*e = x for all x, do NOT conclude a*b = a\n- From identities involving terms like u*u, do NOT assume u*u ranges over all elements\n\n- Do NOT assume that values of a constructed expression cover all elements of M\n- From A = (y*z)*(y*x), you may NOT conclude A ranges over all elements of M\n- Properties proven for such A do NOT extend to all elements\n\nMOST IMPORTANT:\n\nIf you define a symbol from an expression, it is NOT arbitrary.\n\nIf:\n  u := (y*z)*(y*x)\n\nthen u only ranges over values of that expression.\n\nYou may NEVER replace:\n  \"for all values of u := t(...)\"\nwith:\n  \"for all u in M\"\n\nunless surjectivity has been explicitly proven.\n\nTherefore:\n\n- from x = ((y*z)*(y*x))*x you may NOT conclude u*x = x for all u in M\n- from x = x*((y*z)*(y*x)) you may NOT conclude x*u = x for all u in M\n\nCONTEXTUAL REWRITE RULE:\n\n- You may replace a term s by a term t ONLY if you have already proved s = t\n- From x = t, you may replace x by t or t by x\n- You may NOT replace a different term (e.g. y*x) by t\n- Never replace a subterm just because it appears inside an equation whose other side equals a different variable\n\nNO HAND-WAVING:\n\n- Do NOT claim:\n  \"the only way this can happen is ...\"\n  \"this forces the operation to ...\"\n  \"no other operation can satisfy ...\"\nunless fully derived step-by-step\n\n==================================================\nDECISION RULE\n==================================================\n\n- If there is a clear short LOCAL derivation → TRUE\n- Else if there is a fully verified counterexample → FALSE\n- Else choose the most plausible answer from local evidence\n\n==================================================\nREQUIRED OUTPUT FORMAT\n==================================================\n\nVERDICT: TRUE or FALSE\nREASONING: brief\nPROOF: brief or empty\nCOUNTEREXAMPLE: brief or empty",
+    "cheatsheetTitle": "Stage 1 Prompt - Simon Watts",
+    "cnItemId": "cn_ff389b293f214609b7bdb056d5c25faa",
+    "commentCount": 0,
+    "competitionId": "mathematics-distillation-challenge-equational-theories-stage1",
+    "competitionTitle": "Mathematics Distillation Challenge - Equational Theories",
+    "entityAvatarUrl": "https://avatars.githubusercontent.com/u/39976045?v=4",
+    "entityId": "U-c23de45c01c770b1a4315764178865e8e137ef36",
+    "entityName": "SimonRJ",
+    "entityType": "individual",
+    "favoriteCount": 0,
+    "isDerived": false,
+    "itemType": "Original",
+    "likeCount": 0,
+    "lineageDepth": 0,
+    "lineageNodes": [
+      {
+        "cheatsheetTitle": "Stage 1 Prompt - Simon Watts",
+        "cnItemId": "cn_ff389b293f214609b7bdb056d5c25faa",
+        "competitionId": "mathematics-distillation-challenge-equational-theories-stage1",
+        "entityAvatarUrl": "https://avatars.githubusercontent.com/u/39976045?v=4",
+        "entityId": "U-c23de45c01c770b1a4315764178865e8e137ef36",
+        "entityName": "SimonRJ",
+        "entityType": "individual",
+        "isDerived": false,
+        "itemType": "Original",
+        "lineageDepth": 0,
+        "parentCnItemId": null,
+        "parentShareItemId": null,
+        "publicCode": "EQT01-000027",
+        "publishedAt": "2026-04-07T05:29:43Z",
+        "rootCnItemId": "cn_ff389b293f214609b7bdb056d5c25faa",
+        "rootShareItemId": "cn_ff389b293f214609b7bdb056d5c25faa",
+        "shareItemId": "cn_ff389b293f214609b7bdb056d5c25faa",
+        "visibilityStatus": "active"
+      }
+    ],
+    "lineagePathSnapshot": [
+      {
+        "cnItemId": "cn_ff389b293f214609b7bdb056d5c25faa",
+        "entityName": "SimonRJ",
+        "publishedAt": "2026-04-07T05:29:43Z",
+        "shareItemId": "cn_ff389b293f214609b7bdb056d5c25faa"
+      }
+    ],
+    "parentCnItemId": null,
+    "parentShareItemId": null,
+    "publicCode": "EQT01-000027",
+    "publishedAt": "2026-04-07T05:29:43Z",
+    "referencedCount": 0,
+    "remark": "Made in Chat GPT Plus",
+    "rootCnItemId": "cn_ff389b293f214609b7bdb056d5c25faa",
+    "rootShareItemId": "cn_ff389b293f214609b7bdb056d5c25faa",
+    "shareItemId": "cn_ff389b293f214609b7bdb056d5c25faa",
+    "sourceCheatsheetId": "cs_d50dc96c-5dea-486f-80a8-dffd1f08d2a7",
+    "viewerHasFavorited": false,
+    "viewerHasLiked": false,
+    "visibilityStatus": "active"
+  }
+}
