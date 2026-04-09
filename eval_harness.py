@@ -195,6 +195,7 @@ def parse_verdict(text: str | None) -> tuple[bool | None, str]:
 SEMAPHORE = None
 MAX_RETRIES = 3
 RETRY_DELAYS = [2, 5, 15]
+HARD_TIMEOUT_S = 180  # asyncio.wait_for hard cutoff per API call
 
 
 async def call_openrouter(
@@ -236,7 +237,23 @@ async def call_openrouter(
                         await asyncio.sleep(delay)
                         continue
                     resp.raise_for_status()
-                    return await resp.json()
+                    data = await resp.json()
+
+                    # Detect empty responses (0 tokens, no content) — treat as
+                    # retriable server-side failure instead of accepting silently.
+                    usage = data.get("usage", {})
+                    choices = data.get("choices", [])
+                    content = ""
+                    if choices:
+                        content = (choices[0].get("message", {}).get("content", "") or "").strip()
+                    tok_out = usage.get("completion_tokens", 0)
+                    if not content and tok_out == 0 and "error" not in data:
+                        delay = RETRY_DELAYS[min(attempt, len(RETRY_DELAYS) - 1)]
+                        print(f"  Empty response (0 tokens), retrying in {delay}s...", file=sys.stderr)
+                        await asyncio.sleep(delay)
+                        continue
+
+                    return data
         except (aiohttp.ClientError, asyncio.TimeoutError) as e:
             if attempt < MAX_RETRIES - 1:
                 delay = RETRY_DELAYS[min(attempt, len(RETRY_DELAYS) - 1)]
@@ -395,16 +412,17 @@ async def evaluate_problem(
     try:
         start = time.monotonic()
         if backend == "openrouter":
-            response = await call_openrouter(
+            coro = call_openrouter(
                 session, model_id, rendered, api_key, base_url, temperature, max_tokens
             )
         elif backend == "ollama":
-            response = await call_ollama(
+            coro = call_ollama(
                 session, model_id, rendered, base_url, temperature, max_tokens,
                 num_ctx=backend_cfg.get("num_ctx"),
             )
         else:
             raise ValueError(f"unknown backend: {backend}")
+        response = await asyncio.wait_for(coro, timeout=HARD_TIMEOUT_S)
         latency = time.monotonic() - start
 
         # Extract content and reasoning separately (kept independent for the
