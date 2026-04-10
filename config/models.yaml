@@ -16,6 +16,16 @@ models:
     params:
       temperature: 1.0    # reasoning models require temp=1
       max_tokens: 65536   # reasoning tokens count against limit; 32K too low
+    # Applied only when --official-mode is set. Mirrors SAIR's
+    # evaluation_models.json entry for gpt-oss-120b. Temperature is
+    # deliberately excluded — --official-mode leaves temperature alone.
+    official_params:
+      provider: "deepinfra/bf16"
+      reasoning_effort: "low"
+      seed: 0
+      max_tokens: 8192
+      # Healthy bf16 alternatives for --official-fallbacks.
+      fallback_providers: ["Chutes"]
 
   gemma-4-31b:
     display_name: "Google: Gemma 4 31B"
@@ -26,6 +36,17 @@ models:
     ollama:
       model_id: "gemma4:31b"
       num_ctx: 8192    # 8K — max observed usage is 5.4K tokens; saves 9GB KV cache vs 32K
+    # Applied only when --official-mode is set.
+    official_params:
+      provider: "novita/bf16"
+      reasoning_effort: "low"
+      seed: 0
+      max_tokens: 8192
+      # Additional providers appended to provider.order when
+      # --official-fallbacks is set. Novita has been in a persistent
+      # "degraded" state (status=-2) with server_overload errors;
+      # these are the healthy bf16 alternatives for the same model.
+      fallback_providers: ["Parasail", "Venice"]
 
   llama-3.3-70b:
     display_name: "Meta: Llama 3.3 70B Instruct"
@@ -36,6 +57,15 @@ models:
     ollama:
       model_id: "llama3.3:70b"
       num_ctx: 16384   # 16K — model supports 128K but 70B weights + KV cache exceed 64GB RAM at higher ctx
+    # Applied only when --official-mode is set. Llama has no reasoning
+    # mode, so the official config sets reasoning_effort="none".
+    official_params:
+      provider: "deepinfra/fp8"
+      reasoning_effort: "none"
+      seed: 0
+      max_tokens: 8192
+      # Healthy fp8 alternatives for --official-fallbacks.
+      fallback_providers: ["Inceptron", "AkashML", "Together"]
 
   deepseek-v3.2:
     display_name: "DeepSeek: DeepSeek V3.2"
