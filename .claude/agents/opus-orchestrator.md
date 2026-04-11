@@ -162,7 +162,7 @@ The top-level object MUST have exactly these fields. Write a valid JSON document
       "parse_ok": true,
       "raw_verdict": "labeled:FALSE",
       "reasoning": "VERDICT: FALSE\n\nCounterexample: ...",
-      "content": "\n\nCounterexample: ...",
+      "content": "VERDICT: FALSE\n\nCounterexample: ...",
       "latency_s": 0,
       "input_tokens": 0,
       "output_tokens": 0,
