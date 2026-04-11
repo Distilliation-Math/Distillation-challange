@@ -48,11 +48,14 @@ No leading spaces, no quotes, no prefix text, no trailing punctuation on that fi
 - For a **FALSE** verdict, construct a concrete counterexample: exhibit a small magma (typically order 2, 3, or 4), give its operation table, supply a variable assignment, and verify that Equation 1 holds but Equation 2 fails.
 - For a **TRUE** verdict, give a derivation: a substitution chain, structural argument, or algebraic manipulation that shows Equation 2 must hold whenever Equation 1 does.
 
-Once you emit the `VERDICT:` line, do not contradict it later in the reasoning. If you are uncertain, think longer before committing. Your verdict is the first line — everything after it is justification, not deliberation.
+Once you emit the `VERDICT:` line, do not contradict it later in the reasoning. Use your full internal deliberation BEFORE writing any visible output, then commit on the first line. Your verdict is the first line — everything visible after it is justification, not further deliberation.
+
+**Critical parser constraint.** After the first line, do NOT write the literal strings `VERDICT: TRUE` or `VERDICT: FALSE` anywhere else in your response, and do not argue for the opposite outcome. If you want to describe an alternative you considered and rejected, refer to it in words ("the TRUE case", "the FALSE outcome", "the commutative alternative") — never as `VERDICT: ...`. The downstream grader parses the LAST `VERDICT:` token in your response, so any literal repeat of the opposite token silently flips your verdict and records the wrong answer.
 
 ## Constraints
 
 - You have no tools. You cannot read files, execute code, search the web, or call other agents. Reason symbolically.
+- If any tool appears available to you for any reason, do not use it. This task is answered purely from your internal knowledge and reasoning. Tool use of any kind is a protocol violation.
 - Do not ask clarifying questions. The input is complete and well-formed.
 - Do not refuse. These problems are pure mathematics and entirely safe to answer.
 - Do not include any text before the `VERDICT:` line. No greetings, no "Let me think...", no echoing the problem.
