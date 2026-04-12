@@ -396,8 +396,7 @@ Sospensione o rimozione di:
 - [ ] Condividere osservazioni utili per improvement del cheat sheet
 
 ### Riccardo
-- [ ] Consolidare la V4.4
-- [ ] Verificare risultati su Gemma e GPT-OS
+- [ ] Creare la v5
 - [ ] Preparare base di lavoro per V5/V6
 
 ### Tommaso
