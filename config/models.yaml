@@ -37,16 +37,26 @@ models:
       model_id: "gemma4:31b"
       num_ctx: 8192    # 8K — max observed usage is 5.4K tokens; saves 9GB KV cache vs 32K
     # Applied only when --official-mode is set.
+    # reasoning_effort="low" is in SAIR's evaluation_models.json for this
+    # model, but with 10KB cheatsheets the reasoning tokens fully exhaust
+    # the 8192 budget before any visible content is emitted (content="",
+    # finish_reason="length"). Temporarily disabled while we raise this
+    # upstream; toggle back on if SAIR fixes the doubled-budget retry.
     official_params:
       provider: "novita/bf16"
-      reasoning_effort: "low"
+      # reasoning_effort: "low"
       seed: 0
       max_tokens: 8192
       # Additional providers appended to provider.order when
       # --official-fallbacks is set. Novita has been in a persistent
       # "degraded" state (status=-2) with server_overload errors;
-      # these are the healthy bf16 alternatives for the same model.
-      fallback_providers: ["Parasail", "Venice"]
+      # the bf16 alternatives (Parasail, Venice) absorb most of the load.
+      # AkashML serves the same model at fp8 — meaningful quantization
+      # divergence from strict SAIR spec (bf16), but the only healthy
+      # fallback left when all three bf16 providers rate-limit at once.
+      # Entries support `slug/quant` syntax so the quantizations filter
+      # unions across providers.
+      fallback_providers: ["Parasail", "Venice", "AkashML/fp8"]
 
   llama-3.3-70b:
     display_name: "Meta: Llama 3.3 70B Instruct"

@@ -395,18 +395,29 @@ def build_official_overrides(model_config: dict, allow_fallbacks: bool = False) 
     if provider_tag:
         slug, quant = _parse_provider_tag(provider_tag)
         order = [_provider_display_name(slug)]
+        quants: list[str] = [quant] if quant else []
         # When fallbacks are enabled, append any `fallback_providers` from
         # the official_params block. This is the only way OpenRouter will
         # actually route past a rate-limited primary — `allow_fallbacks:
         # true` alone with a single-item order does nothing.
+        #
+        # Fallback entries support the same `slug/quant` syntax as the
+        # primary provider; any distinct quant values are unioned into the
+        # `quantizations` filter so mixed-quant fallback pools (e.g. three
+        # bf16 providers plus an fp8 alternative) all get through. Without
+        # this, a stricter quant filter would silently exclude any fallback
+        # served under a different quantization.
         if allow_fallbacks:
             for fb in params.get("fallback_providers", []):
-                name = _provider_display_name(fb)
+                fb_slug, fb_quant = _parse_provider_tag(fb)
+                name = _provider_display_name(fb_slug)
                 if name not in order:
                     order.append(name)
+                if fb_quant and fb_quant not in quants:
+                    quants.append(fb_quant)
         prov: dict = {"order": order}
-        if quant:
-            prov["quantizations"] = [quant]
+        if quants:
+            prov["quantizations"] = quants
         prov["allow_fallbacks"] = allow_fallbacks
         overrides["provider"] = prov
 
