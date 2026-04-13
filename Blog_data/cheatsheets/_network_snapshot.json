@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-12T12:56:11.693956+00:00",
+  "fetched_at": "2026-04-13T06:12:20.740712+00:00",
   "source_url": "https://server-9527.sair.foundation/api/contributor-network/graph?competition=mathematics-distillation-challenge-equational-theories-stage1",
   "data": {
     "competitions": [
@@ -27,6 +27,18 @@
         "type": "individual",
         "name": "Adam Betka",
         "avatarUrl": "https://lh3.googleusercontent.com/a/ACg8ocJRrn-2cMJMQDKXS3v5LFGF440lzxYwvwGhJbO-U4SBXg9P7BCi=s96-c"
+      },
+      {
+        "id": "U-2b0c83a4f7ac06dfbdf09ff11a7e275701f78d53",
+        "type": "individual",
+        "name": "Sven Benson",
+        "avatarUrl": "https://lh3.googleusercontent.com/a/ACg8ocJN7BLxUnIU5cApUWcm-z82ecFdqLFZzN4N2zwLNqW_8HfSd4sj=s96-c"
+      },
+      {
+        "id": "U-2c1bbcd7c77ad40cad30c39880a9e3546bea554d",
+        "type": "individual",
+        "name": "Arjun Garg",
+        "avatarUrl": "https://lh3.googleusercontent.com/a/ACg8ocLV8hFEmFo8wM3edi1t9_boA4uJ3MSDHOCnLNAsztwwRIYNGJV9=s96-c"
       },
       {
         "id": "U-2f58026122e9cb05fc666d3b75e11beddbecdf82",
@@ -561,6 +573,45 @@
         "lineageDepth": 0,
         "referencedCount": 0,
         "favoriteCount": 0
+      },
+      {
+        "shareItemId": "si_0fcbceb6-6bd6-4e32-aa7e-d55893523435",
+        "publicCode": "EQT010001",
+        "competitionId": "mathematics-distillation-challenge-equational-theories-stage1",
+        "entityId": "U-2b0c83a4f7ac06dfbdf09ff11a7e275701f78d53",
+        "cheatsheetTitle": "IR3",
+        "publishedAt": "2026-04-12T16:10:17Z",
+        "visibilityStatus": "active",
+        "rootShareItemId": "si_0fcbceb6-6bd6-4e32-aa7e-d55893523435",
+        "lineageDepth": 0,
+        "referencedCount": 0,
+        "favoriteCount": 0
+      },
+      {
+        "shareItemId": "si_52d6e31e-e4ba-44c8-b18d-b0b690345c1b",
+        "publicCode": "EQT010002",
+        "competitionId": "mathematics-distillation-challenge-equational-theories-stage1",
+        "entityId": "U-2b0c83a4f7ac06dfbdf09ff11a7e275701f78d53",
+        "cheatsheetTitle": "IRvNew2short",
+        "publishedAt": "2026-04-12T20:54:32Z",
+        "visibilityStatus": "active",
+        "rootShareItemId": "si_52d6e31e-e4ba-44c8-b18d-b0b690345c1b",
+        "lineageDepth": 0,
+        "referencedCount": 0,
+        "favoriteCount": 0
+      },
+      {
+        "shareItemId": "si_1c0c90f8-ab6b-44d5-aa97-e54d9f1e3a97",
+        "publicCode": "EQT010003",
+        "competitionId": "mathematics-distillation-challenge-equational-theories-stage1",
+        "entityId": "U-2c1bbcd7c77ad40cad30c39880a9e3546bea554d",
+        "cheatsheetTitle": "bank_lookup_v5",
+        "publishedAt": "2026-04-13T03:34:39Z",
+        "visibilityStatus": "active",
+        "rootShareItemId": "si_1c0c90f8-ab6b-44d5-aa97-e54d9f1e3a97",
+        "lineageDepth": 0,
+        "referencedCount": 0,
+        "favoriteCount": 0
       }
     ],
     "relations": [
@@ -582,10 +633,10 @@
     ],
     "meta": {
       "competitionCount": 1,
-      "entityCount": 18,
-      "itemCount": 34,
+      "entityCount": 20,
+      "itemCount": 37,
       "relationCount": 3,
-      "generatedAt": "2026-04-12T12:56:11Z",
+      "generatedAt": "2026-04-13T06:12:20Z",
       "truncated": false
     }
   }

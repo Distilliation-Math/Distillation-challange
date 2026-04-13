@@ -2,7 +2,7 @@
   "channel": "Math Distillation Challenge - equational theories",
   "channel_id": 13,
   "topic": "general chat",
-  "message_count": 67,
+  "message_count": 69,
   "messages": [
     {
       "id": 341,
@@ -1276,6 +1276,58 @@
       "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
       "content_type": "text/html",
       "date": "2026-04-11T17:12:49.000Z"
+    },
+    {
+      "id": 1544,
+      "sender_id": 117,
+      "content": "<p><span class=\"user-mention silent\" data-user-id=\"188\">Gavin Litchfield</span> <a href=\"#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic//near/1539\">said</a>:</p>\n<blockquote>\n<hr>\n<p>After a few days of testing I'm torn on the 8k token limit.</p>\n<p>I'm seeing a significant performance gap between 8k and 16k on gpt-oss-120b and gemma-4-31b. At 8k, a meaningful fraction of calls silently fail — the models burn through their budget on internal reasoning before producing any visible output, so you get an empty <code>final</code> channel and an unparseable response.</p>\n<p>The practical effect is that the challenge at 8k feels less like \"teach small models to solve equational implication problems\" and more like \"prevent reasoning models from over-thinking themselves out of an answer.\" At 16k, the problem shifts back toward the actual math.</p>\n<p>If the hosts are open to revisiting this detail, it would meaningfully change where I focus my effort over the next few days. Curious whether others are running into the same thing.</p>\n<p>Thanks</p>\n</blockquote>\n<p>I haven't been testing it recently but I got a sense this would happen after checking the official eval setup. even at higher token budget, a lot times it is not enough for the LLMs to finish it's reasoning + following the procedure in the cheat sheet.</p>",
+      "recipient_id": 43,
+      "timestamp": 1776052063,
+      "client": "ZulipElectron",
+      "subject": "general chat",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Gan W.",
+      "sender_email": "user117@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/62f195752f4b8a9ab7928b0e6d43725e586f89c5.png",
+      "content_type": "text/html",
+      "date": "2026-04-13T03:47:43.000Z"
+    },
+    {
+      "id": 1545,
+      "sender_id": 117,
+      "content": "<p>Some of my thoughts on the objective of this competition and the eval pipeline:</p>\n<p>The objective is clearly not only about the knowledge compression, that task was already done in the ML effort part of the ETP project. </p>\n<p>So if the competition focuses more on finding an efficient and effective black-box prompt optimization technique on math reasoning task that generalize across data. Then there is not much value in having a weighted metric across models. In practice, if this generalizable (across data) technique exists, no one would use the same optimized prompt across models. We would always optimize a specific prompt for each model.</p>\n<p>An analogy would be: There are mathematicians all over the world that speaks different languages: English, Chinese, Spanish, Russian... It's less likely that there exists a universal language that we can communicate with all these mathematicians and expect them to understand equally well. It makes better sense to communicate with each of them in their native tongue.</p>\n<p>So what I'd suggest is: <br>\nWe can stick with one model, gpt-oss-120b at low reasoning at 0 temp and maximum max_completion_tokens = 64k (half of it's full context length). Give it enough budge to complete reasoning + procedure following, at low reasoning effort, it would rarely reach near this limit but just in case.</p>\n<p>This way, it also saves the community's cost on running our search algorithm by 2/3.</p>\n<p>Once the prompt optimization method is proven to be effective and generalizable for this one model, it can be easily adapted for other models as well, just plug and play.</p>\n<p>Anyway just a thought to consider. <span class=\"user-mention\" data-user-id=\"25\">@YZ</span></p>",
+      "recipient_id": 43,
+      "timestamp": 1776052073,
+      "client": "ZulipElectron",
+      "subject": "general chat",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Gan W.",
+      "sender_email": "user117@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/62f195752f4b8a9ab7928b0e6d43725e586f89c5.png",
+      "content_type": "text/html",
+      "date": "2026-04-13T03:47:53.000Z"
     }
   ]
 }
