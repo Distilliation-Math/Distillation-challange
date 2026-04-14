@@ -1,6 +1,6 @@
 # Community Cheatsheets — Index
 
-_Generated from `_network_snapshot.json` (fetched 2026-04-12). 34 public + 0 hidden = 34 total._
+_Generated from `_network_snapshot.json` (fetched 2026-04-13). 37 public + 0 hidden = 37 total._
 
 Source: <https://competition.sair.foundation/contributor-network?competition=mathematics-distillation-challenge-equational-theories-stage1>
 
@@ -40,3 +40,6 @@ Source: <https://competition.sair.foundation/contributor-network?competition=mat
 | `EQT01-000032` | ZPY v3.9.4 Zer00logy/Zero-Ology Ternary 6GemLogic | haha8888haha8888 | 0 | 0 | 2026-04-08 | [✓](EQT01-000032.json) |
 | `EQT01-000033` | v23c | omegaestable | 0 | 0 | 2026-04-11 | [✓](EQT01-000033.json) |
 | `EQT010000` | a_1 | back3 | 0 | 0 | 2026-04-12 | [✓](EQT010000.json) |
+| `EQT010001` | IR3 | Sven Benson | 0 | 0 | 2026-04-12 | [✓](EQT010001.json) |
+| `EQT010002` | IRvNew2short | Sven Benson | 0 | 0 | 2026-04-12 | [✓](EQT010002.json) |
+| `EQT010003` | bank_lookup_v5 | Arjun Garg | 0 | 0 | 2026-04-13 | [✓](EQT010003.json) |
