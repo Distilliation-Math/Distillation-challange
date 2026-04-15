@@ -1,0 +1,43 @@
+{
+  "fetched_at": "2026-04-15T16:56:05.611785+00:00",
+  "publicCode": "EQT01-000049",
+  "source_url": "https://server-9527.sair.foundation/api/contributor-network/by-code/EQT01-000049",
+  "data": {
+    "cnItemId": "si_50cb9798-ffcc-49d8-ade0-4639edf508b8",
+    "parentCnItemId": null,
+    "rootCnItemId": "si_50cb9798-ffcc-49d8-ade0-4639edf508b8",
+    "shareItemId": "si_50cb9798-ffcc-49d8-ade0-4639edf508b8",
+    "parentShareItemId": null,
+    "rootShareItemId": "si_50cb9798-ffcc-49d8-ade0-4639edf508b8",
+    "competitionId": "mathematics-distillation-challenge-equational-theories-stage1",
+    "competitionTitle": "",
+    "entityType": "individual",
+    "entityId": "U-abe27ea62b01080a664195cfdcd5d23de8f92021",
+    "entityName": "wubing",
+    "entityAvatarUrl": "",
+    "cheatsheetTitle": "EXAMPLE: balanced",
+    "cheatsheetContent": "---\n## CHEAT SHEET: EQUATIONAL THEORIES IMPLICATION (MAGMAS)\n### Version 1 - Balanced Hybrid (Proof + Counterexample Discipline)\n\n### 1. Task Definition (Always Keep This Fixed)\n- You are given:\n  - Equation 1 (assumption law): `L1 = R1`\n  - Equation 2 (target law): `L2 = R2`\n- Goal:\n  - Decide whether `Eq1 => Eq2` over **all magmas** (all binary operations on all non-empty sets).\n- Output policy:\n  - If TRUE: provide a proof sketch.\n  - If FALSE: provide a finite counterexample magma and verify both equations.\n\n---\n### 2. Canonical Parsing & Normalization\n- Parse each term as a binary tree over `*`.\n- Remove irrelevant whitespace and redundant outer parentheses.\n- Canonicalize variable names by first appearance (`_v0, _v1, ...`) before structural comparison.\n- Compare equations up to:\n  - side swap (`A=B` same as `B=A`),\n  - variable renaming,\n  - alpha-equivalent tree shape.\n\nWhy: many implication wins/fails can be detected by syntax-level invariants before heavy search.\n\n---\n### 3. Fast Decision Filters (Cheap, High Impact)\n### A. Immediate TRUE patterns\n- Target reflexivity: `L2` and `R2` are syntactically identical (tautological law).\n- Eq2 is Eq1 after variable renaming / side swap.\n- Eq1 collapses to a very strong/projection-like law that forces trivial behavior.\n\n### B. Immediate FALSE patterns\n- Find one finite magma where Eq1 holds and Eq2 fails.\n- If a model checker/candidate search returns a verified counterexample, stop and answer FALSE.\n\nRule: a single valid counterexample is decisive; no probability adjustment can override it.\n\n---\n### 4. Proof-Oriented Strategy (for TRUE)\nUse this order:\n\n1. **Derivation by substitution/rewrite**\n- Build bidirectional rewrite rules from Eq1: `L1 <-> R1`.\n- Attempt to rewrite `L2` to `R2` (or both to a common normal form).\n- If reachable, produce explicit derivation steps.\n\n2. **Property extraction from Eq1**\n- Check whether Eq1 enforces known strong families:\n  - projection-like behavior,\n  - absorption-like collapse,\n  - commutativity/associativity/idempotence-type constraints.\n- If Eq2 is a weaker consequence of extracted properties, prove via property chain.\n\n3. **Universalization/trivialization argument**\n- If Eq1 forces all terms to collapse to one value/class, then all equations in that class follow.\n- State the forcing mechanism clearly (do not just claim “obvious”).\n\nProof style:\n- Keep concise but explicit.\n- Name substitutions and the instantiated variables used.\n\n---\n### 5. Counterexample-Oriented Strategy (for FALSE)\nTry small magmas first (size 2 -> 3 -> 4), then structured families.\n\n### A. Candidate families to enumerate\n- All 2x2 tables (exhaustive).\n- Left-zero / right-zero / constant operations.\n- Projections (`x*y=x`, `x*y=y`) and near-projections.\n- Boolean-like tables (`xor`, `and`, `or`) on small domains.\n- Small modular-linear forms (e.g., `x*y = a x + b y + c (mod n)`).\n- Random and hill-climbed tables (when deterministic families fail).\n\n### B. Validation protocol (mandatory)\nFor a found table, verify:\n1. Eq1 is true for all assignments of its variables.\n2. Eq2 is false for at least one assignment (show witness assignment).\n\nReturn format for counterexample:\n- Set/domain.\n- Full operation table.\n- Explicit Eq1 check summary.\n- Explicit Eq2 violating assignment and evaluation.\n\n---\n### 6. Heuristic Signals (Use Only as Guidance)\nIf proof/counterexample not yet found, prioritize search using these signals:\n\n- **Subterm coverage**: if Eq2 subterms are mostly contained in Eq1 subterms, implication is more plausible.\n- **Variable overlap ratio**: larger overlap suggests stronger relation.\n- **Complexity gradient**: Eq1 structurally stronger/simpler constraints may imply a more complex Eq2 less often unless forced.\n- **Law-type strength ordering** (rough): projection/degeneracy > identification/permutation > generic.\n- **Rewrite reachability overlap**: if Eq2 sides fall into same Eq1-rewrite basin, likely TRUE.\n\nImportant:\n- Heuristics rank candidates; they do not replace proof/counterexample.\n\n---\n### 7. Minimal Solve Pipeline (Recommended)\n1. Parse + canonicalize.\n2. Run fast TRUE filters.\n3. Try directed rewrite proof (bounded depth).\n4. Run finite model search for counterexample.\n5. If undecided, use heuristic ranking to choose next rewrites/models.\n6. Return strict final verdict with proof or counterexample.\n\n---\n### 8. Common Failure Modes to Avoid\n- Declaring TRUE without an actual derivation chain.\n- Declaring FALSE without a validated table + violating assignment.\n- Mixing heuristic confidence with formal validity.\n- Forgetting side swap/renaming equivalence.\n- Returning malformed output sections.\n\n---\n### 9. Output Template (Keep Deterministic)\nUse this exact structure in final model response:\n\n- `VERDICT: TRUE|FALSE`\n- `MODEL_NAME: ...`\n- `REASONING: ...`\n- `PROOF: ...` (required if TRUE, else empty)\n- `COUNTEREXAMPLE: ...` (required if FALSE, else empty)\n- `OUTPUT_RESULT: ...`\n\n---\n### 10. Distilled Practice Rule\nWhen uncertain:\n- Prefer **searching for a counterexample** first.\n- If no counterexample appears in strong small-model families, attempt a structured proof.\n- Never return a final verdict without one of:\n  - a derivation/proof witness (TRUE), or\n  - a model witness (FALSE).\n---",
+    "publishedAt": "2026-04-15T08:35:46Z",
+    "visibilityStatus": "deleted",
+    "lineageDepth": 0,
+    "lineagePathSnapshot": [
+      {
+        "shareItemId": "si_50cb9798-ffcc-49d8-ade0-4639edf508b8",
+        "entityName": "wubing",
+        "publishedAt": "2026-04-15T08:35:46Z"
+      }
+    ],
+    "isDerived": false,
+    "itemType": "Original",
+    "sourceCheatsheetId": "cs_7406d5a4-1f48-4b61-a32a-4c1597b65bb6",
+    "publicCode": "EQT01-000049",
+    "remark": "",
+    "likeCount": 0,
+    "favoriteCount": 0,
+    "referencedCount": 0,
+    "commentCount": 0,
+    "canComment": false,
+    "viewerHasLiked": false,
+    "viewerHasFavorited": false
+  }
+}

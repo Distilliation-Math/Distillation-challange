@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-15T05:59:02.280384+00:00",
+  "fetched_at": "2026-04-15T16:55:38.689571+00:00",
   "source_url": "https://server-9527.sair.foundation/api/contributor-network/graph?competition=mathematics-distillation-challenge-equational-theories-stage1",
   "data": {
     "competitions": [
@@ -71,6 +71,12 @@
         "avatarUrl": "https://lh3.googleusercontent.com/a/ACg8ocIJFuwcb5hzR0vGfC7wUMcsXhDxJ_ZnREAqnALgJqht7K0T8w=s96-c"
       },
       {
+        "id": "U-7ccb5c317299ce3f2cebd3dfc3e40401e550faa2",
+        "type": "individual",
+        "name": "Israel Cazares",
+        "avatarUrl": "https://lh3.googleusercontent.com/a/ACg8ocKl07oVS_nbbLHjIn10YEOG--6cwmPcNV5uFauMStunkk2ddIZG=s96-c"
+      },
+      {
         "id": "U-8da7a3ad4b6c50e2ca12bb2104efc9f93facd95d",
         "type": "individual",
         "name": "Tom Chan",
@@ -93,6 +99,12 @@
         "type": "individual",
         "name": "Adam McKenna",
         "avatarUrl": "https://avatars.githubusercontent.com/u/3866398?v=4"
+      },
+      {
+        "id": "U-abe27ea62b01080a664195cfdcd5d23de8f92021",
+        "type": "individual",
+        "name": "wubing",
+        "avatarUrl": null
       },
       {
         "id": "U-b2d8a87bf5b9f39c5911920665ef59416f04e6d3",
@@ -499,7 +511,7 @@
         "rootShareItemId": "cn_ff389b293f214609b7bdb056d5c25faa",
         "lineageDepth": 0,
         "referencedCount": 0,
-        "favoriteCount": 1
+        "favoriteCount": 2
       },
       {
         "shareItemId": "cn_47c66edc365b48ed9d46938ea86fe730",
@@ -760,6 +772,45 @@
         "lineageDepth": 0,
         "referencedCount": 0,
         "favoriteCount": 0
+      },
+      {
+        "shareItemId": "si_bc13f347-5b36-46ce-beaf-49878cde564e",
+        "publicCode": "EQT01-000048",
+        "competitionId": "mathematics-distillation-challenge-equational-theories-stage1",
+        "entityId": "U-7ccb5c317299ce3f2cebd3dfc3e40401e550faa2",
+        "cheatsheetTitle": "Cazares Variant AN38",
+        "publishedAt": "2026-04-15T07:52:35Z",
+        "visibilityStatus": "active",
+        "rootShareItemId": "si_bc13f347-5b36-46ce-beaf-49878cde564e",
+        "lineageDepth": 0,
+        "referencedCount": 0,
+        "favoriteCount": 0
+      },
+      {
+        "shareItemId": "si_50cb9798-ffcc-49d8-ade0-4639edf508b8",
+        "publicCode": "EQT01-000049",
+        "competitionId": "mathematics-distillation-challenge-equational-theories-stage1",
+        "entityId": "U-abe27ea62b01080a664195cfdcd5d23de8f92021",
+        "cheatsheetTitle": "EXAMPLE: balanced",
+        "publishedAt": "2026-04-15T08:35:46Z",
+        "visibilityStatus": "deleted",
+        "rootShareItemId": "si_50cb9798-ffcc-49d8-ade0-4639edf508b8",
+        "lineageDepth": 0,
+        "referencedCount": 0,
+        "favoriteCount": 0
+      },
+      {
+        "shareItemId": "si_dfb2d8a6-a45c-4596-9d3f-358f90febf7c",
+        "publicCode": "EQT01-000050",
+        "competitionId": "mathematics-distillation-challenge-equational-theories-stage1",
+        "entityId": "U-abe27ea62b01080a664195cfdcd5d23de8f92021",
+        "cheatsheetTitle": "EXAMPLE: balanced-v3f",
+        "publishedAt": "2026-04-15T09:50:07Z",
+        "visibilityStatus": "active",
+        "rootShareItemId": "si_dfb2d8a6-a45c-4596-9d3f-358f90febf7c",
+        "lineageDepth": 0,
+        "referencedCount": 0,
+        "favoriteCount": 0
       }
     ],
     "relations": [
@@ -781,10 +832,10 @@
     ],
     "meta": {
       "competitionCount": 1,
-      "entityCount": 23,
-      "itemCount": 47,
+      "entityCount": 25,
+      "itemCount": 50,
       "relationCount": 3,
-      "generatedAt": "2026-04-15T05:59:02Z",
+      "generatedAt": "2026-04-15T16:55:38Z",
       "truncated": false
     }
   }

@@ -1,6 +1,6 @@
 # Community Cheatsheets — Index
 
-_Generated from `_network_snapshot.json` (fetched 2026-04-15). 47 public + 0 hidden = 47 total._
+_Generated from `_network_snapshot.json` (fetched 2026-04-15). 50 public + 0 hidden = 50 total._
 
 Source: <https://competition.sair.foundation/contributor-network?competition=mathematics-distillation-challenge-equational-theories-stage1>
 
@@ -11,6 +11,7 @@ Source: <https://competition.sair.foundation/contributor-network?competition=mat
 | `EQT01-000003` | one-way-implication-guard | owen | 2 | 0 | 2026-04-01 | [✓](EQT01-000003.json) |
 | `EQT01-000008` | TEST3.5 V+ | Shailesh P | 2 | 0 | 2026-04-01 | [✓](EQT01-000008.json) |
 | `EQT01-000012` | 3.15 | Jiaxuan Zou | 2 | 0 | 2026-04-03 | [✓](EQT01-000012.json) |
+| `EQT01-000027` | Stage 1 Prompt - Simon Watts | SimonRJ | 2 | 0 | 2026-04-07 | [✓](EQT01-000027.json) |
 | `EQT01-000001` | proof-skeleton-enforcer | Emily | 1 | 0 | 2026-04-01 | [✓](EQT01-000001.json) |
 | `EQT01-000002` | normalize-then-derive | owen | 1 | 0 | 2026-04-01 | [✓](EQT01-000002.json) |
 | `EQT01-000004` | syntax-then-semantics | Emily | 1 | 0 | 2026-04-01 | [✓](EQT01-000004.json) |
@@ -19,7 +20,6 @@ Source: <https://competition.sair.foundation/contributor-network?competition=mat
 | `EQT01-000020` | Zeta999oldfffZPY Zer00logy/Zero-ology Zeropythfon | haha8888haha8888 | 1 | 0 | 2026-04-06 | [✓](EQT01-000020.json) |
 | `EQT01-000024` | Test 6 - Simon Watts | SimonRJ | 1 | 0 | 2026-04-06 | [✓](EQT01-000024.json) |
 | `EQT01-000025` | Test 7 - Simon Watts | SimonRJ | 1 | 0 | 2026-04-06 | [✓](EQT01-000025.json) |
-| `EQT01-000027` | Stage 1 Prompt - Simon Watts | SimonRJ | 1 | 0 | 2026-04-07 | [✓](EQT01-000027.json) |
 | `EQT01-000028` | v1.05 | Tom Chan | 1 | 0 | 2026-04-07 | [✓](EQT01-000028.json) |
 | `EQT01-000030` | ZPY v3.9.3 Zer00logy/Zero-ology Ternary 6gemlogic | haha8888haha8888 | 1 | 0 | 2026-04-08 | [✓](EQT01-000030.json) |
 | `EQT01-000015` | 64_hard400 | Adam Betka | 0 | 1 | 2026-04-03 | [✓](EQT01-000015.json) |
@@ -53,3 +53,6 @@ Source: <https://competition.sair.foundation/contributor-network?competition=mat
 | `EQT01-000045` | ZPY v4.2.22 Zer00logy/Zero-Ology Ternary6GemLogic | haha8888haha8888 | 0 | 0 | 2026-04-14 | [✓](EQT01-000045.json) |
 | `EQT01-000046` | cs004 | Chi Po Choi | 0 | 0 | 2026-04-15 | [✓](EQT01-000046.json) |
 | `EQT01-000047` | v26c | omegaestable | 0 | 0 | 2026-04-15 | [✓](EQT01-000047.json) |
+| `EQT01-000048` | Cazares Variant AN38 | Israel Cazares | 0 | 0 | 2026-04-15 | [✓](EQT01-000048.json) |
+| `EQT01-000049` | EXAMPLE: balanced | wubing | 0 | 0 | 2026-04-15 | [✓](EQT01-000049.json) |
+| `EQT01-000050` | EXAMPLE: balanced-v3f | wubing | 0 | 0 | 2026-04-15 | [✓](EQT01-000050.json) |
