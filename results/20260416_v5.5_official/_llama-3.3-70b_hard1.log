@@ -1,0 +1,107 @@
+Loaded 69 problems from 'hard1'
+Prompt template: cheatsheets/v5.5_10KB_cheatsheet.md (9926 bytes)
+Sample rendered prompt (9838 chars):
+---
+You are solving equational implication problems over magmas (set + one binary operation *, no other axioms).
+Task: does x = y * (y * ((x * y) * x)) imply x * y = ((z * x) * w) * y over ALL magmas?
+
+OUTPUT FORMAT (mandatory)
+- Plain text only.
+- No extra headings or notes.
+- `VERDICT:` must be exactl...
+---
+Model: Meta: Llama 3.3 70B Instruct | backend: openrouter | model_id: meta-llama/llama-3.3-70b-instruct
+[official-mode] overrides for llama-3.3-70b: {"provider":{"order":["DeepInfra","Inceptron","AkashML","Together"],"quantizations":["fp8"],"allow_fallbacks":true},"reasoning":{"effort":"none"},"seed":0,"max_tokens":8192}
+  [1/69] hard1_0010: OK (expected=False, got=False, $0.0003, 1.9s)
+  [2/69] hard1_0007: WRONG (expected=True, got=False, $0.0003, 1.9s)
+  [3/69] hard1_0043: OK (expected=False, got=False, $0.0003, 4.5s)
+  [4/69] hard1_0068: OK (expected=False, got=False, $0.0003, 4.7s)
+  [5/69] hard1_0037: OK (expected=False, got=False, $0.0003, 4.7s)
+  [6/69] hard1_0020: OK (expected=False, got=False, $0.0003, 7.3s)
+  [7/69] hard1_0004: OK (expected=False, got=False, $0.0003, 7.3s)
+  [8/69] hard1_0055: OK (expected=False, got=False, $0.0003, 8.8s)
+  [9/69] hard1_0059: WRONG (expected=True, got=False, $0.0003, 8.9s)
+  [10/69] hard1_0017: OK (expected=False, got=False, $0.0003, 10.1s)
+  [11/69] hard1_0040: WRONG (expected=True, got=False, $0.0004, 10.2s)
+  [12/69] hard1_0034: WRONG (expected=True, got=False, $0.0004, 10.5s)
+  [13/69] hard1_0056: WRONG (expected=True, got=False, $0.0003, 11.3s)
+  [14/69] hard1_0027: WRONG (expected=True, got=False, $0.0004, 13.1s)
+  [15/69] hard1_0013: WRONG (expected=True, got=False, $0.0004, 13.2s)
+  [16/69] hard1_0014: OK (expected=False, got=False, $0.0003, 14.4s)
+  [17/69] hard1_0065: WRONG (expected=True, got=False, $0.0004, 15.4s)
+  [18/69] hard1_0062: OK (expected=False, got=False, $0.0004, 15.9s)
+  [19/69] hard1_0022: OK (expected=False, got=False, $0.0004, 17.9s)
+  [20/69] hard1_0053: OK (expected=False, got=False, $0.0003, 18.2s)
+  [21/69] hard1_0001: OK (expected=False, got=False, $0.0004, 19.4s)
+  [22/69] hard1_0041: WRONG (expected=True, got=False, $0.0003, 19.6s)
+  [23/69] hard1_0011: OK (expected=False, got=False, $0.0003, 19.6s)
+  [24/69] hard1_0050: WRONG (expected=True, got=False, $0.0004, 20.2s)
+  [25/69] hard1_0066: OK (expected=False, got=False, $0.0003, 21.5s)
+  [26/69] hard1_0038: OK (expected=False, got=False, $0.0003, 21.6s)
+  [27/69] hard1_0008: OK (expected=False, got=False, $0.0003, 22.1s)
+  [28/69] hard1_0005: OK (expected=False, got=False, $0.0003, 23.2s)
+  [29/69] hard1_0026: OK (expected=False, got=False, $0.0003, 23.6s)
+  [30/69] hard1_0051: OK (expected=False, got=False, $0.0003, 26.0s)
+  [31/69] hard1_0031: OK (expected=False, got=False, $0.0004, 26.0s)
+  [32/69] hard1_0047: OK (expected=False, got=False, $0.0004, 26.1s)
+  [33/69] hard1_0063: WRONG (expected=True, got=False, $0.0004, 26.2s)
+  [34/69] hard1_0002: OK (expected=False, got=False, $0.0003, 27.1s)
+  [35/69] hard1_0025: OK (expected=False, got=False, $0.0003, 27.9s)
+  [36/69] hard1_0044: WRONG (expected=True, got=False, $0.0004, 28.8s)
+  [37/69] hard1_0018: WRONG (expected=True, got=False, $0.0003, 29.1s)
+  [38/69] hard1_0048: OK (expected=False, got=False, $0.0003, 29.9s)
+  [39/69] hard1_0021: OK (expected=False, got=False, $0.0004, 31.4s)
+  [40/69] hard1_0035: WRONG (expected=True, got=False, $0.0004, 33.0s)
+  [41/69] hard1_0060: WRONG (expected=True, got=False, $0.0004, 34.1s)
+  [42/69] hard1_0032: OK (expected=False, got=False, $0.0004, 35.1s)
+  [43/69] hard1_0012: OK (expected=False, got=False, $0.0003, 36.2s)
+  [44/69] hard1_0057: OK (expected=False, got=False, $0.0004, 37.5s)
+  [45/69] hard1_0023: WRONG (expected=True, got=False, $0.0004, 39.0s)
+  [46/69] hard1_0009: OK (expected=False, got=False, $0.0003, 42.2s)
+  [47/69] hard1_0015: OK (expected=False, got=False, $0.0004, 44.6s)
+  [48/69] hard1_0067: WRONG (expected=True, got=False, $0.0004, 45.6s)
+  [49/69] hard1_0045: OK (expected=False, got=False, $0.0004, 46.7s)
+  [50/69] hard1_0006: OK (expected=False, got=False, $0.0003, 47.9s)
+  [51/69] hard1_0042: OK (expected=False, got=False, $0.0004, 48.3s)
+  [52/69] hard1_0054: WRONG (expected=True, got=False, $0.0004, 48.6s)
+  [53/69] hard1_0061: WRONG (expected=True, got=False, $0.0003, 49.5s)
+  [54/69] hard1_0003: WRONG (expected=True, got=False, $0.0003, 49.9s)
+  [55/69] hard1_0019: OK (expected=False, got=False, $0.0003, 50.7s)
+  [56/69] hard1_0033: OK (expected=False, got=False, $0.0003, 51.5s)
+  [57/69] hard1_0024: OK (expected=False, got=False, $0.0003, 52.7s)
+  [58/69] hard1_0039: OK (expected=False, got=False, $0.0004, 53.7s)
+  [59/69] hard1_0036: OK (expected=False, got=False, $0.0004, 54.0s)
+  [60/69] hard1_0046: WRONG (expected=True, got=False, $0.0003, 55.2s)
+  [61/69] hard1_0058: OK (expected=False, got=False, $0.0003, 55.9s)
+  [62/69] hard1_0052: WRONG (expected=True, got=False, $0.0006, 56.3s)
+  [63/69] hard1_0049: OK (expected=False, got=False, $0.0004, 56.6s)
+  [64/69] hard1_0028: OK (expected=False, got=False, $0.0006, 58.1s)
+  [65/69] hard1_0030: OK (expected=False, got=False, $0.0004, 59.1s)
+  [66/69] hard1_0016: OK (expected=False, got=False, $0.0004, 61.1s)
+  [67/69] hard1_0069: WRONG (expected=True, got=False, $0.0006, 62.1s)
+  [68/69] hard1_0029: OK (expected=False, got=False, $0.0005, 68.7s)
+  [69/69] hard1_0064: WRONG (expected=True, got=False, $0.0006, 103.6s)
+
+============================================================
+  Model:       llama-3.3-70b (openrouter)
+  Dataset:     hard1
+  Prompt:      cheatsheets/v5.5_10KB_cheatsheet.md
+============================================================
+  Total problems:     69
+  Correct:            45/69 (65.2%)
+  Wrong:              24
+  Parse errors:       0
+  ---
+  TRUE→TRUE:          0
+  TRUE→FALSE:         24  (missed implications)
+  FALSE→TRUE:         0  (confabulations)
+  FALSE→FALSE:        45
+  ---
+  Total cost:         $0.0251
+  Total tokens:       213632 in / 11706 out
+  Avg latency:        32.0s
+============================================================
+
+
+Results written to: results/20260416_v5.5_official/llama-3.3-70b_openrouter_hard1_20260416_024057.csv
+Reasoning written to: results/20260416_v5.5_official/llama-3.3-70b_openrouter_hard1_20260416_024057.json
