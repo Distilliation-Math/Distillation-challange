@@ -1,0 +1,70 @@
+problem_id,expected,predicted,correct,parse_ok,raw_verdict,latency_s,input_tokens,output_tokens,cost_usd,response_text
+hard1_0001,False,False,True,True,labeled:FALSE,48.82,3096,176,0.000366,"VERDICT: FALSE\nREASONING: Apply STEP 1: EXTRACT FEATURES to Eq1: x = y * (y * ((x * y) * x)) and Eq2: x * y = ((z * x) * w) * y.\nFor Eq1, WORD = [x,y], PARITY = [odd,even], SET = {x,y}, AB = [1,2].\"
+hard1_0002,False,False,True,True,labeled:FALSE,63.04,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard1_0003,True,False,False,True,labeled:FALSE,92.16,3094,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard1_0004,False,False,True,True,labeled:FALSE,15.13,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard1_0005,False,False,True,True,labeled:FALSE,57.84,3096,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard1_0006,False,False,True,True,labeled:FALSE,85.73,3089,14,0.000313,VERDICT: FALSE\nREASONING: default false fallback
+hard1_0007,True,False,False,True,labeled:FALSE,144.88,3096,219,0.000380,"VERDICT: FALSE\nREASONING: Apply STEP 1. Eq1: x = (y * (y * (y * z))) * x, Eq2: x * y = z * (w * (w * y)). \nEq1 is bare: x = T where T = (y * (y * (y * z))) * x. \nx appears in T. \nApply STEP 2.8. \"
+hard1_0008,False,False,True,True,labeled:FALSE,52.36,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard1_0009,False,False,True,True,labeled:FALSE,80.17,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard1_0010,False,False,True,True,labeled:FALSE,12.92,3097,18,0.000315,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard1_0011,False,False,True,True,labeled:FALSE,54.06,3099,27,0.000319,VERDICT: FALSE\nREASONING: default false fallback \nNo decisive route fired in STEPs 2-6.
+hard1_0012,False,False,True,True,labeled:FALSE,77.78,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard1_0013,True,False,False,True,labeled:FALSE,27.15,3095,226,0.000382,"VERDICT: FALSE\nREASONING: Apply STEP 1 to extract features from Eq1: x * y = ((z * y) * x) * x and Eq2: x * y = y * (y * (y * y)). \nFor Eq1, WORD = [x, y, z, y, x, x], PARITY = [odd, even, odd], SET"
+hard1_0014,False,False,True,True,labeled:FALSE,74.14,3098,332,0.000416,"VERDICT: FALSE\nREASONING: Apply STEP 1. EXTRACT FEATURES to Eq1: x = (y * x) * (x * (x * z)). \nEq1 is not bare, so we cannot apply the bare-source rules directly. \nHowever, we can still analyze the"
+hard1_0015,False,False,True,True,labeled:FALSE,71.55,3096,18,0.000315,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard1_0016,False,False,True,True,labeled:FALSE,102.83,3099,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard1_0017,False,False,True,True,labeled:FALSE,18.32,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard1_0018,True,False,False,True,labeled:FALSE,75.98,3098,246,0.000389,"VERDICT: FALSE\nREASONING: Apply STEP 1 to extract features from Eq1: x = ((y * x) * y) * (z * z) and Eq2: x = x * (((x * y) * x) * y).\nFor Eq1, the leftmost variable is x, the rightmost variable is "
+hard1_0019,False,False,True,True,labeled:FALSE,92.20,3095,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard1_0020,False,False,True,True,labeled:FALSE,15.24,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard1_0021,False,False,True,True,labeled:FALSE,78.35,3094,226,0.000382,"VERDICT: FALSE\nREASONING: Apply STEP 1 to extract features from Eq1: x = y * ((y * x) * (x * y)) and Eq2: x = (y * (x * y)) * x.\nFor Eq1, the leftmost variable is x, the rightmost variable is y, WOR"
+hard1_0022,False,False,True,True,labeled:FALSE,41.33,3096,349,0.000421,"VERDICT: FALSE\nREASONING: Apply STEP 1. Eq1: x * y = (y * (y * x)) * x, Eq2: x * y = (x * y) * (x * y). \nEq1 is not bare, so we cannot apply the bare-source contradiction motifs or source-collapse l"
+hard1_0023,True,False,False,True,labeled:FALSE,169.15,3094,1218,0.000699,"VERDICT: FALSE\nREASONING: Apply STEP 2.6 Left projection. Eq1 is x = (x * y) * (z * z). This is bare: x = T where T = (x * y) * (z * z). \nMandatory check: T contains x, so we cannot apply left proje"
+hard1_0024,False,False,True,True,labeled:FALSE,95.29,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard1_0025,False,False,True,True,labeled:FALSE,64.97,3097,18,0.000315,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard1_0026,False,False,True,True,labeled:FALSE,58.10,3096,18,0.000315,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard1_0027,True,False,False,True,labeled:FALSE,27.15,3094,223,0.000381,"VERDICT: FALSE\nREASONING: Apply STEP 1 to extract features from Eq1: x = x * (y * (x * z)) and Eq2: x = ((x * y) * (z * w)) * u.\nFor Eq1, WORD = [x, y, x, z], PARITY = [odd, odd, odd, odd], SET = {x"
+hard1_0028,False,False,True,True,labeled:FALSE,146.96,3096,805,0.000567,"VERDICT: FALSE\nREASONING: To determine if the implication x * y = z * ((x * x) * y) implies x * (x * y) = (y * x) * y over all magmas, we must follow the steps outlined.\n\nFirst, let's analyze the g"
+hard1_0029,False,False,True,True,labeled:FALSE,83.80,3097,193,0.000371,"VERDICT: FALSE\nREASONING: Apply STEP 1. EXTRACT FEATURES to Eq1: x = (y * y) * ((z * x) * x) and Eq2: x * y = (y * (z * x)) * y.\nFor Eq1, WORD = [x, y, z], PARITY = [odd, even, odd], SET = {x, y, z}"
+hard1_0030,False,False,True,True,labeled:FALSE,12.86,3097,18,0.000315,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard1_0031,False,False,True,True,labeled:FALSE,37.14,3098,243,0.000388,"VERDICT: FALSE\nREASONING: Apply STEP 1 to Eq1: x = ((y * x) * x) * (x * z). \nEq1 is not bare, so we cannot apply the bare-source rules directly. \nApply STEP 3: \nFor Eq1, WORD = [y, x, x, x, z], PA"
+hard1_0032,False,False,True,True,labeled:FALSE,144.27,3094,779,0.000559,"VERDICT: FALSE\nREASONING: Apply STEP 1. EXTRACT FEATURES to Eq1: x = ((y * x) * x) * (x * z). \nEq1 is not bare, so we cannot apply the bare-source rules directly. \nHowever, we can still analyze the"
+hard1_0033,False,False,True,True,labeled:FALSE,94.45,3097,18,0.000315,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard1_0034,True,False,False,True,labeled:FALSE,15.51,3092,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard1_0035,True,False,False,True,labeled:FALSE,152.77,3097,1088,0.000658,"VERDICT: FALSE\nREASONING: Apply STEP 2.6: left projection. Eq1 is x = x * ((y * z) * (w * u)). Here, T = (y * z) * (w * u). The variables in T are {y, z, w, u}. T does not contain x. This forces a*b "
+hard1_0036,False,False,True,True,labeled:FALSE,87.91,3095,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard1_0037,False,False,True,True,labeled:FALSE,9.73,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard1_0038,False,False,True,True,labeled:FALSE,54.20,3095,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard1_0039,False,False,True,True,labeled:FALSE,155.10,3097,651,0.000518,"VERDICT: FALSE\nREASONING: Apply STEP 1. Eq1: x = x * ((x * y) * (z * z)), Eq2: x = x * (((x * y) * x) * y). \nExtract features for Eq1 and Eq2. \nFor Eq1: WORD = [x, x, y, z, z], SET = {x, y, z}, PAR"
+hard1_0040,True,False,False,True,labeled:FALSE,49.99,3096,501,0.000470,"VERDICT: FALSE\nREASONING: Apply STEP 1 to extract features from Eq1: x = x * ((y * (z * w)) * w) and Eq2: x * y = (x * (z * w)) * u.\nFor Eq1: WORD = [x,y,z,w], PARITY = [odd,odd,odd,odd], SET = {x,y"
+hard1_0041,True,False,False,True,labeled:FALSE,50.58,3096,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard1_0042,False,False,True,True,labeled:FALSE,89.25,3095,144,0.000356,VERDICT: FALSE\nREASONING: Apply STEP 3.0 Spine Isolation. Eq1: x = (y * x) * (x * z) is bare. Trace path from root of Eq1 to x: at each * node record L or R. We have a mixed spine. Normalize Eq2: x =
+hard1_0043,False,False,True,True,labeled:FALSE,12.89,3095,18,0.000315,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard1_0044,True,False,False,True,labeled:FALSE,71.60,3094,349,0.000421,"VERDICT: FALSE\nREASONING: Apply STEP 1 to extract features from Eq1: x = (y * (y * z)) * x and Eq2: x = (((x * y) * x) * x) * x.\nFor Eq1, the leftmost variable is x, the rightmost variable is x, WOR"
+hard1_0045,False,False,True,True,labeled:FALSE,93.40,3099,319,0.000412,"VERDICT: FALSE\nREASONING: Apply STEP 1. \nEq1: x = (y * x) * (x * (x * z))\nEq2: x = (x * (y * z)) * (w * w)\nExtract features for Eq1 and Eq2:\n- Eq1: leftmost variable = y, rightmost variable = z, "
+hard1_0046,True,False,False,True,labeled:FALSE,11.88,3095,18,0.000315,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard1_0047,False,False,True,True,labeled:FALSE,42.13,3098,349,0.000421,"VERDICT: FALSE\nREASONING: Apply STEP 1. EXTRACT FEATURES to Eq1: x = (y * x) * (x * (z * z)). \nEq1 is not bare, so we cannot apply the bare-source contradiction motifs directly. \nHowever, we can st"
+hard1_0048,False,False,True,True,labeled:FALSE,68.22,3094,18,0.000315,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard1_0049,False,False,True,True,labeled:FALSE,94.35,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard1_0050,True,False,False,True,labeled:FALSE,32.35,3097,211,0.000377,"VERDICT: FALSE\nREASONING: Apply STEP 1. EXTRACT FEATURES to Eq1: x = x * (((y * z) * w) * u) and Eq2: x = ((x * x) * (x * y)) * y.\nFor Eq1, leftmost variable is x, rightmost variable is u, WORD = [x"
+hard1_0051,False,False,True,True,labeled:FALSE,60.26,3095,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard1_0052,True,False,False,True,labeled:FALSE,60.35,3096,617,0.000507,"VERDICT: FALSE\nREASONING: Analyzing the given equations, we have Eq1: x = (y * x) * (y * x) and Eq2: x = ((x * y) * x) * (z * x). We need to determine if Eq1 implies Eq2 over all magmas.\n\nFirst, le"
+hard1_0053,False,False,True,True,labeled:FALSE,44.73,3097,18,0.000315,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard1_0054,True,False,False,True,labeled:FALSE,76.49,3096,18,0.000315,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard1_0055,False,False,True,True,labeled:FALSE,51.93,3097,272,0.000397,"VERDICT: FALSE\nREASONING: Apply STEP 1. EXTRACT FEATURES to Eq1: x = y * (((z * w) * x) * x) and Eq2: x = y * (((z * x) * w) * w).\nFor Eq1: leftmost variable = y, rightmost variable = x, WORD = [y,z"
+hard1_0056,True,False,False,True,labeled:FALSE,47.98,3098,227,0.000382,"VERDICT: FALSE\nREASONING: Apply STEP 3.0 Spine Isolation. Eq1 is x = (y * (y * z)) * (w * x) and Eq2 is x = y * (z * (w * (u * x))). \nFirst, normalize Eq1 and Eq2 to find their spines. \nFor Eq1: x "
+hard1_0057,False,False,True,True,labeled:FALSE,69.56,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard1_0058,False,False,True,True,labeled:FALSE,100.87,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard1_0059,True,False,False,True,labeled:FALSE,16.85,3094,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard1_0060,True,False,False,True,labeled:FALSE,60.40,3097,18,0.000315,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard1_0061,True,False,False,True,labeled:FALSE,89.53,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard1_0062,False,False,True,True,labeled:FALSE,94.17,3098,931,0.000608,"VERDICT: FALSE\nREASONING: To determine if the implication x = ((y * x) * z) * (z * y) implies x = (y * (y * (x * x))) * x holds over all magmas, we must follow the steps outlined.\n\nFirst, let's ana"
+hard1_0063,True,False,False,True,labeled:FALSE,56.06,3094,38,0.000322,"VERDICT: FALSE\nREASONING: default false fallback \nNo specific rule or counterexample was found to prove the implication true or false, so the default verdict is false."
+hard1_0064,True,False,False,True,labeled:FALSE,143.03,3097,480,0.000463,"VERDICT: FALSE\nREASONING: Apply STEP 1. \nEq1: x = x * ((y * z) * (z * z))\nEq2: x = (x * ((y * y) * x)) * x\nExtract features:\n- Eq1 leftmost variable: x, rightmost variable: z\n- Eq1 WORD: x,y,z\n"
+hard1_0065,True,False,False,True,labeled:FALSE,42.41,3094,425,0.000445,VERDICT: FALSE\nREASONING: Apply STEP 1. EXTRACT FEATURES to Eq1: x = x * (y * (z * y)). \nEq1 is bare: x = T where T = x * (y * (z * y)). \nApply STEP 2.8: Bare-source contradiction motifs. \nCompute
+hard1_0066,False,False,True,True,labeled:FALSE,54.17,3098,18,0.000316,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard1_0067,True,False,False,True,labeled:FALSE,79.30,3097,18,0.000315,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard1_0068,False,False,True,True,labeled:FALSE,5.83,3096,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard1_0069,True,False,False,True,labeled:FALSE,62.97,3094,198,0.000373,"VERDICT: FALSE\nREASONING: Apply STEP 1. \nEq1: x = ((y * y) * z) * x \nEq2: x = y * (y * (z * (w * x)))\nExtract features:\n- Eq1: WORD = [x,y,y,z], PARITY = [odd,even,zero,zero], SET = [x,y,z], AB ="

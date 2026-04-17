@@ -1,0 +1,201 @@
+problem_id,expected,predicted,correct,parse_ok,raw_verdict,latency_s,input_tokens,output_tokens,cost_usd,response_text
+hard2_0001,False,False,True,True,labeled:FALSE,20.07,3097,18,0.000315,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard2_0002,False,False,True,True,labeled:FALSE,153.12,3098,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0003,True,False,False,True,labeled:FALSE,187.11,3095,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0004,True,False,False,True,labeled:FALSE,232.46,3097,263,0.000394,"VERDICT: FALSE\nREASONING: Apply STEP 1 to extract features from both equations. \nFor Eq1: x = (((y * y) * x) * x) * z, \n- leftmost variable: x\n- rightmost variable: z\n- WORD: x,y,y,x,x,z\n- PARIT"
+hard2_0005,True,False,False,True,labeled:FALSE,267.94,3097,202,0.000374,"VERDICT: FALSE\nREASONING: Apply STEP 1 to extract features from Eq1: x = y * ((z * (z * x)) * y) and Eq2: x = (x * ((x * y) * y)) * x.\nFor Eq1, WORD = [y, z, z, x, y], PARITY = [y:1, z:2, x:1, y:1],"
+hard2_0006,True,False,False,True,labeled:FALSE,287.27,3098,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0007,False,False,True,True,labeled:FALSE,307.79,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0008,True,False,False,True,labeled:FALSE,354.45,3097,204,0.000375,"VERDICT: FALSE\nREASONING: Apply STEP 1 to extract features from Eq1: x = y * (x * (x * (z * y))) and Eq2: x = x * (x * ((y * y) * x)). \nFor Eq1, WORD = [y, x, x, z, y], SET = {x, y, z}, AB = {x:3, y"
+hard2_0009,False,False,True,True,labeled:FALSE,389.92,3097,240,0.000387,"VERDICT: FALSE\nREASONING: Apply STEP 1 to extract features from Eq1: x = y * ((x * z) * (z * y)) and Eq2: x = ((x * y) * (y * y)) * y.\nFor Eq1: leftmost variable = y, rightmost variable = y, WORD = "
+hard2_0010,False,False,True,True,labeled:FALSE,10.50,3098,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0011,False,False,True,True,labeled:FALSE,78.26,3094,228,0.000382,"VERDICT: FALSE\nREASONING: Apply STEP 1 to extract features from Eq1: x = y * ((x * (x * y)) * y) and Eq2: x = (y * (z * z)) * w.\nFor Eq1, the leftmost variable is x, the rightmost variable is y, WOR"
+hard2_0012,False,False,True,True,labeled:FALSE,388.14,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0013,False,False,True,True,labeled:FALSE,82.98,3097,18,0.000315,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard2_0014,False,False,True,True,labeled:FALSE,131.37,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0015,False,False,True,True,labeled:FALSE,168.30,3096,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0016,False,False,True,True,labeled:FALSE,253.18,3096,371,0.000428,"VERDICT: FALSE\nREASONING: Apply STEP 1. EXTRACT FEATURES to Eq1: x = x * (y * ((y * z) * y)). \nEq1 is bare, with x on the left and a product on the right. \nThe product side P = y * ((y * z) * y) ha"
+hard2_0017,True,False,False,True,labeled:FALSE,255.99,3097,268,0.000395,"VERDICT: FALSE\nREASONING: Apply STEP 1 to extract features from both equations.\nFor Eq1: x = y * (x * (y * (y * z))), \n- leftmost variable: y\n- rightmost variable: z\n- WORD: y,x,y,y,z\n- PARITY: "
+hard2_0018,True,False,False,True,labeled:FALSE,285.34,3094,183,0.000368,"VERDICT: FALSE\nREASONING: Apply STEP 1 to extract features from Eq1: x = x * ((x * (y * z)) * z) and Eq2: x = x * (x * (y * x)). \nFor Eq1, WORD = [x, x, y, z], PARITY = [even, odd, odd], SET = [x, y"
+hard2_0019,True,False,False,True,labeled:FALSE,297.99,3096,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0020,False,False,True,True,labeled:FALSE,321.72,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0021,True,False,False,True,labeled:FALSE,380.06,3096,239,0.000386,"VERDICT: FALSE\nREASONING: Apply STEP 1. Eq1: x * y = y * ((z * w) * x), Eq2: (x * x) * y = (z * y) * x. \nExtract features for Eq1 and Eq2. \nFor Eq1: WORD = [x, y, z, w], PARITY = [odd, odd, even, e"
+hard2_0022,True,False,False,True,labeled:FALSE,232.11,3097,887,0.000594,"VERDICT: FALSE\nREASONING: To determine if the implication holds, let's analyze the given equations according to the provided steps.\n\nGiven Eq1: x = y * (((x * y) * z) * w)\nGiven Eq2: x = (y * ((x "
+hard2_0023,True,False,False,True,labeled:FALSE,193.41,3094,369,0.000427,"VERDICT: FALSE\nREASONING: Apply STEP 1. Eq1: x = x * (y * (x * z)), Eq2: x = (x * ((y * z) * w)) * x. \nExtract features for Eq1 and Eq2. \nFor Eq1: leftmost variable = x, rightmost variable = z, WOR"
+hard2_0024,True,False,False,True,labeled:FALSE,196.55,3094,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0025,False,False,True,True,labeled:FALSE,268.71,3095,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0026,True,False,False,True,labeled:FALSE,418.24,3097,744,0.000548,"VERDICT: FALSE\nREASONING: To determine if the implication x = (((y * x) * z) * y) * x implies x = ((x * x) * (y * y)) * x holds over all magmas, we follow the steps outlined.\n\nFirst, we examine if "
+hard2_0027,False,False,True,True,labeled:FALSE,10.65,3098,18,0.000316,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard2_0028,True,False,False,True,labeled:FALSE,23.36,3095,18,0.000315,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard2_0029,False,False,True,True,labeled:FALSE,37.95,3095,18,0.000315,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard2_0030,True,False,False,True,labeled:FALSE,76.69,3096,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0031,False,False,True,True,labeled:FALSE,114.64,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0032,False,False,True,True,labeled:FALSE,155.66,3095,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0033,True,False,False,True,labeled:FALSE,188.87,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0034,False,False,True,True,labeled:FALSE,212.46,3095,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0035,True,False,False,True,labeled:FALSE,345.84,3097,1014,0.000634,"VERDICT: FALSE\nREASONING: To determine if the implication x = ((y * x) * (x * z)) * w implies x = (y * (x * (y * z))) * x holds over all magmas, we must follow the steps outlined.\n\nFirst, let's ana"
+hard2_0036,True,False,False,True,labeled:FALSE,311.12,3098,206,0.000376,"VERDICT: FALSE\nREASONING: Apply STEP 1 to extract features from Eq1: x = (y * (z * x)) * (x * w) and Eq2: x = (((y * y) * y) * z) * x.\nFor Eq1, WORD = [y, z, x, x, w], PARITY = [y:1, z:1, x:3, w:1],"
+hard2_0037,True,False,False,True,labeled:FALSE,309.52,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0038,False,False,True,True,labeled:FALSE,350.04,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0039,True,False,False,True,labeled:FALSE,395.90,3097,301,0.000406,"VERDICT: FALSE\nREASONING: Apply STEP 2.1 to 2.11 to check for TRUE routes. Eq1: x = y * ((y * (x * x)) * z), Eq2: x = ((x * (y * z)) * z) * y. No TRUE route fires. Proceed to STEP 3 to check for FALS"
+hard2_0040,True,False,False,True,labeled:FALSE,26.42,3094,186,0.000369,"VERDICT: FALSE\nREASONING: Apply STEP 1. EXTRACT FEATURES to Eq1: x = y * (x * ((y * z) * w)) and Eq2: x = x * (x * (y * x)). \nFor Eq1, WORD = [y,x,y,z,w], PARITY = [odd,odd,odd,odd,odd], SET = {x,y,"
+hard2_0041,False,False,True,True,labeled:FALSE,73.82,3098,187,0.000370,"VERDICT: FALSE\nREASONING: Apply STEP 1 to extract features from Eq1: x = y * ((y * (x * y)) * x) and Eq2: x = (x * (y * x)) * (x * x).\nFor Eq1, WORD = [y, y, x, y, x], PARITY = [even, even, odd], SE"
+hard2_0042,False,False,True,True,labeled:FALSE,389.57,3097,18,0.000315,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard2_0043,False,False,True,True,labeled:FALSE,189.64,3097,832,0.000576,"VERDICT: FALSE\nREASONING: To determine if the implication holds, let's analyze the given equations step by step according to the provided guidelines.\n\nGiven Eq1: x = ((x * (x * y)) * y) * y\nGiven "
+hard2_0044,True,False,False,True,labeled:FALSE,151.55,3097,207,0.000376,"VERDICT: FALSE\nREASONING: Apply STEP 1. EXTRACT FEATURES to Eq1: x = (y * ((z * z) * x)) * w and Eq2: x = ((x * y) * (y * z)) * z.\nFor Eq1: leftmost variable = y, rightmost variable = w, WORD = [y,z"
+hard2_0045,False,False,True,True,labeled:FALSE,218.18,3095,254,0.000391,"VERDICT: FALSE\nREASONING: Apply STEP 1. Eq1: x * x = ((y * z) * w) * u, Eq2: x * y = x * ((x * z) * y). \nExtract features for Eq1 and Eq2. \nFor Eq1: WORD = [x,x,y,z,w,u], SET = {x,y,z,w,u}, PARITY "
+hard2_0046,False,False,True,True,labeled:FALSE,196.78,3097,18,0.000315,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard2_0047,False,False,True,True,labeled:FALSE,287.10,3095,531,0.000479,"VERDICT: FALSE\nREASONING: Apply STEP 1 to Eq1: x * y = (y * (x * z)) * y. \nEq1 is not bare, so we move to STEP 2. \nChecking STEP 2.1: Eq2 is not identical to Eq1 up to renaming. \nChecking STEP 2.2"
+hard2_0048,False,False,True,True,labeled:FALSE,334.82,3097,688,0.000530,"VERDICT: FALSE\nREASONING: To determine if the implication (x * y) * z = (w * y) * u implies x * (x * y) = z * (x * x) over all magmas, we must follow the steps outlined.\n\nFirst, let's analyze the g"
+hard2_0049,True,False,False,True,labeled:FALSE,299.34,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0050,True,False,False,True,labeled:FALSE,410.86,3094,1061,0.000649,"VERDICT: FALSE\nREASONING: To determine if the implication x = y * ((z * x) * z) implies x = ((y * (z * z)) * w) * x holds over all magmas, we need to follow the steps provided.\n\nFirst, let's analyz"
+hard2_0051,False,False,True,True,labeled:FALSE,367.37,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0052,False,False,True,True,labeled:FALSE,23.34,3097,157,0.000360,"VERDICT: FALSE\nREASONING: Apply STEP 1 to extract features from Eq1: x = y * ((x * (x * y)) * y) and Eq2: x = x * (y * (z * (w * y))). \nFor Eq1, WORD = [x,y], SET = {x,y}, AB = {2,2}, PARITY = [odd,"
+hard2_0053,True,False,False,True,labeled:FALSE,26.50,3098,18,0.000316,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard2_0054,False,False,True,True,labeled:FALSE,37.89,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0055,False,False,True,True,labeled:FALSE,76.05,3097,18,0.000315,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard2_0056,False,False,True,True,labeled:FALSE,141.64,3098,232,0.000384,"VERDICT: FALSE\nREASONING: Apply STEP 1 to extract features from Eq1: x = y * ((y * (y * x)) * x) and Eq2: x = ((y * z) * z) * (w * x).\nFor Eq1, WORD = [y, y, y, x, x], PARITY = {x: odd, y: odd}, SET"
+hard2_0057,True,False,False,True,labeled:FALSE,196.55,3098,309,0.000409,"VERDICT: FALSE\nREASONING: Apply STEP 1 to extract features from Eq1: x = y * ((z * (w * w)) * x) and Eq2: x = ((y * z) * y) * (y * x).\nFor Eq1, WORD = [y, z, w, w, x], PARITY = [y:1, z:1, w:2, x:1],"
+hard2_0058,True,False,False,True,labeled:FALSE,189.53,3098,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0059,True,False,False,True,labeled:FALSE,212.50,3098,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0060,True,False,False,True,labeled:FALSE,257.32,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0061,True,False,False,True,labeled:FALSE,289.71,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0062,False,False,True,True,labeled:FALSE,369.19,3095,624,0.000509,"VERDICT: FALSE\nREASONING: The given problem involves determining whether the equational implication x * x = ((y * z) * w) * u implies x * y = ((z * w) * u) * v over all magmas. To solve this, we need"
+hard2_0063,True,False,False,True,labeled:FALSE,370.33,3094,181,0.000367,"VERDICT: FALSE\nREASONING: Apply STEP 1 to extract features from Eq1: x = y * (z * (x * z)) and Eq2: x = y * (x * ((y * y) * y)). \nFor Eq1, WORD = [x,y,z], PARITY = [odd,odd,odd], SET = {x,y,z}, AB ="
+hard2_0064,False,False,True,True,labeled:FALSE,415.17,3098,630,0.000511,"VERDICT: FALSE\nREASONING: Apply STEP 1. Eq1: x = (y * z) * (z * (x * y)), Eq2: x = y * (z * (y * (z * x))). \nExtract features: \n- Eq1 leftmost variable: x, rightmost variable: y\n- Eq1 WORD: x,y,z\"
+hard2_0065,True,False,False,True,labeled:FALSE,10.64,3095,18,0.000315,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard2_0066,True,False,False,True,labeled:FALSE,33.17,3098,18,0.000316,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard2_0067,False,False,True,True,labeled:FALSE,393.13,3099,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0068,False,False,True,True,labeled:FALSE,85.22,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0069,True,False,False,True,labeled:FALSE,164.14,3097,284,0.000401,"VERDICT: FALSE\nREASONING: Apply STEP 1 to extract features from Eq1: x = y * (((y * x) * y) * z) and Eq2: x = x * ((x * (x * x)) * y).\nFor Eq1, the leftmost variable is x, the rightmost variable is "
+hard2_0070,True,False,False,True,labeled:FALSE,172.61,3095,18,0.000315,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard2_0071,False,False,True,True,labeled:FALSE,193.14,3095,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0072,True,False,False,True,labeled:FALSE,233.84,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0073,True,False,False,True,labeled:FALSE,271.56,3097,18,0.000315,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard2_0074,True,False,False,True,labeled:FALSE,298.51,3098,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0075,True,False,False,True,labeled:FALSE,323.29,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0076,False,False,True,True,labeled:FALSE,369.63,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0077,False,False,True,True,labeled:FALSE,41.43,3097,344,0.000420,"VERDICT: FALSE\nREASONING: Apply STEP 1. Eq1: x = (y * ((y * x) * x)) * y, Eq2: x = (((x * y) * x) * x) * x. \nEq1 is bare: x = T where T = (y * ((y * x) * x)) * y. \nCompute features of T: \n- rhsVar"
+hard2_0078,True,False,False,True,labeled:FALSE,26.43,3095,18,0.000315,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard2_0079,True,False,False,True,labeled:FALSE,45.44,3097,18,0.000315,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard2_0080,True,False,False,True,labeled:FALSE,78.90,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0081,True,False,False,True,labeled:FALSE,120.44,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0082,True,False,False,True,labeled:FALSE,160.15,3096,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0083,True,False,False,True,labeled:FALSE,190.09,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0084,False,False,True,True,labeled:FALSE,290.58,3097,652,0.000518,"VERDICT: FALSE\nREASONING: The given problem involves determining whether the equational implication x * (y * z) = (z * y) * y implies x * (y * z) = (y * z) * w over all magmas. To solve this, we foll"
+hard2_0085,True,False,False,True,labeled:FALSE,259.37,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0086,True,False,False,True,labeled:FALSE,293.26,3097,18,0.000315,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard2_0087,False,False,True,True,labeled:FALSE,314.46,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0088,False,False,True,True,labeled:FALSE,379.67,3094,322,0.000412,"VERDICT: FALSE\nREASONING: Apply STEP 1 to Eq1: x = (x * (x * y)) * y. \nThe leftmost variable is x and the rightmost variable is y. \nEq1 is not bare, so we cannot apply the bare-source contradiction"
+hard2_0089,True,False,False,True,labeled:FALSE,410.64,3097,301,0.000406,"VERDICT: FALSE\nREASONING: Apply STEP 3.0 Spine Isolation. Eq1 is x = y * (((x * x) * z) * w). The path from the root to x is RRR, a pure right-spine of depth 3. Eq2 is x = (y * (z * (w * u))) * x. Th"
+hard2_0090,False,False,True,True,labeled:FALSE,117.78,3095,692,0.000531,"VERDICT: FALSE\nREASONING: To determine if the implication x * y = (y * (x * z)) * y implies x * y = ((x * y) * x) * y holds over all magmas, we need to follow the steps outlined.\n\nFirst, let's anal"
+hard2_0091,True,False,False,True,labeled:FALSE,32.65,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0092,False,False,True,True,labeled:FALSE,69.24,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0093,False,False,True,True,labeled:FALSE,110.96,3097,168,0.000363,"VERDICT: FALSE\nREASONING: Apply STEP 1. \nEq1: x = (y * y) * (x * (y * x))\nEq2: x * y = (x * (x * x)) * y\nExtract features for Eq1 and Eq2:\n- Eq1: WORD = [x,y,y,x,y,x], PARITY = [odd,even,odd], SE"
+hard2_0094,True,False,False,True,labeled:FALSE,139.98,3098,18,0.000316,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard2_0095,False,False,True,True,labeled:FALSE,172.61,3096,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0096,False,False,True,True,labeled:FALSE,518.17,3096,194,0.000372,"VERDICT: FALSE\nREASONING: Apply STEP 1: EXTRACT FEATURES to Eq1: x = y * ((z * y) * (y * x)) and Eq2: x * y = ((z * x) * x) * y.\nFor Eq1, WORD = [x,y,z,y,y,x], PARITY = [odd,even,odd,even,odd], SET "
+hard2_0097,True,False,False,True,labeled:FALSE,233.97,3096,18,0.000315,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard2_0098,True,False,False,True,labeled:FALSE,273.81,3097,18,0.000315,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard2_0099,True,False,False,True,labeled:FALSE,329.58,3097,317,0.000411,"VERDICT: FALSE\nREASONING: Apply STEP 1. \nEq1: x = y * (x * ((z * y) * y))\nEq2: x = ((y * z) * (z * z)) * x\nExtract features:\n- Eq1 leftmost: x, rightmost: y\n- Eq1 WORD: x,y,z\n- Eq1 SET: {x,y,z}"
+hard2_0100,False,False,True,True,labeled:FALSE,377.19,3096,553,0.000487,"VERDICT: FALSE\nREASONING: Apply STEP 1. Eq1: x = (x * ((x * y) * y)) * y, Eq2: x * y = ((x * y) * y) * x. \nExtract features: \n- Eq1: leftmost variable = x, rightmost variable = y, WORD = [x,x,y,y,y"
+hard2_0101,True,False,False,True,labeled:FALSE,372.70,3091,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0102,False,False,True,True,labeled:FALSE,126.29,3097,818,0.000571,"VERDICT: FALSE\nREASONING: Analyzing the given equations, we first look at the structure of Eq1: x = (y * ((y * x) * x)) * y. This equation is not bare since it does not have the form x = T where x do"
+hard2_0103,True,False,False,True,labeled:FALSE,26.36,3095,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0104,False,False,True,True,labeled:FALSE,124.77,3096,459,0.000456,"VERDICT: FALSE\nREASONING: Apply STEP 1 to Eq1: x = (y * ((y * x) * x)) * y. \nEq1 is bare: x = T where T = (y * ((y * x) * x)) * y.\nCompute features of T:\n- rhsVars = 2 (y, x)\n- Lx = FALSE (x is n"
+hard2_0105,False,False,True,True,labeled:FALSE,78.86,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0106,True,False,False,True,labeled:FALSE,123.24,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0107,True,False,False,True,labeled:FALSE,188.40,3098,253,0.000391,"VERDICT: FALSE\nREASONING: Apply STEP 1 to extract features from Eq1: x = (y * (y * z)) * (x * x) and Eq2: x = x * ((y * (x * y)) * x).\nFor Eq1, the leftmost variable is x, and the rightmost variable"
+hard2_0108,False,False,True,True,labeled:FALSE,190.25,3096,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0109,False,False,True,True,labeled:FALSE,216.67,3098,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0110,True,False,False,True,labeled:FALSE,281.99,3097,192,0.000371,"VERDICT: FALSE\nREASONING: Apply STEP 1. EXTRACT FEATURES to Eq1: x = y * (((z * x) * x) * x) and Eq2: x = x * ((x * (x * y)) * x).\nFor Eq1: leftmost variable = y, rightmost variable = x, WORD = [y,z"
+hard2_0111,True,False,False,True,labeled:FALSE,293.30,3096,18,0.000315,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard2_0112,False,False,True,True,labeled:FALSE,317.30,3096,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0113,True,False,False,True,labeled:FALSE,377.12,3097,193,0.000371,"VERDICT: FALSE\nREASONING: Apply STEP 1. EXTRACT FEATURES to Eq1: x = (y * (x * (z * z))) * z and Eq2: x = x * ((x * (y * x)) * z).\nFor Eq1, WORD = [y, x, z, z], PARITY = [y:1, x:1, z:2], SET = {y, x"
+hard2_0114,True,False,False,True,labeled:FALSE,395.22,3094,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0115,True,False,False,True,labeled:FALSE,15.04,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0116,True,False,False,True,labeled:FALSE,32.67,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0117,True,False,False,True,labeled:FALSE,424.11,3095,656,0.000519,"VERDICT: FALSE\nREASONING: To determine if the implication x * y = y * (y * (x * z)) implies x * y = (z * (w * u)) * v holds over all magmas, we must follow the steps outlined.\n\nFirst, let's analyze"
+hard2_0118,False,False,True,True,labeled:FALSE,103.02,3098,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0119,True,False,False,True,labeled:FALSE,168.26,3094,230,0.000383,"VERDICT: FALSE\nREASONING: Apply STEP 1 to extract features from Eq1: x = y * (x * (y * (y * z))) and Eq2: x = ((x * x) * y) * x.\nFor Eq1, the leftmost variable is x, the rightmost variable is z, WOR"
+hard2_0120,True,False,False,True,labeled:FALSE,176.62,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0121,True,False,False,True,labeled:FALSE,196.65,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0122,False,False,True,True,labeled:FALSE,240.26,3097,18,0.000315,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard2_0123,False,False,True,True,labeled:FALSE,301.14,3097,237,0.000386,"VERDICT: FALSE\nREASONING: Apply STEP 1. Eq1: x = y * (((z * y) * x) * z), Eq2: x * (y * z) = x * (z * y). \nExtract features for Eq1 and Eq2. \nFor Eq1: leftmost variable = x, rightmost variable = z,"
+hard2_0124,False,False,True,True,labeled:FALSE,301.65,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0125,False,False,True,True,labeled:FALSE,325.92,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0126,True,False,False,True,labeled:FALSE,372.96,3093,18,0.000315,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard2_0127,True,False,False,True,labeled:FALSE,30.19,3097,207,0.000376,"VERDICT: FALSE\nREASONING: Apply STEP 1 to extract features from Eq1: x = y * (((x * x) * x) * z) and Eq2: x = x * ((y * z) * (y * z)). \nFor Eq1, WORD = [x,y,z], PARITY = [odd,odd,odd], SET = {x,y,z}"
+hard2_0128,True,False,False,True,labeled:FALSE,30.03,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0129,False,False,True,True,labeled:FALSE,49.71,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0130,True,False,False,True,labeled:FALSE,104.85,3097,203,0.000375,"VERDICT: FALSE\nREASONING: Apply STEP 1 to extract features from Eq1: x = (y * (x * (z * w))) * y and Eq2: x = (((y * z) * x) * y) * x.\nFor Eq1, WORD = [y, x, z, w], PARITY = [y:1, x:1, z:1, w:1], SE"
+hard2_0131,True,False,False,True,labeled:FALSE,126.88,3097,32,0.000320,VERDICT: FALSE\nREASONING: default false fallback \nNo decisive route was found in STEPs 2-6 to determine the implication.
+hard2_0132,True,False,False,True,labeled:FALSE,247.74,3096,563,0.000490,"VERDICT: FALSE\nREASONING: Apply STEP 1. Eq1: x = y * ((z * (x * x)) * w), Eq2: x * y = z * ((x * w) * y). \nExtract features: \n- Eq1: leftmost variable = x, rightmost variable = w, WORD = [x,y,z,x,x"
+hard2_0133,False,False,True,True,labeled:FALSE,192.76,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0134,False,False,True,True,labeled:FALSE,220.38,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0135,False,False,True,True,labeled:FALSE,261.92,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0136,True,False,False,True,labeled:FALSE,315.08,3097,241,0.000387,"VERDICT: FALSE\nREASONING: Apply STEP 1 to Eq1: x = ((y * (x * x)) * y) * z and Eq2: x = y * (x * (z * (z * y))). \nFor Eq1: leftmost variable = y, rightmost variable = z, WORD = [y,x,x,y,z], PARITY ="
+hard2_0137,True,False,False,True,labeled:FALSE,317.27,3098,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0138,True,False,False,True,labeled:FALSE,358.95,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0139,False,False,True,True,labeled:FALSE,382.56,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0140,True,False,False,True,labeled:FALSE,26.51,3097,154,0.000359,"VERDICT: FALSE\nREASONING: Apply STEP 2.6 Left projection. Eq1 is x = x * (y * (z * (w * z))). \nMandatory check: T = y * (z * (w * z)) does not contain x. \nThus, Eq1 forces a*b = a. \nApply this to "
+hard2_0141,True,False,False,True,labeled:FALSE,168.71,3097,925,0.000606,"VERDICT: FALSE\nREASONING: Analyzing the given equations, we first look at the structure of Eq1: x = ((y * (z * x)) * z) * z and Eq2: x = ((y * z) * (y * y)) * x. We need to determine if Eq1 implies E"
+hard2_0142,False,False,True,True,labeled:FALSE,136.26,3094,515,0.000474,"VERDICT: FALSE\nREASONING: Apply STEP 1 to Eq1: x = ((y * x) * x) * y. \nEq1 is bare: x = T where T = ((y * x) * x) * y. \nCompute features of T: \nrhsVars = 2 (y, x), \nLx = FALSE (leftmost variable "
+hard2_0143,False,False,True,True,labeled:FALSE,108.31,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0144,False,False,True,True,labeled:FALSE,144.35,3096,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0145,True,False,False,True,labeled:FALSE,176.62,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0146,False,False,True,True,labeled:FALSE,207.56,3096,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0147,True,False,False,True,labeled:FALSE,238.89,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0148,False,False,True,True,labeled:FALSE,275.55,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0149,True,False,False,True,labeled:FALSE,323.08,3097,256,0.000392,"VERDICT: FALSE\nREASONING: Apply STEP 1 to extract features from both equations. \nFor Eq1: x = (y * (x * (z * w))) * w, \n- leftmost variable: y\n- rightmost variable: w\n- WORD: y,x,z,w\n- PARITY: y"
+hard2_0150,False,False,True,True,labeled:FALSE,327.25,3096,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0151,False,False,True,True,labeled:FALSE,372.86,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0152,False,False,True,True,labeled:FALSE,10.38,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0153,True,False,False,True,labeled:FALSE,33.17,3097,42,0.000323,"VERDICT: FALSE\nREASONING: default false fallback \nNo specific rule or counterexample was found in the given steps to prove the implication true or false, so the default verdict is false."
+hard2_0154,True,False,False,True,labeled:FALSE,386.29,3097,18,0.000315,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard2_0155,True,False,False,True,labeled:FALSE,160.69,3095,666,0.000523,"VERDICT: FALSE\nREASONING: Analyzing the given equational implication problem over magmas, we first examine if any of the true routes (STEP 2) apply. The given equations are x * y = ((z * y) * x) * x "
+hard2_0156,False,False,True,True,labeled:FALSE,126.67,3097,18,0.000315,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard2_0157,False,False,True,True,labeled:FALSE,186.75,3096,186,0.000369,"VERDICT: FALSE\nREASONING: Apply STEP 1 to Eq1: x = (x * ((x * y) * y)). \nLEFTMOST variable: x, RIGHTMOST variable: y. \nWORD: x,x,x,y,y. \nPARITY: x=odd,y=even. \nSET: {x,y}. \nAB: {3,2}. \nEq2: x *"
+hard2_0158,False,False,True,True,labeled:FALSE,193.06,3095,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0159,True,False,False,True,labeled:FALSE,220.53,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0160,True,False,False,True,labeled:FALSE,261.95,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0161,False,False,True,True,labeled:FALSE,295.55,3097,18,0.000315,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard2_0162,True,False,False,True,labeled:FALSE,321.30,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0163,False,False,True,True,labeled:FALSE,359.19,3098,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0164,True,False,False,True,labeled:FALSE,405.66,3097,347,0.000421,"VERDICT: FALSE\nREASONING: Apply STEP 1. EXTRACT FEATURES to Eq1: x = y * ((z * x) * (z * z)). \nEq1 is not bare, so we cannot apply the bare-source rules directly. \nHowever, we can still analyze its"
+hard2_0165,False,False,True,True,labeled:FALSE,23.13,3098,124,0.000349,"VERDICT: FALSE\nREASONING: Apply STEP 1 to extract features from Eq1: x = ((y * x) * z) * (z * y) and Eq2: x = y * (x * ((z * y) * z)). \nFor Eq1, the leftmost variable is x and the rightmost variable"
+hard2_0166,False,False,True,True,labeled:FALSE,37.12,3095,18,0.000315,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard2_0167,False,False,True,True,labeled:FALSE,69.74,3096,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0168,True,False,False,True,labeled:FALSE,158.53,3096,452,0.000454,"VERDICT: FALSE\nREASONING: Apply STEP 1: EXTRACT FEATURES to Eq1: x * y = y * (z * (y * x)) and Eq2: x * (y * y) = (y * z) * x.\nFor Eq1, WORD = [x, y, z, y, x], PARITY = [even, odd, even], SET = {x, "
+hard2_0169,False,False,True,True,labeled:FALSE,147.60,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0170,True,False,False,True,labeled:FALSE,181.39,3095,18,0.000315,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard2_0171,False,False,True,True,labeled:FALSE,259.17,3096,385,0.000433,"VERDICT: FALSE\nREASONING: Apply STEP 2.6: left projection. Eq1 is x = y * ((x * (x * y)) * y). This is bare, with x on the left and a product on the right. The product side is P = y * ((x * (x * y)) "
+hard2_0172,False,False,True,True,labeled:FALSE,289.53,3098,451,0.000454,VERDICT: FALSE\nREASONING: Apply STEP 2.6 Left projection. Eq1 is bare: x = y * ((x * (x * y)) * y). \nMANDATORY CHECK: List all variables in T = ((x * (x * y)) * y). Does T contain x? YES. \nSince T 
+hard2_0173,False,False,True,True,labeled:FALSE,295.62,3096,189,0.000370,"VERDICT: FALSE\nREASONING: Apply STEP 2.9: Eq1 is x = y * ((x * (x * y)) * y). This does not match any of the shapes required for the projection family rule. Next, apply STEP 3.0: Eq1 is bare (x = T) "
+hard2_0174,True,False,False,True,labeled:FALSE,356.72,3097,622,0.000509,"VERDICT: FALSE\nREASONING: To determine if the implication x = ((y * (x * x)) * z) * z implies x = ((y * (y * z)) * w) * x holds over all magmas, we must follow the steps outlined.\n\nFirst, let's ana"
+hard2_0175,False,False,True,True,labeled:FALSE,329.19,3097,18,0.000315,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard2_0176,False,False,True,True,labeled:FALSE,375.42,3097,18,0.000315,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard2_0177,False,False,True,True,labeled:FALSE,10.08,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0178,True,False,False,True,labeled:FALSE,30.03,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0179,False,False,True,True,labeled:FALSE,411.62,3098,414,0.000442,"VERDICT: FALSE\nREASONING: Apply STEP 1. Eq1: x = (y * x) * (x * (z * y)), Eq2: (x * y) * x = (y * x) * x. \nExtract features for Eq1 and Eq2. \nFor Eq1: WORD = [y, x, x, z, y], PARITY = [x:2, y:2, z:"
+hard2_0180,False,False,True,True,labeled:FALSE,82.67,3096,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0181,False,False,True,True,labeled:FALSE,157.30,3097,246,0.000388,"VERDICT: FALSE\nREASONING: Apply STEP 1 to Eq1: x = x * (y * ((y * z) * y)). \nEq1 is bare: x = T where T = (y * ((y * z) * y)). \nSince x appears in T, we cannot apply RULE: singleton collapse. \nApp"
+hard2_0182,False,False,True,True,labeled:FALSE,354.92,3096,255,0.000391,"VERDICT: FALSE\nREASONING: Apply STEP 1. Eq1: x = y * ((x * (x * y)) * y), Eq2: x * y = z * (y * (z * w)). \nExtract features for Eq1 and Eq2. \nFor Eq1: leftmost variable = x, rightmost variable = y,"
+hard2_0183,False,False,True,True,labeled:FALSE,193.25,3097,18,0.000315,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard2_0184,True,False,False,True,labeled:FALSE,223.70,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0185,True,False,False,True,labeled:FALSE,264.74,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0186,True,False,False,True,labeled:FALSE,295.62,3097,18,0.000315,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard2_0187,False,False,True,True,labeled:FALSE,319.17,3095,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0188,False,False,True,True,labeled:FALSE,361.90,3097,18,0.000315,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard2_0189,True,False,False,True,labeled:FALSE,384.33,3097,18,0.000315,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard2_0190,False,False,True,True,labeled:FALSE,31.99,3096,224,0.000381,"VERDICT: FALSE\nREASONING: Apply STEP 1. EXTRACT FEATURES to Eq1: x * x = ((y * z) * w) * u and Eq2: x * y = (z * w) * (y * y).\nFor Eq1, WORD = [x,x,y,z,w,u], PARITY = [even,even,odd,odd,odd,odd], SE"
+hard2_0191,False,False,True,True,labeled:FALSE,98.19,3095,266,0.000395,"VERDICT: FALSE\nREASONING: Apply STEP 1: EXTRACT FEATURES to both equations.\nFor Eq1: x = (x * y) * ((x * y) * y), \n- leftmost variable: x\n- rightmost variable: y\n- WORD: x, y\n- PARITY: x=even, y"
+hard2_0192,False,False,True,True,labeled:FALSE,75.90,3097,18,0.000315,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard2_0193,True,False,False,True,labeled:FALSE,111.09,3098,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0194,False,False,True,True,labeled:FALSE,149.36,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0195,False,False,True,True,labeled:FALSE,269.86,3097,596,0.000500,"VERDICT: FALSE\nREASONING: Apply STEP 1. \nEq1: x * (x * y) = (z * y) * w\nEq2: x * (y * x) = (z * z) * x\nExtract features:\n- Eq1 left: x, Eq1 right: (z * y) * w\n- Eq2 left: x, Eq2 right: (z * z) *"
+hard2_0196,False,False,True,True,labeled:FALSE,207.55,3097,14,0.000314,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0197,False,False,True,True,labeled:FALSE,244.24,3095,18,0.000315,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard2_0198,True,False,False,True,labeled:FALSE,349.92,3096,767,0.000555,"VERDICT: FALSE\nREASONING: To determine if the implication x * y = z * (y * (x * x)) implies x * y = (z * w) * (z * x) over all magmas, we follow the steps provided.\n\nFirst, we analyze the given equ"
+hard2_0199,True,False,False,True,labeled:FALSE,305.48,3097,18,0.000315,VERDICT: FALSE\nREASONING: default false fallback \nPROOF:
+hard2_0200,True,False,False,True,labeled:FALSE,360.72,3095,307,0.000408,"VERDICT: FALSE\nREASONING: Apply STEP 1. Eq1: x * y = y * (z * (x * w)), Eq2: x * y = (y * (z * w)) * u. \nExtract features for Eq1 and Eq2. \nFor Eq1: leftmost variable = x, rightmost variable = w, W"
