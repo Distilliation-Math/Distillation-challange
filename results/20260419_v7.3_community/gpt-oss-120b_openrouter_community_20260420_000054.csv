@@ -1,0 +1,201 @@
+problem_id,expected,predicted,correct,parse_ok,raw_verdict,latency_s,input_tokens,output_tokens,cost_usd,response_text
+saircommunity_0001,False,False,True,True,labeled:FALSE,44.63,3283,613,0.000245,REASONING: default false fallback\nVERDICT: FALSE
+saircommunity_0002,True,False,False,True,labeled:FALSE,288.86,3290,1542,0.000421,REASONING: default false fallback\nVERDICT: FALSE
+saircommunity_0003,False,False,True,True,labeled:FALSE,305.93,3284,600,0.000242,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0004,True,False,False,True,labeled:FALSE,393.06,3289,1433,0.000401,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0005,False,False,True,True,labeled:FALSE,421.29,3284,451,0.000214,REASONING: default false fallback\nVERDICT: FALSE
+saircommunity_0006,True,False,False,True,labeled:FALSE,487.33,3289,753,0.000271,VERDICT: FALSE\nREASONING: default false fallback
+saircommunity_0007,False,False,True,True,labeled:FALSE,542.63,3283,966,0.000312,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0008,True,False,False,True,labeled:FALSE,585.76,3280,1212,0.000358,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0009,False,False,True,True,labeled:FALSE,632.99,3280,704,0.000262,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0010,True,False,False,True,labeled:FALSE,13.10,3289,1396,0.000394,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0011,False,False,True,True,labeled:FALSE,62.56,3284,742,0.000269,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0012,True,False,False,True,labeled:FALSE,137.54,3277,1334,0.000381,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0013,False,False,True,True,labeled:FALSE,163.05,3283,502,0.000223,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0014,True,False,False,True,labeled:FALSE,236.60,3289,1235,0.000363,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0015,False,False,True,True,labeled:FALSE,288.89,3284,640,0.000250,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0016,True,False,False,True,labeled:FALSE,367.27,3290,1358,0.000386,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0017,False,False,True,True,labeled:FALSE,399.66,3284,682,0.000258,REASONING: rightmost exclusion\nVERDICT: FALSE\nPROOF:
+saircommunity_0018,True,False,False,True,labeled:FALSE,467.72,3280,1179,0.000352,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0019,False,False,True,True,labeled:FALSE,505.32,3284,563,0.000235,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0020,True,False,False,True,labeled:FALSE,562.12,3289,992,0.000317,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0021,False,False,True,True,labeled:FALSE,613.83,3275,1135,0.000343,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0022,True,False,False,True,labeled:FALSE,213.98,3280,1141,0.000345,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0023,False,False,True,True,labeled:FALSE,271.49,3284,883,0.000296,REASONING: default false fallback\nVERDICT: FALSE
+saircommunity_0024,True,False,False,True,labeled:FALSE,333.25,3289,478,0.000219,REASONING: spine isolation\n\nVERDICT: FALSE\n\nPROOF:
+saircommunity_0025,False,False,True,True,labeled:FALSE,473.42,3275,998,0.000317,REASONING: default false fallback\nVERDICT: FALSE
+saircommunity_0026,True,False,False,True,labeled:FALSE,622.96,3290,1375,0.000390,REASONING: default false fallback\nVERDICT: FALSE
+saircommunity_0027,False,False,True,True,labeled:FALSE,40.99,3289,1310,0.000377,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0028,True,False,False,True,labeled:FALSE,43.31,3284,613,0.000245,REASONING: default false fallback\nVERDICT: FALSE
+saircommunity_0029,False,False,True,True,labeled:FALSE,87.91,3283,765,0.000273,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0030,True,True,True,True,labeled:TRUE,137.80,3284,668,0.000255,"REASONING: The source equation is x = (y * x) * (z * (w * u)). This is a bare equation with P = (y*x)*(z*(w*u)). Computing its features: rv=5 (variables y,x,z,w,u), Lx=FALSE (leftmost variable y), Rx="
+saircommunity_0031,False,False,True,True,labeled:FALSE,210.02,3289,812,0.000283,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0032,True,True,True,True,labeled:TRUE,269.13,3280,1068,0.000331,REASONING: The premise  \n\(x = (x * (y * (z * y))) * x\)  \nis of the form \(x = x * T\) where the term \(T = (y * (z * y))\) contains no occurrence of the variable \(x\).  \nBy the left‑projection r
+saircommunity_0033,False,False,True,True,labeled:FALSE,324.12,3289,977,0.000314,REASONING: default false fallback\nVERDICT: FALSE
+saircommunity_0034,True,True,True,True,labeled:TRUE,376.71,3280,569,0.000236,"REASONING: The source equation is bare (x = T) with T = (y * (x * (x * x))) * z. Computing its features: rv=3, Lx=FALSE, Rx=FALSE, xTop=left (x occurs only in the left subterm of the top product), ts="
+saircommunity_0035,False,False,True,True,labeled:FALSE,424.62,3283,488,0.000221,REASONING: rightmost exclusion\nVERDICT: FALSE
+saircommunity_0036,True,False,False,True,labeled:FALSE,507.53,3289,1440,0.000402,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0037,False,False,True,True,labeled:FALSE,536.40,3289,697,0.000261,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0038,True,False,False,True,labeled:FALSE,573.91,3280,679,0.000257,REASONING: default false fallback\nVERDICT: FALSE
+saircommunity_0039,False,False,True,True,labeled:FALSE,640.08,3284,703,0.000262,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0040,True,False,False,True,labeled:FALSE,13.01,3290,1373,0.000389,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0041,False,False,True,True,labeled:FALSE,62.97,3271,779,0.000276,REASONING: parity exclusion  \nVERDICT: FALSE
+saircommunity_0042,True,False,False,True,labeled:FALSE,120.36,3289,723,0.000266,VERDICT: FALSE\nREASONING: default false fallback
+saircommunity_0043,False,False,True,True,labeled:FALSE,176.03,3290,679,0.000257,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0044,True,False,False,True,labeled:FALSE,240.25,3280,1280,0.000371,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0045,False,False,True,True,labeled:FALSE,315.51,3283,1465,0.000406,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0046,True,True,True,True,labeled:TRUE,336.08,3274,620,0.000245,"REASONING: The source equation is bare (x = T) with T = y * (x * (y * (z * (w * w)))). Features: rv=4, Lx=FALSE, Rx=FALSE, xTop=right, ts=v-m, rTot=[1,1,2,2], xCount=1. This matches contradiction moti"
+saircommunity_0047,False,False,True,True,labeled:FALSE,418.90,3290,1156,0.000348,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0048,True,False,False,True,labeled:FALSE,480.93,3283,1564,0.000425,"VERDICT: FALSE\nREASONING: COUNTEREXAMPLE\nMagma: elements {0,1} with operation * defined as XOR (addition modulo 2):\n0*0=0, 0*1=1, 1*0=1, 1*1=0.\n\nAssignment: x = 1, y = 0, z = 1.\n\nEvaluate Eq1:\"
+saircommunity_0049,False,False,True,True,labeled:FALSE,518.38,3283,792,0.000279,VERDICT: FALSE\nREASONING: default false fallback
+saircommunity_0050,True,False,False,True,labeled:FALSE,556.11,3274,602,0.000242,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0051,False,False,True,True,labeled:FALSE,594.84,3290,625,0.000247,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0052,True,True,True,True,labeled:TRUE,21.08,3283,502,0.000223,"REASONING: The premise Eq1 is bare and can be renamed to the form x = T * x where T = y * ((z * y) * z) does not contain x. This matches the Right projection rule (2.7). The rule forces a*b = b, i.e.,"
+saircommunity_0053,False,False,True,True,labeled:FALSE,33.21,3275,542,0.000231,REASONING: default false fallback\nVERDICT: FALSE
+saircommunity_0054,True,True,True,True,labeled:TRUE,84.16,3274,620,0.000245,"REASONING: The source equation is bare: x = T with T = y * (y * (x * (z * (w * w)))). Compute the required features for T:\n- rv = 4 (variables y, x, z, w)\n- Lx = FALSE (leftmost variable is y)\n- Rx"
+saircommunity_0055,False,False,True,True,labeled:FALSE,155.24,3290,863,0.000292,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0056,True,False,False,True,labeled:FALSE,212.81,3274,930,0.000304,REASONING: WORD exclusion\n\nVERDICT: FALSE
+saircommunity_0057,False,False,True,True,labeled:FALSE,260.34,3283,668,0.000255,REASONING: default false fallback\nVERDICT: FALSE
+saircommunity_0058,True,True,True,True,labeled:TRUE,306.16,3274,500,0.000223,"REASONING: The source equation can be renamed to the form x = T where the variable x does not occur in T (here T = y * (y * (y * (y * (y * y))))). By rule 2.3 (singleton / collapse source), such an eq"
+saircommunity_0059,False,False,True,True,labeled:FALSE,371.49,3275,457,0.000215,VERDICT: FALSE\nREASONING: default false fallback
+saircommunity_0060,True,False,False,True,labeled:FALSE,451.54,3290,1426,0.000399,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0061,False,False,True,True,labeled:FALSE,495.45,3274,823,0.000284,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0062,True,False,False,True,labeled:FALSE,532.24,3281,473,0.000218,REASONING: parity exclusion  \nVERDICT: FALSE
+saircommunity_0063,False,False,True,True,labeled:FALSE,579.85,3284,699,0.000261,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0064,True,True,True,True,labeled:TRUE,631.03,3274,483,0.000219,"REASONING: The source equation is bare (left side is a single variable x) and the right‑hand side does not contain x. By rule 2.3 (singleton / collapse source), any equation of the form x = T with x a"
+saircommunity_0065,False,False,True,True,labeled:FALSE,27.70,3290,488,0.000221,REASONING: default false fallback\nVERDICT: FALSE
+saircommunity_0066,True,False,False,True,labeled:FALSE,51.40,3281,309,0.000187,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0067,False,False,True,True,labeled:FALSE,118.41,3282,567,0.000236,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0068,True,False,False,True,labeled:FALSE,182.20,3289,1190,0.000354,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0069,False,False,True,True,labeled:FALSE,235.02,3290,916,0.000302,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0070,True,False,False,True,labeled:FALSE,305.04,3274,1070,0.000331,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0071,False,False,True,True,labeled:FALSE,333.80,3275,425,0.000208,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0072,True,False,False,True,labeled:FALSE,397.46,3274,402,0.000204,REASONING: missing-variable absorption\nVERDICT: FALSE\nPROOF:
+saircommunity_0073,False,False,True,True,labeled:FALSE,477.60,3289,1143,0.000345,REASONING: default false fallback\nVERDICT: FALSE
+saircommunity_0074,True,False,False,True,labeled:FALSE,518.80,3281,832,0.000286,REASONING: default false fallback\nVERDICT: FALSE
+saircommunity_0075,False,False,True,True,labeled:FALSE,552.55,3271,493,0.000221,REASONING: parity exclusion\nVERDICT: FALSE\nPROOF:
+saircommunity_0076,True,False,False,True,labeled:FALSE,613.23,3274,1299,0.000374,"VERDICT: FALSE\nPROOF:\nCounterexample magma:\n- Set = {a, b}\n- Operation * defined as right-zero: for any p, q, p * q = q.\n\nAssignment:\n- x = a\n- y = b\n- z = a\n\nEvaluation:\n- RHS of Eq1: y *"
+saircommunity_0077,False,False,True,True,labeled:FALSE,13.38,3284,501,0.000223,REASONING: default false fallback\nVERDICT: FALSE
+saircommunity_0078,True,True,True,True,labeled:TRUE,43.66,3274,251,0.000175,"REASONING: Eq1 is x = y with x not appearing in the term y, satisfying the singleton/collapse source condition (Rule 2.3). This forces any magma satisfying Eq1 to be a singleton magma (all elements eq"
+saircommunity_0079,False,False,True,True,labeled:FALSE,104.37,3274,1373,0.000389,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0080,True,False,False,True,labeled:FALSE,138.26,3281,360,0.000196,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0081,False,False,True,True,labeled:FALSE,203.94,3281,441,0.000212,"REASONING: Rightmost-variable exclusion – Eq1 has the same rightmost variable (y) on both sides, while Eq2 does not have the same rightmost variable on its two sides.  \nVERDICT: FALSE"
+saircommunity_0082,True,False,False,True,labeled:FALSE,273.05,3289,893,0.000298,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0083,False,False,True,True,labeled:FALSE,333.35,3274,865,0.000292,REASONING: default false fallback\nVERDICT: FALSE
+saircommunity_0084,True,False,False,True,labeled:FALSE,377.09,3278,389,0.000202,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0085,False,False,True,True,labeled:FALSE,456.09,3283,1063,0.000330,VERDICT: FALSE\nREASONING: constant magma\nPROOF:
+saircommunity_0086,True,True,True,True,labeled:TRUE,491.31,3274,587,0.000239,"REASONING: The source equation is bare (x = T) with T = y*(z*(x*(z*(w*w)))). Computing features: rv=4 (variables y,z,x,w), Lx=FALSE, Rx=FALSE, xTop=right (x appears only in the right subtree of the to"
+saircommunity_0087,False,False,True,True,labeled:FALSE,527.58,3275,360,0.000196,REASONING: rightmost-variable exclusion\nVERDICT: FALSE\nPROOF:
+saircommunity_0088,True,True,True,True,labeled:TRUE,579.19,3271,671,0.000255,"REASONING: The premise x = y * ((x * (z * x)) * y) matches contradiction motif C3 (rv=3, Rx=FALSE, xTop=right, ts=v-m, rTot=[1,2,2], xCount=2). Hence the implication holds in all magmas.\n\nVERDICT: T"
+saircommunity_0089,False,False,True,True,labeled:FALSE,660.87,3290,1472,0.000408,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0090,True,False,False,True,labeled:FALSE,16.63,3289,480,0.000219,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0091,False,False,True,True,labeled:FALSE,53.34,3282,332,0.000191,REASONING: rightmost-variable exclusion\nVERDICT: FALSE
+saircommunity_0092,True,False,False,True,labeled:FALSE,121.63,3274,521,0.000227,REASONING: default false fallback\nVERDICT: FALSE
+saircommunity_0093,False,False,True,True,labeled:FALSE,199.64,3290,1236,0.000363,VERDICT: FALSE\nREASONING: default false fallback
+saircommunity_0094,True,False,False,True,labeled:FALSE,227.77,3281,565,0.000235,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0095,False,False,True,True,labeled:FALSE,285.08,3281,576,0.000237,REASONING: default false fallback\nVERDICT: FALSE
+saircommunity_0096,True,True,True,True,labeled:TRUE,340.65,3271,582,0.000238,"REASONING: The source equation can be renamed to x = P with P = (((y*y)*x)*z)*y. Computing its features gives rv=3, Lx=FALSE, Rx=FALSE, xTop=left, ts=m‑v, rTot=[1,1,3]. This matches contradiction moti"
+saircommunity_0097,False,False,True,True,labeled:FALSE,433.33,3290,1222,0.000360,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0098,True,False,False,True,labeled:FALSE,465.69,3282,342,0.000193,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0099,False,False,True,True,labeled:FALSE,515.28,3271,533,0.000229,"REASONING: left projection (rule 2.6) – Eq1 is of the form x = x * T with T = ((y*z)*y)*z, which does not contain x. This forces a binary operation satisfying the left‑projection law a * b = a for all"
+saircommunity_0100,True,False,False,True,labeled:FALSE,548.95,3274,239,0.000173,REASONING: left projection  \nVERDICT: FALSE  \nPROOF:
+saircommunity_0101,False,False,True,True,labeled:FALSE,626.79,3290,1362,0.000387,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0102,True,True,True,True,labeled:TRUE,4.14,3282,667,0.000255,"REASONING: missing-variable absorption (Rule 2.12) – Eq1 is of the form x*y = T where y does not appear in T, so it forces a left‑projection law a*b = a. Applying this projection to Eq2 reduces both s"
+saircommunity_0103,False,False,True,True,labeled:FALSE,36.99,3283,889,0.000297,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0104,True,False,False,True,labeled:FALSE,98.03,3290,1489,0.000411,REASONING: default false fallback\nVERDICT: FALSE
+saircommunity_0105,False,False,True,True,labeled:FALSE,190.18,3274,1588,0.000429,"REASONING: Counterexample – take a two‑element magma {0,1} with the constant operation a * b = 0 for all a,b. Then for any assignment with x = 0 (e.g. y = 1, z = 0) the premise\nx = ((((y*y)*z)*x)*x)*"
+saircommunity_0106,True,False,False,True,labeled:FALSE,221.93,3281,879,0.000295,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0107,False,False,True,True,labeled:FALSE,267.20,3271,661,0.000253,REASONING: rightmost-variable exclusion\nVERDICT: FALSE\nPROOF:
+saircommunity_0108,True,False,False,True,labeled:FALSE,345.46,3289,1065,0.000331,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0109,False,False,True,True,labeled:FALSE,385.19,3288,581,0.000239,"REASONING: 3.4 Rightmost-variable exclusion – Eq1 has the same rightmost variable on both sides (x), but Eq2 does not (rightmost variable on RHS is w).  \nVERDICT: FALSE"
+saircommunity_0110,True,False,False,True,labeled:FALSE,452.39,3283,824,0.000285,REASONING: parity exclusion\nVERDICT: FALSE
+saircommunity_0111,False,True,False,True,labeled:TRUE,507.25,3281,887,0.000296,"REASONING: missing-variable absorption (Rule 2.12) applies because Eq1 can be renamed to x*y = y * ((x*x)*x) where y does not appear in the term ((x*x)*x). Under the left‑projection law p*q = p, Eq2 r"
+saircommunity_0112,True,False,False,True,labeled:FALSE,538.95,3274,669,0.000255,REASONING: default false fallback\nVERDICT: FALSE
+saircommunity_0113,False,False,True,True,labeled:FALSE,583.14,3275,681,0.000257,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0114,True,True,True,True,labeled:TRUE,636.44,3282,386,0.000201,"REASONING: Eq1 is bare and can be renamed x = T * x with T = y*(y*(y*z)). T does not contain x, so rule 2.7 (right projection) applies, forcing a*b = b in all magmas. Under this law, Eq2 simplifies: x"
+saircommunity_0115,False,False,True,True,labeled:FALSE,32.94,3275,558,0.000234,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0116,True,False,False,True,labeled:FALSE,91.36,3283,1223,0.000360,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0117,False,False,True,True,labeled:FALSE,124.74,3281,526,0.000228,REASONING: spine isolation\nVERDICT: FALSE\nPROOF:
+saircommunity_0118,True,False,False,True,labeled:FALSE,171.58,3274,628,0.000247,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0119,False,False,True,True,labeled:FALSE,231.14,3282,521,0.000227,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0120,True,True,True,True,labeled:TRUE,282.74,3282,347,0.000194,"REASONING: The source equation is bare and can be renamed to the form x = x * T where T = ((y * (z * w)) * w). T does not contain x, so by the left projection rule (2.6) the magma must satisfy a * b ="
+saircommunity_0121,False,False,True,True,labeled:FALSE,365.33,3290,969,0.000312,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0122,True,False,False,True,labeled:FALSE,413.26,3281,525,0.000228,REASONING: default false fallback\nVERDICT: FALSE
+saircommunity_0123,False,False,True,True,labeled:FALSE,475.62,3275,914,0.000301,REASONING: parity exclusion\nVERDICT: FALSE
+saircommunity_0124,True,False,False,True,labeled:FALSE,540.88,3290,1282,0.000372,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0125,False,False,True,True,labeled:FALSE,554.97,3282,391,0.000202,REASONING: PARITY exclusion  \nVERDICT: FALSE
+saircommunity_0126,True,False,False,True,labeled:FALSE,615.46,3274,949,0.000308,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0127,False,False,True,True,labeled:FALSE,38.28,3283,1618,0.000435,REASONING: default false fallback\nVERDICT: FALSE
+saircommunity_0128,True,False,False,True,labeled:FALSE,47.15,3278,479,0.000219,REASONING: default false fallback\nVERDICT: FALSE
+saircommunity_0129,False,False,True,True,labeled:FALSE,102.51,3290,1216,0.000359,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0130,True,False,False,True,labeled:FALSE,164.69,3282,1052,0.000328,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0131,False,,,False,,206.88,3286,300,0.000185,"REASONING: leftmost-variable exclusion (Eq1 has same leftmost variable on both sides, Eq2 does not)"
+saircommunity_0132,True,False,False,True,labeled:FALSE,276.09,3274,915,0.000302,REASONING: default false fallback\nVERDICT: FALSE
+saircommunity_0133,False,False,True,True,labeled:FALSE,315.89,3281,290,0.000183,REASONING: leftmost exclusion\nVERDICT: FALSE
+saircommunity_0134,True,False,False,True,labeled:FALSE,398.08,3290,922,0.000303,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0135,False,False,True,True,labeled:FALSE,438.78,3283,452,0.000214,REASONING: count exclusion  \nVERDICT: FALSE  \nPROOF:  
+saircommunity_0136,True,True,True,True,labeled:TRUE,499.79,3282,742,0.000269,"REASONING: The source equation x = (((y * y) * z) * x) * w can be renamed to x = T where T = (((y*y)*z)*x)*w. Computing the required features for T:\n- rv = 4 (variables y, z, x, w)\n- Lx = FALSE (lef"
+saircommunity_0137,False,False,True,True,labeled:FALSE,562.09,3275,1143,0.000345,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0138,True,False,False,True,labeled:FALSE,577.15,3281,356,0.000196,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0139,False,False,True,True,labeled:FALSE,638.41,3282,446,0.000213,REASONING: leftmost-variable exclusion\nVERDICT: FALSE
+saircommunity_0140,True,False,False,True,labeled:FALSE,21.93,3274,917,0.000302,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0141,False,False,True,True,labeled:FALSE,57.76,3282,242,0.000174,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0142,True,False,False,True,labeled:FALSE,133.03,3280,786,0.000277,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0143,False,False,True,True,labeled:FALSE,181.96,3289,523,0.000228,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0144,True,False,False,True,labeled:FALSE,242.71,3289,913,0.000302,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0145,False,False,True,True,labeled:FALSE,283.61,3283,324,0.000190,"REASONING: leftmost-variable exclusion (Eq1 has the same leftmost variable on both sides, but Eq2 does not)  \nVERDICT: FALSE  \nPROOF:"
+saircommunity_0146,True,False,False,True,labeled:FALSE,357.04,3281,641,0.000250,REASONING: default false fallback\nVERDICT: FALSE
+saircommunity_0147,False,False,True,True,labeled:FALSE,420.81,3283,709,0.000263,REASONING: rightmost-variable exclusion  \nVERDICT: FALSE  \nPROOF:
+saircommunity_0148,True,True,True,True,labeled:TRUE,469.07,3274,527,0.000228,"REASONING: rv=4, Lx=FALSE, Rx=FALSE, xTop=right, ts=v-m, satisfies motif C1 (rv ≥ 4, Lx=FALSE, Rx=FALSE, NOT (xTop=both AND ts=m-m)).  \nVERDICT: TRUE\nPROOF: By contradiction motif C1, the premise fo"
+saircommunity_0149,False,False,True,True,labeled:FALSE,512.75,3279,253,0.000176,"REASONING: leftmost-variable exclusion (Eq1 has the same leftmost variable on both sides, but Eq2 does not)  \nVERDICT: FALSE  \nPROOF:"
+saircommunity_0150,True,False,False,True,labeled:FALSE,566.34,3282,633,0.000248,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0151,False,False,True,True,labeled:FALSE,608.23,3289,704,0.000262,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0152,True,False,False,True,labeled:FALSE,4.15,3283,556,0.000234,REASONING: default false fallback\nVERDICT: FALSE
+saircommunity_0153,False,False,True,True,labeled:FALSE,59.19,3271,439,0.000211,REASONING: parity exclusion  \nVERDICT: FALSE
+saircommunity_0154,True,False,False,True,labeled:FALSE,123.87,3290,1612,0.000435,REASONING: default false fallback\nVERDICT: FALSE
+saircommunity_0155,False,False,True,True,labeled:FALSE,149.17,3287,453,0.000214,REASONING: parity exclusion\nVERDICT: FALSE
+saircommunity_0156,True,True,True,True,labeled:TRUE,218.90,3274,527,0.000228,"REASONING: The source equation is bare with P = y * (x * (y * (x * (z * w)))). Features: rv=4, Lx=FALSE, Rx=FALSE, xTop=right, ts=v-m, rTot=[1,1,2,2], xCount=2. This matches contradiction motif C1 (rv"
+saircommunity_0157,False,False,True,True,labeled:FALSE,270.81,3282,250,0.000175,REASONING: parity exclusion\nVERDICT: FALSE
+saircommunity_0158,True,True,True,True,labeled:TRUE,320.12,3282,517,0.000226,"REASONING: The premise x = y * (x * ((z * z) * w)) is a bare equation with P = y * (x * ((z*z)*w)). Its features are rv=4, Lx=FALSE, Rx=FALSE, xTop=right, ts=v-m, rTot=[1,1,1,2], xCount=1, which match"
+saircommunity_0159,False,False,True,True,labeled:FALSE,395.78,3289,1063,0.000330,REASONING: parity exclusion\nVERDICT: FALSE
+saircommunity_0160,True,False,False,True,labeled:FALSE,433.39,3282,194,0.000165,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0161,False,False,True,True,labeled:FALSE,502.34,3279,592,0.000240,REASONING: square reduction\nVERDICT: FALSE
+saircommunity_0162,True,True,True,True,labeled:TRUE,543.60,3274,558,0.000234,"REASONING: The source equation can be renamed to x = P with P = y*(x*(y*(z*(x*w)))). Features: rv=4, Lx=FALSE, Rx=FALSE, xTop=right, ts=v-m, rTot=[1,1,2,2], xCount=2. This matches contradiction motif "
+saircommunity_0163,False,False,True,True,labeled:FALSE,580.13,3283,270,0.000179,REASONING: parity exclusion\nVERDICT: FALSE
+saircommunity_0164,True,False,False,True,labeled:FALSE,651.18,3289,834,0.000287,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0165,False,False,True,True,labeled:FALSE,34.65,3283,378,0.000200,REASONING: rightmost-variable exclusion  \nVERDICT: FALSE
+saircommunity_0166,True,True,True,True,labeled:TRUE,94.48,3289,1144,0.000346,"REASONING: The premise Eq1 is the associativity law: x * (y * z) = (x * y) * z for all elements. In any magma where this holds, the operation * is associative. Using associativity we can transform the"
+saircommunity_0167,False,False,True,True,labeled:FALSE,152.85,3275,930,0.000304,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0168,True,False,False,True,labeled:FALSE,204.74,3282,1115,0.000340,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0169,False,False,True,True,labeled:FALSE,238.09,3283,406,0.000205,REASONING: SET exclusion\nVERDICT: FALSE\nPROOF:
+saircommunity_0170,True,True,True,True,labeled:TRUE,309.73,3289,827,0.000285,"REASONING: The source equation is bare: x = (y * (z * ((x * y) * y))) * z. Analyzing the right‑hand side P = (y * (z * ((x * y) * y))) * z gives the feature vector rv=3, Lx=FALSE, Rx=FALSE, xTop=left,"
+saircommunity_0171,False,False,True,True,labeled:FALSE,385.41,3281,1545,0.000422,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0172,True,False,False,True,labeled:FALSE,426.57,3274,1236,0.000363,"REASONING: spine isolation, word exclusion, parity exclusion, leftmost/rightmost exclusion, SET exclusion, and count exclusion do not apply. No true route fires. A counterexample exists: take a magma "
+saircommunity_0173,False,False,True,True,labeled:FALSE,480.42,3282,592,0.000240,REASONING: parity exclusion\nVERDICT: FALSE
+saircommunity_0174,True,False,False,True,labeled:FALSE,517.87,3290,464,0.000216,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0175,False,False,True,True,labeled:FALSE,582.11,3290,1190,0.000354,REASONING: default false fallback\nVERDICT: FALSE
+saircommunity_0176,True,False,False,True,labeled:FALSE,631.57,3283,1056,0.000329,REASONING: default false fallback\nVERDICT: FALSE
+saircommunity_0177,False,False,True,True,labeled:FALSE,22.47,3283,628,0.000247,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0178,True,False,False,True,labeled:FALSE,61.23,3274,796,0.000279,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0179,False,False,True,True,labeled:FALSE,102.84,3282,413,0.000206,REASONING: leftmost exclusion\nVERDICT: FALSE
+saircommunity_0180,True,False,False,True,labeled:FALSE,155.68,3289,515,0.000226,VERDICT: FALSE\nREASONING: default false fallback
+saircommunity_0181,False,False,True,True,labeled:FALSE,243.28,3290,1483,0.000410,REASONING: default false fallback\nVERDICT: FALSE
+saircommunity_0182,True,True,True,True,labeled:TRUE,361.02,3274,541,0.000230,"REASONING: The source equation can be renamed to x = P with P = y * (x * (z * (y * (w * u)))). Computing features: rv=5, Lx=FALSE, Rx=FALSE, xTop=right, ts=v-m, rTot=[1,1,1,1,2], xCount=1. This matche"
+saircommunity_0183,False,False,True,True,labeled:FALSE,322.58,3284,546,0.000232,"REASONING: count exclusion (both sides of Eq1 have identical variable counts, but sides of Eq2 have different counts)  \nVERDICT: FALSE  \nPROOF:"
+saircommunity_0184,True,True,True,True,labeled:TRUE,406.59,3290,991,0.000317,"REASONING: The given equation x * (y * z) = (x * y) * z is exactly the associativity law for the binary operation *. Holding for all elements of a magma forces the magma to be a semigroup (i.e., an as"
+saircommunity_0185,False,False,True,True,labeled:FALSE,447.77,3290,494,0.000222,REASONING: parity exclusion\nVERDICT: FALSE\nPROOF:
+saircommunity_0186,True,True,True,True,labeled:TRUE,514.96,3274,719,0.000264,"REASONING: The source equation is bare and can be renamed  \n\(x = P\) with  \n\(P = y * (x * (z * (z * (z * w))))\).  \n\nFeatures of \(P\):  \n- distinct variables \(rv = 4\) (y, x, z, w)  \n- leftm"
+saircommunity_0187,False,False,True,True,labeled:FALSE,557.96,3282,909,0.000301,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0188,True,True,True,True,labeled:TRUE,584.92,3278,322,0.000189,"REASONING: Eq1 is a bare equation x = y where the variable x does not appear on the right‑hand side. By rule 2.3 (singleton / collapse source), this forces every element of the magma to be equal (the "
+saircommunity_0189,False,False,True,True,labeled:FALSE,650.50,3286,756,0.000272,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0190,True,True,True,True,labeled:TRUE,29.86,3289,1323,0.000380,"REASONING: Eq1 is the associativity law. Using it twice we can re‑bracket the word x y x z, showing that Eq2 follows from Eq1. This matches rule 2.11 (two‑step exact instance).\n\nVERDICT: TRUE\nPROOF"
+saircommunity_0191,False,False,True,True,labeled:FALSE,73.77,3282,668,0.000255,REASONING: leftmost-variable exclusion  \nVERDICT: FALSE
+saircommunity_0192,True,True,True,True,labeled:TRUE,150.48,3274,826,0.000285,"REASONING: The right‑hand side of Eq1 is P = y * (x * (z * (w * (x * w)))). Its features are rv=4, Lx=FALSE, Rx=FALSE, xTop=right, ts=v-m, rTot=[1,1,2,2], xCount=2. This matches contradiction motif C1"
+saircommunity_0193,False,False,True,True,labeled:FALSE,189.42,3283,480,0.000219,VERDICT: FALSE\nREASONING: rightmost exclusion
+saircommunity_0194,True,False,False,True,labeled:FALSE,240.95,3281,343,0.000193,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0195,False,False,True,True,labeled:FALSE,308.26,3279,716,0.000264,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+saircommunity_0196,True,True,True,True,labeled:TRUE,363.75,3281,738,0.000268,"REASONING: The premise `x * y = z * (w * (z * u))` is of the form `x*y = T` where `T` is a product term whose variables `{z,w,u}` are disjoint from `{x,y}`. By the **constant‑operation source** rule ("
+saircommunity_0197,False,False,True,True,labeled:FALSE,431.09,3282,1017,0.000321,REASONING: leftmost exclusion\nVERDICT: FALSE\nPROOF:
+saircommunity_0198,True,False,False,True,labeled:FALSE,485.92,3289,482,0.000220,REASONING: default false fallback\nVERDICT: FALSE
+saircommunity_0199,False,False,True,True,labeled:FALSE,524.06,3282,389,0.000202,REASONING: count exclusion\nVERDICT: FALSE
+saircommunity_0200,True,True,True,True,labeled:TRUE,568.89,3274,562,0.000234,"REASONING: The source equation is bare (x = T) with T = y * (x * (z * (w * (z * y)))). Computing features of T: rv=4, Lx=FALSE, Rx=FALSE, xTop=right, ts=v-m, rTot=[1,1,2,2], xCount=1. This matches con"
