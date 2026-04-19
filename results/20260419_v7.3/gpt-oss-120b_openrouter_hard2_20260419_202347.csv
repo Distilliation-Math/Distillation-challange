@@ -1,0 +1,201 @@
+problem_id,expected,predicted,correct,parse_ok,raw_verdict,latency_s,input_tokens,output_tokens,cost_usd,response_text
+hard2_0001,False,False,True,True,labeled:FALSE,30.50,3283,318,0.000188,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0002,False,False,True,True,labeled:FALSE,169.28,3284,572,0.000237,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0003,True,False,False,True,labeled:FALSE,211.04,3281,381,0.000200,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0004,True,False,False,True,labeled:FALSE,271.67,3283,1660,0.000443,REASONING: default false fallback\nVERDICT: FALSE
+hard2_0005,True,False,False,True,labeled:FALSE,302.92,3283,959,0.000310,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0006,True,True,True,True,labeled:TRUE,328.28,3284,498,0.000223,"REASONING: The source equation is bare: x = y*(z*(x*(x*w))). Compute its features: distinct variables rv=4 (y,z,x,w); leftmost variable is y so Lx=FALSE; rightmost variable is w so Rx=FALSE; at the to"
+hard2_0007,False,False,True,True,labeled:FALSE,357.14,3283,258,0.000177,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0008,True,True,True,True,labeled:TRUE,407.40,3283,529,0.000229,"REASONING: The source equation is x = y * (x * (x * (z * y))). Analyzing the right‑hand side P = y * (x * (x * (z * y))) gives the feature vector rv=3, Lx=FALSE, Rx=FALSE, xTop=right, ts=v-m, rTot=[1,"
+hard2_0009,False,False,True,True,labeled:FALSE,443.04,3283,1000,0.000318,REASONING: spine isolation\nVERDICT: FALSE\nPROOF:
+hard2_0010,False,False,True,True,labeled:FALSE,24.17,3284,570,0.000236,REASONING: default false fallback\nVERDICT: FALSE
+hard2_0011,False,False,True,True,labeled:FALSE,54.98,3280,554,0.000233,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0012,False,False,True,True,labeled:FALSE,94.30,3283,927,0.000304,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0013,False,False,True,True,labeled:FALSE,113.78,3283,475,0.000218,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0014,False,False,True,True,labeled:FALSE,164.01,3283,1105,0.000338,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0015,False,True,False,True,labeled:TRUE,202.65,3282,1252,0.000366,"REASONING: The premise `x * x = (y * (z * w)) * u` forces the binary operation to be constant. Indeed, for arbitrary choices of the variables the left‑hand side depends only on `x` while the right‑han"
+hard2_0016,False,True,False,True,labeled:TRUE,231.49,3282,398,0.000204,"REASONING: The source equation is bare and matches the left‑projection pattern 2.6: it can be renamed to x = x * T with T = y * ((y *z) * y), which does not contain x. Hence the magma must satisfy the"
+hard2_0017,True,True,True,True,labeled:TRUE,272.58,3283,647,0.000251,"REASONING: The source equation is bare x = y * (x * (y * (y * z))). Analyzing the term T = y * (x * (y * (y * z))) gives the feature vector rv=3, Lx=FALSE, Rx=FALSE, xTop=right, ts=v-m, rTot=[1,1,3]. "
+hard2_0018,True,False,False,True,labeled:FALSE,325.86,3280,1240,0.000364,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0019,True,True,True,True,labeled:TRUE,351.73,3282,667,0.000255,"REASONING: The source equation is bare: x = T with T = (((y*y)*z)*x)*w. Computing features of T gives rv=4, Lx=FALSE, Rx=FALSE, xTop=left, ts=m‑v, rTot=[1,1,1,2], xCount=1, which matches contradiction"
+hard2_0020,False,True,False,True,labeled:TRUE,403.30,3283,1474,0.000408,"REASONING: The identity x * (y * z) = z * (w * u) forces the binary operation to be constant. Indeed, fixing any right‑hand argument a, the equation with w = y and u = z gives x * a = z * a for all x,"
+hard2_0021,True,False,False,True,labeled:FALSE,419.52,3282,374,0.000199,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0022,True,True,True,True,labeled:TRUE,133.57,3283,580,0.000238,"REASONING: The source equation is bare, x = y*(((x*y)*z)*w). Analyzing the term P = y*(((x*y)*z)*w) gives rv=4, Lx=FALSE, Rx=FALSE, xTop=right, ts=v-m, rTot=[1,1,1,2]. This matches contradiction motif"
+hard2_0023,True,False,False,True,labeled:FALSE,183.66,3280,1175,0.000351,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0024,True,False,False,True,labeled:FALSE,251.44,3280,1389,0.000392,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0025,False,False,True,True,labeled:FALSE,312.93,3281,474,0.000218,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0026,True,False,False,True,labeled:FALSE,433.99,3283,1184,0.000353,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0027,False,False,True,True,labeled:FALSE,31.30,3284,1536,0.000420,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0028,True,False,False,True,labeled:FALSE,45.89,3281,740,0.000269,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0029,False,False,True,True,labeled:FALSE,72.63,3281,701,0.000261,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0030,True,True,True,True,labeled:TRUE,100.56,3282,579,0.000238,"REASONING: The source equation is bare and can be renamed x = P with P = y * (x * ((z * z) * w)). Computing its features: rv=4, Lx=FALSE, Rx=FALSE, xTop=right, ts=v-m, rTot=[1,1,1,2], xCount=1. This m"
+hard2_0031,False,False,True,True,labeled:FALSE,131.18,3283,421,0.000208,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0032,False,False,True,True,labeled:FALSE,174.11,3281,560,0.000234,REASONING: default false fallback\nVERDICT: FALSE
+hard2_0033,True,True,True,True,labeled:TRUE,214.52,3283,532,0.000229,"REASONING: contradiction motif (C3) matches Eq1 with rv=3, Lx=FALSE, Rx=FALSE, xTop=right, ts=v-m, rTot=[1,2,2], xCount=2.\n\nVERDICT: TRUE\nPROOF: The premise x = y * ((z * (x * x)) * y) fits contrad"
+hard2_0034,False,False,True,True,labeled:FALSE,250.13,3281,354,0.000195,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0035,True,False,False,True,labeled:FALSE,303.38,3283,1028,0.000323,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0036,True,False,False,True,labeled:FALSE,340.11,3284,966,0.000312,REASONING: default false fallback\nVERDICT: FALSE
+hard2_0037,True,True,True,True,labeled:TRUE,367.07,3283,508,0.000225,REASONING: Eq1 is bare and can be renamed to the form x = T * x where T = ((y*z)*w)*w does not contain x. By rule 2.7 (right projection) this forces a*b = b for all elements of any magma satisfying Eq
+hard2_0038,False,False,True,True,labeled:FALSE,407.12,3283,460,0.000215,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0039,True,True,True,True,labeled:TRUE,437.76,3283,640,0.000250,"REASONING: contradiction motif (C3) matches Eq1 (rv=3, Lx=FALSE, Rx=FALSE, xTop=right, ts=v-m, rTot=[1,2,2], xCount=2)\n\nVERDICT: TRUE\nPROOF: By rule 2.8 (contradiction motif C3), the premise forces"
+hard2_0040,True,True,True,True,labeled:TRUE,23.06,3280,585,0.000239,"REASONING: The premise equation can be renamed to x = P where P = y * (x * ((y * z) * w)). Analyzing P gives the feature vector rv=4, Lx=FALSE, Rx=FALSE, xTop=right, ts=v-m, rTot=[1,1,1,2], xCount=1, "
+hard2_0041,False,False,True,True,labeled:FALSE,60.30,3284,824,0.000285,REASONING: parity exclusion  \nVERDICT: FALSE
+hard2_0042,False,False,True,True,labeled:FALSE,88.70,3283,621,0.000246,REASONING: default false fallback\nVERDICT: FALSE
+hard2_0043,False,False,True,True,labeled:FALSE,122.55,3283,583,0.000239,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0044,True,True,True,True,labeled:TRUE,153.07,3283,582,0.000239,"REASONING: The source equation is bare: x = (y * ((z * z) * x)) * w. Analyzing the term T = (y * ((z * z) * x)) * w gives the feature vector rv=4, Lx=FALSE, Rx=FALSE, xTop=left, ts=m‑v, rTot=[1,1,1,2]"
+hard2_0045,False,False,True,True,labeled:FALSE,190.23,3281,451,0.000214,REASONING: default false fallback\nVERDICT: FALSE
+hard2_0046,False,False,True,True,labeled:FALSE,222.74,3283,259,0.000177,REASONING: PARITY exclusion\nVERDICT: FALSE
+hard2_0047,False,False,True,True,labeled:FALSE,281.90,3281,585,0.000239,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0048,False,False,True,True,labeled:FALSE,309.37,3283,277,0.000181,VERDICT: FALSE\nREASONING: parity exclusion
+hard2_0049,True,True,True,True,labeled:TRUE,348.26,3283,542,0.000231,"REASONING: The source equation is bare: x = y * (((z * w) * x) * y). Analyzing the right‑hand side P = y * (((z * w) * x) * y) gives the feature vector rv=4, Lx=FALSE, Rx=FALSE, xTop=right, ts=v-m, rT"
+hard2_0050,True,True,True,True,labeled:TRUE,386.99,3280,491,0.000221,"REASONING: The source equation x = y * ((z * x) * z) matches contradiction motif C2 (rv=3, Lx=FALSE, Rx=FALSE, xTop=right, ts=v-m, rTot=[1,1,2]).  \nVERDICT: TRUE\nPROOF: By motif C2, the source force"
+hard2_0051,False,False,True,True,labeled:FALSE,427.23,3283,652,0.000252,REASONING: default false fallback\nVERDICT: FALSE
+hard2_0052,False,False,True,True,labeled:FALSE,11.85,3283,646,0.000251,VERDICT: FALSE\nREASONING: default false fallback
+hard2_0053,True,True,True,True,labeled:TRUE,42.62,3284,742,0.000269,"REASONING: The source equation is bare (x = T) with T = y * (x * (z * (x * z))). Computing the required features:\n- rv = 3 (variables x, y, z)\n- Lx = FALSE (leftmost variable of T is y)\n- Rx = FALS"
+hard2_0054,False,False,True,True,labeled:FALSE,76.59,3283,887,0.000297,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0055,False,False,True,True,labeled:FALSE,110.38,3283,819,0.000284,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0056,False,False,True,True,labeled:FALSE,153.28,3284,1267,0.000369,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0057,True,False,False,True,labeled:FALSE,184.30,3284,907,0.000300,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0058,True,True,True,True,labeled:TRUE,220.65,3284,542,0.000231,"REASONING: The source equation is bare: x = (y*z)*((w*x)*y). Analyzing the term P = (y*z)*((w*x)*y) gives rv=4 distinct variables, Lx=FALSE, Rx=FALSE, x appears only in the right subterm of the top pr"
+hard2_0059,True,False,False,True,labeled:FALSE,272.14,3284,1316,0.000378,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0060,True,False,False,True,labeled:FALSE,306.07,3283,1015,0.000321,REASONING: default false fallback\nVERDICT: FALSE
+hard2_0061,True,True,True,True,labeled:TRUE,337.43,3283,566,0.000236,"REASONING: The source equation can be renamed to x = y * (((x * x) * z) * z). Analyzing the right‑hand side P = y * (((x*x)*z)*z) gives the feature vector rv=3, Lx=FALSE, Rx=FALSE, xTop=right, ts=v-m,"
+hard2_0062,False,False,True,True,labeled:FALSE,367.81,3281,581,0.000238,REASONING: default false fallback\nVERDICT: FALSE
+hard2_0063,True,True,True,True,labeled:TRUE,411.96,3280,555,0.000233,"REASONING: The source equation can be renamed to x = y * (z * (x * z)). Analyzing the right‑hand side P = y*(z*(x*z)) gives the feature vector rv=3, Lx=FALSE, Rx=FALSE, xTop=right, ts=v-m, rTot=[1,1,2"
+hard2_0064,False,False,True,True,labeled:FALSE,452.37,3284,1347,0.000384,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0065,True,False,False,True,labeled:FALSE,25.99,3281,729,0.000266,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0066,True,True,True,True,labeled:TRUE,56.61,3284,587,0.000240,"REASONING: The source equation is bare: x = (y*x)*((z*w)*w). Analyzing the term P = (y*x)*((z*w)*w) gives the feature vector rv=4, Lx=FALSE, Rx=FALSE, xTop=left, ts=m-m, rTot=[1,1,1,2], xCount=1, whic"
+hard2_0067,False,False,True,True,labeled:FALSE,99.89,3285,1103,0.000338,REASONING: spine isolation\nVERDICT: FALSE\nPROOF:
+hard2_0068,False,True,False,True,labeled:TRUE,129.55,3283,1033,0.000324,"REASONING: The equation x * (x * y) = (z * w) * u holds for all assignments of the variables only when the binary operation * yields the same result for any pair of elements; i.e., * is a constant ope"
+hard2_0069,True,False,False,True,labeled:FALSE,165.97,3283,1089,0.000335,REASONING: spine isolation (mixed spine in Eq1 does not match pure requirement) does not apply; no true route triggers. Provide counterexample in the right‑zero magma (a * b = b). Let the domain be {0
+hard2_0070,True,False,False,True,labeled:FALSE,209.56,3281,1143,0.000345,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0071,False,False,True,True,labeled:FALSE,234.51,3281,593,0.000241,REASONING: default false fallback\nVERDICT: FALSE
+hard2_0072,True,True,True,True,labeled:TRUE,284.15,3283,703,0.000262,"REASONING: The premise equation is x = ((y * (x * x)) * z) * w. This is a bare equation x = T where T = ((y * (x * x)) * z) * w. Analyzing T:\n- Distinct variables rv = 4 (y, x, z, w).\n- x is not the"
+hard2_0073,True,False,False,True,labeled:FALSE,320.87,3283,821,0.000284,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0074,True,False,False,True,labeled:FALSE,351.45,3284,627,0.000247,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0075,True,True,True,True,labeled:TRUE,388.92,3283,506,0.000224,"REASONING: The source equation can be renamed to x = P where P = ((y*(z*z))*x)*w. Features: rv=4, Lx=FALSE, Rx=FALSE, xTop=left, ts=m-v, rTot=[1,1,1,2], xCount=1. This matches contradiction motif C1 ("
+hard2_0076,False,False,True,True,labeled:FALSE,427.08,3283,407,0.000205,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0077,False,False,True,True,labeled:FALSE,15.61,3283,790,0.000278,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0078,True,False,False,True,labeled:FALSE,43.22,3281,573,0.000237,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0079,True,True,True,True,labeled:TRUE,73.70,3283,624,0.000247,"REASONING: The source equation is bare, x = (y * (x * (y * z))) * y. Analyzing the term P = (y * (x * (y * z))) * y gives the feature vector rv=3, Lx=FALSE, Rx=FALSE, xTop=left, ts=m‑v, rTot=[1,1,3], "
+hard2_0080,True,True,True,True,labeled:TRUE,108.06,3283,550,0.000233,"REASONING: The source equation is bare: x = ((y*z)*(y*x))*y. Analyzing the term P = ((y*z)*(y*x))*y gives the feature vector rv=3, Lx=FALSE, Rx=FALSE, xTop=left, ts=m‑v, rTot=[1,1,3], xCount=1, which "
+hard2_0081,True,True,True,True,labeled:TRUE,141.59,3283,597,0.000241,"REASONING: The source equation is bare with P = (y * (x * (x * z))) * w. Features: rv=4, Lx=FALSE, Rx=FALSE, xTop=left, ts=m-v, rTot=[1,1,1,2], xCount=2. This matches contradiction motif C1 (rv ≥ 4, L"
+hard2_0082,True,False,False,True,labeled:FALSE,171.33,3282,231,0.000172,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0083,True,False,False,True,labeled:FALSE,234.32,3283,1224,0.000361,"VERDICT: FALSE\nREASONING: counterexample\nPROOF: \nConsider the magma with two elements {0,1} and operation defined by left projection: a * b = a for all a,b.  \nAssign variables as x = 0, y = 0, z ="
+hard2_0084,False,False,True,True,labeled:FALSE,258.92,3283,627,0.000247,REASONING: default false fallback\nVERDICT: FALSE
+hard2_0085,True,True,True,True,labeled:TRUE,303.38,3283,475,0.000218,"REASONING: The source equation is bare with P = ((y*z)*(x*w))*u. Features: rv=5, Lx=FALSE, Rx=FALSE, xTop=left, ts=m‑v, rTot=[1,1,1,1,1], xCount=1. This matches contradiction motif C1 (rv ≥ 4, Lx = FA"
+hard2_0086,True,True,True,True,labeled:TRUE,339.76,3283,675,0.000256,"REASONING: The source equation can be renamed to x = P where P = (y * ((z * z) * x)) * w. For P we have:\n- distinct variables rv = 4 (y, z, x, w)\n- Lx = FALSE (leftmost variable is y)\n- Rx = FALSE "
+hard2_0087,False,False,True,True,labeled:FALSE,365.00,3283,310,0.000187,REASONING: default false fallback\nVERDICT: FALSE
+hard2_0088,False,False,True,True,labeled:FALSE,413.41,3280,587,0.000239,REASONING: default false fallback\nVERDICT: FALSE
+hard2_0089,True,True,True,True,labeled:TRUE,438.66,3283,411,0.000206,"REASONING: The source term P = y * (((x * x) * z) * w) has features rv=4, Lx=FALSE, Rx=FALSE, xTop=right, ts=v-m, rTot=[1,1,1,2]; this matches contradiction motif C7, which yields a forced projection "
+hard2_0090,False,False,True,True,labeled:FALSE,22.73,3281,531,0.000229,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0091,True,True,True,True,labeled:TRUE,57.51,3283,577,0.000238,"REASONING: The source equation is x = y * (((x * z) * x) * w). The right‑hand side P has four distinct variables (rv=4), x is neither the leftmost nor the rightmost variable (Lx=FALSE, Rx=FALSE), and "
+hard2_0092,False,False,True,True,labeled:FALSE,82.07,3283,184,0.000163,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0093,False,False,True,True,labeled:FALSE,125.23,3283,702,0.000261,REASONING: default false fallback\nVERDICT: FALSE
+hard2_0094,True,True,True,True,labeled:TRUE,155.57,3284,595,0.000241,"REASONING: contradiction motif (C4) matches – P = y*((x*(x*x))*z) has rv=3, Lx=FALSE, Rx=FALSE, xTop=right, ts=v-m, rTot=[1,1,3].\n\nVERDICT: TRUE\nPROOF: By rule 2.8 (contradiction motif C4), the pre"
+hard2_0095,False,False,True,True,labeled:FALSE,203.25,3282,842,0.000288,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0096,False,False,True,True,labeled:FALSE,245.42,3282,1015,0.000321,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0097,True,False,False,True,labeled:FALSE,301.76,3282,1469,0.000407,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0098,True,True,True,True,labeled:TRUE,317.63,3283,584,0.000239,"REASONING: The source equation is bare: x = (y * (x * (y * z))) * y. Let P = (y * (x * (y * z))) * y. Features: rv=3 (variables x,y,z), Lx=FALSE (leftmost leaf is y), Rx=FALSE (rightmost leaf is y), x"
+hard2_0099,True,True,True,True,labeled:TRUE,353.65,3283,745,0.000270,"REASONING: The source equation x = y * (x * ((z * y) * y)) matches contradiction motif C4 (rv=3, Lx=FALSE, Rx=FALSE, xTop=right, ts=v-m, rTot=[1,1,3]).  \nVERDICT: TRUE  \nPROOF: By contradiction moti"
+hard2_0100,False,False,True,True,labeled:FALSE,396.33,3282,763,0.000273,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0101,True,True,True,True,labeled:TRUE,431.76,3277,627,0.000247,"REASONING: The source equation can be renamed to x = P with P = y * ((y * x) * z). For P we have rv=3, Lx=FALSE, Rx=FALSE, xTop=right, ts=v-m, rTot=[1,1,2]; this matches contradiction motif C2, which "
+hard2_0102,False,False,True,True,labeled:FALSE,12.86,3283,714,0.000264,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0103,True,False,False,True,labeled:FALSE,43.68,3281,561,0.000235,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0104,False,False,True,True,labeled:FALSE,74.20,3282,578,0.000238,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0105,False,False,True,True,labeled:FALSE,109.88,3283,658,0.000253,REASONING: default false fallback\nVERDICT: FALSE
+hard2_0106,True,True,True,True,labeled:TRUE,142.56,3283,557,0.000234,"REASONING: The source equation is bare: x = (((y * y) * y) * x) * z. Let P = (((y*y)*y)*x)*z. Features: rv=3 (variables y,x,z), Lx=FALSE (leftmost leaf y), Rx=FALSE (rightmost leaf z), xTop=left (x oc"
+hard2_0107,True,False,False,True,labeled:FALSE,189.02,3284,907,0.000300,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0108,False,False,True,True,labeled:FALSE,227.06,3282,834,0.000286,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0109,False,False,True,True,labeled:FALSE,274.48,3284,1290,0.000373,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0110,True,False,False,True,labeled:FALSE,307.09,3283,567,0.000236,REASONING: default false fallback\nVERDICT: FALSE
+hard2_0111,True,True,True,True,labeled:TRUE,340.17,3282,622,0.000246,"REASONING: The source equation is bare with P = (y * ((y * x) * z)) * w. Features: rv=4, Lx=FALSE, Rx=FALSE, xTop=left, ts=m‑v, rTot=[1,1,1,2], xCount=1. This matches contradiction motif C1 (rv ≥ 4, L"
+hard2_0112,False,False,True,True,labeled:FALSE,376.91,3282,829,0.000286,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0113,True,True,True,True,labeled:TRUE,413.94,3283,503,0.000224,"REASONING: The source equation is bare with P = (y * (x * (z * z))) * z. Its features are rv=3, Lx=FALSE, Rx=FALSE, xTop=left, ts=m-v, rTot=[1,1,3], xCount=1, which matches contradiction motif C6. Hen"
+hard2_0114,True,False,False,True,labeled:FALSE,454.62,3280,1326,0.000380,REASONING: default false fallback\nVERDICT: FALSE
+hard2_0115,True,True,True,True,labeled:TRUE,25.33,3283,575,0.000237,"REASONING: The source equation is bare: x = ((y * (z * x)) * x) * w. Analyzing the term P = ((y*(z*x))*x)*w gives rv=4, Lx=FALSE, Rx=FALSE, xTop=left, ts=m‑v, rTot=[1,1,1,2], xCount=2. This matches co"
+hard2_0116,True,True,True,True,labeled:TRUE,63.90,3283,493,0.000222,"REASONING: rv=3, Lx=FALSE, Rx=FALSE, xTop=right, ts=v-m, rTot=[1,1,3] matches motif C4.\n\nVERDICT: TRUE\nPROOF: By contradiction motif C4, the given equation forces a projection that makes any derive"
+hard2_0117,True,False,False,True,labeled:FALSE,81.72,3281,137,0.000154,REASONING: default false fallback\nVERDICT: FALSE
+hard2_0118,False,False,True,True,labeled:FALSE,138.25,3284,1336,0.000382,REASONING: default false fallback\nVERDICT: FALSE
+hard2_0119,True,True,True,True,labeled:TRUE,158.19,3280,604,0.000243,"REASONING: The source equation is bare (x = T) with T = y * (x * (y * (y * z))). Computing its features: rv=3, Lx=FALSE, Rx=FALSE, xTop=right, ts=v-m, rTot=[1,1,3]. This matches contradiction motif C4"
+hard2_0120,True,True,True,True,labeled:TRUE,198.17,3283,485,0.000220,"REASONING: The source equation is bare with P = ((y * (x * x)) * x) * z. Features: rv=3, Lx=FALSE, Rx=FALSE, xTop=left, ts=m-v, rTot=[1,1,3], xCount=3. This matches contradiction motif C6, which yield"
+hard2_0121,True,True,True,True,labeled:TRUE,242.83,3283,700,0.000261,"REASONING: rv=3, Lx=FALSE, Rx=FALSE, xTop=right, ts=v-m, rTot=[1,1,3] matches motif C4.\n\nVERDICT: TRUE\nPROOF: By the contradiction motif rule (2.8), the source equation x = y * (z * ((y * x) * y)) "
+hard2_0122,False,False,True,True,labeled:FALSE,283.92,3283,541,0.000231,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0123,False,False,True,True,labeled:FALSE,325.42,3283,898,0.000299,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0124,False,False,True,True,labeled:FALSE,360.74,3283,1128,0.000342,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0125,False,False,True,True,labeled:FALSE,420.10,3283,1500,0.000413,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0126,True,False,False,True,labeled:FALSE,431.94,3279,652,0.000252,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0127,True,True,True,True,labeled:TRUE,11.56,3283,609,0.000244,"REASONING: The source equation x = y * (((x * x) * x) * z) is a bare equation with RHS P = y * (((x*x)*x)*z). Computing its features: rv=3, Lx=FALSE, Rx=FALSE, xTop=right, ts=v-m, rTot=[1,1,3]. This m"
+hard2_0128,True,True,True,True,labeled:TRUE,55.07,3283,678,0.000257,"REASONING: contradiction motif (C6) matches the source term  \nP = ((y * (y * x)) * z) * y with features rv=3, Lx=FALSE, Rx=FALSE, xTop=left, ts=m-v, rTot=[1,1,3].\n\nVERDICT: TRUE\nPROOF: By rule 2.8"
+hard2_0129,False,False,True,True,labeled:FALSE,78.25,3283,698,0.000261,REASONING: parity exclusion\nVERDICT: FALSE
+hard2_0130,True,True,True,True,labeled:TRUE,107.83,3283,531,0.000229,"REASONING: The source equation is bare: x = (y * (x * (z * w))) * y. Analyzing the term P = (y * (x * (z * w))) * y gives the feature vector rv=4, Lx=FALSE, Rx=FALSE, xTop=left, ts=m‑v, rTot=[1,1,1,2]"
+hard2_0131,True,True,True,True,labeled:TRUE,143.67,3283,583,0.000239,"REASONING: The source equation is bare: x = ((y * (z * z)) * x) * w. Analyzing the right‑hand side P = ((y*(z*z))*x)*w gives the feature vector rv=4, Lx=FALSE, Rx=FALSE, xTop=left, ts=m‑v, rTot=[1,1,1"
+hard2_0132,True,True,True,True,labeled:TRUE,186.74,3282,684,0.000258,"REASONING: The source equation is bare and can be renamed  \n\(x = P\) with  \n\(P = y * ((z * (x * x)) * w)\).  \n\nFeatures of \(P\):\n- distinct variables \( \{x,y,z,w\}\) → rv = 4  \n- leftmost va"
+hard2_0133,False,False,True,True,labeled:FALSE,231.31,3283,989,0.000316,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0134,False,False,True,True,labeled:FALSE,264.66,3283,708,0.000263,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0135,False,False,True,True,labeled:FALSE,301.68,3283,217,0.000169,REASONING: parity exclusion  \nVERDICT: FALSE
+hard2_0136,True,False,False,True,labeled:FALSE,363.18,3283,1388,0.000392,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0137,True,False,False,True,labeled:FALSE,386.85,3284,1145,0.000346,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0138,True,False,False,True,labeled:FALSE,419.01,3283,613,0.000245,REASONING: default false fallback\nVERDICT: FALSE
+hard2_0139,False,False,True,True,labeled:FALSE,460.46,3283,1458,0.000405,REASONING: default false fallback\nVERDICT: FALSE
+hard2_0140,True,False,False,True,labeled:FALSE,40.77,3283,1212,0.000358,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0141,True,True,True,True,labeled:TRUE,63.42,3283,496,0.000222,"REASONING: The source equation is bare with P = ((y*(z*x))*z)*z. Its features are rv=3, Lx=FALSE, Rx=FALSE, xTop=left, ts=m-v, rTot=[1,1,3], xCount=1, which matches contradiction motif C6.  \nVERDICT:"
+hard2_0142,False,False,True,True,labeled:FALSE,94.13,3280,568,0.000236,REASONING: default false fallback\nVERDICT: FALSE
+hard2_0143,False,True,False,True,labeled:TRUE,136.61,3283,1333,0.000381,"REASONING: The identity (x * x) * y = (z * w) * u forces the binary operation to be left‑constant: for any elements a,b in any magma, a * b must equal a fixed element k (since the left‑hand side is in"
+hard2_0144,False,True,False,True,labeled:TRUE,161.04,3282,656,0.000253,"REASONING: The source equation can be renamed to the form x * y = T with T a product that contains none of the variables x or y (here x * x = ((y*z)*w)*u, and T does not contain x). This matches RULE "
+hard2_0145,True,True,True,True,labeled:TRUE,202.90,3283,636,0.000249,"REASONING: The source equation is x = (y * ((y * x) * z)) * w. Let P = (y * ((y * x) * z)) * w. Features: rv=4 (variables y,x,z,w), Lx=FALSE (leftmost leaf y), Rx=FALSE (rightmost leaf w), xTop=left ("
+hard2_0146,False,False,True,True,labeled:FALSE,242.49,3282,483,0.000220,REASONING: default false fallback\nVERDICT: FALSE
+hard2_0147,True,False,False,True,labeled:FALSE,285.75,3283,609,0.000244,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0148,False,False,True,True,labeled:FALSE,318.80,3283,327,0.000190,REASONING: PARITY exclusion\nVERDICT: FALSE
+hard2_0149,True,True,True,True,labeled:TRUE,358.93,3283,569,0.000236,"REASONING: The source equation is bare: x = (y * (x * (z * w))) * w. Analyzing the term P = (y * (x * (z * w))) * w gives the feature vector rv=4, Lx=FALSE, Rx=FALSE, xTop=left, ts=m‑v, rTot=[1,1,1,2]"
+hard2_0150,False,False,True,True,labeled:FALSE,402.01,3282,638,0.000249,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0151,False,False,True,True,labeled:FALSE,442.53,3283,1255,0.000366,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0152,False,False,True,True,labeled:FALSE,13.91,3283,810,0.000282,REASONING: default false fallback\nVERDICT: FALSE
+hard2_0153,True,False,False,True,labeled:FALSE,77.62,3283,1806,0.000471,REASONING: default false fallback\nVERDICT: FALSE
+hard2_0154,True,True,True,True,labeled:TRUE,88.67,3283,688,0.000259,"REASONING: The source term P = ((y * (z * y)) * x) * w has rv=4, Lx=FALSE, Rx=FALSE, xTop=left, ts=m‑v, which satisfies motif C1 (rv ≥ 4, Lx=FALSE, Rx=FALSE, and not (xTop=both AND ts=m‑m)).  \nVERDIC"
+hard2_0155,True,False,False,True,labeled:FALSE,110.78,3281,567,0.000236,REASONING: default false fallback\nVERDICT: FALSE
+hard2_0156,False,False,True,True,labeled:FALSE,146.26,3283,591,0.000240,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0157,False,False,True,True,labeled:FALSE,200.55,3282,1356,0.000386,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0158,False,False,True,True,labeled:FALSE,222.64,3281,507,0.000224,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0159,True,False,False,True,labeled:FALSE,293.97,3283,1979,0.000504,"REASONING: COUNTEREXAMPLE – Use the two‑element magma {0,1} with operation defined as XOR (addition modulo 2).  \n\nOperation table:  \n\n| * | 0 | 1 |\n|---|---|---|\n| 0 | 0 | 1 |\n| 1 | 1 | 0 |\n\n"
+hard2_0160,True,False,False,True,labeled:FALSE,332.15,3283,1625,0.000437,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0161,False,False,True,True,labeled:FALSE,338.44,3283,361,0.000197,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0162,True,False,False,True,labeled:FALSE,395.30,3283,1398,0.000394,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0163,False,False,True,True,labeled:FALSE,422.85,3284,724,0.000266,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0164,True,True,True,True,labeled:TRUE,448.01,3283,620,0.000246,"REASONING: The source equation is bare: x = y * ((z * x) * (z * z)). Analyzing the term P = y * ((z * x) * (z * z)) gives the feature vector rv=3, Lx=FALSE, Rx=FALSE, xTop=right, ts=v-m, rTot=[1,1,3],"
+hard2_0165,False,False,True,True,labeled:FALSE,44.32,3284,996,0.000317,REASONING: spine isolation\nVERDICT: FALSE\nPROOF:
+hard2_0166,False,False,True,True,labeled:FALSE,62.14,3281,321,0.000189,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0167,False,False,True,True,labeled:FALSE,97.67,3282,762,0.000273,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0168,True,False,False,True,labeled:FALSE,121.08,3282,348,0.000194,REASONING: default false fallback\nVERDICT: FALSE
+hard2_0169,False,False,True,True,labeled:FALSE,171.33,3283,785,0.000277,REASONING: parity exclusion\nVERDICT: FALSE
+hard2_0170,True,False,False,True,labeled:FALSE,207.13,3281,752,0.000271,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0171,False,False,True,True,labeled:FALSE,257.44,3282,1141,0.000345,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0172,False,False,True,True,labeled:FALSE,296.00,3284,1022,0.000322,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0173,False,False,True,True,labeled:FALSE,329.93,3282,699,0.000261,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0174,True,False,False,True,labeled:FALSE,377.99,3283,1551,0.000423,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0175,False,False,True,True,labeled:FALSE,407.74,3283,898,0.000299,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0176,False,False,True,True,labeled:FALSE,445.63,3283,1397,0.000393,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0177,False,False,True,True,labeled:FALSE,11.83,3283,558,0.000234,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0178,True,False,False,True,labeled:FALSE,59.61,3283,823,0.000284,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0179,False,False,True,True,labeled:FALSE,99.00,3284,1200,0.000356,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0180,False,False,True,True,labeled:FALSE,108.25,3282,419,0.000208,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0181,False,True,False,True,labeled:TRUE,145.84,3283,421,0.000208,"REASONING: The source equation is of the form x = x * T with T = y * ((y * z) * y). Since T does not contain x, rule 2.6 (left projection) applies, forcing a*b = a for all elements of any magma. Apply"
+hard2_0182,False,False,True,True,labeled:FALSE,213.27,3282,688,0.000259,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0183,False,False,True,True,labeled:FALSE,221.27,3283,336,0.000192,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0184,True,True,True,True,labeled:TRUE,268.29,3283,452,0.000214,"REASONING: The source equation is bare and can be renamed to the form x = T * x where T = (((y*z)*y)*w) does not contain x. This matches RULE 2.7 (right projection), which forces a*b = b in all magmas"
+hard2_0185,True,True,True,True,labeled:TRUE,313.27,3283,517,0.000226,"REASONING: The premise equation can be renamed to x = y * (z * ((x * x) * z)). Analyzing the right‑hand side P = y * (z * ((x*x)*z)) gives the feature vector rv=3, Lx=FALSE, Rx=FALSE, xTop=right, ts=v"
+hard2_0186,True,True,True,True,labeled:TRUE,347.55,3283,780,0.000276,"REASONING: The source equation is bare (x = P) with P = y * (x * ((x*x) * z)). Computing its features:\n- distinct variables rv = 3 (x, y, z)\n- leftmost variable Lx = FALSE (leftmost is y)\n- rightmo"
+hard2_0187,False,False,True,True,labeled:FALSE,386.50,3281,896,0.000298,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0188,False,False,True,True,labeled:FALSE,421.80,3283,652,0.000252,REASONING: default false fallback\nVERDICT: FALSE
+hard2_0189,True,False,False,True,labeled:FALSE,455.99,3283,854,0.000290,REASONING: default false fallback\nVERDICT: FALSE
+hard2_0190,False,False,True,True,labeled:FALSE,45.00,3282,950,0.000308,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0191,False,False,True,True,labeled:FALSE,73.36,3281,849,0.000289,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0192,False,True,False,True,labeled:TRUE,96.58,3283,380,0.000200,REASONING: left projection (Rule 2.6) applies because Eq1 is bare and can be renamed x = x * T with T = y * ((y * z) * y) not containing x. This forces a * b = a in all magmas. Applying this projectio
+hard2_0193,True,False,False,True,labeled:FALSE,130.32,3284,709,0.000263,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0194,False,False,True,True,labeled:FALSE,177.83,3283,1076,0.000332,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0195,False,False,True,True,labeled:FALSE,208.57,3283,359,0.000196,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0196,False,False,True,True,labeled:FALSE,247.74,3283,649,0.000251,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0197,False,False,True,True,labeled:FALSE,297.26,3281,726,0.000266,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0198,True,False,False,True,labeled:FALSE,327.65,3282,483,0.000220,REASONING: default false fallback\nVERDICT: FALSE
+hard2_0199,True,False,False,True,labeled:FALSE,374.14,3283,1180,0.000352,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard2_0200,True,False,False,True,labeled:FALSE,400.02,3281,463,0.000216,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
