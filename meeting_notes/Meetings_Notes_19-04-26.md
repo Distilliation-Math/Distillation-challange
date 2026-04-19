@@ -1,4 +1,4 @@
-# Distillation Challenge – Meeting 5
+# Distillation Challenge – Meeting
 **Data:** 19 aprile 2026
 
 ## Obiettivo del meeting
