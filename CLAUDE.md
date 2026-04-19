@@ -22,13 +22,15 @@ Three-layer cloud-first system (no local GPU):
   - `Hard5_order5.jsonl` (654) -- order-5 equations (5 operations), from Lean proofs
   - `full_2000_equations.jsonl` (1999) -- full dataset from which SAIRCommunityBench was sampled
   - `verification_data_with_citations.jsonl` (199) -- SAIRCommunityBench with Lean proof/countermodel citations
-- `cheatsheets/` -- Versioned prompt+cheatsheet files (e.g. `v4.1_10KB_cheatsheet.md`, `v5.2_10KB_cheatsheet.md`, `v.Opus-1_10KB_cheatsheet.md`)
+- `cheatsheets/` -- Versioned prompt+cheatsheet files (e.g. `v4.1_10KB_cheatsheet.md`, `v5.2_10KB_cheatsheet.md`, `v5.5_10KB_cheatsheet.md`, `v7.1_10KB_cheatsheet.md` (current best), `v.Opus-1_10KB_cheatsheet.md`)
 - `results/` -- Organized by batch: `results/YYYYMMDD_HHMM_description/` containing CSV + JSON per run
   - `results/baselines/` -- Baseline (no cheatsheet) CSV results per model per dataset, plus `SUMMARY.md`
   - `results/iterations/` -- Per-iteration CSV results, named `v{N}_{model}_{dataset}.csv`
   - `results/20260406_2308_v4-all-models-hard/` -- Full v4 sweep: 7 models x 3 hard datasets (21 runs)
   - `results/20260410_v4.1-official/` -- v4.1 official-mode sweep (mirrors SAIR evaluation_models.json)
   - `results/20260412_v5.2_official/` -- v5.2 official-mode sweep
+  - `results/20260417_v5.5_official_run3/` -- v5.5 official-mode sweep (prior baseline)
+  - `results/20260419_v7.1_andrea/` -- v7.1 official-mode sweep, 2 models x hard1/2/3, 0 parse errors (current best: gpt-oss-120b 68.2% overall, gemma-4-31b 68.8% overall)
   - **`results/Opus_research/`** -- All Opus-thread work (new convention): opus-solver raw-reasoning runs, v.Opus-N cheatsheet sweeps, opus-informed analysis PDFs. New Opus-related dirs go here, not at `results/` root.
 - `config/prompts/` -- Prompt templates (e.g. `v0_baseline.txt`)
 - `config/models.yaml` -- Model configuration for eval harness
@@ -74,6 +76,7 @@ Three-layer cloud-first system (no local GPU):
 - **Checklist > reasoning:** Rigid structured protocols with numbered rules outperform free-form mathematical reasoning. Structure the cheatsheet as a decision procedure, not a reference document.
 - **Force minimal reasoning before default-FALSE:** Llama outputs "RULE: default false" in 88 tokens with zero analysis. Add a forced substitution check (x=y=z) before fallback to catch trivial TRUE cases.
 - **Spine Isolation Theorem (McKenna):** "A pure left-spine equation can only imply equations that are themselves pure left-spine of equal or greater depth." Validated on 1.54M pairs with zero exceptions. Fixes +32 hard3 problems.
+- **Bare-source contradiction motifs (step 2.8): keep broad catch-alls.** v7.1 validates that a broad `rhsVars >= 4 ∧ Lx=FALSE` rule (Rx unconstrained) drives the bulk of TRUE recall on hard2/hard3. Narrowing to pattern-specific `rhsTotals` signatures (e.g. `[1,1,1,2]` only) loses ~110 TRUE problems across 6 model×dataset cells — roughly 80% of v7.2's accuracy regression traced to this single change. Keep the broad catch-all plus a mandatory 7-feature write-out (rhsVars, Lx, Rx, xTop, topShape, rhsTotals, xCount) BEFORE motif comparison — forces explicit computation instead of rule-name pattern-matching.
 - **Generalization over benchmark-saturation:** Cheatsheets tuned to one dataset don't generalize. Always test on multiple datasets (hard1, hard2, hard3, SAIRCommunityBench, Hard5).
 - **Model-specific framing:** Llama needs minimal task framing (no "mathematician persona"). GPT needs symbolic solver format with rule locks. Gemini needs explicit "do not invent rules not listed here" guardrail.
 

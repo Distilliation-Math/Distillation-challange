@@ -30,8 +30,10 @@ A [magma](https://en.wikipedia.org/wiki/Magma_(algebra)) is a set with a single 
 │   └── prompts/              # Prompt templates (v0_baseline.txt, etc.)
 ├── cheatsheets/              # Versioned prompt+cheatsheet files
 │   ├── v4_10KB_cheatsheet.md       # v4 cheatsheet (8.8KB)
-│   ├── v4.1_10KB_cheatsheet.md     # Current best general cheatsheet (10.2KB)
+│   ├── v4.1_10KB_cheatsheet.md     # v4.1 cheatsheet (10.2KB)
 │   ├── v5.2_10KB_cheatsheet.md     # v5 structured-output experiment
+│   ├── v5.5_10KB_cheatsheet.md     # v5.5 official-mode checkpoint
+│   ├── v7.1_10KB_cheatsheet.md     # Current best cheatsheet (10.2KB)
 │   └── v.Opus-*_10KB_cheatsheet.md # Opus-informed iterations (Opus-1 / -2 / -2.1)
 ├── results/                  # Organized by batch: YYYYMMDD_HHMM_description/
 │   ├── baselines/            # Baseline (no cheatsheet) results per model/dataset + SUMMARY.md
@@ -39,6 +41,8 @@ A [magma](https://en.wikipedia.org/wiki/Magma_(algebra)) is a set with a single 
 │   ├── 20260406_2308_v4-all-models-hard/  # v4 sweep (7 models x 3 hard datasets)
 │   ├── 20260410_v4.1-official/            # v4.1 official-mode sweep (SAIR evaluation_models.json)
 │   ├── 20260412_v5.2_official/            # v5.2 official-mode sweep
+│   ├── 20260417_v5.5_official_run3/       # v5.5 official-mode sweep (prior baseline)
+│   ├── 20260419_v7.1_andrea/              # v7.1 official-mode sweep (current best)
 │   └── Opus_research/                     # All Opus-thread work (see note below)
 │       ├── 20260411_opus-hard1/           # opus-solver raw-reasoning runs on hard1
 │       ├── 20260413_v.Opus-1_official/    # v.Opus-1 cheatsheet sweep
@@ -105,6 +109,34 @@ All model inference runs in the cloud via [OpenRouter](https://openrouter.ai/). 
 | Inference | OpenRouter API | GPT-OSS-120b, GPT-OSS-20b, Gemma 4 31B, Llama 3.3 70B, DeepSeek V3.2, Gemini Flash Lite, Grok 4.1 Fast |
 
 ## Results
+
+### v7.1 Cheatsheet -- Official-Mode Sweep (2026-04-19)
+
+v7.1_10KB_cheatsheet.md (10.2KB) evaluated under `--official-mode` (provider pinning, `seed=0`, `max_tokens=8192`, reasoning_effort as per SAIR `evaluation_models.json`) on `gpt-oss-120b` and `gemma-4-31b` across hard1/hard2/hard3. Results in `results/20260419_v7.1_andrea/`. 0 parse errors on all 6 runs.
+
+| Model | hard1 (69) | hard2 (200) | hard3 (400) | ALL (669) |
+|-------|-----------|-------------|-------------|-----------|
+| **gpt-oss-120b** | 54/69 (78.3%) | 145/200 (72.5%) | 257/400 (64.2%) | **456/669 (68.2%)** |
+| **gemma-4-31b** | 56/69 (81.2%) | 149/200 (74.5%) | 255/400 (63.8%) | **460/669 (68.8%)** |
+
+**v7.1 vs v5.5 (run3 baseline):**
+
+| Model | DS | v5.5 Acc | v7.1 Acc | Δacc | v5.5 P1 | v7.1 P1 | ΔP1 |
+|-------|-----|---------:|---------:|-----:|--------:|--------:|----:|
+| gpt-oss-120b | hard1 | 73.9% | **78.3%** | +4.3 | 61.5% | **80.0%** | +18.5 |
+| gpt-oss-120b | hard2 | 67.5% | **72.5%** | +5.0 | 73.3% | **80.8%** |  +7.5 |
+| gpt-oss-120b | hard3 | **65.5%** | 64.2% | −1.3 | 73.2% | **75.0%** |  +1.8 |
+| gemma-4-31b  | hard1 | 78.3% | **81.2%** | +2.9 | 73.7% | **78.9%** |  +5.3 |
+| gemma-4-31b  | hard2 | 72.5% | **74.5%** | +2.0 | 74.7% | **81.0%** |  +6.3 |
+| gemma-4-31b  | hard3 | 63.2% | **63.7%** | +0.5 | 70.3% | **73.1%** |  +2.8 |
+
+v7.1 beats v5.5 on accuracy in 5/6 cells and on P1 (TRUE-precision) in all 6 cells.
+
+**Key design wins in v7.1:**
+- **Step 2.8 bare-source contradiction motifs** with broad catch-all rules (`rhsVars≥4 ∧ Lx=FALSE`) — drive a large fraction of TRUE recall on hard2/hard3. Pattern-specific motifs (narrow `rhsTotals` signatures) alone lose ~110 TRUE problems.
+- **Feature-vector discipline**: mandatory 7-feature write-out (rhsVars, Lx, Rx, xTop, topShape, rhsTotals, xCount) before motif lookup — forces explicit computation rather than rule-name guessing.
+- **Hard-stop on FALSE rule / counterexample fire** — blocks GPT-OSS-120b confabulation pattern.
+- **Spine isolation** (3.0): pure-spine depth divisibility — eliminates a well-defined false-TRUE class without touching positives.
 
 ### v4.1 Cheatsheet -- 4-Model Hard Sweep (2026-04-09)
 
@@ -188,8 +220,10 @@ v4_10KB_cheatsheet.md (8.8KB) evaluated on all 7 models x hard1/hard2/hard3 via 
 | Apr 6 | JSON failure analysis + community intel review | Done |
 | Apr 7 | max_tokens increased to 16384, PPTX summary generated | Done |
 | Apr 8-9 | v4.1 sweep: temp=1.0 fix, harness hardening, 4 models x 3 hard | Done |
-| Apr 9+ | v5 cheatsheet: VERDICT-first, feature-first, spine isolation | |
-| Apr 10 | Evaluation models announced by SAIR | |
-| Apr 11 | Model-specific optimization begins | |
-| Apr 18 | Final review | |
+| Apr 9+ | v5 cheatsheet: VERDICT-first, feature-first, spine isolation | Done |
+| Apr 10 | Evaluation models announced by SAIR | Done |
+| Apr 11 | Model-specific optimization begins | Done |
+| Apr 17 | v5.5 official-mode sweep (prior baseline) | Done |
+| Apr 19 | v7.1 official-mode sweep: step-2.8 motif expansion, feature-vector discipline | Done |
+| Apr 20 | Final review | |
 | **Apr 20** | **Submission deadline (23:59 AoE)** | |
