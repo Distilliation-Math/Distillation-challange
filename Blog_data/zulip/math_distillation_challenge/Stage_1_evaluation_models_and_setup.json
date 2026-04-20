@@ -2,7 +2,7 @@
   "channel": "Math Distillation Challenge - equational theories",
   "channel_id": 13,
   "topic": "Stage 1 evaluation models and setup",
-  "message_count": 23,
+  "message_count": 36,
   "messages": [
     {
       "id": 1509,
@@ -842,6 +842,398 @@
       "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
       "content_type": "text/html",
       "date": "2026-04-18T19:03:37.000Z"
+    },
+    {
+      "id": 1700,
+      "sender_id": 117,
+      "content": "<p>Hi <span class=\"user-mention\" data-user-id=\"25\">@YZ</span>   </p>\n<p>llama-3.3-70b-instruct on OpenRouter is no longer supported by deepinfra today when i tested again.<br>\nCan advise a new provider that the competition would use to test llama-3.3-70b-instruct at fp8? Thanks.</p>",
+      "recipient_id": 43,
+      "timestamp": 1776596342,
+      "client": "ZulipElectron",
+      "subject": "Stage 1 evaluation models and setup",
+      "topic_links": [],
+      "last_edit_timestamp": 1776596824,
+      "edit_history": [
+        {
+          "user_id": 117,
+          "timestamp": 1776596824,
+          "prev_content": "Hi @**YZ**   \n\nllama-3.3-70b-instruct on OpenRouter is no longer supported by deepinfra today when i tested again.\nCan advise a new provider that the competition would use? Thanks.",
+          "prev_rendered_content": "<p>Hi <span class=\"user-mention\" data-user-id=\"25\">@YZ</span>   </p>\n<p>llama-3.3-70b-instruct on OpenRouter is no longer supported by deepinfra today when i tested again.<br>\nCan advise a new provider that the competition would use? Thanks.</p>"
+        },
+        {
+          "user_id": 117,
+          "timestamp": 1776596351,
+          "prev_content": "Hi @**YZ**   \n\nllama-3.3-70b-instruct on OpenRouter is no longer support by deepinfra today when i tested again.\nCan advise a new provider that the competition would use? Thanks.",
+          "prev_rendered_content": "<p>Hi <span class=\"user-mention\" data-user-id=\"25\">@YZ</span>   </p>\n<p>llama-3.3-70b-instruct on OpenRouter is no longer support by deepinfra today when i tested again.<br>\nCan advise a new provider that the competition would use? Thanks.</p>"
+        }
+      ],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 236
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 225
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 25
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Gan W.",
+      "sender_email": "user117@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/62f195752f4b8a9ab7928b0e6d43725e586f89c5.png",
+      "content_type": "text/html",
+      "date": "2026-04-19T10:59:02.000Z"
+    },
+    {
+      "id": 1701,
+      "sender_id": 117,
+      "content": "<p>appears to me AkashML is the better one but idk, haven't tested..<br>\n<a href=\"/user_uploads/5/a2/4DYe9sHwuYN4X9XkokwdUL1F/image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/5/a2/4DYe9sHwuYN4X9XkokwdUL1F/image.png\" title=\"image.png\"><img data-original-content-type=\"image/png\" data-original-dimensions=\"962x447\" src=\"/user_uploads/thumbnail/5/a2/4DYe9sHwuYN4X9XkokwdUL1F/image.png/840x560.webp\"></a></div>",
+      "recipient_id": 43,
+      "timestamp": 1776597174,
+      "client": "ZulipElectron",
+      "subject": "Stage 1 evaluation models and setup",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Gan W.",
+      "sender_email": "user117@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/62f195752f4b8a9ab7928b0e6d43725e586f89c5.png",
+      "content_type": "text/html",
+      "date": "2026-04-19T11:12:54.000Z"
+    },
+    {
+      "id": 1704,
+      "sender_id": 25,
+      "content": "<p><span class=\"user-mention\" data-user-id=\"117\">@Gan W.</span> Thanks for pointing this out.<br>\nAkashML is the closest replacement we are considering, since it is also listed as an fp8 provider for meta-llama/llama-3.3-70b-instruct on OpenRouter and therefore preserves the same quantization category as the previous DeepInfra route. If AkashML is not reliable enough, we may consider Groq, but Groq uses a different numerics/quantization setup and is roughly twice as expensive as most other providers.</p>",
+      "recipient_id": 43,
+      "timestamp": 1776614981,
+      "client": "ZulipElectron",
+      "subject": "Stage 1 evaluation models and setup",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-04-19T16:09:41.000Z"
+    },
+    {
+      "id": 1705,
+      "sender_id": 117,
+      "content": "<p>AkashML has a friendly 25$ free credit it's nice.</p>\n<p>If it doesn't work, can consider also novita/bf16 also, at least it's not low quality quantization, and the price is similarly low.</p>\n<p>my observation (in singapore) is that the availability and throughput of AkashML and novita are similar (not great tbh haha far from Groq)</p>\n<p>Yah when it's fast and high bandwidth it's not cheap. It's like ur ISP haha.</p>",
+      "recipient_id": 43,
+      "timestamp": 1776615554,
+      "client": "ZulipElectron",
+      "subject": "Stage 1 evaluation models and setup",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 25
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Gan W.",
+      "sender_email": "user117@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/62f195752f4b8a9ab7928b0e6d43725e586f89c5.png",
+      "content_type": "text/html",
+      "date": "2026-04-19T16:19:14.000Z"
+    },
+    {
+      "id": 1717,
+      "sender_id": 117,
+      "content": "<p><span class=\"user-mention silent\" data-user-id=\"25\">YZ</span> <a href=\"#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/Stage.201.20evaluation.20models.20and.20setup/near/1678\">said</a>:</p>\n<blockquote>\n<p>Thanks everyone for the helpful feedback and questions. Let me give one unified reply on the current plan for the final evaluation set and scoring.</p>\n<p>Our current plan is that all scored implications will carry equal weight.</p>\n<p>For scoring, each problem will be evaluated under each evaluation model, and each model/problem pair will be run 3 times. So the total scored evaluations will be:<br>\n(# of scored problems) × (# of evaluation models) × (repeats)</p>\n<p>In the current design, that would be:<br>\n600 × 3 × 3 = 5400</p>\n<p>More specifically, the scored final evaluation set is currently planned as follows. The final evaluation set will be completely different from the public problem sets.</p>\n<ul>\n<li>\n<p>Normal: 200 problems, with 100 TRUE and 100 FALSE, at roughly the difficulty level of the current public normal subset.</p>\n</li>\n<li>\n<p>Hard: 200 problems, with 100 TRUE and 100 FALSE, at roughly the difficulty level of the current public hard1 / hard2 subsets.</p>\n</li>\n<li>\n<p>Extra hard: 200 problems, with 100 TRUE and 100 FALSE, at roughly the difficulty level of the current public hard3 subset.</p>\n</li>\n</ul>\n<p>All scored implications in the final evaluation are currently planned to be of order at most 4.</p>\n<p>In addition, we are considering a separate order-5 set consisting of 200 order-5 implications, with 100 TRUE and 100 FALSE. This order-5 set would not be part of the official scored evaluation, but would instead have a separate leaderboard for research purposes.</p>\n<p>Also, each team may submit only one cheatsheet, and the final submitted version will be the one used in evaluation. This follows the same general logic as academic paper submission, where the final submitted version is the version that is evaluated.</p>\n</blockquote>\n<p>My thoughts on this set up, challenging the idea of generalizability, open for discussion:</p>\n<ol>\n<li>\n<p>The pro here is that the private leaderboard has less chance of getting saturated, because we have 2/3 of the private test set that are high difficulty.</p>\n</li>\n<li>\n<p>The con is that I feel this contradicts what we were trying to achieve with this competition, which is generalisation ability?</p>\n<p>My team did experiments to random sample a big number of implications from the 22M full graph, we found that most of the implications are at normal difficulty actually.</p>\n</li>\n</ol>\n<p>Therefore in the spirit of true generalizabilty across the 22M full set, a good, generalizable cheatsheet should really just aim to perform well on most of the normal difficulty implications, instead of trying to crack the hard ones.</p>\n<p>The hard ones are the outliers, and they are hard in their own different ways. With the limited 10kb budget, this becomes a trade-off, when we put more rules that help the LLM crack hardA set, and inevitably that will downgrade the LLMs' performance on hardB set.</p>\n<p>Because of this mechanism, the private leaderboard might <strong>to some extend become a leaderboard of luck</strong>:</p>\n<p>whichever cheatsheet happens to include more rules that helps crack the small group of hards that is 2/3 of the private test set wins, at the same time, it might perform equally bad if we just swop those 2/3 hards out with another set of hard implications. May the best luck win. (Sadge)</p>\n<p>Curious of what the true expert here <span class=\"user-mention\" data-user-id=\"28\">@Terence Tao</span> think about this... Which universe are we in? The one that there are a set of universal rules to <strong>rule them all hards</strong>, or there is <strong>no silver bullet</strong>?</p>",
+      "recipient_id": 43,
+      "timestamp": 1776634844,
+      "client": "ZulipElectron",
+      "subject": "Stage 1 evaluation models and setup",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Gan W.",
+      "sender_email": "user117@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/62f195752f4b8a9ab7928b0e6d43725e586f89c5.png",
+      "content_type": "text/html",
+      "date": "2026-04-19T21:40:44.000Z"
+    },
+    {
+      "id": 1719,
+      "sender_id": 25,
+      "content": "<p><span class=\"user-mention\" data-user-id=\"117\">@Gan W.</span> Thanks for the feedback. Just sharing my personal view here. The current setup is meant to help us understand how cheatsheets perform across different difficulty levels.</p>\n<p>If you think this setup may affect fairness, we can consider increasing the proportion of normal problems, for example to 400 normal problems. Please feel free to suggest a ratio that you think would be more appropriate, and we also welcome suggestions from others in the community.</p>\n<p>Based on our benchmarks and the progress we saw from the community in the first week, normal problems are easy to saturate; SOTA models already reach above 90% accuracy on normal-difficulty problems. This is also why our co-organizers prepared harder sets such as hard3: harder problems have greater research value, and we hope participants will tackle these harder problems as part of the research purpose of this competition. This will matter even more in Stage 2, where the goal is to produce Lean proofs.</p>",
+      "recipient_id": 43,
+      "timestamp": 1776640874,
+      "client": "ZulipElectron",
+      "subject": "Stage 1 evaluation models and setup",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-04-19T23:21:14.000Z"
+    },
+    {
+      "id": 1720,
+      "sender_id": 25,
+      "content": "<p>Btw, to better account for generalization, the current public problem sets and the final evaluation set were generated using different strategies designed by different people working with AI.</p>",
+      "recipient_id": 43,
+      "timestamp": 1776641804,
+      "client": "ZulipElectron",
+      "subject": "Stage 1 evaluation models and setup",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 71
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 117
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-04-19T23:36:44.000Z"
+    },
+    {
+      "id": 1721,
+      "sender_id": 71,
+      "content": "<p><span class=\"user-mention silent\" data-user-id=\"117\">Gan W.</span> <a href=\"#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/Stage.201.20evaluation.20models.20and.20setup/near/1717\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"25\">YZ</span> <a href=\"#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/Stage.201.20evaluation.20models.20and.20setup/near/1678\">said</a>:</p>\n<blockquote>\n<p>Thanks everyone for the helpful feedback and questions. Let me give one unified reply on the current plan for the final evaluation set and scoring.</p>\n<p>Our current plan is that all scored implications will carry equal weight.</p>\n<p>For scoring, each problem will be evaluated under each evaluation model, and each model/problem pair will be run 3 times. So the total scored evaluations will be:<br>\n(# of scored problems) × (# of evaluation models) × (repeats)</p>\n<p>In the current design, that would be:<br>\n600 × 3 × 3 = 5400</p>\n<p>More specifically, the scored final evaluation set is currently planned as follows. The final evaluation set will be completely different from the public problem sets.</p>\n<ul>\n<li>\n<p>Normal: 200 problems, with 100 TRUE and 100 FALSE, at roughly the difficulty level of the current public normal subset.</p>\n</li>\n<li>\n<p>Hard: 200 problems, with 100 TRUE and 100 FALSE, at roughly the difficulty level of the current public hard1 / hard2 subsets.</p>\n</li>\n<li>\n<p>Extra hard: 200 problems, with 100 TRUE and 100 FALSE, at roughly the difficulty level of the current public hard3 subset.</p>\n</li>\n</ul>\n<p>All scored implications in the final evaluation are currently planned to be of order at most 4.</p>\n<p>In addition, we are considering a separate order-5 set consisting of 200 order-5 implications, with 100 TRUE and 100 FALSE. This order-5 set would not be part of the official scored evaluation, but would instead have a separate leaderboard for research purposes.</p>\n<p>Also, each team may submit only one cheatsheet, and the final submitted version will be the one used in evaluation. This follows the same general logic as academic paper submission, where the final submitted version is the version that is evaluated.</p>\n</blockquote>\n<p>My thoughts on this set up, challenging the idea of generalizability, open for discussion:</p>\n<ol>\n<li>\n<p>The pro here is that the private leaderboard has less chance of getting saturated, because we have 2/3 of the private test set that are high difficulty.</p>\n</li>\n<li>\n<p>The con is that I feel this contradicts what we were trying to achieve with this competition, which is generalisation ability?</p>\n<p>My team did experiments to random sample a big number of implications from the 22M full graph, we found that most of the implications are at normal difficulty actually.</p>\n</li>\n</ol>\n<p>Therefore in the spirit of true generalizabilty across the 22M full set, a good, generalizable cheatsheet should really just aim to perform well on most of the normal difficulty implications, instead of trying to crack the hard ones.</p>\n<p>The hard ones are the outliers, and they are hard in their own different ways. With the limited 10kb budget, this becomes a trade-off, when we put more rules that help the LLM crack hardA set, and inevitably that will downgrade the LLMs' performance on hardB set.</p>\n<p>Because of this mechanism, the private leaderboard might <strong>to some extend become a leaderboard of luck</strong>:</p>\n<p>whichever cheatsheet happens to include more rules that helps crack the small group of hards that is 2/3 of the private test set wins, at the same time, it might perform equally bad if we just swop those 2/3 hards out with another set of hard implications. May the best luck win. (Sadge)</p>\n<p>Curious of what the true expert here <span class=\"user-mention silent\" data-user-id=\"28\">Terence Tao</span> think about this... Which universe are we in? The one that there are a set of universal rules to <strong>rule them all hards</strong>, or there is <strong>no silver bullet</strong>?</p>\n</blockquote>\n<p>My understanding is that the point of the challenge is not mainly to build a cheatsheet that does best on the most common implications, but to test whether genuinely useful mathematical reasoning can be distilled into a compact human-readable form that improves weaker models. In that sense, the harder problems are especially important, because they are a much better probe of whether the cheatsheet contains real transferable reasoning rather than broad average-case heuristics.</p>\n<p>That also seems closer to Terence's stated ultimate goal: not just to do well on this pilot dataset, but to discover productive techniques and general problem-solving methods that could transfer to other areas of mathematics. If that is the goal, then weighting the evaluation toward more discriminative, reasoning-heavy cases makes perfect sense. Otherwise the benchmark risks rewarding coverage of common easy patterns rather than distillation of methods that actually generalize.</p>\n<p>I do think your concern about luck is valid if the hard pool is too narrow. But to me that suggests broadening and stabilizing the hard evaluation set, not shifting the benchmark toward the normal cases. If the competition is about distilled reasoning, the evaluation should emphasize the problems that best reveal whether such reasoning is really there.</p>",
+      "recipient_id": 43,
+      "timestamp": 1776642886,
+      "client": "website",
+      "subject": "Stage 1 evaluation models and setup",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Heath Sanchez",
+      "sender_email": "user71@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "https://secure.gravatar.com/avatar/62a186edca1996d8ab4aea0c1cacbd21?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-04-19T23:54:46.000Z"
+    },
+    {
+      "id": 1724,
+      "sender_id": 113,
+      "content": "<p>Yo, haha iv read this word a few times human readable, what type of sheet is not human readable maybe I made the wrong type of sheet haha</p>",
+      "recipient_id": 43,
+      "timestamp": 1776648664,
+      "client": "website",
+      "subject": "Stage 1 evaluation models and setup",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Stacey Szmy",
+      "sender_email": "user113@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "https://secure.gravatar.com/avatar/21e44e00230533d40a9a9209cc063b5a?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-04-20T01:31:04.000Z"
+    },
+    {
+      "id": 1725,
+      "sender_id": 157,
+      "content": "<p>Given that any cheatsheet has structural coverage gaps — zones where rules don't fire and the model defaults to a prior — a 600-problem final set could by chance land disproportionately in those gaps for some submissions. Would it be possible to stratify the final sample to ensure coverage across different structural families of equations? This would make the evaluation more robust and less sensitive to sampling variance.</p>",
+      "recipient_id": 43,
+      "timestamp": 1776649256,
+      "client": "website",
+      "subject": "Stage 1 evaluation models and setup",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Garbid",
+      "sender_email": "user157@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "https://secure.gravatar.com/avatar/72a4645be775e7a8bf0ccdba87f1e0c1?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-04-20T01:40:56.000Z"
+    },
+    {
+      "id": 1730,
+      "sender_id": 117,
+      "content": "<p>yah the problem here put in simple terms is that there is a worry that the \"hard ones are hard in their own different ways\", they could only be solved using vastly different tricks, rather than some universally good reasoning framework.</p>\n<p>I prone to think this is closer to the reality, based on my limited impression of the ETP project.</p>",
+      "recipient_id": 43,
+      "timestamp": 1776665623,
+      "client": "ZulipElectron",
+      "subject": "Stage 1 evaluation models and setup",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Gan W.",
+      "sender_email": "user117@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/62f195752f4b8a9ab7928b0e6d43725e586f89c5.png",
+      "content_type": "text/html",
+      "date": "2026-04-20T06:13:43.000Z"
+    },
+    {
+      "id": 1731,
+      "sender_id": 117,
+      "content": "<p>Sorry that I always see problems, haha. To frame it more positively: the diversity inside the private hard test set is crucial. Otherwise it's hit or miss.</p>",
+      "recipient_id": 43,
+      "timestamp": 1776666819,
+      "client": "ZulipElectron",
+      "subject": "Stage 1 evaluation models and setup",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Gan W.",
+      "sender_email": "user117@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/62f195752f4b8a9ab7928b0e6d43725e586f89c5.png",
+      "content_type": "text/html",
+      "date": "2026-04-20T06:33:39.000Z"
+    },
+    {
+      "id": 1732,
+      "sender_id": 117,
+      "content": "<p>Anyways I'm far far from a mathematician so I could be purely wrong haha. But in that case knowing why I'm wrong is also fun for me.</p>",
+      "recipient_id": 43,
+      "timestamp": 1776667055,
+      "client": "ZulipElectron",
+      "subject": "Stage 1 evaluation models and setup",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Gan W.",
+      "sender_email": "user117@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/62f195752f4b8a9ab7928b0e6d43725e586f89c5.png",
+      "content_type": "text/html",
+      "date": "2026-04-20T06:37:35.000Z"
     }
   ]
 }

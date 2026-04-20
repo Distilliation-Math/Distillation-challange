@@ -1,0 +1,44 @@
+{
+  "fetched_at": "2026-04-20T09:52:01.990792+00:00",
+  "publicCode": "EQT01-000110",
+  "source_url": "https://server-9527.sair.foundation/api/contributor-network/by-code/EQT01-000110",
+  "data": {
+    "cnItemId": "si_2eb23f42-7e23-474c-97a6-7c44af78ce47",
+    "parentCnItemId": null,
+    "rootCnItemId": "si_2eb23f42-7e23-474c-97a6-7c44af78ce47",
+    "shareItemId": "si_2eb23f42-7e23-474c-97a6-7c44af78ce47",
+    "parentShareItemId": null,
+    "rootShareItemId": "si_2eb23f42-7e23-474c-97a6-7c44af78ce47",
+    "competitionId": "mathematics-distillation-challenge-equational-theories-stage1",
+    "competitionTitle": "",
+    "entityType": "individual",
+    "entityId": "U-ee1c3a80890934f2e992d2f8fe94b047f642a0f1",
+    "entityName": "Emily",
+    "entityAvatarUrl": "https://avatars.githubusercontent.com/u/239919270?v=4",
+    "cheatsheetTitle": "near-miss-detector",
+    "cheatsheetContent": "You are detecting whether Equation 1 really implies Equation 2 or only almost does.\nEquation 1:\n{{ equation1 }}\n\nEquation 2:\n{{ equation2 }}\n\nMethod:\n- Compare the two equations carefully and identify whether Equation 2 asks for one extra condition or stronger identity than Equation 1 supplies.\n- If it is a near miss rather than a real implication, answer `FALSE` and give a witness isolating the missing part.\n- If the implication truly holds, answer `TRUE` and give a concise proof.\n- Do not promote a near miss to `TRUE`.\n\nRequired output:\nVERDICT: TRUE or FALSE\nREASONING: name the decisive extra condition or the decisive derivation\nPROOF:\nfill only when VERDICT is TRUE\nCOUNTEREXAMPLE:\nfill only when VERDICT is FALSE\n\nRules:\n- Plain text only.\n- `VERDICT:` must be exactly `TRUE` or `FALSE`.\n- `REASONING:` must not be empty.\n- If `VERDICT: TRUE`, `PROOF:` must be non-empty and `COUNTEREXAMPLE:` empty.\n- If `VERDICT: FALSE`, `COUNTEREXAMPLE:` must be non-empty and `PROOF:` empty.",
+    "publishedAt": "2026-04-20T06:21:06Z",
+    "visibilityStatus": "active",
+    "lineageDepth": 0,
+    "lineagePathSnapshot": [
+      {
+        "shareItemId": "si_2eb23f42-7e23-474c-97a6-7c44af78ce47",
+        "entityName": "Emily",
+        "publishedAt": "2026-04-20T06:21:06Z"
+      }
+    ],
+    "isDerived": false,
+    "itemType": "Original",
+    "sourceCheatsheetId": "cs_7012ad95-239d-4f38-aaf5-b2c68c7ce533",
+    "publicCode": "EQT01-000110",
+    "remark": "",
+    "likeCount": 0,
+    "favoriteCount": 0,
+    "referencedCount": 0,
+    "commentCount": 0,
+    "canComment": false,
+    "viewerHasLiked": false,
+    "viewerHasFavorited": false,
+    "pythonFileContent": null
+  }
+}

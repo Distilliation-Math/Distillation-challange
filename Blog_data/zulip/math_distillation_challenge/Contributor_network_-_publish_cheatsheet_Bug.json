@@ -1,0 +1,43 @@
+{
+  "channel": "Math Distillation Challenge - equational theories",
+  "channel_id": 13,
+  "topic": "Contributor network - publish  cheatsheet Bug",
+  "message_count": 1,
+  "messages": [
+    {
+      "id": 1727,
+      "sender_id": 113,
+      "content": "<p>Yo, there maybe a bug if you upload a sheet to the contributor network and its its titled like  \"example1\" and after you publish it and you later delete \"example1\" and again publish a new cheatsheet but titled again as \"example1\" it may skip you on the bench mark testing tools. as i made this mistake and all cheats prior to and after +7 hours have been updated with bench mark results while the two i re-published may have been skipped(?), as there are no bench mark results yet?</p>\n<p>anyways i suppose if youre looking for last minute bench mark results, try not to duplicate a title published to a prior deleted published version just in case. okok glgl</p>",
+      "recipient_id": 43,
+      "timestamp": 1776658133,
+      "client": "website",
+      "subject": "Contributor network - publish  cheatsheet Bug",
+      "topic_links": [],
+      "last_edit_timestamp": 1776658307,
+      "edit_history": [
+        {
+          "user_id": 113,
+          "timestamp": 1776658307,
+          "prev_content": "Yo, there maybe a bug if you upload a sheet to the contributor network and its its titled like  \"example1\" and after you publish it and you later delete \"example1\" and again publish a new cheatsheet but titled again as \"example1\" it may skip you on the bench mark testing tools. as i made this mistake and all cheats prior to and after +7 hours have been updated with bench mark results while the two i submitted may have been skipped(?), as there are no bench mark results yet?\n\nanyways i suppose if youre looking for last minute bench mark results, try not to duplicate a title published to a prior deleted published version just in case. okok glgl",
+          "prev_rendered_content": "<p>Yo, there maybe a bug if you upload a sheet to the contributor network and its its titled like  \"example1\" and after you publish it and you later delete \"example1\" and again publish a new cheatsheet but titled again as \"example1\" it may skip you on the bench mark testing tools. as i made this mistake and all cheats prior to and after +7 hours have been updated with bench mark results while the two i submitted may have been skipped(?), as there are no bench mark results yet?</p>\n<p>anyways i suppose if youre looking for last minute bench mark results, try not to duplicate a title published to a prior deleted published version just in case. okok glgl</p>"
+        }
+      ],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Stacey Szmy",
+      "sender_email": "user113@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "https://secure.gravatar.com/avatar/21e44e00230533d40a9a9209cc063b5a?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-04-20T04:08:53.000Z"
+    }
+  ]
+}

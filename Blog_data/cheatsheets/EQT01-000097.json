@@ -1,0 +1,44 @@
+{
+  "fetched_at": "2026-04-20T09:51:10.030633+00:00",
+  "publicCode": "EQT01-000097",
+  "source_url": "https://server-9527.sair.foundation/api/contributor-network/by-code/EQT01-000097",
+  "data": {
+    "cnItemId": "si_01fb9b62-c54e-4f20-87c7-85b9ca7d99dd",
+    "parentCnItemId": null,
+    "rootCnItemId": "si_01fb9b62-c54e-4f20-87c7-85b9ca7d99dd",
+    "shareItemId": "si_01fb9b62-c54e-4f20-87c7-85b9ca7d99dd",
+    "parentShareItemId": null,
+    "rootShareItemId": "si_01fb9b62-c54e-4f20-87c7-85b9ca7d99dd",
+    "competitionId": "mathematics-distillation-challenge-equational-theories-stage1",
+    "competitionTitle": "",
+    "entityType": "individual",
+    "entityId": "U-d52714dad3961a14353a600016fa56d0c8bb4810",
+    "entityName": "Debtirtha Saha",
+    "entityAvatarUrl": "https://lh3.googleusercontent.com/a/ACg8ocJKK-lxz3MDdFlylQ4WIz6lOp0jUiLul5atI_m9k_zI5bSErQ=s96-c",
+    "cheatsheetTitle": "Test 8",
+    "cheatsheetContent": "## Task\n\nGiven two equations over a single binary operator `*`:\n\n    E1:  L1 = R1\n    E2:  L2 = R2\n\nAll variables (lowercase letters) are UNIVERSALLY quantified. **Decide**:\ndoes every magma (any set with any binary `*`) satisfying E1 necessarily\nsatisfy E2? Output `true` or `false`.\n\n## Framework (Birkhoff)\n\nA magma is `M` with any `*:M×M→M` — no axioms. E1 ⊨ E2 iff **no magma\nsatisfies E1 but falsifies E2**.\n\n- **`false`**: exhibit a magma where E1 holds and E2 fails.\n- **`true`**: sound default when no refuter found.\n\n## Tree helpers\n\n    lm(v)=v,  lm(a*b)=lm(a)     dlm(v)=0, dlm(a*b)=1+dlm(a)\n    rm(v)=v,  rm(a*b)=rm(b)     drm(v)=0, drm(a*b)=1+drm(b)\n    depth(v)=0, depth(a*b)=1+max(depth(a),depth(b))\n    count(v,t)        = # leaf occurrences of v in t\n    signed_count(v,t) = Σ (−1)^(depth of leaf) over v-leaves\n\n## Step 0 — TRUE detectors (apply in order)\n\nIf any of these fires, return **`true`** immediately.\n\n- **T1**: Eq2 is `x = x` (both sides the same single variable).\n- **T2**: Eq1 and Eq2 are the same equation up to renaming variables\n  (alpha-equivalent, trying both orderings).\n- **T3**: Eq1 is `x = y` with `x ≠ y` (two different bare variables) —\n  forces every magma to a singleton.\n- **T4**: Eq1 is `x = R` (or `R = x`) with `x` a single variable and\n  `x ∉ vars(R)`. E.g. `x = (y*y)*y`.\n- **T5**: Eq1 is `x = A*z` (or swapped) with `z` a variable, `z ≠ x`,\n  `z ∉ vars(A)`, and `lm(A) ≠ x`. E.g. `x = (y*y)*z`.\n- **T5b**: Eq1 is `x = z*A` (or swapped) with `z` a variable, `z ≠ x`,\n  `z ∉ vars(A)`, and `rm(A) ≠ x`. E.g. `x = z*(y*y)`.\n\n## Step 1 — D8 spine-divisibility refutation\n\nA **pure left spine of x, depth n** is `((…((x*v₁)*v₂)…)*vₙ)`: every\ndescent is into the LEFT child, and every right child is a bare variable.\n\nIf Eq1 orients as `x = (pure left spine of x, depth n)` with `n ≥ 1`,\nAND Eq2 as `y = (pure left spine of y, depth m)`, AND `n ∤ m`, return\n**`false`**. Symmetric rule for pure right spines.\nWitness: `(ℤ/n, a*b = a+1)`.\n\n## Step 2 — M8 custom absorption magma\n\nClassify each side of Eq1 (outer `*`) by shape:\n\n- **R**: `(bare_var) * (composite)` — bare on left.\n- **L**: `(composite) * (bare_var)` — bare on right.\n- **S**: `v * v` — same bare variable on both.\n\nM8 **fires** iff:\n- Both sides of Eq1 have an outer `*` (not a bare variable).\n- Every side is of type R, L, or S.\n- At least one side is R or L (not both S).\n- At least one R or L side's bare variable appears **nowhere else** in Eq1\n  (fresh).\n\nIf M8 fires, build a 3-element magma on `{0,1,2}` (all products 0 except\none nonzero cell):\n\n| Side types of Eq1 | Nonzero cell |\n|---|---|\n| both in {R, S}, ≥1 R | `0*2 = 1` |\n| both in {L, S}, ≥1 L | `2*0 = 1` |\n| one R and one L      | `2*2 = 1` |\n\nEq1 holds in this magma by construction (all composites evaluate to 0/1,\nso the outer `*` always yields 0).\n\nTest Eq2 at assignments over `{0,1,2}`. If any assignment gives `LHS ≠\nRHS` in this magma → return **`false`**. Try first:\n- one variable = 2, others = 0 (each variable in turn);\n- two variables = 2, rest = 0;\n- all variables = 2.\n\n**Worked M8 example:**\n    E1:  x * (y*z) = z * (w*u)\n    E2:  (x*y)*y = (x*z)*y\n\nEq1 LHS: `x * (y*z)` = R-type (bare `x`, composite), `x` appears nowhere\nelse. Eq1 RHS: `z * (w*u)` = R-type. Both R → magma has `0*2=1`, else 0.\n\nTest Eq2 at `x=0, y=2, z=0`:\n- LHS = `(0*2)*2` = `1 * 2` = `0` (since `1*2 = 0`).\n- RHS = `(0*0)*2` = `0 * 2` = `1`.\n- `0 ≠ 1` → **`false`**. ✓\n\n## Magma catalog — 17 bits\n\nFor each magma below, `sig(E)[i] = TRUE` iff the magma satisfies `E`.\n\n| # | M (`a*b`) | `M ⊨ L=R` iff |\n|---|---|---|\n| 0 | `b` (right-proj) | `rm(L)==rm(R)` |\n| 1 | `a` (left-proj)  | `lm(L)==lm(R)` |\n| 2 | constant         | `(depth(L)≥1 ∧ depth(R)≥1) ∨ L,R same bare var` |\n| 3 | `a+b` mod 2      | `∀v: count(v,L) ≡ count(v,R) (mod 2)` |\n| 4 | `a+b` mod 3      | `∀v: count(v,L) ≡ count(v,R) (mod 3)` |\n| 5 | `a+b` on ℤ       | `∀v: count(v,L) == count(v,R)` |\n| 6 | `b+1` mod 3      | `rm(L)==rm(R) ∧ drm(L) ≡ drm(R) (mod 3)` |\n| 7 | `a+1` mod 3      | `lm(L)==lm(R) ∧ dlm(L) ≡ dlm(R) (mod 3)` |\n| 8 | `−a−b` mod 3     | `∀v: signed_count(v,L) ≡ signed_count(v,R) (mod 3)` |\n|M6 | `1−a` mod 2      | `lm(L)==lm(R) ∧ dlm(L) ≡ dlm(R) (mod 2)` |\n|M7 | `1−b` mod 2      | `rm(L)==rm(R) ∧ drm(L) ≡ drm(R) (mod 2)` |\n\n**Affine magmas 9–14**: `a*b = p·a + q·b + c (mod m)`. Compute:\n\n    val(v) = v                                (symbolic)\n    val(a*b) = p·val(a) + q·val(b) + c (mod m)\n\nThe magma satisfies `L=R` iff `val(L) ≡ val(R)` — every variable's\ncoefficient matches mod m AND the constant matches mod m.\n\n| # | `a*b` formula       | p  | q  | c | m |\n|---|---|---|---|---|---|\n| 9 | `a − b (mod 3)`     |  1 | −1 | 0 | 3 |\n|10 | `−a + 2b (mod 4)`   | −1 |  2 | 0 | 4 |\n|11 | `a + 2b (mod 4)`    |  1 |  2 | 0 | 4 |\n|12 | `2a + b (mod 4)`    |  2 |  1 | 0 | 4 |\n|13 | `2a + b + 1 (mod 4)`|  2 |  1 | 1 | 4 |\n|14 | `−2a − 2b (mod 5)`  | −2 | −2 | 0 | 5 |\n\n`sig(E)` = 17-bit vector: `(h0..h8, M6, M7, h9..h14)`.\n\n## Computing the spine-parity magmas carefully\n\n### h7 (left-successor mod 3)\nStep A: `lm(L) == lm(R)`? If not, h7=FALSE.\nStep B: compute `dlm`; Step C: h7 iff `dlm(L) ≡ dlm(R) (mod 3)`.\nExample `x = ((x*y)*z)*w`: lm match (x=x); dlm(L)=0, dlm(R)=3, 0≡3 (mod 3).\n**h7 = TRUE.**\n\n### h6, M6, M7\nh6 symmetric to h7 using `rm`/`drm`/mod 3. M6 same as h7 but mod 2. M7\nsame as h6 but mod 2.\n\n### h8 (negation-sum mod 3)\nEach leaf of `v` at depth `d` contributes `(−1)^d`: depth 0→+1, 1→−1, etc.\nh8 iff for **every** variable `v`, `signed_count(v,L) ≡ signed_count(v,R) (mod 3)`.\nE.g. `x*y = x`: L gives x:−1, R gives x:+1. −1≡2, +1≡1 (mod 3). **h8=FALSE.**\n\n## Decision procedure\n\n1. **Step 0**: if any of T1,T2,T3,T4,T5,T5b fires → **`true`**.\n2. **Step 1**: if D8 spine-divisibility refutes → **`false`**.\n3. **Step 2**: if M8 custom absorption magma refutes → **`false`**.\n4. Compute `sig(E1)` and `sig(E2)` (17 bits each).\n5. **Refutation scan**: if `∃i` with `sig(E1)[i]=T` and `sig(E2)[i]=F`,\n   return **`false`**.\n6. Otherwise return **`true`**.\n\n**Discipline.** A `false` answer MUST name a specific refuter: a magma\nindex `i` for Step 5, or a concrete counterexample assignment for M8, or\na divisibility argument for D8. Do NOT infer `false` from shared letters\nor structural resemblance. If uncertain after re-checking, return\n**`true`** — a missed refutation is safer than a hallucinated one.\n\n## Worked example — magma 0 refutation\n\n    E1:  x*y = ((z*x)*w)*y\n    E2:  x*x = (y*z)*w\n\nStep 0–2: no TRUE detector fires; not pure spines; Eq1 sides are\n`x*y` (X type, bare*bare different) → M8 skips.\nStep 4: sig(E1): rm(L)=y=rm(R) → h0=T. lm(L)=x≠z=lm(R) → h1=F. Both\ndepths≥1 → h2=T. count(z): 0 vs 1 → h3..h5=F. drm mismatch → h6=F.\nEtc.; sig(E2): rm(L)=x≠w=rm(R) → h0=F.\nStep 5: i=0, sig(E1)[0]=T, sig(E2)[0]=F → **`false`**.\nWitness: `a*b=b` makes E1 hold (`y=y`) and E2 fail (`x=w`).\n\n## Now apply to this instance\n\n    E1:  {{ equation1 }}\n    E2:  {{ equation2 }}\n\nExecute Steps 0–6 and output exactly one word: `true` or `false`.",
+    "publishedAt": "2026-04-19T13:42:03Z",
+    "visibilityStatus": "active",
+    "lineageDepth": 0,
+    "lineagePathSnapshot": [
+      {
+        "shareItemId": "si_01fb9b62-c54e-4f20-87c7-85b9ca7d99dd",
+        "entityName": "Debtirtha Saha",
+        "publishedAt": "2026-04-19T13:42:03Z"
+      }
+    ],
+    "isDerived": false,
+    "itemType": "Original",
+    "sourceCheatsheetId": "cs_eb282600-5a37-48d1-9e34-45e768daffdf",
+    "publicCode": "EQT01-000097",
+    "remark": "",
+    "likeCount": 0,
+    "favoriteCount": 0,
+    "referencedCount": 0,
+    "commentCount": 0,
+    "canComment": false,
+    "viewerHasLiked": false,
+    "viewerHasFavorited": false,
+    "pythonFileContent": null
+  }
+}

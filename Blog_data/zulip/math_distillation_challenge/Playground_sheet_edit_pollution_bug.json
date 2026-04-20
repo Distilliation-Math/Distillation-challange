@@ -1,0 +1,147 @@
+{
+  "channel": "Math Distillation Challenge - equational theories",
+  "channel_id": 13,
+  "topic": "Playground sheet edit pollution bug",
+  "message_count": 4,
+  "messages": [
+    {
+      "id": 1691,
+      "sender_id": 113,
+      "content": "<p>Yo just wanted to share a bug I found in the playground, if you are testing a current sheet called example1 and you continue to use the edit feature on sheet example1 instead of creating a new test sheet for your updated version,  if you are constantly editing example1 sheet, even with the updated version edited into example1 this sheet will carry over past pollution data from your prior version of example1 ... I found it best to always create a new sheet in the playground.. for example if in example1 it was constantly asking for verdict (f) or (t) and you change that via edit to (false) or (true) you will still receive some prompt returns with (f) or (t) while sometimes (false) or (true) it may take a bunch of tests to get full (false) or (true) compliance again.. if you created a new sheet all first prompt returns would have had (false) or (true) only... If it's that obvious with just swapping (f)/(t) to (true)/(false) who knows what other polluted data also holds if your edits are larger..</p>",
+      "recipient_id": 43,
+      "timestamp": 1776580893,
+      "client": "website",
+      "subject": "Playground sheet edit pollution bug",
+      "topic_links": [],
+      "last_edit_timestamp": 1776581433,
+      "edit_history": [
+        {
+          "user_id": 113,
+          "timestamp": 1776581915,
+          "prev_topic": "Playground sheet pollution bug",
+          "topic": "Playground sheet edit pollution bug"
+        },
+        {
+          "user_id": 113,
+          "timestamp": 1776581433,
+          "prev_content": "Yo just wanted to share a bug I found in the playground, if you are testing a current sheet called example1 and you continue to use the edit feature on sheet example1 instead of creating a new test sheet for your updated version,  if you are constantly editing example1 sheet, even with the updated version edited into example1 this sheet will carry over past pollution data from your prior version of example1 ... I found it best to always create a new sheet in the playground.. for example if in example1 it was constantly asking for verdict (f) or (t) and you change that via edit to (false) or (true) you will still receive some prompt returns with (f) or (t) while sometimes (false) or (true) it make take a bunch of tests to get full (false) or (true) compliance again.. if you created a new sheet all first prompt returns would have had (false) or (true) only...",
+          "prev_rendered_content": "<p>Yo just wanted to share a bug I found in the playground, if you are testing a current sheet called example1 and you continue to use the edit feature on sheet example1 instead of creating a new test sheet for your updated version,  if you are constantly editing example1 sheet, even with the updated version edited into example1 this sheet will carry over past pollution data from your prior version of example1 ... I found it best to always create a new sheet in the playground.. for example if in example1 it was constantly asking for verdict (f) or (t) and you change that via edit to (false) or (true) you will still receive some prompt returns with (f) or (t) while sometimes (false) or (true) it make take a bunch of tests to get full (false) or (true) compliance again.. if you created a new sheet all first prompt returns would have had (false) or (true) only...</p>"
+        },
+        {
+          "user_id": 113,
+          "timestamp": 1776581271,
+          "prev_content": "Yo just wanted to share a bug I found in the playground, if you are testing a current sheet called example1 and you continue to use the edit feature on sheet example1 instead of creating a new test sheet with your updated version,  if you are constantly editing example1 sheet, even with the updated version edited into example1 this sheet will carry over past pollution data from your prior version of example1 ... I found it best to always create a new sheet in the playground.. for example if in example1 it was constantly asking for verdict (f) or (t) and you change that via edit to (false) or (true) you will still receive some prompt returns with (f) or (t) while sometimes (false) or (true) it make take a bunch of tests to get full (false) or (true) compliance again.. if you created a new sheet all first prompt returns would have had (false) or (true) only...",
+          "prev_rendered_content": "<p>Yo just wanted to share a bug I found in the playground, if you are testing a current sheet called example1 and you continue to use the edit feature on sheet example1 instead of creating a new test sheet with your updated version,  if you are constantly editing example1 sheet, even with the updated version edited into example1 this sheet will carry over past pollution data from your prior version of example1 ... I found it best to always create a new sheet in the playground.. for example if in example1 it was constantly asking for verdict (f) or (t) and you change that via edit to (false) or (true) you will still receive some prompt returns with (f) or (t) while sometimes (false) or (true) it make take a bunch of tests to get full (false) or (true) compliance again.. if you created a new sheet all first prompt returns would have had (false) or (true) only...</p>"
+        },
+        {
+          "user_id": 113,
+          "timestamp": 1776581113,
+          "prev_content": "Yo just wanted to share a bug I found in the playground, if you are resting a current sheet called example1 and you continue to use the edit feature on sheet 1 instead of deleting the sheet and putting the updated version,  if you are constantly editing example1 sheet, even with the updated version this shit will carry over past pollution data from your prior version of example1 ... I found it best to always create a new sheet in the playground.. for example if in example one it was constantly asking for verdict (f) or (t) and you change that via edit to (false) or (true) you will still receive some prompt returns with (f) or (t) while sometimes (false) or (true) it make take awhile of tests to get full (false) or (true) compliance again.. if you created a new sheet all first prompt returns would have had (false) or (true) only...",
+          "prev_rendered_content": "<p>Yo just wanted to share a bug I found in the playground, if you are resting a current sheet called example1 and you continue to use the edit feature on sheet 1 instead of deleting the sheet and putting the updated version,  if you are constantly editing example1 sheet, even with the updated version this shit will carry over past pollution data from your prior version of example1 ... I found it best to always create a new sheet in the playground.. for example if in example one it was constantly asking for verdict (f) or (t) and you change that via edit to (false) or (true) you will still receive some prompt returns with (f) or (t) while sometimes (false) or (true) it make take awhile of tests to get full (false) or (true) compliance again.. if you created a new sheet all first prompt returns would have had (false) or (true) only...</p>"
+        }
+      ],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "last_moved_timestamp": 1776581915,
+      "sender_full_name": "Stacey Szmy",
+      "sender_email": "user113@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "https://secure.gravatar.com/avatar/21e44e00230533d40a9a9209cc063b5a?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-04-19T06:41:33.000Z"
+    },
+    {
+      "id": 1692,
+      "sender_id": 113,
+      "content": "<p><a href=\"/user_uploads/5/c1/fctldFCKJTxYbgkYUoKLLfM4/Screenshot_2026-04-19-02-57-39-492.jpg\">Screenshot_2026-04-19-02-57-39-492.jpg</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/5/c1/fctldFCKJTxYbgkYUoKLLfM4/Screenshot_2026-04-19-02-57-39-492.jpg\" title=\"Screenshot_2026-04-19-02-57-39-492.jpg\"><img data-original-content-type=\"image/jpeg\" data-original-dimensions=\"682x699\" src=\"/user_uploads/thumbnail/5/c1/fctldFCKJTxYbgkYUoKLLfM4/Screenshot_2026-04-19-02-57-39-492.jpg/840x560.webp\"></a></div>",
+      "recipient_id": 43,
+      "timestamp": 1776581957,
+      "client": "website",
+      "subject": "Playground sheet edit pollution bug",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Stacey Szmy",
+      "sender_email": "user113@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "https://secure.gravatar.com/avatar/21e44e00230533d40a9a9209cc063b5a?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-04-19T06:59:17.000Z"
+    },
+    {
+      "id": 1693,
+      "sender_id": 113,
+      "content": "<p>With a new created sheet.<br>\n<a href=\"/user_uploads/5/67/Ap8TRKgxD-eoxoFgFMgFQjnn/Screenshot_2026-04-19-03-04-54-614.jpg\">Screenshot_2026-04-19-03-04-54-614.jpg</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/5/67/Ap8TRKgxD-eoxoFgFMgFQjnn/Screenshot_2026-04-19-03-04-54-614.jpg\" title=\"Screenshot_2026-04-19-03-04-54-614.jpg\"><img data-original-content-type=\"image/jpeg\" data-original-dimensions=\"720x657\" src=\"/user_uploads/thumbnail/5/67/Ap8TRKgxD-eoxoFgFMgFQjnn/Screenshot_2026-04-19-03-04-54-614.jpg/840x560.webp\"></a></div>",
+      "recipient_id": 43,
+      "timestamp": 1776582374,
+      "client": "website",
+      "subject": "Playground sheet edit pollution bug",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 25
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Stacey Szmy",
+      "sender_email": "user113@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "https://secure.gravatar.com/avatar/21e44e00230533d40a9a9209cc063b5a?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-04-19T07:06:14.000Z"
+    },
+    {
+      "id": 1703,
+      "sender_id": 25,
+      "content": "<p><span class=\"user-mention\" data-user-id=\"113\">@Stacey Szmy</span> Thanks for the feedback!</p>",
+      "recipient_id": 43,
+      "timestamp": 1776614289,
+      "client": "ZulipElectron",
+      "subject": "Playground sheet edit pollution bug",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-04-19T15:58:09.000Z"
+    }
+  ]
+}

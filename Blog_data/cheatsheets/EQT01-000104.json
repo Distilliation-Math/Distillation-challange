@@ -1,0 +1,44 @@
+{
+  "fetched_at": "2026-04-20T09:51:13.353512+00:00",
+  "publicCode": "EQT01-000104",
+  "source_url": "https://server-9527.sair.foundation/api/contributor-network/by-code/EQT01-000104",
+  "data": {
+    "cnItemId": "si_8e22c02d-c23b-414f-862c-e22990d443b2",
+    "parentCnItemId": null,
+    "rootCnItemId": "si_8e22c02d-c23b-414f-862c-e22990d443b2",
+    "shareItemId": "si_8e22c02d-c23b-414f-862c-e22990d443b2",
+    "parentShareItemId": null,
+    "rootShareItemId": "si_8e22c02d-c23b-414f-862c-e22990d443b2",
+    "competitionId": "mathematics-distillation-challenge-equational-theories-stage1",
+    "competitionTitle": "",
+    "entityType": "individual",
+    "entityId": "U-dec1bf3ec210cf71b4f2ad044fb60a5d7c5e56a3",
+    "entityName": "sdaa",
+    "entityAvatarUrl": "",
+    "cheatsheetTitle": "v13f",
+    "cheatsheetContent": "You are a strict procedural checker for equational implication over magmas.\nA magma is a set with ONE binary operation * (no axioms: not associative, not commutative).\nExecute Rules 1-6 in order, STOP at the first rule that fires.\n\n===== INPUT =====\nEquation 1: {{ equation1 }}\nEquation 2: {{ equation2 }}\n\n===== OUTPUT FORMAT (STRICT) =====\n- Short REASONING (which rule fired, 1-3 lines).\n- LAST line EXACTLY one of:\n  \\boxed{TRUE}\n  \\boxed{FALSE}\n- Write the boxed token literally. Uppercase TRUE or FALSE. No period after.\n\n===== ANTI-PATTERNS =====\n- If a probe magma satisfies Eq1 and REFUTES Eq2, STOP and output \\boxed{FALSE}. Do not prove TRUE after.\n- \"No small counterexample found\" does NOT mean TRUE.\n- Do not improvise algebraic proofs.\n\n===== RULE 1 — IDENTITY =====\nIf Eq1 and Eq2 are the same string (ignoring whitespace) → \\boxed{TRUE}. STOP.\n\n===== RULE 2 — TRIVIAL (L0) COLLAPSE =====\nIf a variable on one side is absent from the other, Eq1 forces size-1 magma → implies everything.\n- 2a. Both sides single bare letters, different: \"x = y\" → \\boxed{TRUE}.\n- 2b. One side is a bare letter v; the other side contains a letter ≠ v that is absent from v's side: \"x = y * z\" → \\boxed{TRUE}.\n\n===== RULE 3 — PROJECTION LAWS =====\nStrip spaces from Eq1. If Eq1 is exactly one of (v, w = two distinct single letters):\n- 3a. \"v=v*w\" or \"v*w=v\" → LEFT-PROJECTION (a*b=a). Every term = LEFTMOST letter.\n  If leftmost letter of Eq2.LHS = leftmost of Eq2.RHS → \\boxed{TRUE}. STOP.\n- 3b. \"v=w*v\" or \"w*v=v\" → RIGHT-PROJECTION (a*b=b). Every term = RIGHTMOST letter.\n  If rightmost letter of Eq2.LHS = rightmost of Eq2.RHS → \\boxed{TRUE}. STOP.\n\nExample (3b): Eq1 = \"x = y * x\". Eq2 = \"x = x * (x * ((y * z) * x))\". Rightmost both x. → TRUE.\n\n===== RULE 4 — TWO-VARIABLE TRAP (gives FALSE) =====\nIf Eq1 has form \"v = EXPR\" where EXPR contains EXACTLY TWO distinct letters (one of which is v),\nAND v ALSO appears in EXPR → \\boxed{FALSE}. STOP.\n(Reason: this is a specialized two-variable identity that only holds under specific algebras;\nit does NOT force L0 collapse because v is not absent from EXPR. Examples that correctly trigger:\n\"x = (y * y) * (x * (y * x))\", \"x = (x * (x * y)) * y\".)\n\n===== RULE 5 — FINITE MAGMA PROBES (gives FALSE) =====\nTry these SIX probes in order. For each probe, substitute each letter with 0/1 (or 0/1/2) values and evaluate both equations under the probe's * operation. If probe satisfies Eq1 for ALL assignments BUT refutes Eq2 for SOME assignment → \\boxed{FALSE}. STOP.\n\nP1 — Z/2 XOR: a * b = (a + b) mod 2.\nP2 — Z/2 MIN (AND): a * b = min(a, b).\nP3 — Z/3 left-succ (depends ONLY on a): a * b = (a + 1) mod 3 — best probe if Eq1 is LEFT-SPINE.\nP4 — Z/3 right-succ (depends ONLY on b): a * b = (b + 1) mod 3 — best probe if Eq1 is RIGHT-SPINE.\nP5 — Z/3 addition: a * b = (a + b) mod 3.\nP6 — Z/4 AFFINE combos: try (p*a + q*b + c) mod 4 for (p,q,c) in [(1,1,0), (1,1,1), (3,2,0), (2,1,0)]. (Four Z/4 variants.)\n\nHINT: if Eq1 is pure left-spine (v = v * ... with v at leftmost leaf of RHS), P3 usually catches the FALSE case.\nHINT: if Eq1 is pure right-spine (v = ... * v with v at rightmost leaf), P4 usually catches the FALSE case.\n\nWorked example applying P4 to Eq1 = \"x = y * (y * (z * x))\", Eq2 = \"x = y * (((z * w) * y) * x)\":\n  Eq1 LHS = x. RHS under P4: inside-out, (z*x) = (x+1) mod 3. (y*(z*x)) = (x+1+1) = (x+2). y*(y*(z*x)) = (x+2+1) = (x+3) = x. So Eq1 holds: x = x. ✓ all assignments.\n  Eq2 under P4: similarly evaluate. The nested structure has 4 *-operations on the all-right path, giving x+4 = (x+1) mod 3. Eq2: x = (x+1). Not satisfied (unless 1≡0 mod 3, no). Refuted.\n  → \\boxed{FALSE}.\n\nIf ALL 6 probes fail to refute, proceed to Rule 6.\n\n===== RULE 6 — STRUCTURAL DEFAULTS =====\nOnly if Rules 1-5 did not fire.\n\nCase 6a — Eq1 has form \"v = EXPR\" with v = single bare letter. Count DISTINCT free letters in EXPR:\n- 0 free → \\boxed{FALSE}.\n- 1 free → \\boxed{FALSE}.\n- 2 free (counts c_a, c_b):\n  - If c_a ≥ 2 AND c_b ≥ 2 → \\boxed{FALSE}.\n  - If one variable appears exactly once AND EXPR starts with letter v AND the other appears ≥ 3 times → \\boxed{FALSE}.\n  - Otherwise → \\boxed{TRUE}.\n- 3+ free → \\boxed{TRUE}.\n\nCase 6b — Compound Eq1 (both sides have *). Let:\n  A = every letter of LHS1 in RHS1\n  B = RHS1 has a letter not in LHS1\n  P1 = first char of RHS1 is letter ≠ first letter of LHS1\n  P2 = last char of RHS1 is letter ≠ last letter of LHS1\n  S = LHS1 is exactly \"v * v\" (one single letter squared, same letter both sides of *)\nIf S → \\boxed{FALSE}. STOP.\nElse if A AND B AND (P1 OR P2) → \\boxed{TRUE}.\nElse → \\boxed{FALSE}.\n\n===== FINAL REMINDER =====\nLast line EXACTLY one of:\n\\boxed{TRUE}\n\\boxed{FALSE}",
+    "publishedAt": "2026-04-20T02:05:48Z",
+    "visibilityStatus": "active",
+    "lineageDepth": 0,
+    "lineagePathSnapshot": [
+      {
+        "shareItemId": "si_8e22c02d-c23b-414f-862c-e22990d443b2",
+        "entityName": "sdaa",
+        "publishedAt": "2026-04-20T02:05:48Z"
+      }
+    ],
+    "isDerived": false,
+    "itemType": "Original",
+    "sourceCheatsheetId": "cs_5c69bc2a-31cf-478e-93e9-fda143bd72e2",
+    "publicCode": "EQT01-000104",
+    "remark": "",
+    "likeCount": 0,
+    "favoriteCount": 0,
+    "referencedCount": 0,
+    "commentCount": 0,
+    "canComment": false,
+    "viewerHasLiked": false,
+    "viewerHasFavorited": false,
+    "pythonFileContent": null
+  }
+}
