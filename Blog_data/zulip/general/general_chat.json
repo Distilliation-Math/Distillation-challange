@@ -1,0 +1,34 @@
+{
+  "channel": "general",
+  "channel_id": 9,
+  "topic": "general chat",
+  "message_count": 1,
+  "messages": [
+    {
+      "id": 1702,
+      "sender_id": 274,
+      "content": "<p>Hi everyone, the deadline for submission is coming up. I am a little bit nervous about it. I would like to know if my modified prompt can be resubmitted after the initial submission. Thanks! （＾Ｏ＾）</p>",
+      "recipient_id": 24,
+      "timestamp": 1776608530,
+      "client": "website",
+      "subject": "general chat",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Hongyue Lei",
+      "sender_email": "user274@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "/user_avatars/5/cd5ed7395c97e7f63de89e1b7a207fb1f913449b.png",
+      "content_type": "text/html",
+      "date": "2026-04-19T14:22:10.000Z"
+    }
+  ]
+}

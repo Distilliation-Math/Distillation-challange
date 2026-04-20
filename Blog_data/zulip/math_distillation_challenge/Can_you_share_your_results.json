@@ -2,7 +2,7 @@
   "channel": "Math Distillation Challenge - equational theories",
   "channel_id": 13,
   "topic": "Can you share your results?",
-  "message_count": 3,
+  "message_count": 14,
   "messages": [
     {
       "id": 1629,
@@ -130,6 +130,429 @@
       "avatar_url": "https://secure.gravatar.com/avatar/693930ab905e6349fc3a86b57348c36c?d=identicon&version=1",
       "content_type": "text/html",
       "date": "2026-04-18T14:45:04.000Z"
+    },
+    {
+      "id": 1706,
+      "sender_id": 177,
+      "content": "<p>our current sheet (~9.5 KB) on full hard3:</p>\n<div class=\"codehilite\"><pre><span></span><code>┌────────────────┬──────────────────┐\n│ Model          │  hard3 (400)     │\n├────────────────┼──────────────────┤\n│ gpt-oss-120B   │ 283/400 (70.75%) │\n│ Gemma-4-31B-IT │ 280/400 (70.00%) │\n│ Llama-3.3-70B  │ 280/400 (70.00%) │\n└────────────────┴──────────────────┘\n</code></pre></div>\n<p>weighted (60/40/30) ≈ 70.2%. same sheet across all three, no per-model tuning. gpt-oss and llama via Bedrock, gemma via OpenRouter paid (parallel 5, since anything higher 429s).</p>\n<p>agree with Josu that the public subset numbers aren't really the signal. YZ said the final offline set is a different distribution.</p>",
+      "recipient_id": 43,
+      "timestamp": 1776619786,
+      "client": "curl",
+      "subject": "Can you share your results?",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Adam McKenna",
+      "sender_email": "user177@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "https://secure.gravatar.com/avatar/1eb4e35f0b3a506d78e314b257c1487f?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-04-19T17:29:46.000Z"
+    },
+    {
+      "id": 1709,
+      "sender_id": 50,
+      "content": "<p><span class=\"user-mention silent\" data-user-id=\"177\">Adam McKenna</span> <a href=\"#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/Can.20you.20share.20your.20results.3F/near/1706\">said</a>:</p>\n<blockquote>\n<p>our current sheet (~9.5 KB) on full hard3:</p>\n<div class=\"codehilite\"><pre><span></span><code>┌────────────────┬──────────────────┐\n│ Model          │  hard3 (400)     │\n├────────────────┼──────────────────┤\n│ gpt-oss-120B   │ 283/400 (70.75%) │\n│ Gemma-4-31B-IT │ 280/400 (70.00%) │\n│ Llama-3.3-70B  │ 280/400 (70.00%) │\n└────────────────┴──────────────────┘\n</code></pre></div>\n<p>weighted (60/40/30) ≈ 70.2%. same sheet across all three, no per-model tuning. gpt-oss and llama via Bedrock, gemma via OpenRouter paid (parallel 5, since anything higher 429s).</p>\n<p>agree with Josu that the public subset numbers aren't really the signal. YZ said the final offline set is a different distribution.</p>\n</blockquote>\n<p>gj. interesting to see your method converging performance on all 3 of models. what technique are you using for cheatsheets? some voodoo stuff, or normal algebraic knowledge?</p>",
+      "recipient_id": 43,
+      "timestamp": 1776626674,
+      "client": "website",
+      "subject": "Can you share your results?",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 177
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Adam Betka",
+      "sender_email": "user50@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/f14bb8ad856c1d25d341b64d3485795c25cd1a97.png",
+      "content_type": "text/html",
+      "date": "2026-04-19T19:24:34.000Z"
+    },
+    {
+      "id": 1711,
+      "sender_id": 177,
+      "content": "<p>thanks! nothing voodoo, just a lot of empirical iteration. we actually optimized almost entirely for llama, because it's just bad at staying on task compared to the other two. we've hit &gt;80% on gpt with more theoretical sheets but the same sheets cratered llama, so the current sheet is what survives once you stop breaking llama.</p>\n<p>also ran gpt-oss-20b and deepseek-v3.2 since then and both landed in the same band (~70.8% and ~71.0%). five models within about 1pp of each other now, which wasn't the design goal, just where it ended up.</p>\n<p>I should also add that I was <em>extremely</em> resistant to using the format we ended up using, but we couldn't find any other format that kept llama on task.  I probably burned 2 weeks trying to force suboptimal sheets, but at the end I had no choice but to switch back to the better performing format.</p>",
+      "recipient_id": 43,
+      "timestamp": 1776630660,
+      "client": "curl",
+      "subject": "Can you share your results?",
+      "topic_links": [],
+      "last_edit_timestamp": 1776631007,
+      "edit_history": [
+        {
+          "user_id": 177,
+          "timestamp": 1776631007,
+          "prev_content": "thanks! nothing voodoo, just a lot of empirical iteration. we actually optimized almost entirely for llama, because it's just bad at staying on task compared to the other two. we've hit >80% on gpt with more theoretical sheets but the same sheets cratered llama, so the current sheet is what survives once you stop breaking llama.\n\nalso ran gpt-oss-20b and deepseek-v3.2 since then and both landed in the same band (~70.8% and ~71.0%). five models within about 1pp of each other now, which wasn't the design goal, just where it ended up.",
+          "prev_rendered_content": "<p>thanks! nothing voodoo, just a lot of empirical iteration. we actually optimized almost entirely for llama, because it's just bad at staying on task compared to the other two. we've hit &gt;80% on gpt with more theoretical sheets but the same sheets cratered llama, so the current sheet is what survives once you stop breaking llama.</p>\n<p>also ran gpt-oss-20b and deepseek-v3.2 since then and both landed in the same band (~70.8% and ~71.0%). five models within about 1pp of each other now, which wasn't the design goal, just where it ended up.</p>"
+        }
+      ],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Adam McKenna",
+      "sender_email": "user177@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "https://secure.gravatar.com/avatar/1eb4e35f0b3a506d78e314b257c1487f?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-04-19T20:31:00.000Z"
+    },
+    {
+      "id": 1712,
+      "sender_id": 234,
+      "content": "<p>Impressive that you were able to get Llama to 70%! In my testing Llama was extremely unreliable. I'm curious as to whether you are seeing similar results on other datasets or if there might be some overfitting happening?</p>",
+      "recipient_id": 43,
+      "timestamp": 1776630967,
+      "client": "website",
+      "subject": "Can you share your results?",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Arjun Garg",
+      "sender_email": "user234@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "https://secure.gravatar.com/avatar/681d322aaf7a200b45928e5587f23027?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-04-19T20:36:07.000Z"
+    },
+    {
+      "id": 1713,
+      "sender_id": 177,
+      "content": "<p><span class=\"user-mention silent\" data-user-id=\"234\">Arjun Garg</span> <a href=\"#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/Can.20you.20share.20your.20results.3F/near/1712\">said</a>:</p>\n<blockquote>\n<p>Impressive that you were able to get Llama to 70%! In my testing Llama was extremely unreliable. I'm curious as to whether you are seeing similar results on other datasets or if there might be some overfitting happening?</p>\n</blockquote>\n<p>Getting Claude to stop dataset-fitting to the problem set was actually incredibly difficult at the beginning.  I eventually had to do some Hannibal Lecter style memory editing to bend it to my will.  But the sections in our sheet are intended to cover the full (4694x4694) graph.</p>\n<p>If I'm speaking candidly, I don't fully understand the value of having Llama in the competition at all.  The other competition models seem to be head and shoulders above it pretty much all areas.  Even GPT-OSS-20b performed fine with a completely theorem-based sheet.  Honestly it's frustrating just trying to have a simple conversation with Llama70B in openrouter chat.  I often had to reframe my questions 2 or 3 times to get the answer I was looking for.</p>",
+      "recipient_id": 43,
+      "timestamp": 1776631219,
+      "client": "website",
+      "subject": "Can you share your results?",
+      "topic_links": [],
+      "last_edit_timestamp": 1776631481,
+      "edit_history": [
+        {
+          "user_id": 177,
+          "timestamp": 1776631481,
+          "prev_content": "@_**Arjun Garg|234** [said](https://zulip.sair.foundation/#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/Can.20you.20share.20your.20results.3F/near/1712):\n```quote\nImpressive that you were able to get Llama to 70%! In my testing Llama was extremely unreliable. I'm curious as to whether you are seeing similar results on other datasets or if there might be some overfitting happening?\n```\n\nGetting Claude to stop dataset-fitting to the problem set was actually incredibly difficult at the beginning.  I eventually had to do some Hannibal Lecter style memory editing to bend it to my will.  But the sections in our sheet are intended to cover the full (4796x4796) graph.\n\nIf I'm speaking candidly, I don't fully understand the value of having Llama in the competition at all.  The other competition models seem to be head and shoulders above it pretty much all areas.  Even GPT-OSS-20b performed fine with a completely theorem-based sheet.  Honestly it's frustrating just trying to have a simple conversation with Llama70B in openrouter chat.  I often had to reframe my questions 2 or 3 times to get the answer I was looking for.",
+          "prev_rendered_content": "<p><span class=\"user-mention silent\" data-user-id=\"234\">Arjun Garg</span> <a href=\"#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/Can.20you.20share.20your.20results.3F/near/1712\">said</a>:</p>\n<blockquote>\n<p>Impressive that you were able to get Llama to 70%! In my testing Llama was extremely unreliable. I'm curious as to whether you are seeing similar results on other datasets or if there might be some overfitting happening?</p>\n</blockquote>\n<p>Getting Claude to stop dataset-fitting to the problem set was actually incredibly difficult at the beginning.  I eventually had to do some Hannibal Lecter style memory editing to bend it to my will.  But the sections in our sheet are intended to cover the full (4796x4796) graph.</p>\n<p>If I'm speaking candidly, I don't fully understand the value of having Llama in the competition at all.  The other competition models seem to be head and shoulders above it pretty much all areas.  Even GPT-OSS-20b performed fine with a completely theorem-based sheet.  Honestly it's frustrating just trying to have a simple conversation with Llama70B in openrouter chat.  I often had to reframe my questions 2 or 3 times to get the answer I was looking for.</p>"
+        },
+        {
+          "user_id": 177,
+          "timestamp": 1776631428,
+          "prev_content": "@_**Arjun Garg|234** [said](https://zulip.sair.foundation/#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/Can.20you.20share.20your.20results.3F/near/1712):\n```quote\nImpressive that you were able to get Llama to 70%! In my testing Llama was extremely unreliable. I'm curious as to whether you are seeing similar results on other datasets or if there might be some overfitting happening?\n```\n\nGetting Claude to stop dataset-fitting to the problem set was actually incredibly difficult at the beginning.  I eventually had to do some Hannibal Lecter style memory editing to bend it to my will.  But the sections in our sheet are intended to cover the full (4796x4796) graph.\n\nIf I'm speaking candidly, I don't fully understand the value of having Llama in the competition at all.  It seems to be head and shoulders below the rest of the competition models in pretty much all areas.  Honestly it's frustrating just trying to have a simple conversation with it in openrouter chat.  I often had to reframe my questions 2 or 3 times to get the answer I was looking for.",
+          "prev_rendered_content": "<p><span class=\"user-mention silent\" data-user-id=\"234\">Arjun Garg</span> <a href=\"#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/Can.20you.20share.20your.20results.3F/near/1712\">said</a>:</p>\n<blockquote>\n<p>Impressive that you were able to get Llama to 70%! In my testing Llama was extremely unreliable. I'm curious as to whether you are seeing similar results on other datasets or if there might be some overfitting happening?</p>\n</blockquote>\n<p>Getting Claude to stop dataset-fitting to the problem set was actually incredibly difficult at the beginning.  I eventually had to do some Hannibal Lecter style memory editing to bend it to my will.  But the sections in our sheet are intended to cover the full (4796x4796) graph.</p>\n<p>If I'm speaking candidly, I don't fully understand the value of having Llama in the competition at all.  It seems to be head and shoulders below the rest of the competition models in pretty much all areas.  Honestly it's frustrating just trying to have a simple conversation with it in openrouter chat.  I often had to reframe my questions 2 or 3 times to get the answer I was looking for.</p>"
+        },
+        {
+          "user_id": 177,
+          "timestamp": 1776631367,
+          "prev_content": "@_**Arjun Garg|234** [said](https://zulip.sair.foundation/#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/Can.20you.20share.20your.20results.3F/near/1712):\n```quote\nImpressive that you were able to get Llama to 70%! In my testing Llama was extremely unreliable. I'm curious as to whether you are seeing similar results on other datasets or if there might be some overfitting happening?\n```\n\nGetting Claude to stop dataset-fitting to the problem set was actually incredibly difficult at the beginning.  I eventually had to do some Hannibal Lecter style memory editing to bend it to my will.  But the sections in our sheet are intended to cover the full (4796x4796) graph.",
+          "prev_rendered_content": "<p><span class=\"user-mention silent\" data-user-id=\"234\">Arjun Garg</span> <a href=\"#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/Can.20you.20share.20your.20results.3F/near/1712\">said</a>:</p>\n<blockquote>\n<p>Impressive that you were able to get Llama to 70%! In my testing Llama was extremely unreliable. I'm curious as to whether you are seeing similar results on other datasets or if there might be some overfitting happening?</p>\n</blockquote>\n<p>Getting Claude to stop dataset-fitting to the problem set was actually incredibly difficult at the beginning.  I eventually had to do some Hannibal Lecter style memory editing to bend it to my will.  But the sections in our sheet are intended to cover the full (4796x4796) graph.</p>"
+        }
+      ],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 234
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 117
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 236
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Adam McKenna",
+      "sender_email": "user177@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "https://secure.gravatar.com/avatar/1eb4e35f0b3a506d78e314b257c1487f?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-04-19T20:40:19.000Z"
+    },
+    {
+      "id": 1714,
+      "sender_id": 234,
+      "content": "<p>Likely far too late to make an official change but I agree, I'm having to dumb down or remove rules that GPT and Gemma are able to execute with little to no issues. Seems to be taking away from the math distillation part of the challenge towards random prompt tuning. Might be something to keep in mind for future stages/challenges.</p>",
+      "recipient_id": 43,
+      "timestamp": 1776631581,
+      "client": "website",
+      "subject": "Can you share your results?",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 177
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Arjun Garg",
+      "sender_email": "user234@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "https://secure.gravatar.com/avatar/681d322aaf7a200b45928e5587f23027?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-04-19T20:46:21.000Z"
+    },
+    {
+      "id": 1715,
+      "sender_id": 177,
+      "content": "<p><span class=\"user-mention silent\" data-user-id=\"234\">Arjun Garg</span> <a href=\"#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/Can.20you.20share.20your.20results.3F/near/1714\">said</a>:</p>\n<blockquote>\n<p>Seems to be taking away from the math distillation part of the challenge towards random prompt tuning. Might be something to keep in mind for future stages/challenges.</p>\n</blockquote>\n<p>that is exactly the problem.</p>\n<p>with the other models, you can just sort of tell them about the 'math discoveries' that have been made since their knowledge cutoff, and they seem to be able to competently integrate them.  But llama needs clean procedural steps.  The other models can execute those steps just as well as Llama can, but they don't need them.</p>\n<p>(maybe this was the point of having Llama in the competition :D)</p>",
+      "recipient_id": 43,
+      "timestamp": 1776631635,
+      "client": "website",
+      "subject": "Can you share your results?",
+      "topic_links": [],
+      "last_edit_timestamp": 1776632066,
+      "edit_history": [
+        {
+          "user_id": 177,
+          "timestamp": 1776632066,
+          "prev_content": "@_**Arjun Garg|234** [said](https://zulip.sair.foundation/#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/Can.20you.20share.20your.20results.3F/near/1714):\n```quote\nSeems to be taking away from the math distillation part of the challenge towards random prompt tuning. Might be something to keep in mind for future stages/challenges.\n```\nthat is exactly the problem.\n\nwith the other models, you can just sort of tell them about the 'math discoveries' that have been made since their knowledge cutoff, and they seem to be able to seamlessly integrate them.  But llama needs clean procedural steps.  The other models can execute those steps just as well as Llama can, but they don't need them.\n\n(maybe this was the point of having Llama in the competition :D)",
+          "prev_rendered_content": "<p><span class=\"user-mention silent\" data-user-id=\"234\">Arjun Garg</span> <a href=\"#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/Can.20you.20share.20your.20results.3F/near/1714\">said</a>:</p>\n<blockquote>\n<p>Seems to be taking away from the math distillation part of the challenge towards random prompt tuning. Might be something to keep in mind for future stages/challenges.</p>\n</blockquote>\n<p>that is exactly the problem.</p>\n<p>with the other models, you can just sort of tell them about the 'math discoveries' that have been made since their knowledge cutoff, and they seem to be able to seamlessly integrate them.  But llama needs clean procedural steps.  The other models can execute those steps just as well as Llama can, but they don't need them.</p>\n<p>(maybe this was the point of having Llama in the competition :D)</p>"
+        },
+        {
+          "user_id": 177,
+          "timestamp": 1776631847,
+          "prev_content": "@_**Arjun Garg|234** [said](https://zulip.sair.foundation/#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/Can.20you.20share.20your.20results.3F/near/1714):\n```quote\nSeems to be taking away from the math distillation part of the challenge towards random prompt tuning. Might be something to keep in mind for future stages/challenges.\n```\nthat is exactly the problem.\n\nwith the other models, you can just sort of tell them about the 'math discoveries' that have been made since their knowledge cutoff, and they seem to be able to seamlessly integrate them.  But llama needs clean procedural steps.  The other models can execute those steps just as well as Llama can, but they don't need them.",
+          "prev_rendered_content": "<p><span class=\"user-mention silent\" data-user-id=\"234\">Arjun Garg</span> <a href=\"#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/Can.20you.20share.20your.20results.3F/near/1714\">said</a>:</p>\n<blockquote>\n<p>Seems to be taking away from the math distillation part of the challenge towards random prompt tuning. Might be something to keep in mind for future stages/challenges.</p>\n</blockquote>\n<p>that is exactly the problem.</p>\n<p>with the other models, you can just sort of tell them about the 'math discoveries' that have been made since their knowledge cutoff, and they seem to be able to seamlessly integrate them.  But llama needs clean procedural steps.  The other models can execute those steps just as well as Llama can, but they don't need them.</p>"
+        },
+        {
+          "user_id": 177,
+          "timestamp": 1776631816,
+          "prev_content": "@_**Arjun Garg|234** [said](https://zulip.sair.foundation/#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/Can.20you.20share.20your.20results.3F/near/1714):\n```quote\nSeems to be taking away from the math distillation part of the challenge towards random prompt tuning. Might be something to keep in mind for future stages/challenges.\n```\nthat is exactly the problem.\n\nwith the other models, you can just tell them about the 'math discoveries' that have been made since their knowledge cutoff, and they seem to be able to seamlessly integrate them.  But llama needs clean procedural steps.  The other models can execute those steps just as well as Llama can, but they don't need them.",
+          "prev_rendered_content": "<p><span class=\"user-mention silent\" data-user-id=\"234\">Arjun Garg</span> <a href=\"#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/Can.20you.20share.20your.20results.3F/near/1714\">said</a>:</p>\n<blockquote>\n<p>Seems to be taking away from the math distillation part of the challenge towards random prompt tuning. Might be something to keep in mind for future stages/challenges.</p>\n</blockquote>\n<p>that is exactly the problem.</p>\n<p>with the other models, you can just tell them about the 'math discoveries' that have been made since their knowledge cutoff, and they seem to be able to seamlessly integrate them.  But llama needs clean procedural steps.  The other models can execute those steps just as well as Llama can, but they don't need them.</p>"
+        },
+        {
+          "user_id": 177,
+          "timestamp": 1776631810,
+          "prev_content": "@_**Arjun Garg|234** [said](https://zulip.sair.foundation/#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/Can.20you.20share.20your.20results.3F/near/1714):\n```quote\nSeems to be taking away from the math distillation part of the challenge towards random prompt tuning. Might be something to keep in mind for future stages/challenges.\n```\nthat is exactly the problem.\n\nwith the other models, you can just tell them the math 'discoveries' that have been made since their knowledge cutoff, and they seem to be able to seamlessly integrate them.  But llama needs clean procedural steps.  The other models can execute those steps just as well as Llama can, but they don't need them.",
+          "prev_rendered_content": "<p><span class=\"user-mention silent\" data-user-id=\"234\">Arjun Garg</span> <a href=\"#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/Can.20you.20share.20your.20results.3F/near/1714\">said</a>:</p>\n<blockquote>\n<p>Seems to be taking away from the math distillation part of the challenge towards random prompt tuning. Might be something to keep in mind for future stages/challenges.</p>\n</blockquote>\n<p>that is exactly the problem.</p>\n<p>with the other models, you can just tell them the math 'discoveries' that have been made since their knowledge cutoff, and they seem to be able to seamlessly integrate them.  But llama needs clean procedural steps.  The other models can execute those steps just as well as Llama can, but they don't need them.</p>"
+        },
+        {
+          "user_id": 177,
+          "timestamp": 1776631795,
+          "prev_content": "@_**Arjun Garg|234** [said](https://zulip.sair.foundation/#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/Can.20you.20share.20your.20results.3F/near/1714):\n```quote\nSeems to be taking away from the math distillation part of the challenge towards random prompt tuning. Might be something to keep in mind for future stages/challenges.\n```\nthat is exactly the problem.",
+          "prev_rendered_content": "<p><span class=\"user-mention silent\" data-user-id=\"234\">Arjun Garg</span> <a href=\"#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/Can.20you.20share.20your.20results.3F/near/1714\">said</a>:</p>\n<blockquote>\n<p>Seems to be taking away from the math distillation part of the challenge towards random prompt tuning. Might be something to keep in mind for future stages/challenges.</p>\n</blockquote>\n<p>that is exactly the problem.</p>"
+        }
+      ],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Adam McKenna",
+      "sender_email": "user177@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "https://secure.gravatar.com/avatar/1eb4e35f0b3a506d78e314b257c1487f?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-04-19T20:47:15.000Z"
+    },
+    {
+      "id": 1716,
+      "sender_id": 50,
+      "content": "<p><span class=\"user-mention silent\" data-user-id=\"177\">Adam McKenna</span> <a href=\"#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/Can.20you.20share.20your.20results.3F/near/1711\">said</a>:</p>\n<blockquote>\n<p>thanks! nothing voodoo, just a lot of empirical iteration. we actually optimized almost entirely for llama, because it's just bad at staying on task compared to the other two. we've hit &gt;80% on gpt with more theoretical sheets but the same sheets cratered llama, so the current sheet is what survives once you stop breaking llama.</p>\n<p>also ran gpt-oss-20b and deepseek-v3.2 since then and both landed in the same band (~70.8% and ~71.0%). five models within about 1pp of each other now, which wasn't the design goal, just where it ended up.</p>\n<p>I should also add that I was <em>extremely</em> resistant to using the format we ended up using, but we couldn't find any other format that kept llama on task.  I probably burned 2 weeks trying to force suboptimal sheets, but at the end I had no choice but to switch back to the better performing format.</p>\n</blockquote>\n<p>amazing results. do you have an X account so i can follow you?</p>",
+      "recipient_id": 43,
+      "timestamp": 1776634147,
+      "client": "website",
+      "subject": "Can you share your results?",
+      "topic_links": [],
+      "last_edit_timestamp": 1776634184,
+      "edit_history": [
+        {
+          "user_id": 50,
+          "timestamp": 1776634184,
+          "prev_content": "@_**Adam McKenna|177** [said](https://zulip.sair.foundation/#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/Can.20you.20share.20your.20results.3F/near/1711):\n```quote\nthanks! nothing voodoo, just a lot of empirical iteration. we actually optimized almost entirely for llama, because it's just bad at staying on task compared to the other two. we've hit >80% on gpt with more theoretical sheets but the same sheets cratered llama, so the current sheet is what survives once you stop breaking llama.\n\nalso ran gpt-oss-20b and deepseek-v3.2 since then and both landed in the same band (~70.8% and ~71.0%). five models within about 1pp of each other now, which wasn't the design goal, just where it ended up.\n\nI should also add that I was *extremely* resistant to using the format we ended up using, but we couldn't find any other format that kept llama on task.  I probably burned 2 weeks trying to force suboptimal sheets, but at the end I had no choice but to switch back to the better performing format.\n```\n\namazing results",
+          "prev_rendered_content": "<p><span class=\"user-mention silent\" data-user-id=\"177\">Adam McKenna</span> <a href=\"#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/Can.20you.20share.20your.20results.3F/near/1711\">said</a>:</p>\n<blockquote>\n<p>thanks! nothing voodoo, just a lot of empirical iteration. we actually optimized almost entirely for llama, because it's just bad at staying on task compared to the other two. we've hit &gt;80% on gpt with more theoretical sheets but the same sheets cratered llama, so the current sheet is what survives once you stop breaking llama.</p>\n<p>also ran gpt-oss-20b and deepseek-v3.2 since then and both landed in the same band (~70.8% and ~71.0%). five models within about 1pp of each other now, which wasn't the design goal, just where it ended up.</p>\n<p>I should also add that I was <em>extremely</em> resistant to using the format we ended up using, but we couldn't find any other format that kept llama on task.  I probably burned 2 weeks trying to force suboptimal sheets, but at the end I had no choice but to switch back to the better performing format.</p>\n</blockquote>\n<p>amazing results</p>"
+        }
+      ],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 177
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Adam Betka",
+      "sender_email": "user50@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/f14bb8ad856c1d25d341b64d3485795c25cd1a97.png",
+      "content_type": "text/html",
+      "date": "2026-04-19T21:29:07.000Z"
+    },
+    {
+      "id": 1718,
+      "sender_id": 177,
+      "content": "<p>Thanks!  My X account is @mysticflounder but I'm not super active on there. (need to get better at posting more regularly)</p>",
+      "recipient_id": 43,
+      "timestamp": 1776636189,
+      "client": "website",
+      "subject": "Can you share your results?",
+      "topic_links": [],
+      "last_edit_timestamp": 1776636325,
+      "edit_history": [
+        {
+          "user_id": 177,
+          "timestamp": 1776636325,
+          "prev_content": "Thanks!  My X account is @mysticflounder but I'm not super active on there. (need to get better at it)",
+          "prev_rendered_content": "<p>Thanks!  My X account is @mysticflounder but I'm not super active on there. (need to get better at it)</p>"
+        }
+      ],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Adam McKenna",
+      "sender_email": "user177@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "https://secure.gravatar.com/avatar/1eb4e35f0b3a506d78e314b257c1487f?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-04-19T22:03:09.000Z"
+    },
+    {
+      "id": 1723,
+      "sender_id": 177,
+      "content": "<p>Sorry to reply to myself, but one other point I forgot to make is that, Llama70B is a huge model.. It's not really feasible to run it on home hardware, and somehow it's one of the more expensive per mtok.  I understand that the purpose of the project was to help older models with math but if the older models are both worse performing and use more resources than the newer ones, then nobody should really be using them at all, right?</p>",
+      "recipient_id": 43,
+      "timestamp": 1776647584,
+      "client": "website",
+      "subject": "Can you share your results?",
+      "topic_links": [],
+      "last_edit_timestamp": 1776647608,
+      "edit_history": [
+        {
+          "user_id": 177,
+          "timestamp": 1776647608,
+          "prev_content": "Sorry to reply to myself, but one other point I forgot to make is that, Llama70B is a huge model.. It's not really feasible to run it on home hardware, and somehow it's one of the more expensive per mtok.  I understand that the purpose of the project was to help older models with math but if the older models are both worse performing and use more resources than the newer ones, then nobody should really be using them, right?",
+          "prev_rendered_content": "<p>Sorry to reply to myself, but one other point I forgot to make is that, Llama70B is a huge model.. It's not really feasible to run it on home hardware, and somehow it's one of the more expensive per mtok.  I understand that the purpose of the project was to help older models with math but if the older models are both worse performing and use more resources than the newer ones, then nobody should really be using them, right?</p>"
+        }
+      ],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Adam McKenna",
+      "sender_email": "user177@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "https://secure.gravatar.com/avatar/1eb4e35f0b3a506d78e314b257c1487f?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-04-20T01:13:04.000Z"
+    },
+    {
+      "id": 1726,
+      "sender_id": 117,
+      "content": "<p>I should have suggested DeepSeek-v3.2 earlier sry guys I forgot haha. Would have saved everyone so much money <span aria-label=\"sweat smile\" class=\"emoji emoji-1f605\" role=\"img\" title=\"sweat smile\">:sweat_smile:</span></p>",
+      "recipient_id": 43,
+      "timestamp": 1776649336,
+      "client": "ZulipFlutter",
+      "subject": "Can you share your results?",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "rolling_on_the_floor_laughing",
+          "emoji_code": "1f923",
+          "reaction_type": "unicode_emoji",
+          "user_id": 177
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Gan W.",
+      "sender_email": "user117@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/62f195752f4b8a9ab7928b0e6d43725e586f89c5.png",
+      "content_type": "text/html",
+      "date": "2026-04-20T01:42:16.000Z"
     }
   ]
 }

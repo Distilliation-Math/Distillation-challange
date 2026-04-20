@@ -1,0 +1,83 @@
+{
+  "channel": "Math Distillation Challenge - equational theories",
+  "channel_id": 13,
+  "topic": "looking for stage 2 collaborators",
+  "message_count": 2,
+  "messages": [
+    {
+      "id": 1707,
+      "sender_id": 177,
+      "content": "<p>working solo so far, looking to team up if I make it to stage 2. also: anyone know if team composition can change between stages? not seeing it in the rules.</p>\n<p>quick sketch of where I am:</p>\n<ul>\n<li>on the math side, derived and wrote up a structural theorem about a family of equation pairs that admit algorithmic implication checks. preprint on Zenodo, Lean 4 formalization in a public repo.</li>\n<li>on the tooling side, built out a local stack for the full magma-implication task: exhaustive CE search, full-graph rule validation (sound rules verified 0-wrong across all 4694×4694 pairs), per-failure diagnostics, stratified eval subsets, reproducible build pipeline. reusable beyond this specific competition.</li>\n<li>I've also accumulated a fairly large corpus of model-response data from stage 1 probing: tens of thousands of per-problem results across five frontier models (gpt-oss-120b, gpt-oss-20b, gemma-4-31b, llama-3.3-70b, deepseek-v3.2), every response auto-classified into a fine-grained failure-mode taxonomy at ~99% agreement with hand labels. queryable by what kind of wrong, not just wrong.  </li>\n</ul>\n<p>looking for: equational logic / universal algebra, Lean, or strong math + curiosity. I collaborate heavily with AI on the engineering side, heads up if that's a dealbreaker.</p>\n<p>DM if interested.</p>",
+      "recipient_id": 43,
+      "timestamp": 1776621424,
+      "client": "website",
+      "subject": "looking for stage 2 collaborators",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 25
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Adam McKenna",
+      "sender_email": "user177@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "https://secure.gravatar.com/avatar/1eb4e35f0b3a506d78e314b257c1487f?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-04-19T17:57:04.000Z"
+    },
+    {
+      "id": 1708,
+      "sender_id": 25,
+      "content": "<p><span class=\"user-mention\" data-user-id=\"177\">@Adam McKenna</span>  Yes, the team composition can change. You need to register again and create a new team for stage 2. Thank you!</p>",
+      "recipient_id": 43,
+      "timestamp": 1776623304,
+      "client": "ZulipElectron",
+      "subject": "looking for stage 2 collaborators",
+      "topic_links": [],
+      "last_edit_timestamp": 1776623396,
+      "edit_history": [
+        {
+          "user_id": 25,
+          "timestamp": 1776623396,
+          "prev_content": "@**Adam McKenna**  You need to register again and create a new team for stage 2. Thank you!",
+          "prev_rendered_content": "<p><span class=\"user-mention\" data-user-id=\"177\">@Adam McKenna</span>  You need to register again and create a new team for stage 2. Thank you!</p>"
+        }
+      ],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 177
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-04-19T18:28:24.000Z"
+    }
+  ]
+}

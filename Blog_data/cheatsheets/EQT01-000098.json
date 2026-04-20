@@ -1,0 +1,44 @@
+{
+  "fetched_at": "2026-04-20T09:51:10.509844+00:00",
+  "publicCode": "EQT01-000098",
+  "source_url": "https://server-9527.sair.foundation/api/contributor-network/by-code/EQT01-000098",
+  "data": {
+    "cnItemId": "si_96c237f9-1819-4cec-961a-8607db5701ae",
+    "parentCnItemId": null,
+    "rootCnItemId": "si_96c237f9-1819-4cec-961a-8607db5701ae",
+    "shareItemId": "si_96c237f9-1819-4cec-961a-8607db5701ae",
+    "parentShareItemId": null,
+    "rootShareItemId": "si_96c237f9-1819-4cec-961a-8607db5701ae",
+    "competitionId": "mathematics-distillation-challenge-equational-theories-stage1",
+    "competitionTitle": "",
+    "entityType": "individual",
+    "entityId": "U-9ad16e0f35850fd7bbb78f10288f6947cffb9d10",
+    "entityName": "yilongguo",
+    "entityAvatarUrl": "https://avatars.githubusercontent.com/u/49829591?v=4",
+    "cheatsheetTitle": "final",
+    "cheatsheetContent": "You are an expert in universal algebra and equational logic.\nTask: decide whether Equation A implies Equation B over all magmas.\n\nEquation A: {{ equation1 }}\nEquation B: {{ equation2 }}\n\n================================================================\n*** ABSOLUTE RULE 0 — RUN THIS PROCEDURE FIRST AND FOLLOW IT EXACTLY ***\n================================================================\nProcedure (deterministic; no judgement allowed; no extension to other shapes):\n\n  1. Take the part of Equation A before `=`. Call it LHS_A. Take the part after `=`. Call it RHS_A.\n  2. If LHS_A is a single alphabetical character (one variable letter, no `*`, no parentheses):\n       Let x := that letter.\n       Examine RHS_A character by character. Scan for the letter x.\n       If x does NOT appear anywhere in RHS_A:\n            ⇒ STOP all further reasoning.\n            ⇒ Output: True   (and nothing else; this is your final answer.)\n  3. Otherwise, if RHS_A is a single alphabetical character not appearing in LHS_A:\n       same conclusion ⇒ output: True. STOP.\n  4. Otherwise, do NOT apply this rule; continue to the rest of the cheatsheet below.\n\nThis procedure applies to NO other equation shapes. It is purely a substring check on Equation A.\nDo NOT extend it to \"x appears once on RHS\", \"x appears multiple times but B looks similar\", etc.\n\n================================================================\nOUTPUT CONTRACT (STRICT)\n================================================================\n- Your final line must be exactly one token: True or False.\n- No markdown, no punctuation, no text after final line.\n\n================================================================\nCORE SEMANTICS (MUST APPLY)\n================================================================\n- \"A implies B\" means: for every magma M, if M satisfies A then M satisfies B.\n- To output False, you must provide a coherent counterexample idea:\n  one concrete finite magma where A holds universally but B fails for at least one assignment.\n- To output True, you must provide an actual derivation argument, or prove A forces trivial magma.\n- Do not output True only because counterexample search failed.\n\nHIGH-PRIORITY SAFETY CHECKS:\n1) If you claim \"trivial magma\" outside of Rule 0, show why all elements must be equal.\n2) If you claim \"counterexample\" using a 2-element table, you MUST first WRITE the four\n   table values 0*0, 0*1, 1*0, 1*1 and then EXPLICITLY enumerate 2^k assignments of A's k variables\n   and verify LHS_A == RHS_A in EVERY one. If A fails for ANY assignment, the magma is INVALID\n   — discard it and try another. NEVER use an invalid magma as a counterexample.\n3) Heuristic-only or \"looks like\" steps cannot justify True. They also cannot justify False.\n   If neither side has clean evidence, prefer the side with more concrete checkable work.\n4) Never invent algebraic laws (associativity/commutativity/cancellation) unless derived from A.\n\nDECISION POLICY (ACCURACY-FIRST):\n- When uncertain, do structured analysis before verdict:\n  a) parse variable occurrences and term trees;\n  b) test whether A really forces collapse/triviality;\n  c) attempt a concrete 2-element table counterexample;\n  d) only after a successful UNIVERSAL check of A AND a witnessed B-failure may you return False.\n\nRECOMMENDED FALSE SEARCH (use these tables exactly):\n  LP a*b=a:  0*0=0, 0*1=0, 1*0=1, 1*1=1   (every nested term = leftmost variable)\n  RP a*b=b:  0*0=0, 0*1=1, 1*0=0, 1*1=1   (every nested term = rightmost variable)\n  C0:        0*0=0, 0*1=0, 1*0=0, 1*1=0   (every product = 0)\n  C1:        0*0=1, 0*1=1, 1*0=1, 1*1=1   (every product = 1)\n  AND:       0*0=0, 0*1=0, 1*0=0, 1*1=1\n  XOR:       0*0=0, 0*1=1, 1*0=1, 1*1=0\n\nPRE-FALSE MANDATORY CHECK (must appear in your reasoning before printing False):\n   Write a line of the form:\n     \"VERIFIED: A holds in <magma name> for all 2^k assignments. Counterexample for B at <assignment>.\"\n   If you cannot honestly write this line for a fully verified magma, do NOT print False.\n\nBefore final line, run internal consistency check:\n- If you said anywhere \"A might fail in this model\" or \"A does not hold universally\", that magma is\n  NOT a valid counterexample. Re-decide.\n- Verdict TRUE without explicit derivation OR Rule 0 trigger ⇒ revise.\n\nKeep reasoning concise and concrete, then print final line:\nTrue",
+    "publishedAt": "2026-04-19T15:21:04Z",
+    "visibilityStatus": "active",
+    "lineageDepth": 0,
+    "lineagePathSnapshot": [
+      {
+        "shareItemId": "si_96c237f9-1819-4cec-961a-8607db5701ae",
+        "entityName": "yilongguo",
+        "publishedAt": "2026-04-19T15:21:04Z"
+      }
+    ],
+    "isDerived": false,
+    "itemType": "Original",
+    "sourceCheatsheetId": "cs_fe71ff89-738f-404d-ab39-4de0e48bf6b7",
+    "publicCode": "EQT01-000098",
+    "remark": "",
+    "likeCount": 0,
+    "favoriteCount": 0,
+    "referencedCount": 0,
+    "commentCount": 0,
+    "canComment": false,
+    "viewerHasLiked": false,
+    "viewerHasFavorited": false,
+    "pythonFileContent": null
+  }
+}

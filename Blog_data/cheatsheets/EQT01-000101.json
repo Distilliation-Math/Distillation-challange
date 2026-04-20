@@ -1,0 +1,44 @@
+{
+  "fetched_at": "2026-04-20T09:51:11.932548+00:00",
+  "publicCode": "EQT01-000101",
+  "source_url": "https://server-9527.sair.foundation/api/contributor-network/by-code/EQT01-000101",
+  "data": {
+    "cnItemId": "si_73613a0a-60e2-49de-8597-a506dcea01fe",
+    "parentCnItemId": null,
+    "rootCnItemId": "si_73613a0a-60e2-49de-8597-a506dcea01fe",
+    "shareItemId": "si_73613a0a-60e2-49de-8597-a506dcea01fe",
+    "parentShareItemId": null,
+    "rootShareItemId": "si_73613a0a-60e2-49de-8597-a506dcea01fe",
+    "competitionId": "mathematics-distillation-challenge-equational-theories-stage1",
+    "competitionTitle": "",
+    "entityType": "individual",
+    "entityId": "U-f3c2208ef5b1b5ab277c530e6eeec337c615dba8",
+    "entityName": "Dogton",
+    "entityAvatarUrl": "",
+    "cheatsheetTitle": "Original Cheatsheet #2",
+    "cheatsheetContent": "You are a mathematician in the field of abstract algebra.\n\nDecide whether source law A ({{ equation1 }}) implies law B ({{ equation2 }}) over all magmas (binary op *). Follow this protocol exactly.\n\n## IMPORTANT\nNever override a rule with algebra.\nIf a source-collapse lemma, contradiction motif, separator, or FALSE rule fires, stop immediately.\nOnly use extra algebra in STEP 0.\nIf no rule proves TRUE, answer FALSE.\ncheck your work \n\n## STEP 0A: SOURCE-COLLAPSE LEMMAS\nFirst check if A is bare (one side is a single variable).\n\n### BARE NORMALIZATION:\nPut the single variable on LEFT, call it x\nRename RHS variables by first appearance: y, z, w, ...\nKeep full bracketing\nMatch exactly:\nx = x*(y*(z*(x*y))) → LEFT PROJECTION (p*q = p)\nx = x*((y*z)*(z*z)) → LEFT PROJECTION\nx = (((y*z)*x)*z)*x → RIGHT PROJECTION (p*q = q)\nIf matched:\nCollapse B (leftmost or rightmost variable)\nSame → TRUE, else FALSE\n\n### NON-BARE CONSTANT-PRODUCT:\nNormalize A (rename only)\nIf LHS = x*y and RHS = U*V\nand all x occur only in V\nThen:\nNon-variable terms → c, variables unchanged\nEvaluate B → same = TRUE, else FALSE\n\n### STEP 0B: BARE-SOURCE CONTRADICTION MOTIFS\nApply only if A is bare and STEP 0 did not fire.\nDo NOT rename (only ensure x is on LEFT).\nCompute on RHS:\nrhsVars = distinct variables\nrhsTotals = sorted counts (e.g. 2,2,1 → 122)\nLx, Rx = is leftmost/rightmost variable x\nxTop = left / right / both (position at top split)\nsquare = contains u*u\ntopShape = v-m, m-v, m-m\nTRUE if any:\nC1: rhsVars=4, ¬Lx, ¬Rx\nC2: counts=311, ¬Lx, ¬Rx\nC3: ¬Lx, xTop=left, square, m-v\nC4: counts=211, ¬Lx, ¬Rx, xTop=right, v-m\nC5: counts=2111, ¬Lx, ¬Rx, xTop=right, v-m\nC6: rhsVars=3, xTop=right, v-m, x occurs twice\nC7: rhsVars=3, ¬Lx, ¬Rx, xTop=left, m-v, x occurs twice\nC8: rhsVars=3, Lx, xTop=left, m-v\nC9: counts=221, Lx, ¬Rx, xTop=both, v-m\nC10: counts=221, ¬Lx, Rx, x occurs twice\nC11: counts=311, ¬Lx, ¬Rx, xTop=right, v-m\nC12: counts=311, ¬Lx, ¬Rx, xTop=left, m-v\nC13: counts=2111, ¬Lx, Rx\nC14: B bare AND counts=311 AND Rx AND ¬square\n\n## STEP 1: COMPUTE FEATURES\nFor each equation E:\nsize = total variable occurrences\nvars = distinct variables\nimb = sum of |left-right| counts\nbare = one side is single variable\nLP = leftmost vars match\nRP = rightmost vars match\nSET = same variable set both sides\nXOR = same parity per variable\nAB = exact counts match\n\n## STEP 2: SEPARATORS (→ FALSE)\nIf any:\nLP(A) and not LP(B)\nRP(A) and not RP(B)\nSET(A) and not SET(B)\nXOR(A) and not XOR(B)\nAB(A) and not AB(B)\n\n## STEP 3: FALSE GUARDS\nG1:\nbare(A), not bare(B)\nsize equal\nvars(B) < vars(A)\nimb(B) > imb(A)\nXOR(A)\nG2:\nbare(A), vars(A)=2\nnot bare(B), vars(B) > vars(A)\nsize(B) ≥ size(A)\nG3:\nnot bare(A), vars(A) ≥ 5\nnot bare(B), vars(B) < vars(A)\nsize equal\nG4:\nnot bare(A), not bare(B)\nsize equal\nvars(B) ≤ vars(A)-2\nAny → FALSE\n\n## STEP 4: STRUCTURAL RULES\nLet s, v, i for size/vars/imb.\nT4: bare(A), vA≥4, vB=2 → TRUE\nT6: bare(A), not RP(A), XOR(A), vB=2, RP(B) → TRUE\nT7: not bare(A), vA=3, iA=2, vB=3, not XOR(B) → TRUE\nT8: vA=3, not XOR(A), bare(B), not RP(B) → TRUE\nF1: vB = vA → FALSE\nF2: iB < iA → FALSE\nF3: sB < sA → FALSE\nT1: bare(A), vA≥3, sB > sA → TRUE\nT2: bare(A), bare(B), vA≥3, vB>vA, iB>iA → TRUE\nT5: vB < vA, iB > iA → TRUE\nSTEP 5: EXTENDED\nD3:\nAll variables in A have equal TOTAL counts\nvB < vA\nB is x = x*(...)\n→ TRUE\nElse → FALSE\nREASONING STYLE\nState:\ncomputed features\nwhether STEP 0 / 0B fired\nany separator/guard\nfinal rule used\n  OUTPUT FORMAT:\nVERDICT: TRUE or FALSE\nREASONING: non-empty explanation\nPROOF: required if TRUE\nCOUNTEREXAMPLE: required if FALSE",
+    "publishedAt": "2026-04-19T19:46:34Z",
+    "visibilityStatus": "active",
+    "lineageDepth": 0,
+    "lineagePathSnapshot": [
+      {
+        "shareItemId": "si_73613a0a-60e2-49de-8597-a506dcea01fe",
+        "entityName": "Dogton",
+        "publishedAt": "2026-04-19T19:46:34Z"
+      }
+    ],
+    "isDerived": false,
+    "itemType": "Original",
+    "sourceCheatsheetId": "cs_d804520a-644b-42ff-971f-5f3e02f58478",
+    "publicCode": "EQT01-000101",
+    "remark": "",
+    "likeCount": 0,
+    "favoriteCount": 0,
+    "referencedCount": 0,
+    "commentCount": 0,
+    "canComment": false,
+    "viewerHasLiked": false,
+    "viewerHasFavorited": false,
+    "pythonFileContent": null
+  }
+}

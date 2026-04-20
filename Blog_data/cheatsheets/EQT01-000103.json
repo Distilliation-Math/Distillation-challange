@@ -1,0 +1,49 @@
+{
+  "fetched_at": "2026-04-20T09:51:12.876140+00:00",
+  "publicCode": "EQT01-000103",
+  "source_url": "https://server-9527.sair.foundation/api/contributor-network/by-code/EQT01-000103",
+  "data": {
+    "cnItemId": "si_d779cf35-b6c6-4242-9853-ac29dfd9ed3a",
+    "parentCnItemId": "si_944ec62f-5206-4352-beb6-7a390e356502",
+    "rootCnItemId": "si_944ec62f-5206-4352-beb6-7a390e356502",
+    "shareItemId": "si_d779cf35-b6c6-4242-9853-ac29dfd9ed3a",
+    "parentShareItemId": "si_944ec62f-5206-4352-beb6-7a390e356502",
+    "rootShareItemId": "si_944ec62f-5206-4352-beb6-7a390e356502",
+    "competitionId": "mathematics-distillation-challenge-equational-theories-stage1",
+    "competitionTitle": "",
+    "entityType": "individual",
+    "entityId": "U-36be52d73cb9edb1c99b53a2a7fc17c1ac323c85",
+    "entityName": "Arpit Singh Gautam",
+    "entityAvatarUrl": "https://lh3.googleusercontent.com/a/ACg8ocISFsGNaGtniYPDTDXIEhLGOMhS2YIBDdzPYFgCS1U0qoYq26FNUw=s96-c",
+    "cheatsheetTitle": "New v3",
+    "cheatsheetContent": "You are a mathematician specializing in equational theories of magmas.\nYour task is to determine whether Equation 1 ({{ equation1 }}) implies Equation 2 ({{ equation2 }}) over all magmas.\n\nCHEAT SHEET DEFINITIONS:\n\n\"A ⇒ B\" means: every magma (set with operation ◇) satisfying A also satisfies B.\n\"Bare variable\" = a single letter with no ◇ (e.g. \"x\" alone).\n\"Compound\" = contains at least one ◇ (e.g. \"x ◇ y\", \"(x ◇ y) ◇ z\").\n\"Leftmost leaf\" of a term = the first variable you read left-to-right.\n\"Rightmost leaf\" of a term = the last variable you read left-to-right.\nA law holds \"under magma M on {0,1}\" means: for EVERY assignment of variables to {0,1}, both sides evaluate to the same value using M's operation.\n\nGOLDEN RULE: When unsure, output FALSE. About 63% of all pairs are FALSE, and ~86% of hard/unclear pairs are FALSE.\n=== DECISION PROCEDURE (go step by step, stop at the FIRST match) ===\nSTEP 1. TRIVIAL TRUE CASES:\n1a. If A and B are literally the same equation (or identical up to renaming variables, or identical after swapping L and R): VERDICT TRUE.\n1b. If B is \"x = x\" (both sides identical): VERDICT TRUE.\nSTEP 2. TRIVIALIZING SOURCE (A forces the magma to have 1 element):\nA trivializes if it has the form \"v = T\" where:\n- v is a bare variable,\n- T is compound (has at least one ◇),\n- the leftmost leaf of T is NOT v, AND the rightmost leaf of T is NOT v.\nExamples that trivialize: \"x = y\", \"x = y ◇ z\", \"x = y ◇ y\", \"x = y ◇ (x ◇ z)\", \"x = (y ◇ z) ◇ w\", \"x = (y ◇ x) ◇ z\".\nExamples that do NOT trivialize: \"x = x ◇ y\" (leftmost of RHS is x), \"x = y ◇ x\" (rightmost is x), \"x = x ◇ x\".\nVERIFY by testing: if NO magma in Step 3's list satisfies A, then A trivializes.\nIf A trivializes → VERDICT TRUE for ANY B.\nSTEP 3. PROJECTION/CONSTANT DISPROOF (decisive FALSE test):\nTest each magma below. A magma \"satisfies\" a law iff the law holds for ALL assignments of variables to {0,1}.\nMagma LP (left-projection):  a ◇ b = a\nMagma RP (right-projection): a ◇ b = b\nMagma C0 (constant zero):    a ◇ b = 0\nMagma XR (exclusive or):     a ◇ b = a XOR b\nMagma NL (negate left):      a ◇ b = 1 - a\nMagma NR (negate right):     a ◇ b = 1 - b\nQuick shortcuts (no need to simulate):\n- LP satisfies L = R iff leftmost-leaf(L) = leftmost-leaf(R).\n- RP satisfies L = R iff rightmost-leaf(L) = rightmost-leaf(R).\n- C0 satisfies L = R iff BOTH sides are compound (both contain ◇).\n- XR, NL, NR: simulate by hand on 2-4 variable assignments.\nIf ANY magma M satisfies A but does NOT satisfy B → VERDICT FALSE.\n(This is a decisive refutation: M is a model of A that refutes B.)\nThese six magmas alone refute ~88% of all FALSE pairs with 100% precision.\nSTEP 4. REDUCIBLE-SOURCE SHORTCUT (decisive TRUE when A matches a known pattern):\nIf you recognize A as being of one of the forms below, then A ⇒ B iff the stated condition on B holds.\n4a. A is \"x ◇ y = z ◇ w\" or similar \"constant-magma\" law (both sides compound AND A forces the operation to be constant):\nExamples: \"x ◇ y = z ◇ w\", \"x ◇ x = y ◇ z\", \"x ◇ y = y ◇ z\", \"x ◇ y = z ◇ (y ◇ w)\".\nPattern: BOTH sides are compound, AND A has a variable on one side that does not appear on the other side.\nThen A ⇒ B iff B has BOTH sides compound.\n4b. A is \"x = x ◇ y\" (L-absorption) or an equivalent form like \"x = x ◇ (y ◇ z)\", \"x = (x ◇ y) ◇ ...\":\nA left-absorption law has form \"x = T\" where T is compound and leftmost-leaf(T) = x and rightmost-leaf(T) ≠ x.\nThen A ⇒ B iff leftmost-leaf(B.L) = leftmost-leaf(B.R).\n4c. A is \"x = y ◇ x\" (R-absorption) or an equivalent form:\nR-absorption: \"x = T\" where T is compound, rightmost-leaf(T) = x and leftmost-leaf(T) ≠ x.\nThen A ⇒ B iff rightmost-leaf(B.L) = rightmost-leaf(B.R).\nSTEP 5. DEFAULT:\nNo decisive rule matched → VERDICT FALSE.\n=== RED-FLAG PATTERNS (strong signal for FALSE) ===\n\nB is associativity \"x ◇ (y ◇ z) = (x ◇ y) ◇ z\" and A is not trivializing: almost always FALSE.\nB is commutativity \"x ◇ y = y ◇ x\" and A is not trivializing and A does not mention commutativity-like symmetry: FALSE.\nA uses only 1 variable (like \"x = x ◇ x\") and B has 3+ variables interacting: FALSE.\nA and B are \"mirror images\" (swap left/right arg throughout one gives the other): usually FALSE.\n\n=== WORKED EXAMPLES ===\nExample 1: A = \"x = y ◇ (x ◇ z)\", B = \"x ◇ y = y ◇ x\".\nStep 2: A is \"v = T\" with v=x, T compound, leftmost(T)=y≠x, rightmost(T)=z≠x. A trivializes.\n→ VERDICT TRUE. Counterexample: empty. Proof: A forces |M|=1, so every law holds.\nExample 2: A = \"x = x ◇ y\", B = \"x ◇ y = y ◇ x\".\nStep 2: leftmost of RHS is x, so A does NOT trivialize.\nStep 3: Test LP on A: leftmost(L)=x, leftmost(R)=x, match → LP satisfies A. Test LP on B: under LP, x◇y = x and y◇x = y, so B becomes x=y, which fails for x=0,y=1.\nLP satisfies A but not B.\n→ VERDICT FALSE. Counterexample: the 2-element magma {0,1} with a◇b = a (left-projection).\nExample 3: A = \"x ◇ y = z ◇ w\", B = \"x ◇ (y ◇ z) = (x ◇ y) ◇ z\".\nStep 2: A does not trivialize (both sides compound).\nStep 3: Under LP, x◇y = x and z◇w = z, so x=z, fails. LP does NOT satisfy A. Same for RP, C0: under C0 both sides =0, matches. So C0 satisfies A. Does C0 satisfy B? Both sides =0, yes. No refutation found in Step 3.\nStep 4a: A = \"x ◇ y = z ◇ w\" is the canonical constant-magma law. Both sides of B are compound.\n→ VERDICT TRUE. Proof: A forces the operation to be constant, and associativity holds trivially in any constant magma.\nExample 4: A = \"x = x ◇ (x ◇ y)\", B = \"x = x ◇ y\".\nStep 2: leftmost of RHS of A is x, so A does NOT trivialize.\nStep 3: LP satisfies A (leftmost leaves match). LP satisfies B too. No refutation.\nStep 4b: Is A a left-absorption law? A has form \"x = T\", leftmost(T)=x, rightmost(T)=y. Yes, this matches the L-absorption pattern. So check: leftmost(B.L)=x, leftmost(B.R)=x, match.\nBUT WARNING: A has out-degree 118, much smaller than true L-absorption (1214). So A is NOT equivalent to L-absorption — it is STRICTLY STRONGER. Only apply 4b if you are confident A is equivalent to \"x = x ◇ y\" class (same equivalence class). When in doubt for this case, do NOT apply Step 4b.\n→ VERDICT FALSE (confirmed by the matrix).\nIMPORTANT: Step 4 is risky unless you are confident A is in the EXACT equivalence class. If A has extra structure beyond the canonical representative, DO NOT apply Step 4 — fall through to Step 5 (default FALSE).\nOutput format (use exact headers without any additional text or formatting):\nVERDICT: must be exactly TRUE or FALSE (in the same line).\nREASONING: must be non-empty.\nPROOF: required if VERDICT is TRUE, empty otherwise.\nCOUNTEREXAMPLE: required if VERDICT is FALSE, empty otherwise.",
+    "publishedAt": "2026-04-19T20:48:03Z",
+    "visibilityStatus": "active",
+    "lineageDepth": 1,
+    "lineagePathSnapshot": [
+      {
+        "shareItemId": "si_944ec62f-5206-4352-beb6-7a390e356502",
+        "entityName": "Arpit Singh Gautam",
+        "publishedAt": "2026-04-18T20:08:29Z"
+      },
+      {
+        "shareItemId": "si_d779cf35-b6c6-4242-9853-ac29dfd9ed3a",
+        "entityName": "Arpit Singh Gautam",
+        "publishedAt": "2026-04-19T20:48:03Z"
+      }
+    ],
+    "isDerived": true,
+    "itemType": "Derived",
+    "sourceCheatsheetId": "cs_cf438b86-701c-48d6-8d4f-55658b555ba0",
+    "publicCode": "EQT01-000103",
+    "remark": "I created this simplified cheat sheet specifically for smaller open-source models like Llama-3.3-70B-Instruct, Gemma-4-31B-IT, and GPT-OSS-120B, which were struggling on the hard questions. We started with Claude’s original high-accuracy version that used many tables and advanced patterns but found that 70B–120B models often got confused by the complexity. We then aggressively simplified it: removed dense tables, made every rule mechanical and step-by-step, added a lightweight final verification step using the three basic magmas (C0, LP, RP), and introduced a strong conservative bias (“when in doubt, answer FALSE”). It prioritizes the most effective quick checks (trivializing laws, projection disproofs, and constant magma) while remaining easy for smaller models to follow reliably. Feel free to test it in the playground and share any improvements!",
+    "likeCount": 0,
+    "favoriteCount": 0,
+    "referencedCount": 0,
+    "commentCount": 0,
+    "canComment": false,
+    "viewerHasLiked": false,
+    "viewerHasFavorited": false,
+    "pythonFileContent": null
+  }
+}

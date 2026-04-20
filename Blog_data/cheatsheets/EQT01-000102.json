@@ -1,0 +1,44 @@
+{
+  "fetched_at": "2026-04-20T09:51:12.408026+00:00",
+  "publicCode": "EQT01-000102",
+  "source_url": "https://server-9527.sair.foundation/api/contributor-network/by-code/EQT01-000102",
+  "data": {
+    "cnItemId": "si_f34bddb9-681a-4e79-ba41-08930101328d",
+    "parentCnItemId": null,
+    "rootCnItemId": "si_f34bddb9-681a-4e79-ba41-08930101328d",
+    "shareItemId": "si_f34bddb9-681a-4e79-ba41-08930101328d",
+    "parentShareItemId": null,
+    "rootShareItemId": "si_f34bddb9-681a-4e79-ba41-08930101328d",
+    "competitionId": "mathematics-distillation-challenge-equational-theories-stage1",
+    "competitionTitle": "",
+    "entityType": "individual",
+    "entityId": "U-f3c2208ef5b1b5ab277c530e6eeec337c615dba8",
+    "entityName": "Dogton",
+    "entityAvatarUrl": "",
+    "cheatsheetTitle": "Original Cheatsheet Condensed",
+    "cheatsheetContent": "Decide if A=({{ equation1 }}) implies B=({{ equation2 }}) over magmas. No axioms. Follow exactly. Stop on first match. No rule→FALSE. Run full process twice; use first result if consistent, else majority of three runs.\n\nSTEP 0: COLLAPSE\nA bare: single var vs product. Normalize: LHS=single var→x; rename others y,z,w by 1st appearance; keep brackets.\nMatch canonical:\n- x=x*(y*(z*(x*y))) → LEFT PROJ: p*q→p\n- x=x*((y*z)*(z*z)) → LEFT PROJ\n- x=(((y*z)*x)*z)*x → RIGHT PROJ: p*q→q\nIf match: eval B under proj; collapse sides to leftmost/rightmost var; TRUE if same var else FALSE.\n\nNon‑bare constant‑product: normalize rename. If LHS=x*y and RHS=U*V with all x in V, none in U:\n- collapse non‑var product→c; vars stay.\n- B sides collapse to same symbol? TRUE else FALSE.\n\nSTEP 0B: CONTRADICTION MOTIFS (A bare, STEP0 no fire)\nProduct side only; swap so single var LHS. Compute:\nR=#distinct vars prod side\nT=sorted counts no sep (122,113,1112)\nLx=leftmost is x? Rx=rightmost is x?\nxTop=left/right/both if x only in U/only in V/both at top split U*V\nsq=contains u*u?\nts=v‑m(var*prod), m‑v(prod*var), m‑m(both prod)\n\nC1: R=4 & !Lx & !Rx → TRUE\nC2: R=3, T=113, !Lx, !Rx → TRUE\nC3: !Lx & xTop=left & sq & ts=m‑v → TRUE\nC4: R=3, T=112, !Lx, !Rx, xTop=right, ts=v‑m → TRUE\nC5: R=4, T=1112, !Lx, !Rx, xTop=right, ts=v‑m → TRUE\nC6: R=3, xTop=right, ts=v‑m, x occurs 2× → TRUE\nC7: R=3, !Lx, !Rx, xTop=left, ts=m‑v, x occurs 2× → TRUE\nC8: R=3, Lx, xTop=left, ts=m‑v → TRUE\nC9: R=3, T=122, Lx, !Rx, xTop=both, ts=v‑m → TRUE\nC10: R=3, T=122, !Lx, Rx, x occurs 2× → TRUE\nC11: R=3, T=113, !Lx, !Rx, xTop=right, ts=v‑m → TRUE\nC12: R=3, T=113, !Lx, !Rx, xTop=left, ts=m‑v → TRUE\nC13: R=4, T=1112, !Lx, Rx → TRUE\nC14: B bare, R=3, T=113, Rx, !sq → TRUE\n\nSTEP 1: FEATURES\nFor eq E(L=R):\nsize=total var occ\nvars=#distinct letters\nimb=sum|Lcount‑Rcount|\nbare=one side single var\nLP=leftmost equal\nRP=rightmost equal\nSET=same var set\nXOR=each var parity equal\nAB=exact counts equal\nCompute for A and B.\n\nSTEP 2: SEPARATORS → FALSE if:\nLP(A)&!LP(B) | RP(A)&!RP(B) | SET(A)&!SET(B) | XOR(A)&!XOR(B) | AB(A)&!AB(B)\n\nSTEP 3: FALSE GUARDS (all must hold)\nG1: bare(A) & !bare(B) & size(A)=size(B) & vars(B)<vars(A) & imb(B)>imb(A) & XOR(A)\nG2: bare(A) & vars(A)=2 & !bare(B) & vars(B)>vars(A) & size(B)>=size(A)\nG3: !bare(A) & vars(A)>=5 & !bare(B) & vars(B)<vars(A) & size(B)=size(A)\nG4: !bare(A) & !bare(B) & size(B)=size(A) & vars(B)<=vars(A)‑2\n\nSTEP 4: STRUCTURAL (s=size, v=vars, i=imb; apply first match)\nT4: bare(A) & vA>=4 & vB=2 → TRUE\nT6: bare(A) & !RP(A) & XOR(A) & vB=2 & RP(B) → TRUE\nT7: !bare(A) & vA=3 & iA=2 & vB=3 & !XOR(B) → TRUE\nT8: vA=3 & !XOR(A) & bare(B) & !RP(B) → TRUE\nF1: vB=vA → FALSE\nF2: iB<iA → FALSE\nF3: sB<sA → FALSE\nT1: bare(A) & vA>=3 & sB>sA → TRUE\nT2: bare(A) & bare(B) & vA>=3 & vB>vA & iB>iA → TRUE\nT5: vB<vA & iB>iA → TRUE\n\nSTEP 5: EXTENDED\nD3: AB(A) true for all vars & vB<vA & B bare form x=x*(...) → TRUE\nElse FALSE.\n\nOUTPUT (after two consistent runs, else third tiebreak):\nVERDICT: TRUE/FALSE\nREASONING: (concise)\nPROOF: (if TRUE)\nCOUNTEREXAMPLE: (if FALSE)",
+    "publishedAt": "2026-04-19T20:14:03Z",
+    "visibilityStatus": "active",
+    "lineageDepth": 0,
+    "lineagePathSnapshot": [
+      {
+        "shareItemId": "si_f34bddb9-681a-4e79-ba41-08930101328d",
+        "entityName": "Dogton",
+        "publishedAt": "2026-04-19T20:14:03Z"
+      }
+    ],
+    "isDerived": false,
+    "itemType": "Original",
+    "sourceCheatsheetId": "cs_cc994087-7c6a-4156-a9a9-49b2684015c2",
+    "publicCode": "EQT01-000102",
+    "remark": "",
+    "likeCount": 0,
+    "favoriteCount": 0,
+    "referencedCount": 0,
+    "commentCount": 0,
+    "canComment": false,
+    "viewerHasLiked": false,
+    "viewerHasFavorited": false,
+    "pythonFileContent": null
+  }
+}

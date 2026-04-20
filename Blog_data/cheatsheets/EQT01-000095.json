@@ -1,0 +1,44 @@
+{
+  "fetched_at": "2026-04-20T09:51:09.098175+00:00",
+  "publicCode": "EQT01-000095",
+  "source_url": "https://server-9527.sair.foundation/api/contributor-network/by-code/EQT01-000095",
+  "data": {
+    "cnItemId": "si_e36a1771-27f2-450e-b07d-06da292149d3",
+    "parentCnItemId": null,
+    "rootCnItemId": "si_e36a1771-27f2-450e-b07d-06da292149d3",
+    "shareItemId": "si_e36a1771-27f2-450e-b07d-06da292149d3",
+    "parentShareItemId": null,
+    "rootShareItemId": "si_e36a1771-27f2-450e-b07d-06da292149d3",
+    "competitionId": "mathematics-distillation-challenge-equational-theories-stage1",
+    "competitionTitle": "",
+    "entityType": "individual",
+    "entityId": "U-a33a1c935ea481df8866e832ae42ef24a91348de",
+    "entityName": "Yuhui Yao",
+    "entityAvatarUrl": "https://avatars.githubusercontent.com/u/42308062?v=4",
+    "cheatsheetTitle": "方法",
+    "cheatsheetContent": "You are an expert in abstract algebra. Determine whether Eq1 implies Eq2 over all magmas (a set M with a binary operation `*`, no axioms assumed).\n\n**Eq1:** {{ equation1 }}\n**Eq2:** {{ equation2 }}\n\nTRUE means every magma satisfying Eq1 also satisfies Eq2 for all variable assignments. FALSE means there exists a magma and assignment where Eq1 holds but Eq2 fails.\n\n---\n\n**Step 1 — Quick checks**\n- If Eq2 is syntactically identical to Eq1 (up to renaming/swapping sides): TRUE.\n- If Eq2 has strictly more distinct variables than Eq1: suspect FALSE, go to Step 2.\n\n**Step 2 — Counterexample search on M = {0, 1}**\n\nFor each candidate operation, verify Eq1 holds for ALL assignments first, then check if Eq2 fails for any assignment:\n\n| Operation | Rule |\n|---|---|\n| Left projection | a\\*b = a |\n| Right projection | a\\*b = b |\n| Constant 0 | a\\*b = 0 |\n| Constant 1 | a\\*b = 1 |\n| Flip-left | a\\*b = 1−a (on {0,1}) |\n| Flip-right | a\\*b = 1−b (on {0,1}) |\n\nIf any satisfies Eq1 but violates Eq2 → FALSE.\n\n**Step 3 — Image analysis (before concluding TRUE)**\n\nBefore concluding TRUE from an apparent algebraic proof, answer:\n\n**Q: Does Eq1 force image(\\*) = M?**\n- If Eq1 has the form `x = (expression involving x and *)`, then every element x appears as a product → image(\\*) = M → any constancy derived from Eq1 applies to ALL elements.\n- If Eq1 only constrains products-of-products (e.g., `x * (something) = c` where `something` ∈ image(\\*)), then elements outside image(\\*) are unconstrained.\n\n**If image(\\*) ≠ M is possible:** Check whether Eq2 contains any sub-expression where one argument is a free variable not forced to be a product (either left or right argument). If so, construct a counterexample with image(\\*) ⊊ M: set all product columns to satisfy Eq1, but let elements outside image(\\*) violate Eq2. If a 2-element magma is insufficient, try n=3.\n\n**If image(\\*) = M:** Constancy is global; proceed to Step 4.\n\n**Step 4 — Proof**\n\nDerive Eq2 from Eq1 by algebraic substitution. Verify each step applies to ALL elements, not just elements in image(\\*).\n\n---\n\nOutput format (use exact headers without any additional text or formatting):\nVERDICT: must be exactly TRUE or FALSE (in the same line).\nREASONING: must be non-empty.\nPROOF: required if VERDICT is TRUE, empty otherwise.\nCOUNTEREXAMPLE: required if VERDICT is FALSE, empty otherwise.",
+    "publishedAt": "2026-04-19T12:58:25Z",
+    "visibilityStatus": "active",
+    "lineageDepth": 0,
+    "lineagePathSnapshot": [
+      {
+        "shareItemId": "si_e36a1771-27f2-450e-b07d-06da292149d3",
+        "entityName": "Yuhui Yao",
+        "publishedAt": "2026-04-19T12:58:25Z"
+      }
+    ],
+    "isDerived": false,
+    "itemType": "Original",
+    "sourceCheatsheetId": "cs_c5fbbaeb-fb94-4e5f-9f08-36cba3b0a087",
+    "publicCode": "EQT01-000095",
+    "remark": "",
+    "likeCount": 0,
+    "favoriteCount": 1,
+    "referencedCount": 0,
+    "commentCount": 0,
+    "canComment": false,
+    "viewerHasLiked": false,
+    "viewerHasFavorited": false,
+    "pythonFileContent": null
+  }
+}
