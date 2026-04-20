@@ -33,7 +33,8 @@ A [magma](https://en.wikipedia.org/wiki/Magma_(algebra)) is a set with a single 
 │   ├── v4.1_10KB_cheatsheet.md     # v4.1 cheatsheet (10.2KB)
 │   ├── v5.2_10KB_cheatsheet.md     # v5 structured-output experiment
 │   ├── v5.5_10KB_cheatsheet.md     # v5.5 official-mode checkpoint
-│   ├── v7.1_10KB_cheatsheet.md     # Current best cheatsheet (10.2KB)
+│   ├── v7.1_10KB_cheatsheet.md     # v7.1 cheatsheet (10.2KB)
+│   ├── v7.4_10KB_cheatsheet.md     # Current best cheatsheet (10.2KB)
 │   └── v.Opus-*_10KB_cheatsheet.md # Opus-informed iterations (Opus-1 / -2 / -2.1)
 ├── results/                  # Organized by batch: YYYYMMDD_HHMM_description/
 │   ├── baselines/            # Baseline (no cheatsheet) results per model/dataset + SUMMARY.md
@@ -42,7 +43,9 @@ A [magma](https://en.wikipedia.org/wiki/Magma_(algebra)) is a set with a single 
 │   ├── 20260410_v4.1-official/            # v4.1 official-mode sweep (SAIR evaluation_models.json)
 │   ├── 20260412_v5.2_official/            # v5.2 official-mode sweep
 │   ├── 20260417_v5.5_official_run3/       # v5.5 official-mode sweep (prior baseline)
-│   ├── 20260419_v7.1_andrea/              # v7.1 official-mode sweep (current best)
+│   ├── 20260419_v7.1_andrea/              # v7.1 official-mode sweep
+│   ├── 20260419_v7.4/                     # v7.4 official-mode sweep (current best)
+│   ├── 20260420_v7.5/                     # v7.5 official-mode sweep (regression test)
 │   └── Opus_research/                     # All Opus-thread work (see note below)
 │       ├── 20260411_opus-hard1/           # opus-solver raw-reasoning runs on hard1
 │       ├── 20260413_v.Opus-1_official/    # v.Opus-1 cheatsheet sweep
@@ -138,6 +141,42 @@ v7.1 beats v5.5 on accuracy in 5/6 cells and on P1 (TRUE-precision) in all 6 cel
 - **Hard-stop on FALSE rule / counterexample fire** — blocks GPT-OSS-120b confabulation pattern.
 - **Spine isolation** (3.0): pure-spine depth divisibility — eliminates a well-defined false-TRUE class without touching positives.
 
+### v7.4 Cheatsheet -- Official-Mode Sweep (2026-04-19) ← Submission Candidate
+
+v7.4_10KB_cheatsheet.md (10.2KB) evaluated under `--official-mode` on `gpt-oss-120b` and `gemma-4-31b` across hard1/hard2/hard3. Results in `results/20260419_v7.4/`. 0 parse errors on all 6 runs.
+
+| Model | hard1 (69) | hard2 (200) | hard3 (400) | ALL (669) |
+|-------|-----------|-------------|-------------|-----------|
+| **gpt-oss-120b** | 56/69 (81.2%) | 145/200 (72.5%) | 256/400 (64.0%) | **457/669 (68.3%)** |
+| **gemma-4-31b** | 55/69 (79.7%) | 143/200 (71.5%) | 256/400 (64.0%) | **454/669 (67.9%)** |
+
+**Confusion matrix (hard1+hard2+hard3 combined):**
+
+| Model | TP | FP | TN | FN | PE | TRUE-rec | FALSE-rec | TRUE-prec |
+|-------|---:|---:|---:|---:|---:|---------:|----------:|----------:|
+| gpt-oss-120b | 129 | 22 | 328 | 190 | 0 | 40.4% | 93.7% | 85.4% |
+| gemma-4-31b | 136 | 32 | 318 | 183 | 0 | 42.6% | 90.9% | 81.0% |
+
+**v7.4 vs v7.1:**
+
+| Model | DS | v7.1 Acc | v7.4 Acc | Δacc | v7.1 FP | v7.4 FP | ΔFP |
+|-------|-----|---------:|---------:|-----:|--------:|--------:|----:|
+| gpt-oss-120b | hard1 | 78.3% | **81.2%** | +2.9 | 3 | 3 | 0 |
+| gpt-oss-120b | hard2 | 72.5% | 72.5% | 0.0 | 14 | **9** | −5 |
+| gpt-oss-120b | hard3 | 64.2% | 64.0% | −0.2 | 26 | **10** | −16 |
+| gemma-4-31b  | hard1 | **81.2%** | 79.7% | −1.4 | 4 | 4 | 0 |
+| gemma-4-31b  | hard2 | **74.5%** | 71.5% | −3.0 | 15 | **14** | −1 |
+| gemma-4-31b  | hard3 | 63.7% | **64.0%** | +0.3 | 29 | **14** | −15 |
+
+v7.4 trades a small amount of TRUE-recall for substantially fewer false positives (−37 FP combined across both models vs v7.1). This makes it more robust to distribution shifts in the hidden test set.
+
+**Key design changes from v7.1 to v7.4:**
+- **Broad catch-all C1 restored** (`rv≥4, Lx=FALSE, Rx=FALSE`) — essential for TRUE recall; narrowing to pattern-specific `rhsTotals` in v7.2 lost ~110 TRUE problems.
+- **Additional motifs C6-C11** — `xCount=0` safety net, m-m topShape patterns, higher-order rTot signatures.
+- **Bidirectional hard-stop** ("Once ANY rule fires, emit VERDICT and STOP") — prevents GPT confabulation pattern where correct counterexamples are overridden by fluent wrong proofs.
+- **Removed Step 2.11** (two-step exact instance) — was an early-exit trap that blocked the cascade from reaching motifs.
+- **Abbreviated feature names** (`rv`, `ts`, `rTot`) — saves bytes for additional motifs.
+
 ### v4.1 Cheatsheet -- 4-Model Hard Sweep (2026-04-09)
 
 v4.1_10KB_cheatsheet.md (10.2KB) evaluated on 4 models x hard1/hard2/hard3 via OpenRouter. All parse errors resolved. Full report with confusion matrices: [`results/20260409_v4.1-retry2/v4.1_results.pdf`](results/20260409_v4.1-retry2/v4.1_results.pdf).
@@ -225,5 +264,6 @@ v4_10KB_cheatsheet.md (8.8KB) evaluated on all 7 models x hard1/hard2/hard3 via 
 | Apr 11 | Model-specific optimization begins | Done |
 | Apr 17 | v5.5 official-mode sweep (prior baseline) | Done |
 | Apr 19 | v7.1 official-mode sweep: step-2.8 motif expansion, feature-vector discipline | Done |
-| Apr 20 | Final review | |
+| Apr 19 | v7.2–v7.4 iteration: motif tuning, hard-stop experiments, C1 guard | Done |
+| Apr 20 | v7.5 regression test (asymmetric hard-stop); v7.4 selected as submission | Done |
 | **Apr 20** | **Submission deadline (23:59 AoE)** | |
