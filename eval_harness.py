@@ -859,6 +859,20 @@ async def run_evaluation(
             f"[official-mode] overrides for {model_name}: "
             f"{json.dumps(extra_payload, separators=(',', ':'))}"
         )
+    else:
+        params_reasoning_effort = model_params.get("reasoning_effort")
+        if params_reasoning_effort and backend == "openrouter":
+            extra_payload = {"reasoning": {"effort": params_reasoning_effort}}
+            if params_reasoning_effort != "none" and concurrency > 3:
+                print(
+                    f"[params] reasoning.effort={params_reasoning_effort} — capping "
+                    f"concurrency {concurrency} → 3 to avoid provider 429 stampedes"
+                )
+                concurrency = 3
+            print(
+                f"[params] reasoning override for {model_name}: "
+                f"{json.dumps(extra_payload, separators=(',', ':'))}"
+            )
 
     SEMAPHORE = asyncio.Semaphore(concurrency)
 

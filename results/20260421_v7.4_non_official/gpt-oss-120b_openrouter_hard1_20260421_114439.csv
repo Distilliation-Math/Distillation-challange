@@ -1,0 +1,70 @@
+problem_id,expected,predicted,correct,parse_ok,raw_verdict,latency_s,input_tokens,output_tokens,cost_usd,response_text
+hard1_0001,False,False,True,True,labeled:FALSE,2273.99,3345,5340,0.001145,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard1_0002,False,False,True,True,labeled:FALSE,631.39,3346,2886,0.000679,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard1_0003,True,True,True,True,labeled:TRUE,1372.66,3343,2487,0.000603,"REASONING: Right projection (Rule 2.7) applies – Eq1 is of the form x = T * x with T not containing x, forcing a * b = b. Applying this to Eq2 reduces the RHS to x, yielding x = x.  \nVERDICT: TRUE  \"
+hard1_0004,False,False,True,True,labeled:FALSE,2151.96,3346,4789,0.001040,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard1_0005,False,False,True,True,labeled:FALSE,516.49,3345,6303,0.001328,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard1_0006,False,False,True,True,labeled:FALSE,1105.46,3338,1960,0.000503,REASONING: leftmost exclusion\nVERDICT: FALSE\nPROOF:
+hard1_0007,True,True,True,True,labeled:TRUE,69.31,3345,2679,0.000639,"REASONING: Right projection (Rule 2.7) applies because Eq1 is of the form x = T * x with x not occurring in T, forcing a*b = b in any magma satisfying Eq1. Under this projection Eq2 reduces to y = y.\"
+hard1_0008,False,True,False,True,labeled:TRUE,780.72,3346,1156,0.000350,"REASONING: left projection (rule 2.6) – Eq1 is of the form x = x * T with T = y * ((y * z) * y) not containing x, so it forces a*b = a in every magma. Under this projection any product reduces to its "
+hard1_0009,False,False,True,True,labeled:FALSE,1600.55,3346,4793,0.001041,REASONING: default false fallback\nVERDICT: FALSE
+hard1_0010,False,False,True,True,labeled:FALSE,2362.42,3346,2421,0.000590,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard1_0011,False,False,True,True,labeled:FALSE,698.11,3348,3648,0.000824,REASONING: leftmost exclusion\nVERDICT: FALSE
+hard1_0012,False,False,True,True,labeled:FALSE,1397.25,3346,2383,0.000583,REASONING: default false fallback\nVERDICT: FALSE
+hard1_0013,True,False,False,True,labeled:FALSE,2166.29,3344,3632,0.000820,REASONING: default false fallback\nVERDICT: FALSE
+hard1_0014,False,False,True,True,labeled:FALSE,472.30,3347,5878,0.001247,"VERDICT: FALSE\nPROOF:\nREASONING: Counterexample: Use the right-zero magma defined by a*b = b (projection onto the second argument). Take the two-element set {0,1} with operation table:\n0*0 = 0, 0*1"
+hard1_0015,False,False,True,True,labeled:FALSE,1169.83,3345,2642,0.000632,REASONING: default false fallback\nVERDICT: FALSE
+hard1_0016,False,False,True,True,labeled:FALSE,2482.22,3348,5114,0.001102,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard1_0017,False,False,True,True,labeled:FALSE,347.30,3346,3311,0.000760,REASONING: default false fallback\nVERDICT: FALSE
+hard1_0018,True,False,False,True,labeled:FALSE,1085.07,3347,4109,0.000911,REASONING: default false fallback\nVERDICT: FALSE
+hard1_0019,False,False,True,True,labeled:FALSE,2471.80,3344,5822,0.001237,REASONING: default false fallback\nVERDICT: FALSE
+hard1_0020,False,False,True,True,labeled:FALSE,210.67,3346,2149,0.000539,REASONING: missing-variable absorption\nVERDICT: FALSE\nPROOF:
+hard1_0021,False,False,True,True,labeled:FALSE,1059.92,3343,7028,0.001466,REASONING: default false fallback\nVERDICT: FALSE
+hard1_0022,False,False,True,True,labeled:FALSE,1818.58,3345,5718,0.001217,"REASONING: counterexample: magma with elements {0,1} and operation table: 0*0=1, 0*1=1, 1*0=0, 1*1=0; assignment x=0, y=1 satisfies x*y = (y*(y*x))*x but not x*y = (x*y)*(x*y).  \nVERDICT: FALSE  \nPR"
+hard1_0023,True,False,False,True,labeled:FALSE,157.99,3343,7199,0.001498,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard1_0024,False,False,True,True,labeled:FALSE,956.13,3346,6570,0.001379,REASONING: default false fallback\nVERDICT: FALSE
+hard1_0025,False,False,True,True,labeled:FALSE,1749.22,3346,9017,0.001844,"REASONING: COUNTEREXAMPLE: In the magma with elements {0,1,2} and binary operation * given by the table  \n* | 0 1 2  \n0 | 1 2 0  \n1 | 0 0 0  \n2 | 1 0 0  \nassign x=0, y=0, z=0. Then Eq1 holds: 0 ="
+hard1_0026,False,False,True,True,labeled:FALSE,1060.25,3345,4179,0.000924,VERDICT: FALSE\nREASONING: left-zero\nPROOF:
+hard1_0027,True,False,False,True,labeled:FALSE,754.21,3343,4929,0.001067,VERDICT: FALSE\nREASONING: default false fallback\nPROOF:
+hard1_0028,False,False,True,True,labeled:FALSE,1499.85,3345,5952,0.001261,VERDICT: FALSE\nREASONING: default false fallback
+hard1_0029,False,False,True,True,labeled:FALSE,2291.18,3346,6879,0.001438,"REASONING: Counterexample: let the magma be the set {0,1} with binary operation a*b = a XOR b (addition modulo 2). Take the assignment x=0, y=1, z=0. Then  \nEq1: x = (y*y) * ((z*x) * x) becomes 0 = ("
+hard1_0030,False,False,True,True,labeled:FALSE,616.13,3346,5889,0.001249,REASONING: default false fallback\nVERDICT: FALSE
+hard1_0031,False,False,True,True,labeled:FALSE,1213.97,3347,4547,0.000994,REASONING: default false fallback\nVERDICT: FALSE
+hard1_0032,False,False,True,True,labeled:FALSE,106.60,3343,5038,0.001088,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard1_0033,False,True,False,True,labeled:TRUE,883.07,3346,3674,0.000829,"REASONING: Right projection (rule 2.7) applies because Eq1 is of the form x = T * x with T = ((y * (z * y)) * y) which does not contain x. This forces the operation to satisfy a * b = b for all a,b. U"
+hard1_0034,True,False,False,True,labeled:FALSE,1652.45,3341,3091,0.000718,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard1_0035,True,True,True,True,labeled:TRUE,1235.54,3346,2495,0.000605,"REASONING: left projection (Rule 2.6) applies – Eq1 is of the form x = x * T with T = ((y*z)*(w*u)) not containing x, which forces the left‑projection law a * b = a in any magma. Under this law the ri"
+hard1_0036,False,False,True,True,labeled:FALSE,753.75,3344,3925,0.000876,REASONING: default false fallback\nVERDICT: FALSE
+hard1_0037,False,False,True,True,labeled:FALSE,1514.90,3346,5944,0.001260,VERDICT: FALSE\nREASONING: default false fallback\nPROOF:
+hard1_0038,False,False,True,True,labeled:FALSE,2442.67,3344,12600,0.002524,"REASONING: Counterexample: Let the magma be the set {0,1} with binary operation * defined by the table  \n0*0 = 1, 0*1 = 0, 1*0 = 0, 1*1 = 1 (i.e., a*b = 1 iff a = b, else 0).  \nAssign x = 0, y = 1, "
+hard1_0039,False,False,True,True,labeled:FALSE,640.62,3346,5223,0.001123,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard1_0040,True,True,True,True,labeled:TRUE,1262.00,3345,2029,0.000516,"REASONING: Eq1 is bare and matches the pattern x = x * T with T = ((y * (z * w)) * w) which does not contain x. By rule 2.6 (left projection), any magma satisfying Eq1 must satisfy a * b = a for all a"
+hard1_0041,True,False,False,True,labeled:FALSE,2085.92,3345,6870,0.001436,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard1_0042,False,False,True,True,labeled:FALSE,393.86,3344,5319,0.001141,REASONING: default false fallback\nPROOF:\nVERDICT: FALSE
+hard1_0043,False,False,True,True,labeled:FALSE,1315.14,3344,8296,0.001707,"REASONING: counterexample: right-zero magma (a*b = b) on set {0,1} with table 0*0=0, 0*1=1, 1*0=0, 1*1=1; assign x=0, y=1, z=1, w=0 gives x*x = y*(x*(z*w)) true but x*x = y*((x*x)*z) false\nVERDICT: F"
+hard1_0044,True,True,True,True,labeled:TRUE,1866.37,3343,2440,0.000594,"REASONING: Right projection (Rule 2.7) applies because Eq1 is x = (y*(y*z))*x with T = (y*(y*z)) not containing x, forcing a*b = b. Applying this to Eq2, we simplify (((x*y)*x)*x)*x to x, yielding x ="
+hard1_0045,False,False,True,True,labeled:FALSE,309.19,3348,5555,0.001186,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard1_0046,True,False,False,True,labeled:FALSE,984.97,3344,2952,0.000691,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard1_0047,False,False,True,True,labeled:FALSE,1809.74,3347,5085,0.001097,VERDICT: FALSE\nREASONING: default false fallback\nPROOF:
+hard1_0048,False,True,False,True,labeled:TRUE,172.87,3343,4581,0.001001,"REASONING: right projection (rule 2.7) applied – Eq1 matches x = T * x with T = (y * (z * y)) not containing x, forcing a*b = b. Under this projection Eq2 reduces to x = x.  \n\nVERDICT: TRUE  \n\nPRO"
+hard1_0049,False,False,True,True,labeled:FALSE,829.17,3346,2535,0.000612,REASONING: parity exclusion\nVERDICT: FALSE\nPROOF:
+hard1_0050,True,True,True,True,labeled:TRUE,1656.25,3346,2482,0.000602,"REASONING: Left projection rule applies (Eq1 forces a*b = a) and Eq2 reduces to x = x under this law.  \nVERDICT: TRUE  \nPROOF: From Eq1 we have x = x * T with T not containing x, so any magma satisf"
+hard1_0051,False,False,True,True,labeled:FALSE,1697.45,3344,1789,0.000470,REASONING: leftmost exclusion\nVERDICT: FALSE\nPROOF:
+hard1_0052,True,False,False,True,labeled:FALSE,789.00,3345,3890,0.000870,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard1_0053,False,False,True,True,labeled:FALSE,1462.15,3346,3061,0.000712,REASONING: default false fallback\nVERDICT: FALSE
+hard1_0054,True,True,True,True,labeled:TRUE,2340.56,3345,2261,0.000560,"REASONING: Missing-variable absorption (left projection) – in Eq1, y does not occur in the right‑hand side ((z*w)*x)*u, so the left‑projection law p*q = p can be applied to Eq2.  \nVERDICT: TRUE\nPROO"
+hard1_0055,False,False,True,True,labeled:FALSE,616.24,3346,3456,0.000787,REASONING: rightmost exclusion\nVERDICT: FALSE\nPROOF:
+hard1_0056,True,False,False,True,labeled:FALSE,1388.87,3347,5873,0.001246,REASONING: default false fallback\nVERDICT: FALSE
+hard1_0057,False,False,True,True,labeled:FALSE,273.14,3346,6816,0.001426,VERDICT: FALSE\nREASONING: default false fallback\nPROOF:
+hard1_0058,False,False,True,True,labeled:FALSE,909.50,3346,3425,0.000781,REASONING: default false fallback\nVERDICT: FALSE\nPROOF:
+hard1_0059,True,True,True,True,labeled:TRUE,1704.39,3343,2007,0.000512,REASONING: Eq1 is a bare equation of the form x = T * x where T = ((y*z)*z) does not contain x. By rule 2.7 (right projection) this forces the law a * b = b in any magma satisfying Eq1. Applying this 
+hard1_0060,True,True,True,True,labeled:TRUE,1863.80,3346,2205,0.000549,"REASONING: Eq1 is x = (((y*z)*x)*z)*x, which matches the source‑collapse lemma pattern “x = (((y*z)*x)*z)*x → RIGHT PROJ (p*q=q)”. This forces the binary operation to be a right projection, i.e. a*b ="
+hard1_0061,True,True,True,True,labeled:TRUE,812.50,3346,2254,0.000559,REASONING: source-collapse lemma (pattern x = x*(y*(z*(x*y))) forces left projection p*q = p)  \nVERDICT: TRUE  \nPROOF: Eq1 matches the pattern x = x*(y*(z*(x*y))) which induces the left‑projection l
+hard1_0062,False,False,True,True,labeled:FALSE,1582.72,3347,5215,0.001121,REASONING: default false fallback\nVERDICT: FALSE
+hard1_0063,True,True,True,True,labeled:TRUE,2348.78,3343,2160,0.000541,REASONING: Eq1 is of the form x = T * x with T = ((y*z)*w) which does not contain x.  By rule 2.7 (right projection) this forces the identity a*b = b in every magma satisfying Eq1.  Applying the right
+hard1_0064,True,True,True,True,labeled:TRUE,666.71,3346,2463,0.000598,"REASONING: Eq1 is a bare equation of the form x = x *((y*z)*(z*z)), which matches the source‑collapse lemma pattern x = x*((y*z)*(z*z)). This pattern forces the left‑projection law a*b = a in any magm"
+hard1_0065,True,True,True,True,labeled:TRUE,1340.62,3343,2512,0.000608,"REASONING: Left projection (Rule 2.6) applies because Eq1 is x = x * (y * (z * y)) with the term T = (y * (z * y)) not containing x, forcing a*b = a in any magma. Applying this left‑projection law to "
+hard1_0066,False,False,True,True,labeled:FALSE,538.89,3347,9474,0.001931,VERDICT: FALSE\nREASONING: default false fallback\nPROOF:
+hard1_0067,True,False,False,True,labeled:FALSE,1106.92,3346,6529,0.001371,REASONING: default false fallback\nVERDICT: FALSE
+hard1_0068,False,False,True,True,labeled:FALSE,1941.51,3345,3297,0.000757,REASONING: default false fallback\nVERDICT: FALSE
+hard1_0069,True,True,True,True,labeled:TRUE,266.10,3343,2223,0.000553,REASONING: Eq1 matches the right‑projection pattern x = T * x with T = ((y*y)*z) which does not contain x. This forces the law a * b = b in any magma satisfying Eq1. Applying this right‑projection law

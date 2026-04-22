@@ -15,7 +15,8 @@ models:
     # 120B params — default GGUF is ~65GB, exceeds 64GB RAM
     params:
       temperature: 0.0    # aligned with SAIR official evaluation parameters
-      max_tokens: 65536   # reasoning tokens count against limit; 32K too low
+      max_tokens: 125000  # ctx=131072 minus ~6K headroom for prompt (v7.4 ~2.5K tok)
+      reasoning_effort: "high"
     # Applied only when --official-mode is set. Mirrors SAIR's
     # evaluation_models.json entry for gpt-oss-120b. Temperature is
     # deliberately excluded — --official-mode leaves temperature alone.
@@ -55,6 +56,10 @@ models:
     ollama:
       model_id: "gemma4:31b"
       num_ctx: 8192    # 8K — max observed usage is 5.4K tokens; saves 9GB KV cache vs 32K
+    params:
+      temperature: 0.0
+      max_tokens: 256000  # ctx=262144 minus ~6K headroom for prompt (v7.4 ~2.5K tok)
+      reasoning_effort: "high"
     # Applied only when --official-mode is set.
     # reasoning_effort="low" is in SAIR's evaluation_models.json for this
     # model, but with 10KB cheatsheets the reasoning tokens fully exhaust
