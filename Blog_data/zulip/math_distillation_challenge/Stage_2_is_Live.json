@@ -1,0 +1,317 @@
+{
+  "channel": "Math Distillation Challenge - equational theories",
+  "channel_id": 13,
+  "topic": "Stage 2 is Live!",
+  "message_count": 9,
+  "messages": [
+    {
+      "id": 1878,
+      "sender_id": 25,
+      "content": "<p><strong>Mathematics Distillation Challenge - Equational Theories: Stage 2 is now live</strong></p>\n<p>Hi everyone,</p>\n<p>Stage 2 of the Mathematics Distillation Challenge - Equational Theories is now live.</p>\n<p>At a high level, Stage 2 is an autoformalization challenge: participants will build systems that translate equational reasoning into Lean 4 artifacts that can be checked automatically by a deterministic judge.</p>\n<p>This stage moves from true/false prediction to <strong>machine-checkable Lean 4 certificates</strong>. For each equational implication, submissions must provide either a Lean proof that the implication is true, or a Lean certificate of a counterexample showing that the implication is false.</p>\n<p>Stage 2 has two tracks:</p>\n<p><strong>Solo</strong>: one solver subprocess per problem.  <br>\n<strong>Marathon</strong>: one solver subprocess handles a batch of problems under a shared global budget.</p>\n<p>Both tracks use the same deterministic Lean judge and the same public verdict statuses. Submissions should be a single <code>solver.py</code> file, up to 500 KB.</p>\n<p>The official repository includes the evaluation pipeline, Lean judge, demo solvers, tutorials, and local testing tools.</p>\n<p>Stage 2 is open to everyone.</p>\n<p>Deadline: <strong>August 31, 2026, 23:59 AoE</strong></p>\n<p>Competition page: <a href=\"https://competition.sair.foundation/competitions/mathematics-distillation-challenge-equational-theories-stage2/overview\">https://competition.sair.foundation/competitions/mathematics-distillation-challenge-equational-theories-stage2/overview</a></p>\n<p>Playground: <a href=\"https://playground.sair.foundation/playground/mathematics-distillation-challenge-equational-theories-stage2\">https://playground.sair.foundation/playground/mathematics-distillation-challenge-equational-theories-stage2</a></p>\n<p>Please note that the Stage 2 Playground is currently available only to participants who registered for Stage 1.</p>\n<p>The Stage 2 Contributor Network will open soon.</p>\n<p>Repository: <a href=\"https://github.com/SAIRcompetition/equational-theories-lean-stage2\">https://github.com/SAIRcompetition/equational-theories-lean-stage2</a></p>\n<p>If you run into setup problems, judge bugs, unclear documentation, or reproducible errors, please open a GitHub issue in the official repository. Feedback on the rules and evaluation setup is also welcome.</p>\n<p>Thank you for participating in SAIR competitions! Good luck, and we’re excited to see what the community builds.</p>",
+      "recipient_id": 43,
+      "timestamp": 1777650830,
+      "client": "ZulipElectron",
+      "subject": "Stage 2 is Live!",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 317
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 189
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 234
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 32
+        },
+        {
+          "emoji_name": "checkered_flag",
+          "emoji_code": "1f3c1",
+          "reaction_type": "unicode_emoji",
+          "user_id": 71
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 225
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 117
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 292
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 113
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-05-01T15:53:50.000Z"
+    },
+    {
+      "id": 2094,
+      "sender_id": 134,
+      "content": "<p>I saw that Stage 2 will include Order 5 laws. Will it include any <code>Finite</code> problems? That would be interesting difficulty in proving...</p>",
+      "recipient_id": 43,
+      "timestamp": 1779300966,
+      "client": "website",
+      "subject": "Stage 2 is Live!",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Alex Meiburg",
+      "sender_email": "user134@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "https://secure.gravatar.com/avatar/fa7e9ca1d9249db03849e44977e3cc5f?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-05-20T18:16:06.000Z"
+    },
+    {
+      "id": 2095,
+      "sender_id": 134,
+      "content": "<p>Separate question: some aspects of proof generation could be made much easier with auxiliary theorems / lemmas / definitions that we place before the theorem. Is this still allowed? The repository suggests that everything gets placed after <code>example : Goal := </code>, but that there's some kind of \"legacy\" mechanism to actually emit a theorem ourselves.</p>",
+      "recipient_id": 43,
+      "timestamp": 1779301916,
+      "client": "website",
+      "subject": "Stage 2 is Live!",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Alex Meiburg",
+      "sender_email": "user134@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "https://secure.gravatar.com/avatar/fa7e9ca1d9249db03849e44977e3cc5f?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-05-20T18:31:56.000Z"
+    },
+    {
+      "id": 2096,
+      "sender_id": 25,
+      "content": "<p><span class=\"user-mention silent\" data-user-id=\"134\">Alex Meiburg</span> <a href=\"#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/Stage.202.20is.20Live!/near/2094\">said</a>:</p>\n<blockquote>\n<p>I saw that Stage 2 will include Order 5 laws. Will it include any <code>Finite</code> problems? That would be interesting difficulty in proving...</p>\n</blockquote>\n<p>Stage 2 will include Order 5 laws. Whether to add Finite problems for Order 5 will depend on how the community engages with the competition. For now, the Order 5 samples in the public problem set are all easy problems.</p>",
+      "recipient_id": 43,
+      "timestamp": 1779303561,
+      "client": "ZulipElectron",
+      "subject": "Stage 2 is Live!",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-05-20T18:59:21.000Z"
+    },
+    {
+      "id": 2097,
+      "sender_id": 25,
+      "content": "<p><span class=\"user-mention silent\" data-user-id=\"134\">Alex Meiburg</span> <a href=\"#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/Stage.202.20is.20Live!/near/2095\">said</a>:</p>\n<blockquote>\n<p>Separate question: some aspects of proof generation could be made much easier with auxiliary theorems / lemmas / definitions that we place before the theorem. Is this still allowed? The repository suggests that everything gets placed after <code>example : Goal := </code>, but that there's some kind of \"legacy\" mechanism to actually emit a theorem ourselves.</p>\n</blockquote>\n<p>Yes, fully allowed. Your solver's <code>code</code> field is a complete Lean file, not just a tactic body. You can declare any helper <code>theorem</code>, <code>def</code>, <code>lemma</code>, <code>namespace</code>, or <code>notation</code> above the main term — the only requirement is that the file exposes a top-level <code>def submission : Goal := ...</code> (or any term whose type matches <code>Goal</code>). The judge writes your <code>code</code> to <code>Submission.lean</code> verbatim and wraps it in a separate file as <code>example : Goal := submission</code>.</p>",
+      "recipient_id": 43,
+      "timestamp": 1779303600,
+      "client": "ZulipElectron",
+      "subject": "Stage 2 is Live!",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-05-20T19:00:00.000Z"
+    },
+    {
+      "id": 2098,
+      "sender_id": 134,
+      "content": "<p>Ah, okay, I misunderstood how the string <code>submission</code> was being used! Okay. Great :)</p>",
+      "recipient_id": 43,
+      "timestamp": 1779303731,
+      "client": "website",
+      "subject": "Stage 2 is Live!",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 25
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Alex Meiburg",
+      "sender_email": "user134@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "https://secure.gravatar.com/avatar/fa7e9ca1d9249db03849e44977e3cc5f?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-05-20T19:02:11.000Z"
+    },
+    {
+      "id": 2099,
+      "sender_id": 117,
+      "content": "<p><span class=\"user-mention silent\" data-user-id=\"25\">YZ</span> <a href=\"#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/Stage.202.20is.20Live!/near/2096\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"134\">Alex Meiburg</span> <a href=\"#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/Stage.202.20is.20Live!/near/2094\">said</a>:</p>\n<blockquote>\n<p>I saw that Stage 2 will include Order 5 laws. Will it include any <code>Finite</code> problems? That would be interesting difficulty in proving...</p>\n</blockquote>\n<p>Stage 2 will include Order 5 laws. Whether to add Finite problems for Order 5 will depend on how the community engages with the competition. For now, the Order 5 samples in the public problem set are all easy problems.</p>\n</blockquote>\n<p>I understand this as that unlike stage1, in stage2 order5 implications will be part of official eval.</p>\n<p>Could u also help clarify, as per current plan, around how much % of the official private test set will be order5 implications? Ballparks</p>",
+      "recipient_id": 43,
+      "timestamp": 1779336245,
+      "client": "ZulipElectron",
+      "subject": "Stage 2 is Live!",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Gan W.",
+      "sender_email": "user117@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/62f195752f4b8a9ab7928b0e6d43725e586f89c5.png",
+      "content_type": "text/html",
+      "date": "2026-05-21T04:04:05.000Z"
+    },
+    {
+      "id": 2100,
+      "sender_id": 25,
+      "content": "<p>Yes, order 5 implications will be included in the final evaluation.</p>",
+      "recipient_id": 43,
+      "timestamp": 1779340286,
+      "client": "ZulipElectron",
+      "subject": "Stage 2 is Live!",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-05-21T05:11:26.000Z"
+    },
+    {
+      "id": 2101,
+      "sender_id": 25,
+      "content": "<p>The exact proportion of order 5 will depend on community feedback and the co-organizers’ final decision.</p>",
+      "recipient_id": 43,
+      "timestamp": 1779340371,
+      "client": "ZulipElectron",
+      "subject": "Stage 2 is Live!",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "ok",
+          "emoji_code": "1f44c",
+          "reaction_type": "unicode_emoji",
+          "user_id": 117
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 323
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-05-21T05:12:51.000Z"
+    }
+  ]
+}
