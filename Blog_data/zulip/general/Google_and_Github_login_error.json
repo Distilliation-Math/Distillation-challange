@@ -1,0 +1,102 @@
+{
+  "channel": "general",
+  "channel_id": 9,
+  "topic": "Google and Github login error",
+  "message_count": 3,
+  "messages": [
+    {
+      "id": 2471,
+      "sender_id": 382,
+      "content": "<p>Hi!<br>\nI'm trying to create an account with Google, which doesn't work because the redirect_uri is misconfigured. Same thing happens with GitHub<br>\n<a href=\"/user_uploads/5/53/AzK4lc_hJ0TL3sqY35UnJRU-/image.png\">image.png</a><br>\n<a href=\"/user_uploads/5/41/jzLkdXEEMHqVM_YiMpgdGElt/image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/5/53/AzK4lc_hJ0TL3sqY35UnJRU-/image.png\" title=\"image.png\"><img data-original-content-type=\"image/png\" data-original-dimensions=\"2010x482\" src=\"/user_uploads/thumbnail/5/53/AzK4lc_hJ0TL3sqY35UnJRU-/image.png/840x560.webp\"></a></div><div class=\"message_inline_image\"><a href=\"/user_uploads/5/41/jzLkdXEEMHqVM_YiMpgdGElt/image.png\" title=\"image.png\"><img data-original-content-type=\"image/png\" data-original-dimensions=\"1648x748\" src=\"/user_uploads/thumbnail/5/41/jzLkdXEEMHqVM_YiMpgdGElt/image.png/840x560.webp\"></a></div>",
+      "recipient_id": 24,
+      "timestamp": 1781650208,
+      "client": "website",
+      "subject": "Google and Github login error",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Ryan Yin",
+      "sender_email": "user382@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "https://secure.gravatar.com/avatar/9aa1e84fce8ea52747ab501a70087c88?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-06-16T22:50:08.000Z"
+    },
+    {
+      "id": 2473,
+      "sender_id": 25,
+      "content": "<p>Hi <span class=\"user-mention\" data-user-id=\"382\">@Ryan Yin</span> ! We will check it.</p>",
+      "recipient_id": 24,
+      "timestamp": 1781651454,
+      "client": "ZulipFlutter",
+      "subject": "Google and Github login error",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "heart",
+          "emoji_code": "2764",
+          "reaction_type": "unicode_emoji",
+          "user_id": 382
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-06-16T23:10:54.000Z"
+    },
+    {
+      "id": 2480,
+      "sender_id": 25,
+      "content": "<p><span class=\"user-mention\" data-user-id=\"382\">@Ryan Yin</span>  The issue is fixed. Please check. Thanks!</p>",
+      "recipient_id": 24,
+      "timestamp": 1781654804,
+      "client": "ZulipElectron",
+      "subject": "Google and Github login error",
+      "topic_links": [],
+      "last_edit_timestamp": 1781654816,
+      "edit_history": [
+        {
+          "user_id": 25,
+          "timestamp": 1781654816,
+          "prev_content": "@**Ryan Yin**  The issue is fixed. Thanks!",
+          "prev_rendered_content": "<p><span class=\"user-mention\" data-user-id=\"382\">@Ryan Yin</span>  The issue is fixed. Thanks!</p>"
+        }
+      ],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-06-17T00:06:44.000Z"
+    }
+  ]
+}
