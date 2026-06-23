@@ -1,0 +1,34 @@
+{
+  "channel": "general",
+  "channel_id": 9,
+  "topic": "Diderot: a preprint server for partly AI-generated papers",
+  "message_count": 1,
+  "messages": [
+    {
+      "id": 2760,
+      "sender_id": 362,
+      "content": "<p>Hi,</p>\n<p>I previously shared a prototype of a preprint server for partly AI-generated papers (<a href=\"#narrow/channel/9-general/topic//near/2270\">here</a>) -- a kind of crossover between arXiv and <a href=\"https://www.erdosproblems.com/\">https://www.erdosproblems.com</a>. I received positive response from others within the mathematical community, so I continued developing the website.</p>\n<p>You’re very welcome to start uploading writeups to <a href=\"https://projectdiderot.com/\">https://projectdiderot.com</a>. Of course, feedback is still very much appreciated (whether in DM or this thread). Also, if you want to be more involved, please do let me know. Thank you!</p>",
+      "recipient_id": 24,
+      "timestamp": 1782060357,
+      "client": "ZulipElectron",
+      "subject": "Diderot: a preprint server for partly AI-generated papers",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Isabel Dahlgren",
+      "sender_email": "user362@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "https://secure.gravatar.com/avatar/4a33ef1705606b27b6c4531cf57a46f7?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-06-21T16:45:57.000Z"
+    }
+  ]
+}
