@@ -2,7 +2,7 @@
   "channel": "general",
   "channel_id": 9,
   "topic": "general chat",
-  "message_count": 1,
+  "message_count": 2,
   "messages": [
     {
       "id": 1702,
@@ -29,6 +29,32 @@
       "avatar_url": "/user_avatars/5/cd5ed7395c97e7f63de89e1b7a207fb1f913449b.png",
       "content_type": "text/html",
       "date": "2026-04-19T14:22:10.000Z"
+    },
+    {
+      "id": 2270,
+      "sender_id": 362,
+      "content": "<p>Hi all,</p>\n<p>Inspired by Thomas Bloom's <a href=\"https://www.erdosproblems.com/\">Erdős Problems</a>, I built a preprint server designed to host AI-generated mathematical papers. My main motivation was to create a place for papers like the OpenAI writeup about the unit distance problem.</p>\n<p>Here's a <a href=\"https://open-author.vercel.app/about\">prototype</a>. There are only dummy papers so far, but the core features are live: one can create accounts, submit papers and review the work of others. Feel free to try it out.</p>\n<p>I’m curious to hear your thoughts. Could a platform like this become a useful piece of mathematical infrastructure? And if so, what design decisions matter most?</p>",
+      "recipient_id": 24,
+      "timestamp": 1781297591,
+      "client": "website",
+      "subject": "general chat",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Isabel Dahlgren",
+      "sender_email": "user362@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "https://secure.gravatar.com/avatar/4a33ef1705606b27b6c4531cf57a46f7?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-06-12T20:53:11.000Z"
     }
   ]
 }
