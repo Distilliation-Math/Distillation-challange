@@ -1,0 +1,1154 @@
+{
+  "channel": "Math Distillation Challenge - equational theories",
+  "channel_id": 13,
+  "topic": "Stage 2 is Live!",
+  "message_count": 36,
+  "messages": [
+    {
+      "id": 1878,
+      "sender_id": 25,
+      "content": "<p><strong>Mathematics Distillation Challenge - Equational Theories: Stage 2 is now live</strong></p>\n<p>Hi everyone,</p>\n<p>Stage 2 of the Mathematics Distillation Challenge - Equational Theories is now live.</p>\n<p>At a high level, Stage 2 is an autoformalization challenge: participants will build systems that translate equational reasoning into Lean 4 artifacts that can be checked automatically by a deterministic judge.</p>\n<p>This stage moves from true/false prediction to <strong>machine-checkable Lean 4 certificates</strong>. For each equational implication, submissions must provide either a Lean proof that the implication is true, or a Lean certificate of a counterexample showing that the implication is false.</p>\n<p>Stage 2 has two tracks:</p>\n<p><strong>Solo</strong>: one solver subprocess per problem.  <br>\n<strong>Marathon</strong>: one solver subprocess handles a batch of problems under a shared global budget.</p>\n<p>Both tracks use the same deterministic Lean judge and the same public verdict statuses. Submissions should be a single <code>solver.py</code> file, up to 500 KB.</p>\n<p>The official repository includes the evaluation pipeline, Lean judge, demo solvers, tutorials, and local testing tools.</p>\n<p>Stage 2 is open to everyone.</p>\n<p>Deadline: <strong>August 31, 2026, 23:59 AoE</strong></p>\n<p>Competition page: <a href=\"https://competition.sair.foundation/competitions/mathematics-distillation-challenge-equational-theories-stage2/overview\">https://competition.sair.foundation/competitions/mathematics-distillation-challenge-equational-theories-stage2/overview</a></p>\n<p>Playground: <a href=\"https://playground.sair.foundation/playground/mathematics-distillation-challenge-equational-theories-stage2\">https://playground.sair.foundation/playground/mathematics-distillation-challenge-equational-theories-stage2</a></p>\n<p>Please note that the Stage 2 Playground is currently available only to participants who registered for Stage 1.</p>\n<p>The Stage 2 Contributor Network will open soon.</p>\n<p>Repository: <a href=\"https://github.com/SAIRcompetition/equational-theories-lean-stage2\">https://github.com/SAIRcompetition/equational-theories-lean-stage2</a></p>\n<p>If you run into setup problems, judge bugs, unclear documentation, or reproducible errors, please open a GitHub issue in the official repository. Feedback on the rules and evaluation setup is also welcome.</p>\n<p>Thank you for participating in SAIR competitions! Good luck, and we’re excited to see what the community builds.</p>",
+      "recipient_id": 43,
+      "timestamp": 1777650830,
+      "client": "ZulipElectron",
+      "subject": "Stage 2 is Live!",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 317
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 189
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 234
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 32
+        },
+        {
+          "emoji_name": "checkered_flag",
+          "emoji_code": "1f3c1",
+          "reaction_type": "unicode_emoji",
+          "user_id": 71
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 225
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 117
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 292
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 113
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-05-01T15:53:50.000Z"
+    },
+    {
+      "id": 2094,
+      "sender_id": 134,
+      "content": "<p>I saw that Stage 2 will include Order 5 laws. Will it include any <code>Finite</code> problems? That would be interesting difficulty in proving...</p>",
+      "recipient_id": 43,
+      "timestamp": 1779300966,
+      "client": "website",
+      "subject": "Stage 2 is Live!",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Alex Meiburg",
+      "sender_email": "user134@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "https://secure.gravatar.com/avatar/fa7e9ca1d9249db03849e44977e3cc5f?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-05-20T18:16:06.000Z"
+    },
+    {
+      "id": 2095,
+      "sender_id": 134,
+      "content": "<p>Separate question: some aspects of proof generation could be made much easier with auxiliary theorems / lemmas / definitions that we place before the theorem. Is this still allowed? The repository suggests that everything gets placed after <code>example : Goal := </code>, but that there's some kind of \"legacy\" mechanism to actually emit a theorem ourselves.</p>",
+      "recipient_id": 43,
+      "timestamp": 1779301916,
+      "client": "website",
+      "subject": "Stage 2 is Live!",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "thinking",
+          "emoji_code": "1f914",
+          "reaction_type": "unicode_emoji",
+          "user_id": 71
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Alex Meiburg",
+      "sender_email": "user134@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "https://secure.gravatar.com/avatar/fa7e9ca1d9249db03849e44977e3cc5f?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-05-20T18:31:56.000Z"
+    },
+    {
+      "id": 2096,
+      "sender_id": 25,
+      "content": "<p><span class=\"user-mention silent\" data-user-id=\"134\">Alex Meiburg</span> <a href=\"#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/Stage.202.20is.20Live!/near/2094\">said</a>:</p>\n<blockquote>\n<p>I saw that Stage 2 will include Order 5 laws. Will it include any <code>Finite</code> problems? That would be interesting difficulty in proving...</p>\n</blockquote>\n<p>Stage 2 will include Order 5 laws. Whether to add Finite problems for Order 5 will depend on how the community engages with the competition. For now, the Order 5 samples in the public problem set are all easy problems.</p>",
+      "recipient_id": 43,
+      "timestamp": 1779303561,
+      "client": "ZulipElectron",
+      "subject": "Stage 2 is Live!",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-05-20T18:59:21.000Z"
+    },
+    {
+      "id": 2097,
+      "sender_id": 25,
+      "content": "<p><span class=\"user-mention silent\" data-user-id=\"134\">Alex Meiburg</span> <a href=\"#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/Stage.202.20is.20Live!/near/2095\">said</a>:</p>\n<blockquote>\n<p>Separate question: some aspects of proof generation could be made much easier with auxiliary theorems / lemmas / definitions that we place before the theorem. Is this still allowed? The repository suggests that everything gets placed after <code>example : Goal := </code>, but that there's some kind of \"legacy\" mechanism to actually emit a theorem ourselves.</p>\n</blockquote>\n<p>Yes, fully allowed. Your solver's <code>code</code> field is a complete Lean file, not just a tactic body. You can declare any helper <code>theorem</code>, <code>def</code>, <code>lemma</code>, <code>namespace</code>, or <code>notation</code> above the main term — the only requirement is that the file exposes a top-level <code>def submission : Goal := ...</code> (or any term whose type matches <code>Goal</code>). The judge writes your <code>code</code> to <code>Submission.lean</code> verbatim and wraps it in a separate file as <code>example : Goal := submission</code>.</p>",
+      "recipient_id": 43,
+      "timestamp": 1779303600,
+      "client": "ZulipElectron",
+      "subject": "Stage 2 is Live!",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-05-20T19:00:00.000Z"
+    },
+    {
+      "id": 2098,
+      "sender_id": 134,
+      "content": "<p>Ah, okay, I misunderstood how the string <code>submission</code> was being used! Okay. Great :)</p>",
+      "recipient_id": 43,
+      "timestamp": 1779303731,
+      "client": "website",
+      "subject": "Stage 2 is Live!",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 25
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Alex Meiburg",
+      "sender_email": "user134@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "https://secure.gravatar.com/avatar/fa7e9ca1d9249db03849e44977e3cc5f?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-05-20T19:02:11.000Z"
+    },
+    {
+      "id": 2099,
+      "sender_id": 117,
+      "content": "<p><span class=\"user-mention silent\" data-user-id=\"25\">YZ</span> <a href=\"#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/Stage.202.20is.20Live!/near/2096\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"134\">Alex Meiburg</span> <a href=\"#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/Stage.202.20is.20Live!/near/2094\">said</a>:</p>\n<blockquote>\n<p>I saw that Stage 2 will include Order 5 laws. Will it include any <code>Finite</code> problems? That would be interesting difficulty in proving...</p>\n</blockquote>\n<p>Stage 2 will include Order 5 laws. Whether to add Finite problems for Order 5 will depend on how the community engages with the competition. For now, the Order 5 samples in the public problem set are all easy problems.</p>\n</blockquote>\n<p>I understand this as that unlike stage1, in stage2 order5 implications will be part of official eval.</p>\n<p>Could u also help clarify, as per current plan, around how much % of the official private test set will be order5 implications? Ballparks</p>",
+      "recipient_id": 43,
+      "timestamp": 1779336245,
+      "client": "ZulipElectron",
+      "subject": "Stage 2 is Live!",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Gan W.",
+      "sender_email": "user117@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/62f195752f4b8a9ab7928b0e6d43725e586f89c5.png",
+      "content_type": "text/html",
+      "date": "2026-05-21T04:04:05.000Z"
+    },
+    {
+      "id": 2100,
+      "sender_id": 25,
+      "content": "<p>Yes, order 5 implications will be included in the final evaluation.</p>",
+      "recipient_id": 43,
+      "timestamp": 1779340286,
+      "client": "ZulipElectron",
+      "subject": "Stage 2 is Live!",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-05-21T05:11:26.000Z"
+    },
+    {
+      "id": 2101,
+      "sender_id": 25,
+      "content": "<p>The exact proportion of order 5 will depend on community feedback and the co-organizers’ final decision.</p>",
+      "recipient_id": 43,
+      "timestamp": 1779340371,
+      "client": "ZulipElectron",
+      "subject": "Stage 2 is Live!",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "ok",
+          "emoji_code": "1f44c",
+          "reaction_type": "unicode_emoji",
+          "user_id": 117
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 323
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-05-21T05:12:51.000Z"
+    },
+    {
+      "id": 2139,
+      "sender_id": 134,
+      "content": "<p>I think I've got a decent <code>true</code> solver for order 4. I'd love to see some kind order 5s to try out. <span aria-label=\"eyes\" class=\"emoji emoji-1f440\" role=\"img\" title=\"eyes\">:eyes:</span> <span aria-label=\"eyes\" class=\"emoji emoji-1f440\" role=\"img\" title=\"eyes\">:eyes:</span> <br>\nI guess I could try the order 5's from Stage 1, right? Is there any other source to look at for them?</p>",
+      "recipient_id": 43,
+      "timestamp": 1779742354,
+      "client": "website",
+      "subject": "Stage 2 is Live!",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 25
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Alex Meiburg",
+      "sender_email": "user134@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "https://secure.gravatar.com/avatar/fa7e9ca1d9249db03849e44977e3cc5f?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-05-25T20:52:34.000Z"
+    },
+    {
+      "id": 2140,
+      "sender_id": 25,
+      "content": "<p><span class=\"user-mention\" data-user-id=\"134\">@Alex Meiburg</span>  For selected order-5 problems, you can check:<br>\n<a href=\"https://huggingface.co/datasets/SAIRfoundation/equational-theories-selected-problems/viewer/evaluation_order5\">https://huggingface.co/datasets/SAIRfoundation/equational-theories-selected-problems/viewer/evaluation_order5</a></p>\n<p>All equations of order ≤ 5 are available here, with 62,576 equations in total:</p>\n<p><a href=\"https://github.com/SAIRcompetition/equational-theories-lean-stage2/blob/main/examples/problems/eq_size5.txt\">https://github.com/SAIRcompetition/equational-theories-lean-stage2/blob/main/examples/problems/eq_size5.txt</a></p>\n<p>We do not have ground truth for all order-5 implication directions, and we encourage participants to explore and figure them out with verified Lean proofs.</p>",
+      "recipient_id": 43,
+      "timestamp": 1779768149,
+      "client": "ZulipElectron",
+      "subject": "Stage 2 is Live!",
+      "topic_links": [],
+      "last_edit_timestamp": 1779768181,
+      "edit_history": [
+        {
+          "user_id": 25,
+          "timestamp": 1779768181,
+          "prev_content": "@**Alex Meiburg**  For selected order-5 problems, you can check:\nhttps://huggingface.co/datasets/SAIRfoundation/equational-theories-selected-problems/viewer/evaluation_order5\n\nAll equations of order ≤ 5 are available here, with 62,576 equations in total:\n\nhttps://github.com/SAIRcompetition/equational-theories-lean-stage2/blob/main/examples/problems/eq_size5.txt\n\nWe do not have ground truth for all order-5 implication directions, and we encourage participants to explore and figure out them with verified Lean proofs.",
+          "prev_rendered_content": "<p><span class=\"user-mention\" data-user-id=\"134\">@Alex Meiburg</span>  For selected order-5 problems, you can check:<br>\n<a href=\"https://huggingface.co/datasets/SAIRfoundation/equational-theories-selected-problems/viewer/evaluation_order5\">https://huggingface.co/datasets/SAIRfoundation/equational-theories-selected-problems/viewer/evaluation_order5</a></p>\n<p>All equations of order ≤ 5 are available here, with 62,576 equations in total:</p>\n<p><a href=\"https://github.com/SAIRcompetition/equational-theories-lean-stage2/blob/main/examples/problems/eq_size5.txt\">https://github.com/SAIRcompetition/equational-theories-lean-stage2/blob/main/examples/problems/eq_size5.txt</a></p>\n<p>We do not have ground truth for all order-5 implication directions, and we encourage participants to explore and figure out them with verified Lean proofs.</p>"
+        }
+      ],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "railway_track",
+          "emoji_code": "1f6e4",
+          "reaction_type": "unicode_emoji",
+          "user_id": 189
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 134
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 71
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-05-26T04:02:29.000Z"
+    },
+    {
+      "id": 2167,
+      "sender_id": 71,
+      "content": "<p><span class=\"user-mention silent\" data-user-id=\"134\">Alex Meiburg</span> <a href=\"#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/Stage.202.20is.20Live!/near/2095\">said</a>:</p>\n<blockquote>\n<p>Separate question: some aspects of proof generation could be made much easier with auxiliary theorems / lemmas / definitions that we place before the theorem. Is this still allowed? The repository suggests that everything gets placed after <code>example : Goal := </code>, but that there's some kind of \"legacy\" mechanism to actually emit a theorem ourselves.</p>\n</blockquote>\n<p>Yes, this feels like exactly the interesting part to me. Stage 2 may be less \"emit the final proof term\" and more about building the smallest local theory that makes the certificate inevitable. The auxiliary lemmas/defs might end up being the most reusable artifacts.</p>",
+      "recipient_id": 43,
+      "timestamp": 1780442260,
+      "client": "website",
+      "subject": "Stage 2 is Live!",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Heath Sanchez",
+      "sender_email": "user71@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "https://secure.gravatar.com/avatar/62a186edca1996d8ab4aea0c1cacbd21?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-06-02T23:17:40.000Z"
+    },
+    {
+      "id": 2925,
+      "sender_id": 118,
+      "content": "<p>Hi <span class=\"user-mention\" data-user-id=\"25\">@YZ</span> , I have a question about the private Stage 2 evaluation distribution.</p>\n<p>In my own analysis of the full order-5 non-self ordered-pair space, a few relatively simple certificate families already cover a very large fraction of the space. Concretely, Fin 2 / Fin 3 finite-model counterexample families cover about 2.27B FALSE pairs, and several singleton-style TRUE proof families, including singleton collapse, singleton seedbank, and singleton-seedbank specialization, cover about 1.31B unique TRUE pairs after deduplicating source sets. Together this is roughly 3.58B / 3.92B pairs, or about 91.4%.</p>\n<p>I also did a clustering-style analysis on a 330M-pair subset. Even in that subset, there are over one million clusters, with a very uneven number of pairs per cluster, and different clusters seem to require quite different proof or counterexample strategies.</p>\n<p>I’m not asking for the private test set or exact ratios, but could you share any directional guidance on whether the private evaluation is expected to roughly reflect the natural imbalance of the full candidate space, or whether it will be curated/stratified by difficulty, cluster/family, TRUE/FALSE balance, or equation order?</p>\n<p>This would help participants decide whether to optimize for broad easy-family coverage/compression, or for deeper strategies on residual and cluster-specific cases. Thanks!</p>",
+      "recipient_id": 43,
+      "timestamp": 1782786523,
+      "client": "website",
+      "subject": "Stage 2 is Live!",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Bing Wu",
+      "sender_email": "user118@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/8c99a8a6c86e5c227091ae31b3eb4ac3f55cae64.png",
+      "content_type": "text/html",
+      "date": "2026-06-30T02:28:43.000Z"
+    },
+    {
+      "id": 2930,
+      "sender_id": 25,
+      "content": "<p><span class=\"user-mention\" data-user-id=\"118\">@Bing Wu</span> Our current plan is that we will use almost the same distribution for the final evaluation as stage 1. You can check the evaluation set for stage 1 on hf:</p>\n<p><a href=\"https://huggingface.co/datasets/SAIRfoundation/equational-theories-selected-problems\">https://huggingface.co/datasets/SAIRfoundation/equational-theories-selected-problems</a></p>",
+      "recipient_id": 43,
+      "timestamp": 1782790911,
+      "client": "ZulipFlutter",
+      "subject": "Stage 2 is Live!",
+      "topic_links": [],
+      "last_edit_timestamp": 1782790924,
+      "edit_history": [
+        {
+          "user_id": 25,
+          "timestamp": 1782790924,
+          "prev_content": "@**Bing Wu** Our current plan is that we will use almost the same distribution for the final evaluation as stage 1. You can check the evaluation set for stage 1 on hf:\n\n  https://huggingface.co/datasets/SAIRfoundation/equational-theories-selected-problems",
+          "prev_rendered_content": "<p><span class=\"user-mention\" data-user-id=\"118\">@Bing Wu</span> Our current plan is that we will use almost the same distribution for the final evaluation as stage 1. You can check the evaluation set for stage 1 on hf:</p>\n<p><a href=\"https://huggingface.co/datasets/SAIRfoundation/equational-theories-selected-problems\">https://huggingface.co/datasets/SAIRfoundation/equational-theories-selected-problems</a></p>"
+        }
+      ],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-06-30T03:41:51.000Z"
+    },
+    {
+      "id": 2934,
+      "sender_id": 117,
+      "content": "<p>Hi <span class=\"user-mention\" data-user-id=\"25\">@YZ</span> </p>\n<p>We'd like to check the exact hardware/software level constraint that the stage2 official eval pipeline has, when running eval on the final eval machine. It is crucial to actually know these configs because it will affect the design of the solver, i.e. the strategy of efficiently allocating the given computational resources, space vs time, etc.</p>\n<p>Currently there are default/suggestion configs in the repo's README file, such as this one:<br>\n<a href=\"/user_uploads/5/d3/JUe9hRjAg5Bdqxcq2zy9OaeQ/image.png\">image.png</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/5/d3/JUe9hRjAg5Bdqxcq2zy9OaeQ/image.png\" title=\"image.png\"><img data-original-content-type=\"image/png\" data-original-dimensions=\"904x320\" src=\"/user_uploads/thumbnail/5/d3/JUe9hRjAg5Bdqxcq2zy9OaeQ/image.png/840x560.webp\"></a></div><p>But it never stated that this will be the final value of the constraints. </p>\n<p>Could u help clarify? Thanks</p>",
+      "recipient_id": 43,
+      "timestamp": 1782837470,
+      "client": "ZulipElectron",
+      "subject": "Stage 2 is Live!",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Gan W.",
+      "sender_email": "user117@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/62f195752f4b8a9ab7928b0e6d43725e586f89c5.png",
+      "content_type": "text/html",
+      "date": "2026-06-30T16:37:50.000Z"
+    },
+    {
+      "id": 2941,
+      "sender_id": 25,
+      "content": "<p>I will check and get back to you, thanks!</p>",
+      "recipient_id": 43,
+      "timestamp": 1782869352,
+      "client": "ZulipElectron",
+      "subject": "Stage 2 is Live!",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 117
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-07-01T01:29:12.000Z"
+    },
+    {
+      "id": 2955,
+      "sender_id": 25,
+      "content": "<p><a href=\"https://playground.sair.foundation/playground/mathematics-distillation-challenge-equational-theories-stage2/official-evaluation-spec\">https://playground.sair.foundation/playground/mathematics-distillation-challenge-equational-theories-stage2/official-evaluation-spec</a></p>",
+      "recipient_id": 43,
+      "timestamp": 1782948052,
+      "client": "ZulipElectron",
+      "subject": "Stage 2 is Live!",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-07-01T23:20:52.000Z"
+    },
+    {
+      "id": 2956,
+      "sender_id": 25,
+      "content": "<p><span class=\"user-mention\" data-user-id=\"117\">@Gan W.</span> Please feel free to check the current evaluation spec and it's also the config for the SAIR playground.</p>",
+      "recipient_id": 43,
+      "timestamp": 1782948091,
+      "client": "ZulipElectron",
+      "subject": "Stage 2 is Live!",
+      "topic_links": [],
+      "last_edit_timestamp": 1782948145,
+      "edit_history": [
+        {
+          "user_id": 25,
+          "timestamp": 1782948145,
+          "prev_content": "@**Gan W.** Please feel free to check the current evaluation spec and it's the config for the SAIR playground.",
+          "prev_rendered_content": "<p><span class=\"user-mention\" data-user-id=\"117\">@Gan W.</span> Please feel free to check the current evaluation spec and it's the config for the SAIR playground.</p>"
+        }
+      ],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-07-01T23:21:31.000Z"
+    },
+    {
+      "id": 2957,
+      "sender_id": 25,
+      "content": "<p>Feel free to let us know if you have suggestions for the evaluation config and we are collecting feedback from the community.</p>",
+      "recipient_id": 43,
+      "timestamp": 1782948129,
+      "client": "ZulipElectron",
+      "subject": "Stage 2 is Live!",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-07-01T23:22:09.000Z"
+    },
+    {
+      "id": 2965,
+      "sender_id": 117,
+      "content": "<p><span class=\"user-mention silent\" data-user-id=\"25\">YZ</span> <a href=\"#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/Stage.202.20is.20Live!/near/2956\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"117\">Gan W.</span> Please feel free to check the current evaluation spec and it's also the config for the SAIR playground.</p>\n</blockquote>\n<p>ok thank u</p>",
+      "recipient_id": 43,
+      "timestamp": 1782978981,
+      "client": "ZulipElectron",
+      "subject": "Stage 2 is Live!",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Gan W.",
+      "sender_email": "user117@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/62f195752f4b8a9ab7928b0e6d43725e586f89c5.png",
+      "content_type": "text/html",
+      "date": "2026-07-02T07:56:21.000Z"
+    },
+    {
+      "id": 3317,
+      "sender_id": 118,
+      "content": "<p>Hi @YZ, could you clarify whether final Stage 2 Lean certificates may directly depend on Mathlib declarations such as <code>ZMod</code>, <code>ZMod.commRing</code>, or other <code>ZMod.*</code> declarations?</p>\n<p>The public <code>DEFAULT_PROOF_POLICY</code> currently allows importing Mathlib modules but does not include <code>ZMod</code> or <code>ZMod.</code> in <code>allowed_declarations</code> / <code>allowed_declaration_prefixes</code>, so such certificates appear to receive <code>DISALLOWED_DECLARATIONS</code>.</p>\n<p>Should participants assume that all final evaluation problems use this public default policy, or will the official evaluation policy allow <code>ZMod.*</code> dependencies?</p>",
+      "recipient_id": 43,
+      "timestamp": 1783924128,
+      "client": "website",
+      "subject": "Stage 2 is Live!",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Bing Wu",
+      "sender_email": "user118@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/8c99a8a6c86e5c227091ae31b3eb4ac3f55cae64.png",
+      "content_type": "text/html",
+      "date": "2026-07-13T06:28:48.000Z"
+    },
+    {
+      "id": 3318,
+      "sender_id": 25,
+      "content": "<p>Currently no — a proof that directly uses ZMod / ZMod.* gets DISALLOWED_DECLARATIONS (→ incomplete_proof) under the public default policy</p>",
+      "recipient_id": 43,
+      "timestamp": 1783980565,
+      "client": "ZulipElectron",
+      "subject": "Stage 2 is Live!",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-07-13T22:09:25.000Z"
+    },
+    {
+      "id": 3319,
+      "sender_id": 25,
+      "content": "<p>You can also run your solver on the SAIR playground and check.</p>",
+      "recipient_id": 43,
+      "timestamp": 1783980606,
+      "client": "ZulipElectron",
+      "subject": "Stage 2 is Live!",
+      "topic_links": [],
+      "last_edit_timestamp": 1783980623,
+      "edit_history": [
+        {
+          "user_id": 25,
+          "timestamp": 1783980623,
+          "prev_content": "You can also check it on the SAIR playground.",
+          "prev_rendered_content": "<p>You can also check it on the SAIR playground.</p>"
+        }
+      ],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "ok",
+          "emoji_code": "1f44c",
+          "reaction_type": "unicode_emoji",
+          "user_id": 118
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-07-13T22:10:06.000Z"
+    },
+    {
+      "id": 3328,
+      "sender_id": 118,
+      "content": "<p>Hi @YZ, I encountered what looks like a reproducible Playground judge environment issue.</p>\n<p>In run <code>s2run_feed98f1-e0b2-4c89-8150-190ab2a6c271</code>, six TRUE certificates, including Equation194, were rejected at the import stage because they contained:</p>\n<p><code>import Mathlib.Tactic</code></p>\n<p>The judge reported:</p>\n<div class=\"codehilite\"><pre><span></span><code>error: unknown module prefix &#39;Mathlib&#39;\nNo directory &#39;Mathlib&#39; or file &#39;Mathlib.olean&#39; in the search path entries:\n\njudge\ntools/lean-4.20.0-linux/lib/lean\n</code></pre></div>\n<p>However, the official repository’s <code>lakefile.lean</code> explicitly depends on a pinned Mathlib revision, <code>scripts/setup.sh</code> downloads the Mathlib olean cache, and <code>judge/verify.py</code> says that <code>LEAN_PATH</code> should include Mathlib, its dependencies, and the judge build directories. The README also states that the same judge code runs locally and in the official evaluation.</p>\n<p>Could you please clarify whether the Playground is intentionally configured to disallow importing Mathlib, or whether its deployed <code>LEAN_PATH</code> is currently missing the <code>.lake/packages/mathlib/...</code> paths?</p>\n<p>If this is a deployment issue, could the affected run be re-run after it is fixed? Thanks!</p>",
+      "recipient_id": 43,
+      "timestamp": 1784018923,
+      "client": "website",
+      "subject": "Stage 2 is Live!",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Bing Wu",
+      "sender_email": "user118@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/8c99a8a6c86e5c227091ae31b3eb4ac3f55cae64.png",
+      "content_type": "text/html",
+      "date": "2026-07-14T08:48:43.000Z"
+    },
+    {
+      "id": 3332,
+      "sender_id": 25,
+      "content": "<p><span class=\"user-mention\" data-user-id=\"118\">@Bing Wu</span> Thanks for the feedback. We will check it.</p>",
+      "recipient_id": 43,
+      "timestamp": 1784047177,
+      "client": "ZulipElectron",
+      "subject": "Stage 2 is Live!",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 118
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-07-14T16:39:37.000Z"
+    },
+    {
+      "id": 3352,
+      "sender_id": 25,
+      "content": "<p><span class=\"user-mention\" data-user-id=\"118\">@Bing Wu</span> This issue was fixed. Thank you!</p>",
+      "recipient_id": 43,
+      "timestamp": 1784138005,
+      "client": "ZulipElectron",
+      "subject": "Stage 2 is Live!",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "tada",
+          "emoji_code": "1f389",
+          "reaction_type": "unicode_emoji",
+          "user_id": 118
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-07-15T17:53:25.000Z"
+    },
+    {
+      "id": 3439,
+      "sender_id": 117,
+      "content": "<p>Hi <span class=\"user-mention\" data-user-id=\"25\">@YZ</span> , can I check with u:</p>\n<ol>\n<li>\n<p>If there is a plan to set up an leaderboard page for stage 2?  It'll be nice to have that so that everyone knows the progress of the competition and also where they are in the race. </p>\n</li>\n<li>\n<p>I've tested the playground to be working ok with both marathon solver and solo solver, may I know if that is correct...? Because my understanding is that the constraints for solo and marathon tracks should be different, e.g. in marathon track, the solver should not be able to call the lean judge via the proxy, yet this is allowed for solo.</p>\n</li>\n</ol>\n<p>Thanks</p>",
+      "recipient_id": 43,
+      "timestamp": 1784795737,
+      "client": "ZulipElectron",
+      "subject": "Stage 2 is Live!",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Gan W.",
+      "sender_email": "user117@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/62f195752f4b8a9ab7928b0e6d43725e586f89c5.png",
+      "content_type": "text/html",
+      "date": "2026-07-23T08:35:37.000Z"
+    },
+    {
+      "id": 3442,
+      "sender_id": 25,
+      "content": "<p>Hi <span class=\"user-mention\" data-user-id=\"117\">@Gan W.</span> </p>\n<ol>\n<li>Yes, for stage 2, we will have a public leaderboard after the submission and evaluation like stage 1. Currently, you can use the SAIR contributor network if you want to  build on other contestants' solvers:</li>\n</ol>\n<p><a href=\"https://competition.sair.foundation/contributor-network?competition=mathematics-distillation-challenge-equational-theories-stage2\">https://competition.sair.foundation/contributor-network?competition=mathematics-distillation-challenge-equational-theories-stage2</a></p>",
+      "recipient_id": 43,
+      "timestamp": 1784827490,
+      "client": "ZulipElectron",
+      "subject": "Stage 2 is Live!",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-07-23T17:24:50.000Z"
+    },
+    {
+      "id": 3443,
+      "sender_id": 25,
+      "content": "<ol start=\"2\">\n<li>For the marathon tracks, I think you can also call the lean judge. For both tracks, the solver can combine:</li>\n</ol>\n<ul>\n<li><strong>Deterministic strategies</strong> (brute-force counterexample search, pattern matching, symbolic proof construction)</li>\n<li><strong>LLM calls</strong> (via the organizer-provided proxy)</li>\n<li><strong>Judge calls</strong> (submit candidate proofs for Lean verification, receive accept/reject feedback)</li>\n</ul>",
+      "recipient_id": 43,
+      "timestamp": 1784827611,
+      "client": "ZulipElectron",
+      "subject": "Stage 2 is Live!",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-07-23T17:26:51.000Z"
+    },
+    {
+      "id": 3444,
+      "sender_id": 25,
+      "content": "<p>Compared with Solo, Marathon also requires reasoning under limited total resources. Your strategy is not only about improving the solver’s capability on each individual problem, but also about deciding how much resource to spend on each problem and which problems to attempt first, much like taking an exam under a fixed time budget.</p>",
+      "recipient_id": 43,
+      "timestamp": 1784827842,
+      "client": "ZulipElectron",
+      "subject": "Stage 2 is Live!",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-07-23T17:30:42.000Z"
+    },
+    {
+      "id": 3445,
+      "sender_id": 25,
+      "content": "<p>Marathon is more like an exam: you are given all the problems at the beginning, and you need to decide how to allocate your limited resources across them to maximize your final score. <span aria-label=\"grinning\" class=\"emoji emoji-1f600\" role=\"img\" title=\"grinning\">:grinning:</span></p>",
+      "recipient_id": 43,
+      "timestamp": 1784827856,
+      "client": "ZulipElectron",
+      "subject": "Stage 2 is Live!",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-07-23T17:30:56.000Z"
+    },
+    {
+      "id": 3451,
+      "sender_id": 117,
+      "content": "<p>Hi <span class=\"user-mention\" data-user-id=\"25\">@YZ</span> </p>\n<p>Below are my interp, can help check:</p>\n<ol>\n<li>\n<p>when marathon runner is initiated, the stdin is DEVNULL:<br>\n<a href=\"https://github.com/SAIRcompetition/equational-theories-lean-stage2/blob/6805e232/pipeline/marathon_runner.py#L357-L366\">https://github.com/SAIRcompetition/equational-theories-lean-stage2/blob/6805e232/pipeline/marathon_runner.py#L357-L366</a></p>\n</li>\n<li>\n<p>the marathon proxy only supports completion and not judge:<br>\n<a href=\"https://github.com/SAIRcompetition/equational-theories-lean-stage2/blob/6805e232/pipeline/marathon_proxy.py#L246-L248\">https://github.com/SAIRcompetition/equational-theories-lean-stage2/blob/6805e232/pipeline/marathon_proxy.py#L246-L248</a></p>\n</li>\n</ol>\n<p>So marathon solver is not allowed to call judge during solving , at least that's the behavoir of the public repo. Not sure if the playground is the same or not.</p>",
+      "recipient_id": 43,
+      "timestamp": 1784869801,
+      "client": "ZulipElectron",
+      "subject": "Stage 2 is Live!",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 25
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Gan W.",
+      "sender_email": "user117@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/62f195752f4b8a9ab7928b0e6d43725e586f89c5.png",
+      "content_type": "text/html",
+      "date": "2026-07-24T05:10:01.000Z"
+    },
+    {
+      "id": 3452,
+      "sender_id": 25,
+      "content": "<p><span class=\"user-mention\" data-user-id=\"117\">@Gan W.</span> Thanks for sharing the details. We will check and get back to you.</p>",
+      "recipient_id": 43,
+      "timestamp": 1784870741,
+      "client": "ZulipFlutter",
+      "subject": "Stage 2 is Live!",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 117
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-07-24T05:25:41.000Z"
+    },
+    {
+      "id": 3455,
+      "sender_id": 117,
+      "content": "<p>At the same time, not that it matters much, but, I still do not quite understand what is the significance of having the compression_ratio.</p>\n<p>It is a global param on the whole implication set, not a param that the marathon solver could allocate dynamically for each and everyone of the implications. By setting it at the default value of 0.5, effectively we're allowed around 1/12 wall time budget for marathon track compared to the solo track. Could u help elaborate <span class=\"user-mention\" data-user-id=\"25\">@YZ</span> ? Thanks.</p>",
+      "recipient_id": 43,
+      "timestamp": 1784885855,
+      "client": "ZulipElectron",
+      "subject": "Stage 2 is Live!",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Gan W.",
+      "sender_email": "user117@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/62f195752f4b8a9ab7928b0e6d43725e586f89c5.png",
+      "content_type": "text/html",
+      "date": "2026-07-24T09:37:35.000Z"
+    },
+    {
+      "id": 3494,
+      "sender_id": 117,
+      "content": "<p><span class=\"user-mention silent\" data-user-id=\"25\">YZ</span> <a href=\"#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/Stage.202.20is.20Live.21/near/3474\">said</a>:</p>\n<blockquote>\n<p>For example, in the solo mode you have 60 mins to solve a problem. If the ratio is 0.5, then in marathon mode you have 30 mins to solve a problem on average.</p>\n</blockquote>\n<p><a href=\"https://github.com/SAIRcompetition/equational-theories-lean-stage2/blob/main/scripts/run_marathon.py#L35\">https://github.com/SAIRcompetition/equational-theories-lean-stage2/blob/main/scripts/run_marathon.py#L35</a></p>\n<p>For now, this is why it is actually 1/12 and not 1/2.</p>\n<p>Ofc, there is also a difference of level of parallelism allowed. Currently, the solo track is strictly only solved in series. While the level of parallelism for marathon solver is up to us, no limitation on software level, ultimately only constrained by the hardware, which can be messy.</p>",
+      "recipient_id": 43,
+      "timestamp": 1785127086,
+      "client": "ZulipElectron",
+      "subject": "Stage 2 is Live!",
+      "topic_links": [],
+      "last_edit_timestamp": 1785127183,
+      "edit_history": [
+        {
+          "user_id": 117,
+          "timestamp": 1785127183,
+          "prev_content": "@_**YZ|25** [said](https://zulip.sair.foundation/#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/Stage.202.20is.20Live.21/near/3474):\n```quote\nFor example, in the solo mode you have 60 mins to solve a problem. If the ratio is 0.5, then in marathon mode you have 30 mins to solve a problem on average.\n```\n\nhttps://github.com/SAIRcompetition/equational-theories-lean-stage2/blob/main/scripts/run_marathon.py#L35\n\nFor now, this is why it is actually 1/12 and not 1/2.\n\nOfc, there is also a difference of level of parallelism allowed. Currently, the solo track is strictly only solved in series. While the level of parallelism for marathon solver is up to us, no limitation on software level, ultimately only constrained by the hardware.",
+          "prev_rendered_content": "<p><span class=\"user-mention silent\" data-user-id=\"25\">YZ</span> <a href=\"#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/Stage.202.20is.20Live.21/near/3474\">said</a>:</p>\n<blockquote>\n<p>For example, in the solo mode you have 60 mins to solve a problem. If the ratio is 0.5, then in marathon mode you have 30 mins to solve a problem on average.</p>\n</blockquote>\n<p><a href=\"https://github.com/SAIRcompetition/equational-theories-lean-stage2/blob/main/scripts/run_marathon.py#L35\">https://github.com/SAIRcompetition/equational-theories-lean-stage2/blob/main/scripts/run_marathon.py#L35</a></p>\n<p>For now, this is why it is actually 1/12 and not 1/2.</p>\n<p>Ofc, there is also a difference of level of parallelism allowed. Currently, the solo track is strictly only solved in series. While the level of parallelism for marathon solver is up to us, no limitation on software level, ultimately only constrained by the hardware.</p>"
+        },
+        {
+          "user_id": 117,
+          "timestamp": 1785127117,
+          "prev_content": "@_**YZ|25** [said](https://zulip.sair.foundation/#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/Stage.202.20is.20Live.21/near/3474):\n```quote\nFor example, in the solo mode you have 60 mins to solve a problem. If the ratio is 0.5, then in marathon mode you have 30 mins to solve a problem on average.\n```\n\nhttps://github.com/SAIRcompetition/equational-theories-lean-stage2/blob/main/scripts/run_marathon.py#L35\n\nFor now, this is why it is actually 1/12 and not 1/2.\n\nOfc, there is also a difference of level of parallelism allowed. Currently, the solo track is strictly only solved in series. While the level of parallelism for marathon solver is up to us, no limitation on software level, ultimately only restricted by the hardware.",
+          "prev_rendered_content": "<p><span class=\"user-mention silent\" data-user-id=\"25\">YZ</span> <a href=\"#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/Stage.202.20is.20Live.21/near/3474\">said</a>:</p>\n<blockquote>\n<p>For example, in the solo mode you have 60 mins to solve a problem. If the ratio is 0.5, then in marathon mode you have 30 mins to solve a problem on average.</p>\n</blockquote>\n<p><a href=\"https://github.com/SAIRcompetition/equational-theories-lean-stage2/blob/main/scripts/run_marathon.py#L35\">https://github.com/SAIRcompetition/equational-theories-lean-stage2/blob/main/scripts/run_marathon.py#L35</a></p>\n<p>For now, this is why it is actually 1/12 and not 1/2.</p>\n<p>Ofc, there is also a difference of level of parallelism allowed. Currently, the solo track is strictly only solved in series. While the level of parallelism for marathon solver is up to us, no limitation on software level, ultimately only restricted by the hardware.</p>"
+        }
+      ],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Gan W.",
+      "sender_email": "user117@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/62f195752f4b8a9ab7928b0e6d43725e586f89c5.png",
+      "content_type": "text/html",
+      "date": "2026-07-27T04:38:06.000Z"
+    },
+    {
+      "id": 3533,
+      "sender_id": 25,
+      "content": "<p><span class=\"user-mention\" data-user-id=\"117\">@Gan W.</span> Sorry for the confusion. We have removed the definition of the compression ratio because it was misleading. Currently, Solo allows 60 minutes per problem, while Marathon provides an average of 5 minutes per problem. Hardware specifications are available here: <a href=\"https://playground.sair.foundation/playground/mathematics-distillation-challenge-equational-theories-stage2/official-evaluation-spec\">https://playground.sair.foundation/playground/mathematics-distillation-challenge-equational-theories-stage2/official-evaluation-spec</a><br>\nThank you for reporting the issue.</p>",
+      "recipient_id": 43,
+      "timestamp": 1785305818,
+      "client": "ZulipElectron",
+      "subject": "Stage 2 is Live!",
+      "topic_links": [],
+      "last_edit_timestamp": 1785305830,
+      "edit_history": [
+        {
+          "user_id": 25,
+          "timestamp": 1785305830,
+          "prev_content": "@**Gan W.** Sorry for the confusion. We have removed the definition of the compression ratio because it was misleading: Currently, Solo allows 60 minutes per problem, while Marathon provides an average of 5 minutes per problem. Hardware specifications are available here: https://playground.sair.foundation/playground/mathematics-distillation-challenge-equational-theories-stage2/official-evaluation-spec\nThank you for reporting the issue.",
+          "prev_rendered_content": "<p><span class=\"user-mention\" data-user-id=\"117\">@Gan W.</span> Sorry for the confusion. We have removed the definition of the compression ratio because it was misleading: Currently, Solo allows 60 minutes per problem, while Marathon provides an average of 5 minutes per problem. Hardware specifications are available here: <a href=\"https://playground.sair.foundation/playground/mathematics-distillation-challenge-equational-theories-stage2/official-evaluation-spec\">https://playground.sair.foundation/playground/mathematics-distillation-challenge-equational-theories-stage2/official-evaluation-spec</a><br>\nThank you for reporting the issue.</p>"
+        }
+      ],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-07-29T06:16:58.000Z"
+    }
+  ]
+}
