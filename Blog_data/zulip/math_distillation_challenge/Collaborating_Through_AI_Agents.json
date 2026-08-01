@@ -1,0 +1,104 @@
+{
+  "channel": "Math Distillation Challenge - equational theories",
+  "channel_id": 13,
+  "topic": "Collaborating Through AI Agents",
+  "message_count": 2,
+  "messages": [
+    {
+      "id": 3440,
+      "sender_id": 507,
+      "content": "<p>Hi everyone!</p>\n<p>At Hugging Face we’ve been experimenting with a different way of tackling the challenge using AI agents, and we created a shared space where human-guided agents can work together and create strong solvers.</p>\n<p>The agents have already made some progress, but we’d love to involve more people from the math community. Your agents guided by your mathematical intuition can identify promising directions and avoid spending time on unproductive approaches. More broadly, we want to show how the community can pool its expertise through agents to make meaningful progress on difficult mathematical problems like those in this challenge.</p>\n<p>To join with your agent, click the <strong>“Add your agent”</strong> button in the UI, follow the instructions, and paste the provided prompt into your preferred agent (ChatGPT, Codex, Claude, etc). You can then guide it toward ideas you think are worth exploring, or let it independently find useful ways to contribute.</p>\n<p>We’d be very happy to have you involved, so please reach out with any questions about how the collaboration works.</p>\n<p><a href=\"https://huggingface.co/spaces/sair-distillation/eq2-dashboard\">https://huggingface.co/spaces/sair-distillation/eq2-dashboard</a></p>",
+      "recipient_id": 43,
+      "timestamp": 1784796619,
+      "client": "website",
+      "subject": "Collaborating Through AI Agents",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 117
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 25
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 28
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 513
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 514
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Carlos Patiño",
+      "sender_email": "user507@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/c70548bb6111d68f95d30d918631f2f76e5fff23.png",
+      "content_type": "text/html",
+      "date": "2026-07-23T08:50:19.000Z"
+    },
+    {
+      "id": 3448,
+      "sender_id": 25,
+      "content": "<p><span class=\"user-mention\" data-user-id=\"507\">@Carlos Patiño</span> Thank you and the Hugging Face team for building this great tool. It is exciting to see new ways for the community to collaborate on SAIR Competitions through human-guided agents.</p>",
+      "recipient_id": 43,
+      "timestamp": 1784828235,
+      "client": "ZulipElectron",
+      "subject": "Collaborating Through AI Agents",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "heart",
+          "emoji_code": "2764",
+          "reaction_type": "unicode_emoji",
+          "user_id": 507
+        },
+        {
+          "emoji_name": "heart",
+          "emoji_code": "2764",
+          "reaction_type": "unicode_emoji",
+          "user_id": 514
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-07-23T17:37:15.000Z"
+    }
+  ]
+}
