@@ -1,0 +1,99 @@
+{
+  "channel": "general",
+  "channel_id": 9,
+  "topic": "Mathematics distillation_stage 2",
+  "message_count": 3,
+  "messages": [
+    {
+      "id": 3909,
+      "sender_id": 159,
+      "content": "<p>Hi SAIR team — I would like to clarify a possible certificate-size inconsistency in the Stage 2 evaluation pipeline.</p>\n<p>The official evaluation spec and <code>rules/evaluation.md</code> state:</p>\n<ul>\n<li>\n<p>Submitted Lean code: 100,000 bytes per judge call</p>\n</li>\n<li>\n<p>False-certificate code: 20,000 bytes per judge call</p>\n</li>\n</ul>\n<p>This also matches <code>pipeline/config.json</code>:</p>\n<div class=\"codehilite\" data-code-language=\"JSON\"><pre><span></span><code><span class=\"nt\">\"max_code_length\"</span><span class=\"p\">:</span><span class=\"w\"> </span><span class=\"mi\">100000</span><span class=\"p\">,</span>\n<span class=\"nt\">\"max_false_cert_bytes\"</span><span class=\"p\">:</span><span class=\"w\"> </span><span class=\"mi\">20000</span>\n</code></pre></div>\n<p>For the Solo path, <code>pipeline/proxy.py</code> explicitly propagates these active config values into <code>JudgeConfig</code>, so Solo appears to enforce 100,000 / 20,000 bytes as documented.</p>\n<p>However, the raw defaults in <code>judge/verify.py</code> are:</p>\n<div class=\"codehilite\" data-code-language=\"Python\"><pre><span></span><code><span class=\"n\">MAX_CODE_LENGTH</span> <span class=\"o\">=</span> <span class=\"mi\">50_000</span>\n<span class=\"n\">MAX_FALSE_CERT_BYTES</span> <span class=\"o\">=</span> <span class=\"mi\">10_000</span>\n</code></pre></div>\n<p>The current Marathon scoring path appears to fall back to these smaller defaults:</p>\n<ol>\n<li>\n<p><code>pipeline/marathon_score.py::score_marathon()</code> defaults <code>judge_config</code> to <code>None</code>.</p>\n</li>\n<li>\n<p><code>_grade_one()</code> calls <code>verify_answer(..., config=judge_config)</code>.</p>\n</li>\n<li>\n<p><code>scripts/run_marathon.py</code> calls <code>score_marathon()</code> without supplying a <code>JudgeConfig</code>.</p>\n</li>\n<li>\n<p>Therefore, the standard Marathon CLI appears to enforce 50,000 / 10,000 bytes rather than the documented 100,000 / 20,000 bytes.</p>\n</li>\n</ol>\n<p>Could you please confirm:</p>\n<ol>\n<li>\n<p>Are the official production limits 100,000 bytes for a true certificate and 20,000 bytes for a false certificate in both Solo and Marathon?</p>\n</li>\n<li>\n<p>Would a 56,798-byte true certificate be accepted in official Marathon evaluation?</p>\n</li>\n<li>\n<p>Is the current Marathon scoring behavior intentional, or should it propagate the limits from <code>pipeline/config.json</code>, as the Solo path does?</p>\n</li>\n</ol>\n<p>For clarity, I am measuring certificate size using UTF-8 bytes, consistent with:</p>\n<div class=\"codehilite\" data-code-language=\"Python\"><pre><span></span><code><span class=\"nb\">len</span><span class=\"p\">(</span><span class=\"n\">code</span><span class=\"o\">.</span><span class=\"n\">encode</span><span class=\"p\">(</span><span class=\"s2\">\"utf-8\"</span><span class=\"p\">))</span>\n</code></pre></div>\n<p>Thank you!</p>",
+      "recipient_id": 24,
+      "timestamp": 1787629433,
+      "client": "website",
+      "subject": "Mathematics distillation_stage 2",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "heart",
+          "emoji_code": "2764",
+          "reaction_type": "unicode_emoji",
+          "user_id": 534
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 323
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Dxp",
+      "sender_email": "user159@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "https://secure.gravatar.com/avatar/6046c76d109289e82d1bc8a62121ddcf?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-08-25T03:43:53.000Z"
+    },
+    {
+      "id": 3919,
+      "sender_id": 25,
+      "content": "<p><span class=\"user-mention\" data-user-id=\"159\">@Dxp</span> Thanks for the feedback! We will check and get back to you asap.</p>",
+      "recipient_id": 24,
+      "timestamp": 1787682527,
+      "client": "ZulipElectron",
+      "subject": "Mathematics distillation_stage 2",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-08-25T18:28:47.000Z"
+    },
+    {
+      "id": 3928,
+      "sender_id": 25,
+      "content": "<p><span class=\"user-mention\" data-user-id=\"159\">@Dxp</span> The issue was fixed. Thank you for reporting the issue!</p>",
+      "recipient_id": 24,
+      "timestamp": 1787711438,
+      "client": "ZulipElectron",
+      "subject": "Mathematics distillation_stage 2",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-08-26T02:30:38.000Z"
+    }
+  ]
+}
