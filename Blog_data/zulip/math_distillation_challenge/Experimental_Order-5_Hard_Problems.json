@@ -1,0 +1,53 @@
+{
+  "channel": "Math Distillation Challenge - equational theories",
+  "channel_id": 13,
+  "topic": "Experimental Order-5 Hard Problems",
+  "message_count": 1,
+  "messages": [
+    {
+      "id": 3972,
+      "sender_id": 25,
+      "content": "<p>Dear participants,</p>\n<p>We have prepared a more challenging experimental dataset of 100 Order-5 Hard problems involving Austin laws. For each problem, at least one of <code>Eq1</code> or <code>Eq2</code> is an Austin law. The ground truth for some of these problems is currently unknown.</p>\n<p>Experimental dataset:<br>\n<a href=\"https://huggingface.co/datasets/SAIRfoundation/equational-theories-selected-problems/viewer/research_order5_hard\">https://huggingface.co/datasets/SAIRfoundation/equational-theories-selected-problems/viewer/research_order5_hard</a></p>\n<p>For more background on Order-5 Austin laws, see the Equational Theories blueprint:<br>\n<a href=\"https://teorth.github.io/equational_theories/blueprint/order-5-austin-laws.html\">https://teorth.github.io/equational_theories/blueprint/order-5-austin-laws.html</a></p>\n<p>These problems are intended only for experimentation and research. They will not be included in the main leaderboard evaluation.</p>\n<p>Thank you for your participation and support!</p>",
+      "recipient_id": 43,
+      "timestamp": 1787882958,
+      "client": "ZulipElectron",
+      "subject": "Experimental Order-5 Hard Problems",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "heart",
+          "emoji_code": "2764",
+          "reaction_type": "unicode_emoji",
+          "user_id": 534
+        },
+        {
+          "emoji_name": "heart",
+          "emoji_code": "2764",
+          "reaction_type": "unicode_emoji",
+          "user_id": 118
+        },
+        {
+          "emoji_name": "heart",
+          "emoji_code": "2764",
+          "reaction_type": "unicode_emoji",
+          "user_id": 551
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-08-28T02:09:18.000Z"
+    }
+  ]
+}
