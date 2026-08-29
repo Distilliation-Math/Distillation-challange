@@ -1,0 +1,258 @@
+{
+  "channel": "general",
+  "channel_id": 9,
+  "topic": "Mathematics distillation_stage 2",
+  "message_count": 8,
+  "messages": [
+    {
+      "id": 3909,
+      "sender_id": 159,
+      "content": "<p>Hi SAIR team — I would like to clarify a possible certificate-size inconsistency in the Stage 2 evaluation pipeline.</p>\n<p>The official evaluation spec and <code>rules/evaluation.md</code> state:</p>\n<ul>\n<li>\n<p>Submitted Lean code: 100,000 bytes per judge call</p>\n</li>\n<li>\n<p>False-certificate code: 20,000 bytes per judge call</p>\n</li>\n</ul>\n<p>This also matches <code>pipeline/config.json</code>:</p>\n<div class=\"codehilite\" data-code-language=\"JSON\"><pre><span></span><code><span class=\"nt\">\"max_code_length\"</span><span class=\"p\">:</span><span class=\"w\"> </span><span class=\"mi\">100000</span><span class=\"p\">,</span>\n<span class=\"nt\">\"max_false_cert_bytes\"</span><span class=\"p\">:</span><span class=\"w\"> </span><span class=\"mi\">20000</span>\n</code></pre></div>\n<p>For the Solo path, <code>pipeline/proxy.py</code> explicitly propagates these active config values into <code>JudgeConfig</code>, so Solo appears to enforce 100,000 / 20,000 bytes as documented.</p>\n<p>However, the raw defaults in <code>judge/verify.py</code> are:</p>\n<div class=\"codehilite\" data-code-language=\"Python\"><pre><span></span><code><span class=\"n\">MAX_CODE_LENGTH</span> <span class=\"o\">=</span> <span class=\"mi\">50_000</span>\n<span class=\"n\">MAX_FALSE_CERT_BYTES</span> <span class=\"o\">=</span> <span class=\"mi\">10_000</span>\n</code></pre></div>\n<p>The current Marathon scoring path appears to fall back to these smaller defaults:</p>\n<ol>\n<li>\n<p><code>pipeline/marathon_score.py::score_marathon()</code> defaults <code>judge_config</code> to <code>None</code>.</p>\n</li>\n<li>\n<p><code>_grade_one()</code> calls <code>verify_answer(..., config=judge_config)</code>.</p>\n</li>\n<li>\n<p><code>scripts/run_marathon.py</code> calls <code>score_marathon()</code> without supplying a <code>JudgeConfig</code>.</p>\n</li>\n<li>\n<p>Therefore, the standard Marathon CLI appears to enforce 50,000 / 10,000 bytes rather than the documented 100,000 / 20,000 bytes.</p>\n</li>\n</ol>\n<p>Could you please confirm:</p>\n<ol>\n<li>\n<p>Are the official production limits 100,000 bytes for a true certificate and 20,000 bytes for a false certificate in both Solo and Marathon?</p>\n</li>\n<li>\n<p>Would a 56,798-byte true certificate be accepted in official Marathon evaluation?</p>\n</li>\n<li>\n<p>Is the current Marathon scoring behavior intentional, or should it propagate the limits from <code>pipeline/config.json</code>, as the Solo path does?</p>\n</li>\n</ol>\n<p>For clarity, I am measuring certificate size using UTF-8 bytes, consistent with:</p>\n<div class=\"codehilite\" data-code-language=\"Python\"><pre><span></span><code><span class=\"nb\">len</span><span class=\"p\">(</span><span class=\"n\">code</span><span class=\"o\">.</span><span class=\"n\">encode</span><span class=\"p\">(</span><span class=\"s2\">\"utf-8\"</span><span class=\"p\">))</span>\n</code></pre></div>\n<p>Thank you!</p>",
+      "recipient_id": 24,
+      "timestamp": 1787629433,
+      "client": "website",
+      "subject": "Mathematics distillation_stage 2",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "heart",
+          "emoji_code": "2764",
+          "reaction_type": "unicode_emoji",
+          "user_id": 534
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 323
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Dxp",
+      "sender_email": "user159@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "https://secure.gravatar.com/avatar/6046c76d109289e82d1bc8a62121ddcf?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-08-25T03:43:53.000Z"
+    },
+    {
+      "id": 3919,
+      "sender_id": 25,
+      "content": "<p><span class=\"user-mention\" data-user-id=\"159\">@Dxp</span> Thanks for the feedback! We will check and get back to you asap.</p>",
+      "recipient_id": 24,
+      "timestamp": 1787682527,
+      "client": "ZulipElectron",
+      "subject": "Mathematics distillation_stage 2",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-08-25T18:28:47.000Z"
+    },
+    {
+      "id": 3928,
+      "sender_id": 25,
+      "content": "<p><span class=\"user-mention\" data-user-id=\"159\">@Dxp</span> The issue was fixed. Thank you for reporting the issue!</p>",
+      "recipient_id": 24,
+      "timestamp": 1787711438,
+      "client": "ZulipElectron",
+      "subject": "Mathematics distillation_stage 2",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "heart",
+          "emoji_code": "2764",
+          "reaction_type": "unicode_emoji",
+          "user_id": 159
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-08-26T02:30:38.000Z"
+    },
+    {
+      "id": 3979,
+      "sender_id": 159,
+      "content": "<p>Dear SAIR Competition Team,</p>\n<p>I am participating in the Mathematics Distillation Challenge – Equational Theories Stage 2.</p>\n<p>I submitted several evaluation runs on August 27, but three of them have remained in “Pending” status for more than 24 hours:</p>\n<ul>\n<li>s2run_4905ad05-14f3-4190-8f66-f70cf43a1651 — submitted at 10:43 AM</li>\n<li>s2run_7765c57a-43b4-4bcc-a2a3-55f05a3ab4ff — submitted at 10:48 AM</li>\n<li>s2run_49e6b666-ea85-4682-8cc4-45b3edd171c1 — submitted at 10:49 AM</li>\n</ul>\n<p>All three runs still show 0/10 progress and 0 accepted, rejected, or errored cases. None of them has entered the “Running” state.</p>\n<p>I have attached a screenshot of the History page for reference.</p>\n<p>Could you please help confirm:</p>\n<ol>\n<li>Whether the Stage 2 evaluation workers are currently paused or experiencing a queue backlog;</li>\n<li>Whether these runs need to be manually requeued;</li>\n<li>Whether a run submitted before the competition deadline will still be considered valid if the evaluation completes after the deadline; and</li>\n<li>Whether I should keep all three pending runs or cancel the later duplicates.</li>\n</ol>\n<p>Since the competition deadline is approaching, I would greatly appreciate it if you could check the status of these runs.</p>\n<p>Thank you for your help.</p>\n<p>Best regards,<br>\nXueping Dong<br>\n<img alt=\"Result.png\" class=\"inline-image\" data-original-content-type=\"image/png\" data-original-dimensions=\"3200x1572\" data-original-src=\"/user_uploads/5/e4/bwirrYX50GAKb6HG-LRlrfpP/Result.png\" src=\"/user_uploads/thumbnail/5/e4/bwirrYX50GAKb6HG-LRlrfpP/Result.png/840x560.webp\"></p>",
+      "recipient_id": 24,
+      "timestamp": 1787891906,
+      "client": "website",
+      "subject": "Mathematics distillation_stage 2",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Dxp",
+      "sender_email": "user159@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "https://secure.gravatar.com/avatar/6046c76d109289e82d1bc8a62121ddcf?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-08-28T04:38:26.000Z"
+    },
+    {
+      "id": 3980,
+      "sender_id": 285,
+      "content": "<p>same here</p>",
+      "recipient_id": 24,
+      "timestamp": 1787893853,
+      "client": "website",
+      "subject": "Mathematics distillation_stage 2",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Wenlin Zhang",
+      "sender_email": "user285@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "https://secure.gravatar.com/avatar/87fa48b12d5f812053d0214b9614faa4?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-08-28T05:10:53.000Z"
+    },
+    {
+      "id": 3985,
+      "sender_id": 316,
+      "content": "<p><a href=\"/user_uploads/5/2b/AslmfGIQA0txo331UUjZ7XY3/1003981033.jpg\">1003981033.jpg</a></p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/5/2b/AslmfGIQA0txo331UUjZ7XY3/1003981033.jpg\" title=\"1003981033.jpg\"><img data-original-content-type=\"image/jpeg\" data-original-dimensions=\"2340x1080\" src=\"/user_uploads/thumbnail/5/2b/AslmfGIQA0txo331UUjZ7XY3/1003981033.jpg/840x560.webp\"></a></div><p>I've submitted 4 Solvers how will the scoring go? Best scoring of the 4?</p>",
+      "recipient_id": 24,
+      "timestamp": 1787927371,
+      "client": "ZulipFlutter",
+      "subject": "Mathematics distillation_stage 2",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Vincent Witte",
+      "sender_email": "user316@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "/user_avatars/5/5161cba0304296b89ed3e1869478e372159cb06d.png",
+      "content_type": "text/html",
+      "date": "2026-08-28T14:29:31.000Z"
+    },
+    {
+      "id": 3989,
+      "sender_id": 25,
+      "content": "<p>Hi <span class=\"user-mention\" data-user-id=\"159\">@Dxp</span> <span class=\"user-mention\" data-user-id=\"285\">@Wenlin Zhang</span> ! As we approach the submission deadline, many participants are testing their solvers in the Playground, and each Solo-mode problem can run for up to 3,600 seconds, so pending times may be longer. To ensure timely testing, we recommend you to deploy the Lean 4 environment locally for testing.</p>",
+      "recipient_id": 24,
+      "timestamp": 1787943945,
+      "client": "ZulipElectron",
+      "subject": "Mathematics distillation_stage 2",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 551
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-08-28T19:05:45.000Z"
+    },
+    {
+      "id": 3990,
+      "sender_id": 25,
+      "content": "<p><span class=\"user-mention\" data-user-id=\"316\">@Vincent Witte</span> This will be 4 leaderboards: 2 models (Gemma4, oss-120b) x 2 tracks (Solo and Marathon).</p>",
+      "recipient_id": 24,
+      "timestamp": 1787943989,
+      "client": "ZulipElectron",
+      "subject": "Mathematics distillation_stage 2",
+      "topic_links": [],
+      "last_edit_timestamp": 1787944021,
+      "edit_history": [
+        {
+          "user_id": 25,
+          "timestamp": 1787944021,
+          "prev_content": "@**Vincent Witte** This will be 4 leaderboards: 2 models x 2 tracks (Solo and Marathon).",
+          "prev_rendered_content": "<p><span class=\"user-mention\" data-user-id=\"316\">@Vincent Witte</span> This will be 4 leaderboards: 2 models x 2 tracks (Solo and Marathon).</p>"
+        },
+        {
+          "user_id": 25,
+          "timestamp": 1787944001,
+          "prev_content": "@**Vincent Witte** This will be 4 leaderboards, 2 models, 2 tracks (Solo and Marathon).",
+          "prev_rendered_content": "<p><span class=\"user-mention\" data-user-id=\"316\">@Vincent Witte</span> This will be 4 leaderboards, 2 models, 2 tracks (Solo and Marathon).</p>"
+        }
+      ],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-08-28T19:06:29.000Z"
+    }
+  ]
+}

@@ -1,0 +1,320 @@
+{
+  "channel": "Math Distillation Challenge - equational theories",
+  "channel_id": 13,
+  "topic": "New Stage 2 Stress-Test Dataset",
+  "message_count": 7,
+  "messages": [
+    {
+      "id": 3966,
+      "sender_id": 25,
+      "content": "<p>Dear participants,</p>\n<p>It is great to see how strong the community’s solvers have become. In response to requests for new test problems, we have prepared a stress-test dataset that mirrors the configuration of the final Stage 2 main leaderboard evaluation:</p>\n<p><a href=\"https://huggingface.co/datasets/SAIRfoundation/equational-theories-selected-problems/viewer/stage2_stress_test\">https://huggingface.co/datasets/SAIRfoundation/equational-theories-selected-problems/viewer/stage2_stress_test</a></p>\n<p>The dataset contains 200 problems across four difficulty categories, with 50 problems in each category: 25 true and 25 false.</p>\n<ul>\n<li><code>order4_normal</code></li>\n<li><code>order4_hard</code></li>\n<li><code>order4_extra_hard</code></li>\n<li><code>order5_normal</code></li>\n</ul>\n<p>Each problem is worth one point. The final Stage 2 main leaderboard evaluation will use the same category distribution and scoring setup. You can use this dataset to stress-test and finalize your solver before submission.</p>\n<p>We are also preparing harder Order-5 problems for experimentation and research. These problems will be available as an additional community challenge and will not be included in the main leaderboard evaluation.</p>\n<p>Thank you for your participation and support!</p>",
+      "recipient_id": 43,
+      "timestamp": 1787852179,
+      "client": "ZulipElectron",
+      "subject": "New Stage 2 Stress-Test Dataset",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "heart",
+          "emoji_code": "2764",
+          "reaction_type": "unicode_emoji",
+          "user_id": 551
+        },
+        {
+          "emoji_name": "heart",
+          "emoji_code": "2764",
+          "reaction_type": "unicode_emoji",
+          "user_id": 189
+        },
+        {
+          "emoji_name": "heart",
+          "emoji_code": "2764",
+          "reaction_type": "unicode_emoji",
+          "user_id": 534
+        },
+        {
+          "emoji_name": "heart",
+          "emoji_code": "2764",
+          "reaction_type": "unicode_emoji",
+          "user_id": 118
+        },
+        {
+          "emoji_name": "heart",
+          "emoji_code": "2764",
+          "reaction_type": "unicode_emoji",
+          "user_id": 289
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-08-27T17:36:19.000Z"
+    },
+    {
+      "id": 3969,
+      "sender_id": 551,
+      "content": "<p>Thank you for the stress-test set!</p>\n<p>I had asked for around 100 fresh equations to really test the robustness of our solver before submission, so getting 200 problems matching the final leaderboard distribution was an even better test than expected. <span aria-label=\"slight smile\" class=\"emoji emoji-1f642\" role=\"img\" title=\"slight smile\">:slight_smile:</span></p>\n<p>Our current solver is a single self-contained Python file of about <strong>406 KB</strong>. On the full 200-problem stress test, it reached:<br>\n<strong>200/200 solved - 0 failed</strong><br>\n<strong>Total solver time: 741.2 s</strong><br>\n<strong>Wall-clock time: 12m25.6s</strong></p>\n<p>This was across all four categories, including the Order-5 problems, with Lean-accepted certificates.</p>\n<p>What was especially satisfying is that it also solved the two particularly stubborn Order-5 residuals we had been working on. Those were the cases that forced us to improve the proof-search architecture rather than simply add more brute force.</p>\n<p>At this point, my main remaining uncertainty is simply whether everything behaves exactly the same in the official evaluation environment. Fingers crossed. <span aria-label=\"slight smile\" class=\"emoji emoji-1f642\" role=\"img\" title=\"slight smile\">:slight_smile:</span></p>\n<p>One small question about the final leaderboard: in the event of a tie on the number of correctly solved problems, is there any secondary criterion such as <strong>total solving time or submission size</strong>, or is the ranking based strictly on the number of solved problems? Just curious about how ties are handled.</p>\n<p>Thank you again for providing such a useful benchmark.</p>\n<p>Now that “hard” and “extra hard” are behaving rather nicely… any chance of an <strong>ULTRA HARD</strong> experimental category? <span aria-label=\"wink\" class=\"emoji emoji-1f609\" role=\"img\" title=\"wink\">:wink:</span><br>\nPurely for science, of course.</p>\n<p>Good luck to everyone for the final submissions!</p>",
+      "recipient_id": 43,
+      "timestamp": 1787881718,
+      "client": "website",
+      "subject": "New Stage 2 Stress-Test Dataset",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 534
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 25
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Axabra",
+      "sender_email": "user551@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/cf73ea7486cf166dcb02add5627d389947632feb.png",
+      "content_type": "text/html",
+      "date": "2026-08-28T01:48:38.000Z"
+    },
+    {
+      "id": 3970,
+      "sender_id": 534,
+      "content": "<p>Perhaps more difficult or higher-order problems could be used solely to break ties between teams.</p>",
+      "recipient_id": 43,
+      "timestamp": 1787882248,
+      "client": "website",
+      "subject": "New Stage 2 Stress-Test Dataset",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 551
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 534
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 25
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "ZplusM",
+      "sender_email": "user534@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/6d2078d216d3217a0400a0a0c2ffa1ab4d716676.png",
+      "content_type": "text/html",
+      "date": "2026-08-28T01:57:28.000Z"
+    },
+    {
+      "id": 3971,
+      "sender_id": 551,
+      "content": "<p>Or perhaps LLM calls could carry a small penalty in tie-break situations, just to reward fully deterministic solvers a little. <span aria-label=\"slight smile\" class=\"emoji emoji-1f642\" role=\"img\" title=\"slight smile\">:slight_smile:</span></p>",
+      "recipient_id": 43,
+      "timestamp": 1787882787,
+      "client": "website",
+      "subject": "New Stage 2 Stress-Test Dataset",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 25
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 534
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Axabra",
+      "sender_email": "user551@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/cf73ea7486cf166dcb02add5627d389947632feb.png",
+      "content_type": "text/html",
+      "date": "2026-08-28T02:06:27.000Z"
+    },
+    {
+      "id": 3973,
+      "sender_id": 25,
+      "content": "<p><span class=\"user-mention\" data-user-id=\"551\">@Axabra</span> <span class=\"user-mention\" data-user-id=\"534\">@ZplusM</span> Congratulations! Please feel free to try the new research dataset.</p>",
+      "recipient_id": 43,
+      "timestamp": 1787883005,
+      "client": "ZulipElectron",
+      "subject": "New Stage 2 Stress-Test Dataset",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "heart",
+          "emoji_code": "2764",
+          "reaction_type": "unicode_emoji",
+          "user_id": 534
+        },
+        {
+          "emoji_name": "heart",
+          "emoji_code": "2764",
+          "reaction_type": "unicode_emoji",
+          "user_id": 551
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-08-28T02:10:05.000Z"
+    },
+    {
+      "id": 3974,
+      "sender_id": 285,
+      "content": "<p><span class=\"user-mention silent\" data-user-id=\"551\">Axabra</span> <a href=\"#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/New.20Stage.202.20Stress-Test.20Dataset/near/3969\">said</a>:</p>\n<blockquote>\n<p>Thank you for the stress-test set!</p>\n<p>I had asked for around 100 fresh equations to really test the robustness of our solver before submission, so getting 200 problems matching the final leaderboard distribution was an even better test than expected. <span aria-label=\"slight smile\" class=\"emoji emoji-1f642\" role=\"img\" title=\"slight smile\">:slight_smile:</span></p>\n<p>Our current solver is a single self-contained Python file of about <strong>406 KB</strong>. On the full 200-problem stress test, it reached:<br>\n<strong>200/200 solved - 0 failed</strong><br>\n<strong>Total solver time: 741.2 s</strong><br>\n<strong>Wall-clock time: 12m25.6s</strong></p>\n<p>This was across all four categories, including the Order-5 problems, with Lean-accepted certificates.</p>\n<p>What was especially satisfying is that it also solved the two particularly stubborn Order-5 residuals we had been working on. Those were the cases that forced us to improve the proof-search architecture rather than simply add more brute force.</p>\n<p>At this point, my main remaining uncertainty is simply whether everything behaves exactly the same in the official evaluation environment. Fingers crossed. <span aria-label=\"slight smile\" class=\"emoji emoji-1f642\" role=\"img\" title=\"slight smile\">:slight_smile:</span></p>\n<p>One small question about the final leaderboard: in the event of a tie on the number of correctly solved problems, is there any secondary criterion such as <strong>total solving time or submission size</strong>, or is the ranking based strictly on the number of solved problems? Just curious about how ties are handled.</p>\n<p>Thank you again for providing such a useful benchmark.</p>\n<p>Now that “hard” and “extra hard” are behaving rather nicely… any chance of an <strong>ULTRA HARD</strong> experimental category? <span aria-label=\"wink\" class=\"emoji emoji-1f609\" role=\"img\" title=\"wink\">:wink:</span><br>\nPurely for science, of course.</p>\n<p>Good luck to everyone for the final submissions!</p>\n</blockquote>\n<p>Hi, congrats on the clean sweep! We ran the stress test as well: 200/200, all four categories, zero LLM calls, with a single file under 200 KB. Our wall-clock was a bit longer than yours (ours includes per-problem judge compilation, so the numbers aren't directly comparable). Nice benchmark to finalize against — looking forward to seeing you on the final leaderboard!</p>",
+      "recipient_id": 43,
+      "timestamp": 1787886570,
+      "client": "website",
+      "subject": "New Stage 2 Stress-Test Dataset",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 534
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 551
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 25
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Wenlin Zhang",
+      "sender_email": "user285@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "https://secure.gravatar.com/avatar/87fa48b12d5f812053d0214b9614faa4?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-08-28T03:09:30.000Z"
+    },
+    {
+      "id": 3986,
+      "sender_id": 551,
+      "content": "<p><span class=\"user-mention\" data-user-id=\"285\">@Wenlin Zhang</span> </p>\n<p>Thanks, and thank you for sharing your results too!</p>\n<p>After the 200-problem stress test, I also ran one final full regression over our combined Stage 2 validation set: <strong>2,130 problems aggregated across the available benchmark categories</strong>, all with the exact same solver version.</p>\n<p>Result:<br>\n<strong>2130/2130 solved — 0 failed</strong><br>\n<strong>Total solver time: 7170.1 s</strong><br>\n<strong>Wall-clock: 119m56.7s</strong><br>\nabout <strong>3.37 s/problem</strong> on average.</p>\n<p>Most importantly for me, the entire run was <strong>fully deterministic, zero LLM calls</strong>.</p>\n<p>So the same single-file solver now passes both the 200-problem stress test and this much larger 2,130-problem regression set without a failure.</p>\n<p>Under the hood it has become a fairly hardcore mix of equational rewriting, guided superposition, finite countermodel construction and Lean certificate generation... although I suspect that part may impress the solver more than the leaderboard. <span aria-label=\"smile\" class=\"emoji emoji-1f604\" role=\"img\" title=\"smile\">:smile:</span></p>\n<p>At this point I think I’ve tested it about as hard as I reasonably can before submission.</p>\n<p>See you on the final leaderboard!</p>",
+      "recipient_id": 43,
+      "timestamp": 1787933766,
+      "client": "website",
+      "subject": "New Stage 2 Stress-Test Dataset",
+      "topic_links": [],
+      "last_edit_timestamp": 1787933820,
+      "edit_history": [
+        {
+          "user_id": 551,
+          "timestamp": 1787933820,
+          "prev_content": "@_**Wenlin Zhang|285** [said](https://zulip.sair.foundation/#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/New.20Stage.202.20Stress-Test.20Dataset/near/3974) :\n````quote\n@_**Axabra|551** [said](https://zulip.sair.foundation/#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/New.20Stage.202.20Stress-Test.20Dataset/near/3969):\n```quote\nThank you for the stress-test set!\n\nI had asked for around 100 fresh equations to really test the robustness of our solver before submission, so getting 200 problems matching the final leaderboard distribution was an even better test than expected. :slight_smile:\n\nOur current solver is a single self-contained Python file of about **406 KB**. On the full 200-problem stress test, it reached:\n**200/200 solved - 0 failed**\n**Total solver time: 741.2 s**\n**Wall-clock time: 12m25.6s**\n\nThis was across all four categories, including the Order-5 problems, with Lean-accepted certificates.\n\nWhat was especially satisfying is that it also solved the two particularly stubborn Order-5 residuals we had been working on. Those were the cases that forced us to improve the proof-search architecture rather than simply add more brute force.\n\nAt this point, my main remaining uncertainty is simply whether everything behaves exactly the same in the official evaluation environment. Fingers crossed. :slight_smile:\n\nOne small question about the final leaderboard: in the event of a tie on the number of correctly solved problems, is there any secondary criterion such as **total solving time or submission size**, or is the ranking based strictly on the number of solved problems? Just curious about how ties are handled.\n\nThank you again for providing such a useful benchmark.\n\nNow that “hard” and “extra hard” are behaving rather nicely… any chance of an **ULTRA HARD** experimental category? :wink:\nPurely for science, of course.\n\nGood luck to everyone for the final submissions!\n```\n\nHi, congrats on the clean sweep! We ran the stress test as well: 200/200, all four categories, zero LLM calls, with a single file under 200 KB. Our wall-clock was a bit longer than yours (ours includes per-problem judge compilation, so the numbers aren't directly comparable). Nice benchmark to finalize against — looking forward to seeing you on the final leaderboard!\n````\n\nThanks, and thank you for sharing your results too!\n\nAfter the 200-problem stress test, I also ran one final full regression over our combined Stage 2 validation set: **2,130 problems aggregated across the available benchmark categories**, all with the exact same solver version.\n\nResult:\n**2130/2130 solved — 0 failed**\n**Total solver time: 7170.1 s**\n**Wall-clock: 119m56.7s**\nabout **3.37 s/problem** on average.\n\nMost importantly for me, the entire run was **fully deterministic, zero LLM calls**.\n\nSo the same single-file solver now passes both the 200-problem stress test and this much larger 2,130-problem regression set without a failure.\n\nUnder the hood it has become a fairly hardcore mix of equational rewriting, guided superposition, finite countermodel construction and Lean certificate generation... although I suspect that part may impress the solver more than the leaderboard. 😄\n\nAt this point I think I’ve tested it about as hard as I reasonably can before submission.\n\nSee you on the final leaderboard!",
+          "prev_rendered_content": "<p><span class=\"user-mention silent\" data-user-id=\"285\">Wenlin Zhang</span> <a href=\"#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/New.20Stage.202.20Stress-Test.20Dataset/near/3974\">said</a> :</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"551\">Axabra</span> <a href=\"#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/New.20Stage.202.20Stress-Test.20Dataset/near/3969\">said</a>:</p>\n<blockquote>\n<p>Thank you for the stress-test set!</p>\n<p>I had asked for around 100 fresh equations to really test the robustness of our solver before submission, so getting 200 problems matching the final leaderboard distribution was an even better test than expected. <span aria-label=\"slight smile\" class=\"emoji emoji-1f642\" role=\"img\" title=\"slight smile\">:slight_smile:</span></p>\n<p>Our current solver is a single self-contained Python file of about <strong>406 KB</strong>. On the full 200-problem stress test, it reached:<br>\n<strong>200/200 solved - 0 failed</strong><br>\n<strong>Total solver time: 741.2 s</strong><br>\n<strong>Wall-clock time: 12m25.6s</strong></p>\n<p>This was across all four categories, including the Order-5 problems, with Lean-accepted certificates.</p>\n<p>What was especially satisfying is that it also solved the two particularly stubborn Order-5 residuals we had been working on. Those were the cases that forced us to improve the proof-search architecture rather than simply add more brute force.</p>\n<p>At this point, my main remaining uncertainty is simply whether everything behaves exactly the same in the official evaluation environment. Fingers crossed. <span aria-label=\"slight smile\" class=\"emoji emoji-1f642\" role=\"img\" title=\"slight smile\">:slight_smile:</span></p>\n<p>One small question about the final leaderboard: in the event of a tie on the number of correctly solved problems, is there any secondary criterion such as <strong>total solving time or submission size</strong>, or is the ranking based strictly on the number of solved problems? Just curious about how ties are handled.</p>\n<p>Thank you again for providing such a useful benchmark.</p>\n<p>Now that “hard” and “extra hard” are behaving rather nicely… any chance of an <strong>ULTRA HARD</strong> experimental category? <span aria-label=\"wink\" class=\"emoji emoji-1f609\" role=\"img\" title=\"wink\">:wink:</span><br>\nPurely for science, of course.</p>\n<p>Good luck to everyone for the final submissions!</p>\n</blockquote>\n<p>Hi, congrats on the clean sweep! We ran the stress test as well: 200/200, all four categories, zero LLM calls, with a single file under 200 KB. Our wall-clock was a bit longer than yours (ours includes per-problem judge compilation, so the numbers aren't directly comparable). Nice benchmark to finalize against — looking forward to seeing you on the final leaderboard!</p>\n</blockquote>\n<p>Thanks, and thank you for sharing your results too!</p>\n<p>After the 200-problem stress test, I also ran one final full regression over our combined Stage 2 validation set: <strong>2,130 problems aggregated across the available benchmark categories</strong>, all with the exact same solver version.</p>\n<p>Result:<br>\n<strong>2130/2130 solved — 0 failed</strong><br>\n<strong>Total solver time: 7170.1 s</strong><br>\n<strong>Wall-clock: 119m56.7s</strong><br>\nabout <strong>3.37 s/problem</strong> on average.</p>\n<p>Most importantly for me, the entire run was <strong>fully deterministic, zero LLM calls</strong>.</p>\n<p>So the same single-file solver now passes both the 200-problem stress test and this much larger 2,130-problem regression set without a failure.</p>\n<p>Under the hood it has become a fairly hardcore mix of equational rewriting, guided superposition, finite countermodel construction and Lean certificate generation... although I suspect that part may impress the solver more than the leaderboard. <span aria-label=\"smile\" class=\"emoji emoji-1f604\" role=\"img\" title=\"smile\">:smile:</span></p>\n<p>At this point I think I’ve tested it about as hard as I reasonably can before submission.</p>\n<p>See you on the final leaderboard!</p>"
+        }
+      ],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 25
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 285
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Axabra",
+      "sender_email": "user551@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/cf73ea7486cf166dcb02add5627d389947632feb.png",
+      "content_type": "text/html",
+      "date": "2026-08-28T16:16:06.000Z"
+    }
+  ]
+}
