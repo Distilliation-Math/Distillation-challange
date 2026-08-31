@@ -1,0 +1,214 @@
+{
+  "channel": "Math Distillation Challenge - equational theories",
+  "channel_id": 13,
+  "topic": "3 Days Left: Final Submission Checklist for Stage 2",
+  "message_count": 5,
+  "messages": [
+    {
+      "id": 3991,
+      "sender_id": 25,
+      "content": "<p>Dear participants,</p>\n<p>We hope you have enjoyed exploring the autoformalization of equational theories in Lean 4 through the Mathematics Distillation Challenge - Stage 2.</p>\n<p>Around three days remain until the submission ends. Here is a final checklist before the submission deadline:</p>\n<p><strong>1. Submit through the SAIR competition platform</strong></p>\n<p>Please submit your final solver through the competition platform:<br>\n<a href=\"https://competition.sair.foundation/competitions/mathematics-distillation-challenge-equational-theories-stage2/overview\">https://competition.sair.foundation/competitions/mathematics-distillation-challenge-equational-theories-stage2/overview</a></p>\n<p>Do not submit through the Playground. The Playground is for testing only, and submissions made there will not count as official competition submissions.</p>\n<p>When submitting:</p>\n<ul>\n<li>Select your track: Solo or Marathon.</li>\n<li>Select your model: gemma4-31b or gpt-oss-120b.</li>\n<li>Each participant may submit up to four solvers in total.</li>\n<li>Final results will be reported on four separate leaderboards, one for each track-model combination.</li>\n</ul>\n<p>Please also use the Submission Note to provide relevant details:</p>\n<ul>\n<li>If your solver includes compressed data or binary blobs, describe what they contain and how they were generated.</li>\n<li>If your submission draws on work from the Contributor Network or another open-source project, please identify the source.</li>\n</ul>\n<p><strong>2. Test your solvers</strong></p>\n<p>The Playground may be busy as the deadline approaches. For faster testing and iteration, we recommend setting up the Lean 4 environment locally.</p>\n<p>The evaluation environment uses Lean v4.33.1 and Mathlib v4.33.1.</p>\n<p>Evaluation specifications:<br>\n<a href=\"https://playground.sair.foundation/playground/mathematics-distillation-challenge-equational-theories-stage2/official-evaluation-spec\">https://playground.sair.foundation/playground/mathematics-distillation-challenge-equational-theories-stage2/official-evaluation-spec</a></p>\n<p>Official repository:<br>\n<a href=\"https://github.com/SAIRcompetition/equational-theories-lean-stage2\">https://github.com/SAIRcompetition/equational-theories-lean-stage2</a></p>\n<p><strong>3. Review the test datasets</strong></p>\n<p>Reference problems are available on Hugging Face:<br>\n<a href=\"https://huggingface.co/datasets/SAIRfoundation/equational-theories-selected-problems\">https://huggingface.co/datasets/SAIRfoundation/equational-theories-selected-problems</a></p>\n<p>We have also prepared a Stage 2 stress-test dataset containing 200 problems across four categories:</p>\n<ul>\n<li>order4_normal</li>\n<li>order4_hard</li>\n<li>order4_extra_hard</li>\n<li>order5_normal</li>\n</ul>\n<p>Each category contains 50 problems: 25 true and 25 false. Each problem is worth one point. The final main leaderboard evaluation will use the same category distribution and scoring configuration.</p>\n<p>Stage 2 stress-test dataset:<br>\n<a href=\"https://huggingface.co/datasets/SAIRfoundation/equational-theories-selected-problems/viewer/stage2_stress_test\">https://huggingface.co/datasets/SAIRfoundation/equational-theories-selected-problems/viewer/stage2_stress_test</a></p>\n<p>Some participants have already achieved 100% accuracy on the standard problem sets, so we have also prepared an experimental order5_hard dataset for further research and testing. Some problems have unknown ground truth, and this dataset will not be used for the main leaderboard.</p>\n<p>Experimental Order-5 Hard dataset:<br>\n<a href=\"https://huggingface.co/datasets/SAIRfoundation/equational-theories-selected-problems/viewer/research_order5_hard\">https://huggingface.co/datasets/SAIRfoundation/equational-theories-selected-problems/viewer/research_order5_hard</a></p>\n<p>Thank you for supporting SAIR Competitions and for all the excellent suggestions and feedback. Community feedback continues to drive our work.</p>\n<p>We also welcome you to join our upcoming competitions. The Lean Kernel Challenge, co-organized with Lean FRO, will officially launch on September 15.</p>\n<p>Enjoy the competition, and good luck with your submissions! <span aria-label=\"tada\" class=\"emoji emoji-1f389\" role=\"img\" title=\"tada\">:tada:</span></p>",
+      "recipient_id": 43,
+      "timestamp": 1787948479,
+      "client": "ZulipElectron",
+      "subject": "3 Days Left: Final Submission Checklist for Stage 2",
+      "topic_links": [],
+      "last_edit_timestamp": 1787948626,
+      "edit_history": [
+        {
+          "user_id": 25,
+          "timestamp": 1787948893,
+          "prev_topic": "3 Days Left: Final Submission Checklist",
+          "topic": "3 Days Left: Final Submission Checklist for Stage 2"
+        },
+        {
+          "user_id": 25,
+          "timestamp": 1787948626,
+          "prev_content": "Dear participants,\n\nWe hope you have enjoyed exploring the autoformalization of equational theories in Lean 4 through the Mathematics Distillation Challenge - Stage 2.\n\nAround three days remain until the submission ends. Here is a final checklist before the submission deadline:\n\n**1. Submit through the SAIR competition platform**\n\nPlease submit your final solver through the competition platform:\nhttps://competition.sair.foundation/competitions/mathematics-distillation-challenge-equational-theories-stage2/overview\n\nDo not submit through the Playground. The Playground is for testing only.\n\nWhen submitting:\n\n- Select your track: Solo or Marathon.\n- Select your model: gemma4-31b or gpt-oss-120b.\n- Each participant may submit up to four solvers in total.\n- Final results will be reported on four separate leaderboards, one for each track-model combination.\n\nPlease also use the Submission Note to provide relevant details:\n\n- If your solver includes compressed data or binary blobs, describe what they contain and how they were generated.\n- If your submission draws on work from the Contributor Network or another open-source project, please identify the source.\n\n**2. Test your solvers**\n\nThe Playground may be busy as the deadline approaches. For faster testing and iteration, we recommend setting up the Lean 4 environment locally.\n\nThe evaluation environment uses Lean v4.33.1 and Mathlib v4.33.1.\n\nEvaluation specifications:\nhttps://playground.sair.foundation/playground/mathematics-distillation-challenge-equational-theories-stage2/official-evaluation-spec\n\nOfficial repository:\nhttps://github.com/SAIRcompetition/equational-theories-lean-stage2\n\n**3. Review the test datasets**\n\nReference problems are available on Hugging Face:\nhttps://huggingface.co/datasets/SAIRfoundation/equational-theories-selected-problems\n\nWe have also prepared a Stage 2 stress-test dataset containing 200 problems across four categories:\n\n- order4_normal\n- order4_hard\n- order4_extra_hard\n- order5_normal\n\nEach category contains 50 problems: 25 true and 25 false. Each problem is worth one point. The final main leaderboard evaluation will use the same category distribution and scoring configuration.\n\nStage 2 stress-test dataset:\nhttps://huggingface.co/datasets/SAIRfoundation/equational-theories-selected-problems/viewer/stage2_stress_test\n\nSome participants have already achieved 100% accuracy on the standard problem sets, so we have also prepared an experimental order5_hard dataset for further research and testing. Some problems have unknown ground truth, and this dataset will not be used for the main leaderboard.\n\nExperimental Order-5 Hard dataset:\nhttps://huggingface.co/datasets/SAIRfoundation/equational-theories-selected-problems/viewer/research_order5_hard\n\nThank you for supporting SAIR Competitions and for all the excellent suggestions and feedback. Community feedback continues to drive our work.\n\nWe also welcome you to join our upcoming competitions. The Lean Kernel Challenge, co-organized with Lean FRO, will officially launch on September 15.\n\nEnjoy the competition, and good luck with your submissions! :tada:",
+          "prev_rendered_content": "<p>Dear participants,</p>\n<p>We hope you have enjoyed exploring the autoformalization of equational theories in Lean 4 through the Mathematics Distillation Challenge - Stage 2.</p>\n<p>Around three days remain until the submission ends. Here is a final checklist before the submission deadline:</p>\n<p><strong>1. Submit through the SAIR competition platform</strong></p>\n<p>Please submit your final solver through the competition platform:<br>\n<a href=\"https://competition.sair.foundation/competitions/mathematics-distillation-challenge-equational-theories-stage2/overview\">https://competition.sair.foundation/competitions/mathematics-distillation-challenge-equational-theories-stage2/overview</a></p>\n<p>Do not submit through the Playground. The Playground is for testing only.</p>\n<p>When submitting:</p>\n<ul>\n<li>Select your track: Solo or Marathon.</li>\n<li>Select your model: gemma4-31b or gpt-oss-120b.</li>\n<li>Each participant may submit up to four solvers in total.</li>\n<li>Final results will be reported on four separate leaderboards, one for each track-model combination.</li>\n</ul>\n<p>Please also use the Submission Note to provide relevant details:</p>\n<ul>\n<li>If your solver includes compressed data or binary blobs, describe what they contain and how they were generated.</li>\n<li>If your submission draws on work from the Contributor Network or another open-source project, please identify the source.</li>\n</ul>\n<p><strong>2. Test your solvers</strong></p>\n<p>The Playground may be busy as the deadline approaches. For faster testing and iteration, we recommend setting up the Lean 4 environment locally.</p>\n<p>The evaluation environment uses Lean v4.33.1 and Mathlib v4.33.1.</p>\n<p>Evaluation specifications:<br>\n<a href=\"https://playground.sair.foundation/playground/mathematics-distillation-challenge-equational-theories-stage2/official-evaluation-spec\">https://playground.sair.foundation/playground/mathematics-distillation-challenge-equational-theories-stage2/official-evaluation-spec</a></p>\n<p>Official repository:<br>\n<a href=\"https://github.com/SAIRcompetition/equational-theories-lean-stage2\">https://github.com/SAIRcompetition/equational-theories-lean-stage2</a></p>\n<p><strong>3. Review the test datasets</strong></p>\n<p>Reference problems are available on Hugging Face:<br>\n<a href=\"https://huggingface.co/datasets/SAIRfoundation/equational-theories-selected-problems\">https://huggingface.co/datasets/SAIRfoundation/equational-theories-selected-problems</a></p>\n<p>We have also prepared a Stage 2 stress-test dataset containing 200 problems across four categories:</p>\n<ul>\n<li>order4_normal</li>\n<li>order4_hard</li>\n<li>order4_extra_hard</li>\n<li>order5_normal</li>\n</ul>\n<p>Each category contains 50 problems: 25 true and 25 false. Each problem is worth one point. The final main leaderboard evaluation will use the same category distribution and scoring configuration.</p>\n<p>Stage 2 stress-test dataset:<br>\n<a href=\"https://huggingface.co/datasets/SAIRfoundation/equational-theories-selected-problems/viewer/stage2_stress_test\">https://huggingface.co/datasets/SAIRfoundation/equational-theories-selected-problems/viewer/stage2_stress_test</a></p>\n<p>Some participants have already achieved 100% accuracy on the standard problem sets, so we have also prepared an experimental order5_hard dataset for further research and testing. Some problems have unknown ground truth, and this dataset will not be used for the main leaderboard.</p>\n<p>Experimental Order-5 Hard dataset:<br>\n<a href=\"https://huggingface.co/datasets/SAIRfoundation/equational-theories-selected-problems/viewer/research_order5_hard\">https://huggingface.co/datasets/SAIRfoundation/equational-theories-selected-problems/viewer/research_order5_hard</a></p>\n<p>Thank you for supporting SAIR Competitions and for all the excellent suggestions and feedback. Community feedback continues to drive our work.</p>\n<p>We also welcome you to join our upcoming competitions. The Lean Kernel Challenge, co-organized with Lean FRO, will officially launch on September 15.</p>\n<p>Enjoy the competition, and good luck with your submissions! <span aria-label=\"tada\" class=\"emoji emoji-1f389\" role=\"img\" title=\"tada\">:tada:</span></p>"
+        },
+        {
+          "user_id": 25,
+          "timestamp": 1787948530,
+          "prev_content": "Dear participants,\n\nWe hope you have enjoyed exploring the autoformalization of equational theories in Lean 4 through the Mathematics Distillation Challenge - Stage 2.\n\nAround three days remain until the submission ends. Here is a final checklist before the submission deadline:\n\n1. Submit through the competition platform\n\nPlease submit your final solver through the competition platform:\nhttps://competition.sair.foundation/competitions/mathematics-distillation-challenge-equational-theories-stage2/overview\n\nDo not submit through the Playground. The Playground is for testing only.\n\nWhen submitting:\n\n- Select your track: Solo or Marathon.\n- Select your model: gemma4-31b or gpt-oss-120b.\n- Each participant may submit up to four solvers in total.\n- Final results will be reported on four separate leaderboards, one for each track-model combination.\n\nPlease also use the Submission Note to provide relevant details:\n\n- If your solver includes compressed data or binary blobs, describe what they contain and how they were generated.\n- If your submission draws on work from the Contributor Network or another open-source project, please identify the source.\n\n2. Test your solvers\n\nThe Playground may be busy as the deadline approaches. For faster testing and iteration, we recommend setting up the Lean 4 environment locally.\n\nThe evaluation environment uses Lean v4.33.1 and Mathlib v4.33.1.\n\nEvaluation specifications:\nhttps://playground.sair.foundation/playground/mathematics-distillation-challenge-equational-theories-stage2/official-evaluation-spec\n\nOfficial repository:\nhttps://github.com/SAIRcompetition/equational-theories-lean-stage2\n\n3. Review the test datasets\n\nReference problems are available on Hugging Face:\nhttps://huggingface.co/datasets/SAIRfoundation/equational-theories-selected-problems\n\nWe have also prepared a Stage 2 stress-test dataset containing 200 problems across four categories:\n\n- order4_normal\n- order4_hard\n- order4_extra_hard\n- order5_normal\n\nEach category contains 50 problems: 25 true and 25 false. Each problem is worth one point. The final main leaderboard evaluation will use the same category distribution and scoring configuration.\n\nStage 2 stress-test dataset:\nhttps://huggingface.co/datasets/SAIRfoundation/equational-theories-selected-problems/viewer/stage2_stress_test\n\nSome participants have already achieved 100% accuracy on the standard problem sets, so we have also prepared an experimental order5_hard dataset for further research and testing. Some problems have unknown ground truth, and this dataset will not be used for the main leaderboard.\n\nExperimental Order-5 Hard dataset:\nhttps://huggingface.co/datasets/SAIRfoundation/equational-theories-selected-problems/viewer/research_order5_hard\n\nThank you for supporting SAIR Competitions and for all the excellent suggestions and feedback. Community feedback continues to drive our work.\n\nWe also welcome you to join our upcoming competitions. The Lean Kernel Challenge, co-organized with Lean FRO, will officially launch on September 15.\n\nEnjoy the competition, and good luck with your submissions! :tada:",
+          "prev_rendered_content": "<p>Dear participants,</p>\n<p>We hope you have enjoyed exploring the autoformalization of equational theories in Lean 4 through the Mathematics Distillation Challenge - Stage 2.</p>\n<p>Around three days remain until the submission ends. Here is a final checklist before the submission deadline:</p>\n<ol>\n<li>Submit through the competition platform</li>\n</ol>\n<p>Please submit your final solver through the competition platform:<br>\n<a href=\"https://competition.sair.foundation/competitions/mathematics-distillation-challenge-equational-theories-stage2/overview\">https://competition.sair.foundation/competitions/mathematics-distillation-challenge-equational-theories-stage2/overview</a></p>\n<p>Do not submit through the Playground. The Playground is for testing only.</p>\n<p>When submitting:</p>\n<ul>\n<li>Select your track: Solo or Marathon.</li>\n<li>Select your model: gemma4-31b or gpt-oss-120b.</li>\n<li>Each participant may submit up to four solvers in total.</li>\n<li>Final results will be reported on four separate leaderboards, one for each track-model combination.</li>\n</ul>\n<p>Please also use the Submission Note to provide relevant details:</p>\n<ul>\n<li>If your solver includes compressed data or binary blobs, describe what they contain and how they were generated.</li>\n<li>If your submission draws on work from the Contributor Network or another open-source project, please identify the source.</li>\n</ul>\n<ol start=\"2\">\n<li>Test your solvers</li>\n</ol>\n<p>The Playground may be busy as the deadline approaches. For faster testing and iteration, we recommend setting up the Lean 4 environment locally.</p>\n<p>The evaluation environment uses Lean v4.33.1 and Mathlib v4.33.1.</p>\n<p>Evaluation specifications:<br>\n<a href=\"https://playground.sair.foundation/playground/mathematics-distillation-challenge-equational-theories-stage2/official-evaluation-spec\">https://playground.sair.foundation/playground/mathematics-distillation-challenge-equational-theories-stage2/official-evaluation-spec</a></p>\n<p>Official repository:<br>\n<a href=\"https://github.com/SAIRcompetition/equational-theories-lean-stage2\">https://github.com/SAIRcompetition/equational-theories-lean-stage2</a></p>\n<ol start=\"3\">\n<li>Review the test datasets</li>\n</ol>\n<p>Reference problems are available on Hugging Face:<br>\n<a href=\"https://huggingface.co/datasets/SAIRfoundation/equational-theories-selected-problems\">https://huggingface.co/datasets/SAIRfoundation/equational-theories-selected-problems</a></p>\n<p>We have also prepared a Stage 2 stress-test dataset containing 200 problems across four categories:</p>\n<ul>\n<li>order4_normal</li>\n<li>order4_hard</li>\n<li>order4_extra_hard</li>\n<li>order5_normal</li>\n</ul>\n<p>Each category contains 50 problems: 25 true and 25 false. Each problem is worth one point. The final main leaderboard evaluation will use the same category distribution and scoring configuration.</p>\n<p>Stage 2 stress-test dataset:<br>\n<a href=\"https://huggingface.co/datasets/SAIRfoundation/equational-theories-selected-problems/viewer/stage2_stress_test\">https://huggingface.co/datasets/SAIRfoundation/equational-theories-selected-problems/viewer/stage2_stress_test</a></p>\n<p>Some participants have already achieved 100% accuracy on the standard problem sets, so we have also prepared an experimental order5_hard dataset for further research and testing. Some problems have unknown ground truth, and this dataset will not be used for the main leaderboard.</p>\n<p>Experimental Order-5 Hard dataset:<br>\n<a href=\"https://huggingface.co/datasets/SAIRfoundation/equational-theories-selected-problems/viewer/research_order5_hard\">https://huggingface.co/datasets/SAIRfoundation/equational-theories-selected-problems/viewer/research_order5_hard</a></p>\n<p>Thank you for supporting SAIR Competitions and for all the excellent suggestions and feedback. Community feedback continues to drive our work.</p>\n<p>We also welcome you to join our upcoming competitions. The Lean Kernel Challenge, co-organized with Lean FRO, will officially launch on September 15.</p>\n<p>Enjoy the competition, and good luck with your submissions! <span aria-label=\"tada\" class=\"emoji emoji-1f389\" role=\"img\" title=\"tada\">:tada:</span></p>"
+        }
+      ],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "heart",
+          "emoji_code": "2764",
+          "reaction_type": "unicode_emoji",
+          "user_id": 534
+        },
+        {
+          "emoji_name": "heart",
+          "emoji_code": "2764",
+          "reaction_type": "unicode_emoji",
+          "user_id": 323
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "last_moved_timestamp": 1787948893,
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-08-28T20:21:19.000Z"
+    },
+    {
+      "id": 3994,
+      "sender_id": 189,
+      "content": "<p>Thanks for organizing! One question on evaluation, how will you rank tied solvers? Is total/avg time the best metric? I am having a hard time choosing between optimizing for time or generalization strength. I also published a solver on the contribution network (claudev5) , it is 100% accurate on the current Playground problem set.</p>",
+      "recipient_id": 43,
+      "timestamp": 1787950492,
+      "client": "website",
+      "subject": "3 Days Left: Final Submission Checklist for Stage 2",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Juan Padilla",
+      "sender_email": "user189@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/fcb053e7652b28fb436e535e09531905814b0206.png",
+      "content_type": "text/html",
+      "date": "2026-08-28T20:54:52.000Z"
+    },
+    {
+      "id": 3996,
+      "sender_id": 25,
+      "content": "<p><span class=\"user-mention\" data-user-id=\"189\">@Juan Padilla</span> Congratulations! Let me discuss with the co-organizers and get back to you. Thanks!</p>",
+      "recipient_id": 43,
+      "timestamp": 1787953916,
+      "client": "ZulipElectron",
+      "subject": "3 Days Left: Final Submission Checklist for Stage 2",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-08-28T21:51:56.000Z"
+    },
+    {
+      "id": 4002,
+      "sender_id": 551,
+      "content": "<p><span class=\"user-mention\" data-user-id=\"25\">@YZ</span>  I would personally suggest not using execution time as the main tie-breaker.</p>\n<p>Runtime can depend quite heavily on hardware-specific optimizations, multiprocessing strategy, number of available cores, process scheduling, memory behaviour, and the exact judge environment. It is difficult to optimize these aspects reliably without having access to the actual evaluation machine.</p>\n<p>In my case, I deliberately did not push multiprocessing very aggressively, even though there are clear opportunities to do so, because I preferred robustness and did not want to risk overloading or destabilizing the judge machine.</p>\n<p>So two solvers with essentially the same mathematical capability could end up with noticeably different runtimes simply because one was more aggressively tuned for parallel execution.</p>\n<p>Of course, runtime is still useful as an operational metric, but I would be cautious about making it the decisive ranking criterion in a tie.</p>",
+      "recipient_id": 43,
+      "timestamp": 1788002355,
+      "client": "website",
+      "subject": "3 Days Left: Final Submission Checklist for Stage 2",
+      "topic_links": [],
+      "last_edit_timestamp": 1788002378,
+      "edit_history": [
+        {
+          "user_id": 551,
+          "timestamp": 1788002378,
+          "prev_content": "I would personally suggest not using execution time as the main tie-breaker.\n\nRuntime can depend quite heavily on hardware-specific optimizations, multiprocessing strategy, number of available cores, process scheduling, memory behaviour, and the exact judge environment. It is difficult to optimize these aspects reliably without having access to the actual evaluation machine.\n\nIn my case, I deliberately did not push multiprocessing very aggressively, even though there are clear opportunities to do so, because I preferred robustness and did not want to risk overloading or destabilizing the judge machine.\n\nSo two solvers with essentially the same mathematical capability could end up with noticeably different runtimes simply because one was more aggressively tuned for parallel execution.\n\nOf course, runtime is still useful as an operational metric, but I would be cautious about making it the decisive ranking criterion in a tie.",
+          "prev_rendered_content": "<p>I would personally suggest not using execution time as the main tie-breaker.</p>\n<p>Runtime can depend quite heavily on hardware-specific optimizations, multiprocessing strategy, number of available cores, process scheduling, memory behaviour, and the exact judge environment. It is difficult to optimize these aspects reliably without having access to the actual evaluation machine.</p>\n<p>In my case, I deliberately did not push multiprocessing very aggressively, even though there are clear opportunities to do so, because I preferred robustness and did not want to risk overloading or destabilizing the judge machine.</p>\n<p>So two solvers with essentially the same mathematical capability could end up with noticeably different runtimes simply because one was more aggressively tuned for parallel execution.</p>\n<p>Of course, runtime is still useful as an operational metric, but I would be cautious about making it the decisive ranking criterion in a tie.</p>"
+        }
+      ],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 285
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 534
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 289
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Axabra",
+      "sender_email": "user551@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/cf73ea7486cf166dcb02add5627d389947632feb.png",
+      "content_type": "text/html",
+      "date": "2026-08-29T11:19:15.000Z"
+    },
+    {
+      "id": 4007,
+      "sender_id": 534,
+      "content": "<p><span class=\"user-mention silent\" data-user-id=\"551\">Axabra</span> <a href=\"#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/3.20Days.20Left.3A.20Final.20Submission.20Checklist.20for.20Stage.202/near/4002\">said</a>:</p>\n<blockquote>\n<p><span class=\"user-mention silent\" data-user-id=\"25\">YZ</span>  I would personally suggest not using execution time as the main tie-breaker.</p>\n<p>Runtime can depend quite heavily on hardware-specific optimizations, multiprocessing strategy, number of available cores, process scheduling, memory behaviour, and the exact judge environment. It is difficult to optimize these aspects reliably without having access to the actual evaluation machine.</p>\n<p>In my case, I deliberately did not push multiprocessing very aggressively, even though there are clear opportunities to do so, because I preferred robustness and did not want to risk overloading or destabilizing the judge machine.</p>\n<p>So two solvers with essentially the same mathematical capability could end up with noticeably different runtimes simply because one was more aggressively tuned for parallel execution.</p>\n<p>Of course, runtime is still useful as an operational metric, but I would be cautious about making it the decisive ranking criterion in a tie.</p>\n</blockquote>\n<p>I agree with your point. Code size and runtime are constraints imposed by the competition rules, but the primary evaluation criterion should be a solver’s problem-solving capability, especially its performance on unseen problem distributions. I’d like to suggest that, when several highly ranked teams solve the same number of problems on the main leaderboard, the tie-breaking evaluation should place greater emphasis on solver generalization—especially performance on higher-order or genuinely harder problems.</p>\n<p>One possible approach would be to generate an additional hidden test set through random sampling, then filter out problems that are already easy for standard methods. For example, problems with countermodels of order 2 or 3, as well as obviously implied statements on the true side, could be excluded. The remaining problems would provide a more meaningful test of whether a solver has learned broadly useful mathematical strategies rather than simply optimized for the current benchmark distribution.</p>\n<p>The current results also suggest that top-ranked solvers can answer most ordinary problems very quickly. Therefore, the time cost of an additional evaluation may be lower than it initially appears, making it practical to use a reasonably large extra test set. A larger sample would also reduce variance and provide a more reliable comparison of generalization.</p>\n<p>In my view, generalization is the central goal of mathematical distillation and should therefore be the most important capability used to distinguish tied systems. Runtime alone may not be an ideal measure of solver quality, particularly for teams whose methods genuinely use LLM inference. It can also unintentionally encourage highly benchmark-specific engineering, such as pre-recording answer types for many known problems and then generating targeted Lean certificates, instead of developing methods that transfer to unfamiliar equations.</p>\n<p>This is not meant to discount efficiency, which is still valuable. I only suggest that, for top-level ties, performance on a carefully constructed set of harder, unseen problems should carry more weight than small runtime differences. I believe this would better reflect the scientific purpose of the competition and reward solvers with stronger mathematical generalization.</p>",
+      "recipient_id": 43,
+      "timestamp": 1788015261,
+      "client": "website",
+      "subject": "3 Days Left: Final Submission Checklist for Stage 2",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 551
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 534
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "ZplusM",
+      "sender_email": "user534@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/6d2078d216d3217a0400a0a0c2ffa1ab4d716676.png",
+      "content_type": "text/html",
+      "date": "2026-08-29T14:54:21.000Z"
+    }
+  ]
+}
