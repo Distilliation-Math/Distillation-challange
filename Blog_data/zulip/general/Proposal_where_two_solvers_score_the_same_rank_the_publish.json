@@ -1,0 +1,258 @@
+{
+  "channel": "general",
+  "channel_id": 9,
+  "topic": "Proposal: where two solvers score the same, rank the publish",
+  "message_count": 8,
+  "messages": [
+    {
+      "id": 4003,
+      "sender_id": 582,
+      "content": "<p>Hi,<br>\nthe top of the board is saturated so a tie-break is needed.</p>\n<p>My suggestion: where two solvers score the same, rank the published one higher.</p>\n<p>The scoring rule and the Contributor Network pull in opposite directions: as a consequence, in Stage 2 and filtering the official demos and the template posts from the opening week, I noticed that</p>\n<p><strong>of 285 participants just 7 or 8 published so far, and neither of the 2 who reported 200/200 on the stress test is among them</strong></p>\n<p>I am at 55/200, so I am not tied and this cannot change my placement.</p>\n<p>If it is taken up, announce before the deadline: rewarding publication is only fair to people who still have time.</p>\n<p>Disclosure: my solver and its analysis were produced by an AI agent (Claude) under my direction.</p>",
+      "recipient_id": 24,
+      "timestamp": 1788008804,
+      "client": "website",
+      "subject": "Proposal: where two solvers score the same, rank the publish",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "plus",
+          "emoji_code": "2795",
+          "reaction_type": "unicode_emoji",
+          "user_id": 274
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Carlo Perassi",
+      "sender_email": "user582@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "/user_avatars/5/40e951d14ef7d2da78c6f6b3853f2982daa6365c.png",
+      "content_type": "text/html",
+      "date": "2026-08-29T13:06:44.000Z"
+    },
+    {
+      "id": 4006,
+      "sender_id": 285,
+      "content": "<p>Hi, one of the two 200/200 stress-test reports here — figured I should say hello rather than stay a number on a list :)</p>\n<p>On the tie-break idea: I'd personally leave the ranking to the announced scoring, since teams time their releases for all kinds of reasons. In our case it's simply that the solver belongs to a bigger piece of work we want to present properly — we're preparing an arXiv system-description paper for right after the competition closes, and the repository will come with it.</p>\n<p>Since you brought up publication, maybe some context on where our result comes from. Our group has been working on Lean formalization for quite a while: we develop <a href=\"https://github.com/the-omega-institute/trureturing\">trureturing</a>, an open framework where a mathematical claim only counts as truth once it is frozen as a kernel-checked Lean proof, and there are years of machine-generated, kernel-verified mathematics behind it. So Stage 2's certificate format felt like home ground for us — the solver is really that accumulated experience compressed into one file. Happy to talk more once everything is out.</p>",
+      "recipient_id": 24,
+      "timestamp": 1788014746,
+      "client": "website",
+      "subject": "Proposal: where two solvers score the same, rank the publish",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 534
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 117
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 551
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Wenlin Zhang",
+      "sender_email": "user285@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "https://secure.gravatar.com/avatar/87fa48b12d5f812053d0214b9614faa4?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-08-29T14:45:46.000Z"
+    },
+    {
+      "id": 4008,
+      "sender_id": 582,
+      "content": "<p>Thanks for saying hello :)<br>\nRight objection.<br>\nA binary rule would penalize your case.<br>\nThe rule can't tell your case from withholding: enough to drop it.<br>\nI'd take you up on talking once you're out.</p>\n<p>Different end: my solver only refutes and scores 55/200, but the corpus behind it measures the ETP graph rather than solving it. A greedy cover over all 13,855,357 false implications, the exact split of the 1062 Vampire-unresolved ones into 610 infinite-only / 450 finite / 2 open, and 19,522 order-5 laws usable as an oracle. Possibly useful context for a system-description paper, and I'd rather hand it over than have you recompute it.</p>\n<p>trureturing looks like the thing I'd have wanted to know existed a while ago.</p>",
+      "recipient_id": 24,
+      "timestamp": 1788016229,
+      "client": "website",
+      "subject": "Proposal: where two solvers score the same, rank the publish",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Carlo Perassi",
+      "sender_email": "user582@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "/user_avatars/5/40e951d14ef7d2da78c6f6b3853f2982daa6365c.png",
+      "content_type": "text/html",
+      "date": "2026-08-29T15:10:29.000Z"
+    },
+    {
+      "id": 4009,
+      "sender_id": 285,
+      "content": "<p>Thank you, that's a really kind offer. Your measurements would genuinely help us — especially the 610 / 450 / 2 split of the Vampire-unresolved implications, which speaks directly to questions we kept running into from the solving side.</p>\n<p>Once the competition is over and everything is out, let's sit down and see whether there's room for something together — a joint paper, or at least a good exchange of notes. Looking forward to it.</p>\n<p>Since trureturing caught your eye, a bit more about it. It's our append-only truth ledger for machine-written mathematics: a proposition is only admitted after kernel verification — zero sorry, no native_decide, and the axiom closure of every declaration must stay inside {propext, Classical.choice, Quot.sound}. Once a module is frozen it is never rewritten; later work can import it but can't reach back and change it, so the ledger only ever grows. Everything frozen so far is content-addressed and kernel-checked — the current ledger includes a golden-integer tower (unit group ≃* ℤ × Multiplicative (ZMod 2), Fibonacci/Lucas bridges, prime splitting mod 5) and zeta–Gibbs / entropy nodes. The Stage 2 solver really grew out of this discipline: producing certificates the kernel will accept is what we'd already been doing every day.</p>\n<p>Repo: <a href=\"http://github.com/the-omega-institute/trureturing\">github.com/the-omega-institute/trureturing</a> — there's also a browsable version of the blueprint at <a href=\"http://the-omega-institute.github.io/trureturing-mdbook/\">the-omega-institute.github.io/trureturing-mdbook/</a>. Issues and PRs are open, and we'd love to see more people from the Lean community involved. If your corpus ever surfaces statements worth freezing, that would be a lovely place for them to live.</p>",
+      "recipient_id": 24,
+      "timestamp": 1788017943,
+      "client": "website",
+      "subject": "Proposal: where two solvers score the same, rank the publish",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Wenlin Zhang",
+      "sender_email": "user285@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "https://secure.gravatar.com/avatar/87fa48b12d5f812053d0214b9614faa4?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-08-29T15:39:03.000Z"
+    },
+    {
+      "id": 4010,
+      "sender_id": 582,
+      "content": "<p>Glad it's useful: the split is yours whenever you want it, competition or no.</p>\n<p>First, something I should have said when I wrote that trureturing looked like something I'd wanted to exist:</p>\n<p>1)<br>\n<a href=\"http://github.com/carlok/LeanFrontier\">github.com/carlok/LeanFrontier</a><br>\nwhich is \"a Lean 4 library of machine-generated, kernel-verified mathematics\" is close enough to your own description that we've apparently built the same thing without knowing. <span aria-label=\"grinning\" class=\"emoji emoji-1f600\" role=\"img\" title=\"grinning\">:grinning:</span></p>\n<p>Different emphasis: mine is a corpus with an automated upgrade pipeline (it moved itself to Mathlib v4.33.1 last week, re-auditing 114 entrypoints and replaying the kernel before opening its own PR), while yours is the append-only ledger discipline. Those seem more complementary than overlapping.</p>\n<p>Your axiom policy is the same one I've been working under: zero sorry, no native_decide, closure inside {propext, Classical.choice, Quot.sound}. Every file I compiled this week satisfies it already, which makes the fit easy.</p>\n<p>On freezing: honest answer is mostly no, so far. What my corpus produces in Lean mostly reproves what ETP already has — finite counterexamples with the right axiom closure, but not new statements. Worth saying rather than inventing candidates.</p>\n<p>One exception. I have a negative I can't find recorded anywhere: no constant-coefficient abelian extension of a base magma by (Z/p)^k separates a specific 23 of the ETP hard-core pairs (decided rather than searched) across 661,142 fibre candidates. Right now it's a computation, not a theorem. That seems like the sort of thing a ledger is for: nobody publishes negatives about construction families, so everyone recomputes them. <span aria-label=\"smiley\" class=\"emoji emoji-1f603\" role=\"img\" title=\"smiley\">:smiley:</span></p>\n<p>2)<br>\nAnd the link I should have given, since I offered the data and then didn't say where it lives:</p>\n<p><a href=\"http://github.com/carlok/parsimagma\">github.com/carlok/parsimagma</a><br>\nthe split is docs/infinite-only-exact.md, the ATP cliff is docs/atp-control.md, the order-5 measurement is docs/order5-first-map.md. Apache-2.0, take what's useful. I'm more than happy if you use it.</p>\n<p>After the deadline then. I'd rather see what your paper needs before deciding what shape anything joint takes.</p>\n<p>3)<br>\nGood luck with this competition. <span aria-label=\"wink\" class=\"emoji emoji-1f609\" role=\"img\" title=\"wink\">:wink:</span></p>",
+      "recipient_id": 24,
+      "timestamp": 1788020284,
+      "client": "website",
+      "subject": "Proposal: where two solvers score the same, rank the publish",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Carlo Perassi",
+      "sender_email": "user582@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "/user_avatars/5/40e951d14ef7d2da78c6f6b3853f2982daa6365c.png",
+      "content_type": "text/html",
+      "date": "2026-08-29T16:18:04.000Z"
+    },
+    {
+      "id": 4011,
+      "sender_id": 551,
+      "content": "<p>Hi , I suspect I may be one of the people concerned here <span aria-label=\"smile\" class=\"emoji emoji-1f604\" role=\"img\" title=\"smile\">:smile:</span></p>\n<p>Just for context: I registered for this challenge and started coding for it last Tuesday. Before that, I had never worked with magma identities, the ◇ notation, or Lean. So I am a complete newcomer to this particular field, although not to recursive algorithms, structural search, and lattice-based reasoning.</p>\n<p>My solver is fully deterministic: no LLM calls, no sampling, and no stochastic search. It also takes what I believe is a genuinely unusual route, and I am currently developing a broader theoretical generalization around it. That is also why I have not published it yet: the work is still evolving very quickly, and I would rather present it coherently than release an unfinished snapshot. I will keep the details for later.</p>\n<p>Of course, 200/200 only means 200/200 on the published stress test. Nobody, including me, can certify 100% performance on an unseen final dataset. Everyone still has a real chance.</p>\n<p>More generally, my personal view is that current AI systems cannot autonomously solve problems of this kind, even when supplied with strong theoretical foundations. Their learned representations remain constrained by the training distribution, autoregressive objective, inductive biases, and familiar inference basins. I would have many suggestions for AI researchers but that is another conversation <span aria-label=\"smile\" class=\"emoji emoji-1f604\" role=\"img\" title=\"smile\">:smile:</span></p>\n<p>For now, I am simply enjoying the fact that last week I did not speak Lean, and diamonds were still mostly jewellery to me. Good luck to everyone!</p>",
+      "recipient_id": 24,
+      "timestamp": 1788036149,
+      "client": "website",
+      "subject": "Proposal: where two solvers score the same, rank the publish",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Axabra",
+      "sender_email": "user551@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "/user_avatars/5/cf73ea7486cf166dcb02add5627d389947632feb.png",
+      "content_type": "text/html",
+      "date": "2026-08-29T20:42:29.000Z"
+    },
+    {
+      "id": 4012,
+      "sender_id": 582,
+      "content": "<p>Hi, yes: as I said to Wenlin, I dropped the proposal.</p>\n<p>Full disclosure: I spent a day on this challenge, more for the networking than the winning. 55/200, refutation only.</p>\n<p>IMHO LLMs are not ready for the full thing (at least on an average person's time and budget) but they were good at measurement: decoding the ETP's own build artifacts to split the 1062 Vampire-unresolved implications exactly, and checking 790 of my counterexamples against their Lean graph with zero disagreements. Not at derivation: three times it gave me a result which was already in the blueprint.</p>\n<p>Good luck with the competition to you too <span aria-label=\"grinning\" class=\"emoji emoji-1f600\" role=\"img\" title=\"grinning\">:grinning:</span> <span aria-label=\"+1\" class=\"emoji emoji-1f44d\" role=\"img\" title=\"+1\">:+1:</span></p>",
+      "recipient_id": 24,
+      "timestamp": 1788066894,
+      "client": "website",
+      "subject": "Proposal: where two solvers score the same, rank the publish",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 551
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Carlo Perassi",
+      "sender_email": "user582@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "/user_avatars/5/40e951d14ef7d2da78c6f6b3853f2982daa6365c.png",
+      "content_type": "text/html",
+      "date": "2026-08-30T05:14:54.000Z"
+    },
+    {
+      "id": 4013,
+      "sender_id": 551,
+      "content": "<p>Yes, no worries, I understood that you had dropped the proposal. :)</p>\n<p>And just to make it explicit: my DMs are open to anyone here, whether for a technical question, exchanging ideas, comparing approaches, or potentially collaborating on something later.</p>\n<p>The real issue is not that mathematics lacks results. It lacks a small number of structural languages capable of making certain families of results look inevitable.</p>\n<p>I have identified three such missing structures ...</p>\n<p>Once they are introduced, several objects that usually look like separate curiosities, Pascal's triangle, binary patterns, recursive identities, implication lattices, finite constructions, become manifestations of the same underlying architecture.</p>\n<p>Pascal's triangle, in particular, stops being a combinatorial curiosity and becomes a remarkably deep structural machine.</p>\n<p>That is also why I perform so easily on this challenge. I am not solving identities one by one. I am working in structural coordinates where large families of apparently unrelated equations collapse together.</p>\n<p>The important result is therefore not the solver's speed. It is the fact that the same missing structure makes many different problems easy at once.</p>\n<p>If the theory continues to hold, the solver will probably be one of its least interesting consequences.</p>\n<p>Anyway, enough serious mathematics for a Sunday morning. We have had magmas, diamonds, Vampire, Lean, 13 million implications and 661,142 fibre candidates in this thread, so I think we have earned a scientific intermission:</p>\n<p><a href=\"https://www.youtube.com/shorts/OkWyvjdbNxI\">https://www.youtube.com/shorts/OkWyvjdbNxI</a></p>\n<div class=\"youtube-video message_inline_image\"><a data-id=\"OkWyvjdbNxI\" href=\"https://www.youtube.com/shorts/OkWyvjdbNxI\"><img src=\"/external_content/26f394ce69431356d8ba767a557fadfa6f2cfcbc/68747470733a2f2f692e7974696d672e636f6d2f76692f4f6b5779766a64624e78492f6d7164656661756c742e6a7067\"></a></div><p>I still have no theorem explaining why chickens are funny. Give me another week. <span aria-label=\"smile\" class=\"emoji emoji-1f604\" role=\"img\" title=\"smile\">:smile:</span></p>\n<p>Good luck to everyone for the final stretch!</p>",
+      "recipient_id": 24,
+      "timestamp": 1788101429,
+      "client": "website",
+      "subject": "Proposal: where two solvers score the same, rank the publish",
+      "topic_links": [],
+      "last_edit_timestamp": 1788101494,
+      "edit_history": [
+        {
+          "user_id": 551,
+          "timestamp": 1788101494,
+          "prev_content": "Yes, no worries, I understood that you had dropped the proposal. :)\n\nAnd just to make it explicit: my DMs are open to anyone here, whether for a technical question, exchanging ideas, comparing approaches, or potentially collaborating on something later.\n\nThe real issue is not that mathematics lacks results. It lacks a small number of structural languages capable of making certain families of results look inevitable.\n\nI have identified three such missing structures ...\n\nThey do not add another trick to the toolbox; they change the coordinate system in which the problem is seen. Once expressed in those coordinates, objects that usually appear unrelated, Pascal's triangle, binary decompositions, recursive laws, implication structures, begin to behave like different shadows of the same construction.\n\nOnce they are introduced, several objects that usually look like separate curiosities, Pascal's triangle, binary patterns, recursive identities, implication lattices, finite constructions, become manifestations of the same underlying architecture.\n\nPascal's triangle, in particular, stops being a combinatorial curiosity and becomes a remarkably deep structural machine.\n\nThat is also why I perform so easily on this challenge. I am not solving identities one by one. I am working in structural coordinates where large families of apparently unrelated equations collapse together.\n\nThe important result is therefore not the solver's speed. It is the fact that the same missing structure makes many different problems easy at once.\n\nIf the theory continues to hold, the solver will probably be one of its least interesting consequences.\n\nAnyway, enough serious mathematics for a Sunday morning. We have had magmas, diamonds, Vampire, Lean, 13 million implications and 661,142 fibre candidates in this thread, so I think we have earned a scientific intermission:\n\nhttps://www.youtube.com/shorts/OkWyvjdbNxI\n\nI still have no theorem explaining why chickens are funny. Give me another week. 😄\n\nGood luck to everyone for the final stretch!",
+          "prev_rendered_content": "<p>Yes, no worries, I understood that you had dropped the proposal. :)</p>\n<p>And just to make it explicit: my DMs are open to anyone here, whether for a technical question, exchanging ideas, comparing approaches, or potentially collaborating on something later.</p>\n<p>The real issue is not that mathematics lacks results. It lacks a small number of structural languages capable of making certain families of results look inevitable.</p>\n<p>I have identified three such missing structures ...</p>\n<p>They do not add another trick to the toolbox; they change the coordinate system in which the problem is seen. Once expressed in those coordinates, objects that usually appear unrelated, Pascal's triangle, binary decompositions, recursive laws, implication structures, begin to behave like different shadows of the same construction.</p>\n<p>Once they are introduced, several objects that usually look like separate curiosities, Pascal's triangle, binary patterns, recursive identities, implication lattices, finite constructions, become manifestations of the same underlying architecture.</p>\n<p>Pascal's triangle, in particular, stops being a combinatorial curiosity and becomes a remarkably deep structural machine.</p>\n<p>That is also why I perform so easily on this challenge. I am not solving identities one by one. I am working in structural coordinates where large families of apparently unrelated equations collapse together.</p>\n<p>The important result is therefore not the solver's speed. It is the fact that the same missing structure makes many different problems easy at once.</p>\n<p>If the theory continues to hold, the solver will probably be one of its least interesting consequences.</p>\n<p>Anyway, enough serious mathematics for a Sunday morning. We have had magmas, diamonds, Vampire, Lean, 13 million implications and 661,142 fibre candidates in this thread, so I think we have earned a scientific intermission:</p>\n<p><a href=\"https://www.youtube.com/shorts/OkWyvjdbNxI\">https://www.youtube.com/shorts/OkWyvjdbNxI</a></p>\n<div class=\"youtube-video message_inline_image\"><a data-id=\"OkWyvjdbNxI\" href=\"https://www.youtube.com/shorts/OkWyvjdbNxI\"><img src=\"/external_content/26f394ce69431356d8ba767a557fadfa6f2cfcbc/68747470733a2f2f692e7974696d672e636f6d2f76692f4f6b5779766a64624e78492f6d7164656661756c742e6a7067\"></a></div><p>I still have no theorem explaining why chickens are funny. Give me another week. <span aria-label=\"smile\" class=\"emoji emoji-1f604\" role=\"img\" title=\"smile\">:smile:</span></p>\n<p>Good luck to everyone for the final stretch!</p>"
+        }
+      ],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Axabra",
+      "sender_email": "user551@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "/user_avatars/5/cf73ea7486cf166dcb02add5627d389947632feb.png",
+      "content_type": "text/html",
+      "date": "2026-08-30T14:50:29.000Z"
+    }
+  ]
+}
