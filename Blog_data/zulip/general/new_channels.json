@@ -2,7 +2,7 @@
   "channel": "general",
   "channel_id": 9,
   "topic": "new channels",
-  "message_count": 3,
+  "message_count": 7,
   "messages": [
     {
       "id": 80,
@@ -78,6 +78,110 @@
       "stream_id": 9,
       "avatar_url": "https://zulip.sair.foundation/static/images/static_avatars/notification-bot.36f721bad3d0.png",
       "content_type": "text/html"
+    },
+    {
+      "id": 1782,
+      "sender_id": 15,
+      "content": "<p><span class=\"user-mention silent\" data-user-id=\"142\">Aishwarya</span> created a new channel <a class=\"stream\" data-stream-id=\"19\" href=\"/#narrow/channel/19-lean\">#lean</a>.</p>",
+      "recipient_id": 24,
+      "timestamp": 1776867053,
+      "client": "Internal",
+      "subject": "new channels",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Notification Bot",
+      "sender_email": "notification-bot@zulip.com",
+      "sender_realm_str": "zulipinternal",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "https://zulip.sair.foundation/static/images/static_avatars/notification-bot.36f721bad3d0.png",
+      "content_type": "text/html",
+      "date": "2026-04-22T14:10:53.000Z"
+    },
+    {
+      "id": 2191,
+      "sender_id": 15,
+      "content": "<p><span class=\"user-mention silent\" data-user-id=\"25\">YZ</span> created a new channel <a class=\"stream\" data-stream-id=\"20\" href=\"/#narrow/channel/20-Modular-Arithmetic-Challenge\">#Modular Arithmetic Challenge</a>.</p>",
+      "recipient_id": 24,
+      "timestamp": 1780945068,
+      "client": "Internal",
+      "subject": "new channels",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Notification Bot",
+      "sender_email": "notification-bot@zulip.com",
+      "sender_realm_str": "zulipinternal",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "https://zulip.sair.foundation/static/images/static_avatars/notification-bot.36f721bad3d0.png",
+      "content_type": "text/html",
+      "date": "2026-06-08T18:57:48.000Z"
+    },
+    {
+      "id": 2408,
+      "sender_id": 15,
+      "content": "<p><span class=\"user-mention silent\" data-user-id=\"25\">YZ</span> created a new channel <a class=\"stream\" data-stream-id=\"21\" href=\"/#narrow/channel/21-Inverse-Galois-Problem-.28IGP24.29\">#Inverse Galois Problem (IGP24)</a>.</p>",
+      "recipient_id": 24,
+      "timestamp": 1781621745,
+      "client": "Internal",
+      "subject": "new channels",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Notification Bot",
+      "sender_email": "notification-bot@zulip.com",
+      "sender_realm_str": "zulipinternal",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "https://zulip.sair.foundation/static/images/static_avatars/notification-bot.36f721bad3d0.png",
+      "content_type": "text/html",
+      "date": "2026-06-16T14:55:45.000Z"
+    },
+    {
+      "id": 3920,
+      "sender_id": 15,
+      "content": "<p><span class=\"user-mention silent\" data-user-id=\"25\">YZ</span> created a new channel <a class=\"stream\" data-stream-id=\"24\" href=\"/#narrow/channel/24-Lean-Kernel-Challenge\">#Lean Kernel Challenge</a>.</p>",
+      "recipient_id": 24,
+      "timestamp": 1787683251,
+      "client": "Internal",
+      "subject": "new channels",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Notification Bot",
+      "sender_email": "notification-bot@zulip.com",
+      "sender_realm_str": "zulipinternal",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "https://zulip.sair.foundation/static/images/static_avatars/notification-bot.36f721bad3d0.png",
+      "content_type": "text/html",
+      "date": "2026-08-25T18:40:51.000Z"
     }
   ]
 }
