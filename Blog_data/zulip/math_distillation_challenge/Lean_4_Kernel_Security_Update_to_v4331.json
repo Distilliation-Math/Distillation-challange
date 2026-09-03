@@ -1,0 +1,53 @@
+{
+  "channel": "Math Distillation Challenge - equational theories",
+  "channel_id": 13,
+  "topic": "Lean 4 Kernel Security Update to v4.33.1",
+  "message_count": 1,
+  "messages": [
+    {
+      "id": 3950,
+      "sender_id": 25,
+      "content": "<p>Following the recent Lean kernel soundness bug hunt, Lean released v4.33.1 with important fixes for kernel and runtime soundness issues. To keep Stage 2 aligned with the latest trusted Lean environment, we have upgraded the judge from Lean and Mathlib 4.32.2 to Lean and Mathlib 4.33.1.</p>\n<p>The upgrade applies to the local harness, Playground, and official evaluation. The fixes affect only proofs that rely on the corrected unsound behavior. Existing valid certificates remain valid, and no resubmission is required.</p>\n<p>Background and technical details:<br>\n<a href=\"https://leodemoura.github.io/blog/2026-8-24-postmortem-for-the-kernel-soundness-bug-hunt/\">https://leodemoura.github.io/blog/2026-8-24-postmortem-for-the-kernel-soundness-bug-hunt/</a></p>",
+      "recipient_id": 43,
+      "timestamp": 1787779697,
+      "client": "ZulipElectron",
+      "subject": "Lean 4 Kernel Security Update to v4.33.1",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "octopus",
+          "emoji_code": "1f419",
+          "reaction_type": "unicode_emoji",
+          "user_id": 572
+        },
+        {
+          "emoji_name": "working_on_it",
+          "emoji_code": "1f6e0",
+          "reaction_type": "unicode_emoji",
+          "user_id": 189
+        },
+        {
+          "emoji_name": "working_on_it",
+          "emoji_code": "1f6e0",
+          "reaction_type": "unicode_emoji",
+          "user_id": 32
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-08-26T21:28:17.000Z"
+    }
+  ]
+}
