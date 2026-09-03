@@ -1,0 +1,34 @@
+{
+  "channel": "Math Distillation Challenge - equational theories",
+  "channel_id": 13,
+  "topic": "Sharing thoughts and experiences",
+  "message_count": 1,
+  "messages": [
+    {
+      "id": 4064,
+      "sender_id": 28,
+      "content": "<p>Thanks to everyone who participated in the Math Distillation Challenge!  We hope to run final evaluations and publish the results soon.</p>\n<p>In the meantime, I'd like to open this thread for people to share their experiences in this competition, and give any feedback on how to improve the experience for future competitions.</p>",
+      "recipient_id": 43,
+      "timestamp": 1788396398,
+      "client": "website",
+      "subject": "Sharing thoughts and experiences",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Terence Tao",
+      "sender_email": "user28@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "https://secure.gravatar.com/avatar/66522e6c0b7fca709255b9abd0120b10?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-09-03T00:46:38.000Z"
+    }
+  ]
+}

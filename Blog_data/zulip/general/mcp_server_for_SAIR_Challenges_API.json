@@ -1,0 +1,47 @@
+{
+  "channel": "general",
+  "channel_id": 9,
+  "topic": "mcp server for SAIR Challenges API",
+  "message_count": 1,
+  "messages": [
+    {
+      "id": 3270,
+      "sender_id": 335,
+      "content": "<p>Hi all,<br>\nfor convenience I made an mcp server for the SAIR Challenge API (see <a href=\"https://docs.sair.foundation/docs/\">https://docs.sair.foundation/docs/</a> )</p>\n<p>The mcp server can be found at <strong>https://github.com/osick/SAIRmcp</strong> including some short documentation and installation hints.</p>\n<p>It is a small helper when working on the SAIR challenges with LLMs . It can be used for tools like claude code, gemini, cursor ... and so on.  With it, the LLM can get better and more specific context knowledge about SAIR challenges. </p>\n<p>If this post (or the tool) is inappropriate in this channel or for the challenge, I will delete it at once.<br>\n(and perhaps the name SAIRmcp is a bit missleading, it is only for the challenges API... I can rename it if needed).</p>\n<p>Any feedback is welcome!</p>",
+      "recipient_id": 24,
+      "timestamp": 1783534700,
+      "client": "website",
+      "subject": "mcp server for SAIR Challenges API",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 32
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 25
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Oliver Sick",
+      "sender_email": "user335@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "https://secure.gravatar.com/avatar/a2c2448e43866b6022c4dc7322eb00f9?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-07-08T18:18:20.000Z"
+    }
+  ]
+}
