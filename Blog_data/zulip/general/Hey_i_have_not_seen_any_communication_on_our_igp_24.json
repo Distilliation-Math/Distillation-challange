@@ -1,0 +1,74 @@
+{
+  "channel": "general",
+  "channel_id": 9,
+  "topic": "Hey i have not seen any communication on our igp 24 ?",
+  "message_count": 2,
+  "messages": [
+    {
+      "id": 3902,
+      "sender_id": 554,
+      "content": "<p>hey any communication from SAIR igp 24 , are we allowed to send more after deadline ??</p>",
+      "recipient_id": 24,
+      "timestamp": 1787553716,
+      "client": "website",
+      "subject": "Hey i have not seen any communication on our igp 24 ?",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 25
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "fredrick ruoja",
+      "sender_email": "user554@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "/user_avatars/5/1b0d8607be4f8d75d107c4757afd64a8e4b446e0.png",
+      "content_type": "text/html",
+      "date": "2026-08-24T06:41:56.000Z"
+    },
+    {
+      "id": 3907,
+      "sender_id": 25,
+      "content": "<p><span class=\"user-mention\" data-user-id=\"554\">@fredrick ruoja</span> We are currently organizing the IGP24 competition data. After we release the participant data publicly, we plan to reopen the polynomial submission system. New polynomials submitted after the deadline will not count toward the competition results, but the system will remain available for continued exploration and improvement.</p>",
+      "recipient_id": 24,
+      "timestamp": 1787593181,
+      "client": "ZulipElectron",
+      "subject": "Hey i have not seen any communication on our igp 24 ?",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "heart",
+          "emoji_code": "2764",
+          "reaction_type": "unicode_emoji",
+          "user_id": 521
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-08-24T17:39:41.000Z"
+    }
+  ]
+}
