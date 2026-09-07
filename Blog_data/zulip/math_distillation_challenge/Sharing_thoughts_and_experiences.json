@@ -1,0 +1,128 @@
+{
+  "channel": "Math Distillation Challenge - equational theories",
+  "channel_id": 13,
+  "topic": "Sharing thoughts and experiences",
+  "message_count": 2,
+  "messages": [
+    {
+      "id": 4064,
+      "sender_id": 28,
+      "content": "<p>Thanks to everyone who participated in the Math Distillation Challenge!  We hope to run final evaluations and publish the results soon.</p>\n<p>In the meantime, I'd like to open this thread for people to share their experiences in this competition, and give any feedback on how to improve the experience for future competitions.</p>",
+      "recipient_id": 43,
+      "timestamp": 1788396398,
+      "client": "website",
+      "subject": "Sharing thoughts and experiences",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "heart",
+          "emoji_code": "2764",
+          "reaction_type": "unicode_emoji",
+          "user_id": 117
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 335
+        },
+        {
+          "emoji_name": "heart",
+          "emoji_code": "2764",
+          "reaction_type": "unicode_emoji",
+          "user_id": 559
+        },
+        {
+          "emoji_name": "folded_hands",
+          "emoji_code": "1f64f",
+          "reaction_type": "unicode_emoji",
+          "user_id": 71
+        },
+        {
+          "emoji_name": "heart",
+          "emoji_code": "2764",
+          "reaction_type": "unicode_emoji",
+          "user_id": 289
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 289
+        },
+        {
+          "emoji_name": "folded_hands",
+          "emoji_code": "1f64f",
+          "reaction_type": "unicode_emoji",
+          "user_id": 289
+        },
+        {
+          "emoji_name": "heart",
+          "emoji_code": "2764",
+          "reaction_type": "unicode_emoji",
+          "user_id": 285
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Terence Tao",
+      "sender_email": "user28@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "https://secure.gravatar.com/avatar/66522e6c0b7fca709255b9abd0120b10?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-09-03T00:46:38.000Z"
+    },
+    {
+      "id": 4080,
+      "sender_id": 71,
+      "content": "<p><span class=\"user-mention silent\" data-user-id=\"28\">Terence Tao</span> <a href=\"#narrow/channel/13-Math-Distillation-Challenge---equational-theories/topic/Sharing.20thoughts.20and.20experiences/near/4064\">said</a>:</p>\n<blockquote>\n<p>Thanks to everyone who participated in the Math Distillation Challenge!  We hope to run final evaluations and publish the results soon.</p>\n<p>In the meantime, I'd like to open this thread for people to share their experiences in this competition, and give any feedback on how to improve the experience for future competitions.</p>\n</blockquote>\n<p>Thank you Terence  &amp; SAIR team, I really enjoyed this..</p>\n<p>One unexpected outcome for me was transferring some of the Stage 2 learnings to the Lean Kernel Arena, where our Lean kernel subsequently reached #1 and is currently ~18× faster than the official Lean checker. We've only just started applying the learnings there and elsewhere, so the cross-benchmark transfer is particularly interesting.</p>\n<p>Would definitely love to participate again and looking forward to future challenges.</p>",
+      "recipient_id": 43,
+      "timestamp": 1788473502,
+      "client": "website",
+      "subject": "Sharing thoughts and experiences",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 117
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 588
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 28
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Heath Sanchez",
+      "sender_email": "user71@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "https://secure.gravatar.com/avatar/62a186edca1996d8ab4aea0c1cacbd21?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-09-03T22:11:42.000Z"
+    }
+  ]
+}

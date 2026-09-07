@@ -1,0 +1,53 @@
+{
+  "channel": "general",
+  "channel_id": 9,
+  "topic": "FrontierPhysics: e2e agentic physics research benchmark",
+  "message_count": 1,
+  "messages": [
+    {
+      "id": 3908,
+      "sender_id": 561,
+      "content": "<p>Great to meet everyone! I found out this community form <a href=\"https://sair.foundation/events/science-ai-summit-2026-caltech\">https://sair.foundation/events/science-ai-summit-2026-caltech</a></p>\n<p>I am Bingran You, 5th year AMO physics PhD at UC Berkeley. I am leading FrontierPhysics, the first agentic e2e physics research benchmark <a href=\"https://www.benchflow.ai/frontierphysics\">https://www.benchflow.ai/frontierphysics</a>. We would like to connect and collaborate with all the physics researchers!</p>",
+      "recipient_id": 24,
+      "timestamp": 1787598909,
+      "client": "website",
+      "subject": "FrontierPhysics: e2e agentic physics research benchmark",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 521
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 561
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 323
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Bingran You",
+      "sender_email": "user561@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "/user_avatars/5/8d8e3dc5751a0c5c54dcf4ee3fdc1fcb7e3490f4.png",
+      "content_type": "text/html",
+      "date": "2026-08-24T19:15:09.000Z"
+    }
+  ]
+}
