@@ -1,0 +1,99 @@
+{
+  "channel": "Math Distillation Challenge - equational theories",
+  "channel_id": 13,
+  "topic": "New Order-5 Austin Laws",
+  "message_count": 3,
+  "messages": [
+    {
+      "id": 4172,
+      "sender_id": 534,
+      "content": "<p>Hi everyone,</p>\n<p>I’d like to share our paper, <strong>Trace-Tree Magmas: Proof-Producing Infinite Countermodels and 28 New Order-Five Austin Classifications</strong>:</p>\n<p><a href=\"https://arxiv.org/abs/2609.05690\">Read the paper on arXiv</a></p>\n<p>We introduce a family of infinite magmas built from finite constructor trees. The operation normally pairs its arguments, with exceptions determined by symbolic evaluation traces. Our system searches for these constructions and generates Lean certificates verifying the resulting countermodels.</p>\n<p>The paper reports <strong>28 new order-five Austin classifications</strong>, representing 14 duality classes. These identities admit nontrivial infinite models even though all their finite models are trivial. Code and reproducibility artifacts are linked from the paper.</p>\n<p>We’d welcome questions, independent checks, and comparisons with other constructions—especially connections to countermodels others have found.</p>\n<p>Many thanks to everyone in the equational theories community for the shared problems, tools, and discussions!</p>",
+      "recipient_id": 43,
+      "timestamp": 1788965549,
+      "client": "website",
+      "subject": "New Order-5 Austin Laws",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "ZplusM",
+      "sender_email": "user534@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/6d2078d216d3217a0400a0a0c2ffa1ab4d716676.png",
+      "content_type": "text/html",
+      "date": "2026-09-09T14:52:29.000Z"
+    },
+    {
+      "id": 4174,
+      "sender_id": 534,
+      "content": "<p>Beyond those 32, we now have certificates for <strong>24 additional order-five Austin laws</strong>, forming the following 12 dual pairs:</p>\n<p>Identity / Dual identity</p>\n<p>Equation5833  / Equation40070<br>\nEquation6878  / Equation39126<br>\nEquation7763  / Equation38565<br>\nEquation9603  / Equation36514<br>\nEquation11205 / Equation35100<br>\nEquation11280 / Equation34778<br>\nEquation12073 / Equation33998<br>\nEquation12857 / Equation33436<br>\nEquation13764 / Equation32294<br>\nEquation13849 / Equation32281<br>\nEquation13992 / Equation32280<br>\nEquation18212 / Equation27859</p>\n<p>These identities have only trivial finite models, while the certificates establish the existence of nontrivial infinite models.</p>\n<p>We also obtained Lean proofs of two <strong>TRUE</strong> implications:</p>\n<ul>\n<li><strong>Equation5834 → Equation2</strong></li>\n<li><strong>Equation40037 → Equation2</strong></li>\n</ul>\n<p>Here, Equation2 is the identity \\(x=y\\). These two laws therefore force every model—not merely every finite model—to be trivial, so they are <strong>not Austin laws</strong>.</p>\n<p>The certificates for all 24 Austin laws and both TRUE implications have been accepted by our Judge v3. The Lean proofs and accompanying materials are publicly available here:</p>\n<p><a href=\"https://github.com/YanbiaoLab/Order5-Austin-Law-Proofs\">GitHub: Order5-Austin-Law-Proofs</a></p>\n<p>A note on prior work: Equation12857 and Equation33436 already appear in the ALPS historical results; our contribution for these two is independent certification. “Additional” refers to identities beyond our paper’s collection, rather than a claim that all 24 are first discoveries.</p>\n<p>Independent checks, questions, and feedback are very welcome!</p>",
+      "recipient_id": 43,
+      "timestamp": 1788966076,
+      "client": "website",
+      "subject": "New Order-5 Austin Laws",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 25
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 118
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "ZplusM",
+      "sender_email": "user534@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/6d2078d216d3217a0400a0a0c2ffa1ab4d716676.png",
+      "content_type": "text/html",
+      "date": "2026-09-09T15:01:16.000Z"
+    },
+    {
+      "id": 4176,
+      "sender_id": 534,
+      "content": "<p>We are continuing to classify more order-five Austin candidates and will keep updating the repository as further results are verified.</p>",
+      "recipient_id": 43,
+      "timestamp": 1788966845,
+      "client": "website",
+      "subject": "New Order-5 Austin Laws",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "ZplusM",
+      "sender_email": "user534@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/6d2078d216d3217a0400a0a0c2ffa1ab4d716676.png",
+      "content_type": "text/html",
+      "date": "2026-09-09T15:14:05.000Z"
+    }
+  ]
+}
