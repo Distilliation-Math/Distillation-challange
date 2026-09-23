@@ -1,0 +1,60 @@
+{
+  "channel": "general",
+  "channel_id": 9,
+  "topic": "Advice on open models",
+  "message_count": 2,
+  "messages": [
+    {
+      "id": 4868,
+      "sender_id": 761,
+      "content": "<p>Hi, at my Math Department we might try to test some SLM on our PC and our Department Server. Do you have any advice about which model we could try? Other than starting with say Gemma or Qwen via Ollama.</p>",
+      "recipient_id": 24,
+      "timestamp": 1790008961,
+      "client": "website",
+      "subject": "Advice on open models",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Giulio Codogni",
+      "sender_email": "user761@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "/user_avatars/5/940f24e0b26482330e22f3ff5f51d1d8f8ab8257.png",
+      "content_type": "text/html",
+      "date": "2026-09-21T16:42:41.000Z"
+    },
+    {
+      "id": 4923,
+      "sender_id": 759,
+      "content": "<p>I have had good luck with the Qwen models, you should start there.  Gemma is good as well and ollama makes setup very easy.  Beyond that it's a question of what your workload is + how you are planning on using the model.  I would suggest you also spend $20 on a basic OpenAI/Codex account and learn to steer more powerful models (easier there) before trying the same with a smaller open one.</p>",
+      "recipient_id": 24,
+      "timestamp": 1790109642,
+      "client": "website",
+      "subject": "Advice on open models",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Brett Koonce",
+      "sender_email": "user759@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "/user_avatars/5/83abe74a2c7b7b37d42d11e7688af48d98a5f0a8.png",
+      "content_type": "text/html",
+      "date": "2026-09-22T20:40:42.000Z"
+    }
+  ]
+}
