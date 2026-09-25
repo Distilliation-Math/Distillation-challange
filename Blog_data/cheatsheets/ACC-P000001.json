@@ -1,0 +1,100 @@
+{
+  "fetched_at": "2026-09-25T09:49:54.881220+00:00",
+  "publicCode": "ACC-P000001",
+  "source_url": "https://server-9527.sair.foundation/api/contributor-network/by-code/ACC-P000001",
+  "data": {
+    "cnItemId": "si_07567a7c-bf55-5ab8-b773-5ea5eab7dd44",
+    "parentCnItemId": null,
+    "rootCnItemId": "si_07567a7c-bf55-5ab8-b773-5ea5eab7dd44",
+    "shareItemId": "si_07567a7c-bf55-5ab8-b773-5ea5eab7dd44",
+    "parentShareItemId": null,
+    "rootShareItemId": "si_07567a7c-bf55-5ab8-b773-5ea5eab7dd44",
+    "competitionId": "acc",
+    "competitionTitle": "",
+    "entityType": "individual",
+    "entityId": "U-092646db142a0e7d10e0777e15ddf08bc3b4b430",
+    "entityName": "Patrik Iden",
+    "entityAvatarUrl": "",
+    "cheatsheetTitle": "Local-search stagnation predicts current unsolved status for AC Discovery instances (empirical, partial result)",
+    "sourceType": "acc_proof",
+    "sourceId": "1",
+    "artifactKind": "proof",
+    "artifactType": "acc_proof",
+    "stage2Track": null,
+    "stage2ModelId": null,
+    "stage2Model": null,
+    "modelName": null,
+    "commitHash": null,
+    "problemId": null,
+    "approvedRevision": null,
+    "solutionRevision": null,
+    "executionSnapshotId": null,
+    "templateVersion": null,
+    "toolchainVersion": null,
+    "manifestVersion": null,
+    "workspaceSha256": null,
+    "workspaceSizeBytes": null,
+    "packageFilename": null,
+    "packageFileCount": null,
+    "packageSizeBytes": null,
+    "packageSha256": null,
+    "downloadUrl": null,
+    "artifactTitle": "Local-search stagnation predicts current unsolved status for AC Discovery instances (empirical, partial result)",
+    "contentHash": "sha256:a5d34feb49718003705b4de75fc18930d7b9118d0e43ccd2b5c2742532bbfbe3",
+    "publishedAt": "2026-09-12T13:02:04.338Z",
+    "visibilityStatus": "active",
+    "lineageDepth": 0,
+    "lineagePathSnapshot": [
+      {
+        "entityName": "Patrik Iden",
+        "publishedAt": "2026-09-12T13:02:04.338Z",
+        "shareItemId": "si_07567a7c-bf55-5ab8-b773-5ea5eab7dd44"
+      }
+    ],
+    "isDerived": false,
+    "itemType": "Original",
+    "sourceCheatsheetId": null,
+    "publicCode": "ACC-P000001",
+    "remark": "",
+    "itemRole": null,
+    "likeCount": 0,
+    "favoriteCount": 0,
+    "referencedCount": 0,
+    "commentCount": 0,
+    "canComment": false,
+    "viewerHasLiked": false,
+    "viewerHasFavorited": false,
+    "artifactContent": "## Empirical correlation between local-search stagnation and community-wide problem difficulty in AC Discovery Track instances\n\n**Note on claim direction:** this submission does not argue for or against the AC conjecture. It is an empirical, computational observation about which Discovery Track instances resist a simple search method. \"Proof\" was selected only because the form requires a direction; no directional claim is intended.\n\n### Method\nWe implemented the official ac-r2-v1 move set (moves 0–13) independently in Rust and verified it exactly against the published ms-train-0160 receipt (move-for-move match: `[6,4,2,9,1,4,1]`, work=46, length=7), and independently verified the \"AC solution + [16,15]\" Stable AC shortcut against the official sac-train-0160 receipt (length=9, work=47). Using this, we ran beam search (heuristic: current total relator length, beam width 64, 5,000,000-node budget) across 2,000 unattempted challenges from the published AC pool (ac-00263 through ac-02260), tracking `best_length_seen` — the shortest total relator length reached anywhere during each search, regardless of whether it solved the challenge.\n\n### Finding\n369 of 2,000 challenges showed zero length improvement (\"stuck\") within this budget. Cross-referenced against the complete published challenge snapshot (10,115 challenges, fetched 2026-09-12), 361 of these 369 (97.8%) were independently classified \"unsolved\" by the platform at that time.\n\n### Follow-up test\nOn three separately-identified stuck AC instances, we re-ran the identical search using the full Stable AC move set (257 moves, including stabilize/destabilize) — `best_length_seen` still did not improve within a comparable budget, suggesting the observed difficulty is not simply an artifact of a restricted (rank-2-only) move set.\n\n### What remains open\nThis is a single-pass empirical observation, not a statistical study. Correlation with current unsolved status is not evidence of intrinsic difficulty — a stuck classification could reflect this particular heuristic's blind spot rather than a property of the presentation itself, and the reference \"unsolved\" set will continue shrinking as other teams submit solutions. We offer no theoretical explanation for the correlation; it is consistent with Krawiec & Swan's (2016) finding that no simple heuristic reliably guides AC search. We share this as a cheap, reproducible triage signal, not as a structural insight into the conjecture itself.",
+    "cheatsheetContent": "## Empirical correlation between local-search stagnation and community-wide problem difficulty in AC Discovery Track instances\n\n**Note on claim direction:** this submission does not argue for or against the AC conjecture. It is an empirical, computational observation about which Discovery Track instances resist a simple search method. \"Proof\" was selected only because the form requires a direction; no directional claim is intended.\n\n### Method\nWe implemented the official ac-r2-v1 move set (moves 0–13) independently in Rust and verified it exactly against the published ms-train-0160 receipt (move-for-move match: `[6,4,2,9,1,4,1]`, work=46, length=7), and independently verified the \"AC solution + [16,15]\" Stable AC shortcut against the official sac-train-0160 receipt (length=9, work=47). Using this, we ran beam search (heuristic: current total relator length, beam width 64, 5,000,000-node budget) across 2,000 unattempted challenges from the published AC pool (ac-00263 through ac-02260), tracking `best_length_seen` — the shortest total relator length reached anywhere during each search, regardless of whether it solved the challenge.\n\n### Finding\n369 of 2,000 challenges showed zero length improvement (\"stuck\") within this budget. Cross-referenced against the complete published challenge snapshot (10,115 challenges, fetched 2026-09-12), 361 of these 369 (97.8%) were independently classified \"unsolved\" by the platform at that time.\n\n### Follow-up test\nOn three separately-identified stuck AC instances, we re-ran the identical search using the full Stable AC move set (257 moves, including stabilize/destabilize) — `best_length_seen` still did not improve within a comparable budget, suggesting the observed difficulty is not simply an artifact of a restricted (rank-2-only) move set.\n\n### What remains open\nThis is a single-pass empirical observation, not a statistical study. Correlation with current unsolved status is not evidence of intrinsic difficulty — a stuck classification could reflect this particular heuristic's blind spot rather than a property of the presentation itself, and the reference \"unsolved\" set will continue shrinking as other teams submit solutions. We offer no theoretical explanation for the correlation; it is consistent with Krawiec & Swan's (2016) finding that no simple heuristic reliably guides AC search. We share this as a cheap, reproducible triage signal, not as a structural insight into the conjecture itself.",
+    "canDelete": false,
+    "proof": {
+      "submissionId": "14e91819-49f6-40fb-99e2-35d6ecc6cfb3",
+      "versionId": "1",
+      "previousVersionId": null,
+      "claimCompleteness": "partial",
+      "conjecture": "ac",
+      "claimType": "proof"
+    },
+    "team": {
+      "teamId": "teamv2_d2daa6b1a95e42c99b98e21aed1eef75",
+      "teamName": "EUREKA",
+      "teamNumber": "ACC01-T00067"
+    },
+    "teamDetails": {
+      "members": [
+        {
+          "name": "Patrik Iden",
+          "email": "register@pi-konsulting.se"
+        }
+      ],
+      "memberCount": 1
+    },
+    "withdrawal": null,
+    "proofSync": {
+      "status": "snapshot",
+      "syncedAt": "2026-09-12T13:02:04Z",
+      "stateRevision": 1
+    },
+    "teamNameSource": "current_team"
+  }
+}
