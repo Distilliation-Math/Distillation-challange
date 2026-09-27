@@ -1,0 +1,108 @@
+{
+  "fetched_at": "2026-09-27T10:16:48.984374+00:00",
+  "publicCode": "ACC-P000002",
+  "source_url": "https://server-9527.sair.foundation/api/contributor-network/by-code/ACC-P000002",
+  "data": {
+    "cnItemId": "si_5004618b-7eac-5a80-b9cb-3052e118e85a",
+    "parentCnItemId": null,
+    "rootCnItemId": "si_5004618b-7eac-5a80-b9cb-3052e118e85a",
+    "shareItemId": "si_5004618b-7eac-5a80-b9cb-3052e118e85a",
+    "parentShareItemId": null,
+    "rootShareItemId": "si_5004618b-7eac-5a80-b9cb-3052e118e85a",
+    "competitionId": "acc",
+    "competitionTitle": "",
+    "entityType": "individual",
+    "entityId": "U-ceaddb5c008e6c2a296ebaf4fdfe60a5f0f964f7",
+    "entityName": "Rob Sneiderman",
+    "entityAvatarUrl": "https://server-9527.sair.foundation/avatars/U-ceaddb5c008e6c2a296ebaf4fdfe60a5f0f964f7/202606/22ba7f3910aa4e40bbf1f001d07615a1.png",
+    "cheatsheetTitle": "Explicit AC constructions for divisibility subfamilies of square presentations",
+    "sourceType": "acc_proof",
+    "sourceId": "2",
+    "artifactKind": "proof",
+    "artifactType": "acc_proof",
+    "stage2Track": null,
+    "stage2ModelId": null,
+    "stage2Model": null,
+    "modelName": null,
+    "commitHash": null,
+    "problemId": null,
+    "approvedRevision": null,
+    "solutionRevision": null,
+    "executionSnapshotId": null,
+    "templateVersion": null,
+    "toolchainVersion": null,
+    "manifestVersion": null,
+    "workspaceSha256": null,
+    "workspaceSizeBytes": null,
+    "packageFilename": null,
+    "packageFileCount": null,
+    "packageSizeBytes": null,
+    "packageSha256": null,
+    "downloadUrl": null,
+    "artifactTitle": "Explicit AC constructions for divisibility subfamilies of square presentations",
+    "contentHash": "sha256:fb989fa6d68a6dbfdfb96517333daba3c7354bfec2c44b896251a329e2351ecf",
+    "publishedAt": "2026-09-13T00:19:51.930Z",
+    "visibilityStatus": "active",
+    "lineageDepth": 0,
+    "lineagePathSnapshot": [
+      {
+        "entityName": "Rob Sneiderman",
+        "publishedAt": "2026-09-13T00:19:51.930Z",
+        "shareItemId": "si_5004618b-7eac-5a80-b9cb-3052e118e85a"
+      }
+    ],
+    "isDerived": false,
+    "itemType": "Original",
+    "sourceCheatsheetId": null,
+    "publicCode": "ACC-P000002",
+    "remark": "",
+    "itemRole": null,
+    "likeCount": 0,
+    "favoriteCount": 0,
+    "referencedCount": 5,
+    "commentCount": 0,
+    "canComment": false,
+    "viewerHasLiked": false,
+    "viewerHasFavorited": false,
+    "artifactContent": "This is a partial result toward ordinary Andrews–Curtis, at fixed rank two.\nFor the ordered relator tuple\n\n\\[\nG(p,s)=(u^2y^{-(2s+1)},\\;uy^pu y^{-s}u^{-1}y^{-p}),\n\\]\n\nwe give an explicit finite AC construction for natural p,s whenever p divides\ns or s+1. This includes G(2,s) for every nonnegative s. The argument passes\nthrough a root-conjugacy pair and constructs all normal-closure substitutions\nas finite ordered products of conjugates, restoring the donor relator each\ntime. Coordinate transports include explicit ordinary AC corrections of the\nimage basis. The quantified statement and its parameter consequences are\nproved in Lean against the shared SAIR AC definition.\n\nThe accompanying research note explains the proof and affine entry; the\nrepository supplies the complete schedule, formal source and reproducible\ncertificate exports. Lean proves the quantified statement. Python is a\nseparate implementation whose emitted paths are independently replayed;\nno extraction or universal equality of the two factor-list implementations\nis claimed. The\n50-case validation matrix passes official replay without resource limits;\n48 cases meet the frozen golden budgets. Finite replay supports the exporter\nand is separate from the quantified proof. No new finite challenge solves\nor shortest paths are claimed.\n\nThe entire square family remains open here. For the next family G(3,3m+1),\nthe package proves an exact equivalence to a companion-restoration condition\nat d=2,4,8,...; restoration itself remains open, including d=2. This does not\nresolve AC, Stable AC, or AK(3).\n\nThe closest prior results are Ali Shehper and coauthors,\n[*What makes math problems hard for reinforcement learning: a case study*](https://arxiv.org/abs/2408.15332v2),\nwhose infinite-family theorems and substitution method informed the earlier\np=1 analysis. Conjugacy/substitution techniques are credited to Pavel\nPanteleev and Alexander Ushakov,\n[*Conjugacy search problem and the Andrews–Curtis conjecture*](https://arxiv.org/abs/1609.00325).\nMarc Lackenby's [thickenable-presentation theorem](https://arxiv.org/abs/2606.06122v1)\nis a related geometric sufficient condition; its overlap with this full\narithmetic family has not been determined. Prior AC formalization by Caroline\nZhang and coauthors is acknowledged in\n[*AI-Driven Mathematical Discovery for the Andrews–Curtis Conjecture*](https://openreview.net/forum?id=lt3Lpa4d2d).\nThe official definition and verifier are reused from\n[SAIR](https://github.com/SAIRcompetition/Andrews-Curtis/tree/99a65377c5c4f412cd9af7b8d31c41464a855736),\nand existing finite solved materials are credited to Lucas Fagan and coauthors'\n[*Two-Hump Problem*](https://arxiv.org/abs/2606.21611v1) and ACSolverX work.\n\nOur contribution is the explicit arithmetic construction and its proof\npackage; priority for the underlying triviality classes has not been\nestablished. Research and preparation used Codex and Fable assistance, as\ndescribed in the paper's provenance statement.\n",
+    "cheatsheetContent": "This is a partial result toward ordinary Andrews–Curtis, at fixed rank two.\nFor the ordered relator tuple\n\n\\[\nG(p,s)=(u^2y^{-(2s+1)},\\;uy^pu y^{-s}u^{-1}y^{-p}),\n\\]\n\nwe give an explicit finite AC construction for natural p,s whenever p divides\ns or s+1. This includes G(2,s) for every nonnegative s. The argument passes\nthrough a root-conjugacy pair and constructs all normal-closure substitutions\nas finite ordered products of conjugates, restoring the donor relator each\ntime. Coordinate transports include explicit ordinary AC corrections of the\nimage basis. The quantified statement and its parameter consequences are\nproved in Lean against the shared SAIR AC definition.\n\nThe accompanying research note explains the proof and affine entry; the\nrepository supplies the complete schedule, formal source and reproducible\ncertificate exports. Lean proves the quantified statement. Python is a\nseparate implementation whose emitted paths are independently replayed;\nno extraction or universal equality of the two factor-list implementations\nis claimed. The\n50-case validation matrix passes official replay without resource limits;\n48 cases meet the frozen golden budgets. Finite replay supports the exporter\nand is separate from the quantified proof. No new finite challenge solves\nor shortest paths are claimed.\n\nThe entire square family remains open here. For the next family G(3,3m+1),\nthe package proves an exact equivalence to a companion-restoration condition\nat d=2,4,8,...; restoration itself remains open, including d=2. This does not\nresolve AC, Stable AC, or AK(3).\n\nThe closest prior results are Ali Shehper and coauthors,\n[*What makes math problems hard for reinforcement learning: a case study*](https://arxiv.org/abs/2408.15332v2),\nwhose infinite-family theorems and substitution method informed the earlier\np=1 analysis. Conjugacy/substitution techniques are credited to Pavel\nPanteleev and Alexander Ushakov,\n[*Conjugacy search problem and the Andrews–Curtis conjecture*](https://arxiv.org/abs/1609.00325).\nMarc Lackenby's [thickenable-presentation theorem](https://arxiv.org/abs/2606.06122v1)\nis a related geometric sufficient condition; its overlap with this full\narithmetic family has not been determined. Prior AC formalization by Caroline\nZhang and coauthors is acknowledged in\n[*AI-Driven Mathematical Discovery for the Andrews–Curtis Conjecture*](https://openreview.net/forum?id=lt3Lpa4d2d).\nThe official definition and verifier are reused from\n[SAIR](https://github.com/SAIRcompetition/Andrews-Curtis/tree/99a65377c5c4f412cd9af7b8d31c41464a855736),\nand existing finite solved materials are credited to Lucas Fagan and coauthors'\n[*Two-Hump Problem*](https://arxiv.org/abs/2606.21611v1) and ACSolverX work.\n\nOur contribution is the explicit arithmetic construction and its proof\npackage; priority for the underlying triviality classes has not been\nestablished. Research and preparation used Codex and Fable assistance, as\ndescribed in the paper's provenance statement.\n",
+    "canDelete": false,
+    "proof": {
+      "submissionId": "c10f6d65-9123-4729-8301-40117a72eaf3",
+      "versionId": "2",
+      "previousVersionId": null,
+      "claimCompleteness": "partial",
+      "conjecture": "ac",
+      "claimType": "proof",
+      "githubUrl": "https://github.com/Robby955/ac-square-divisibility",
+      "commitSha": "d0ed2c06bb3a9e7ed31e2f31e24d17de6323efe8",
+      "paperUrl": "https://github.com/Robby955/ac-square-divisibility/releases/download/v0.1.0/square-divisibility.pdf",
+      "githubSnapshot": {
+        "commitSha": "d0ed2c06bb3a9e7ed31e2f31e24d17de6323efe8",
+        "permalink": "https://github.com/Robby955/ac-square-divisibility/tree/d0ed2c06bb3a9e7ed31e2f31e24d17de6323efe8"
+      }
+    },
+    "team": {
+      "teamId": "teamv2_adc334e09fe24eeebdc1a276097cd063",
+      "teamName": "NavierStoked",
+      "teamNumber": "ACC01-T00011"
+    },
+    "teamDetails": {
+      "members": [
+        {
+          "name": "Robert Sneiderman",
+          "avatarUrl": "https://server-9527.sair.foundation/avatars/U-ceaddb5c008e6c2a296ebaf4fdfe60a5f0f964f7/202606/22ba7f3910aa4e40bbf1f001d07615a1.png",
+          "email": "robbysneiderman@gmail.com"
+        }
+      ],
+      "memberCount": 1
+    },
+    "withdrawal": null,
+    "proofSync": {
+      "status": "snapshot",
+      "syncedAt": "2026-09-13T00:19:51Z",
+      "stateRevision": 2
+    },
+    "teamNameSource": "current_team"
+  }
+}
