@@ -1,0 +1,60 @@
+{
+  "channel": "general",
+  "channel_id": 9,
+  "topic": "IGP- submission has been in queue for almost 24 hrs now",
+  "message_count": 2,
+  "messages": [
+    {
+      "id": 3497,
+      "sender_id": 515,
+      "content": "<p>Hi everyone , <span class=\"user-mention\" data-user-id=\"25\">@YZ</span> <span class=\"user-mention\" data-user-id=\"21\">@SAIRadmin</span> - our submission has been in queue for almost 24 hrs now, just checking if everyone is facing the same problem or is it just us? this is the first time our submissions have been in queue for this long</p>",
+      "recipient_id": 24,
+      "timestamp": 1785153839,
+      "client": "website",
+      "subject": "IGP- submission has been in queue for almost 24 hrs now",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Durgesh",
+      "sender_email": "user515@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "/user_avatars/5/3258c1263872a44e3833e63d35ddbcf86ef2fb99.png",
+      "content_type": "text/html",
+      "date": "2026-07-27T12:03:59.000Z"
+    },
+    {
+      "id": 3498,
+      "sender_id": 145,
+      "content": "<p><span class=\"user-mention\" data-user-id=\"515\">@Durgesh</span>  You can see on the discovery page:<br>\n\"Processed 34,395,070      Pending 1,861,362\"<br>\nSo it's just slowly processing a massive queue, likely still a day before that will be done...<br>\nSimilar things have happened several times before in recent weeks, it's generally a single user submitting millions of polynomials at a time and clogging things up, labeling locally without magma can be pretty slow so that is the main limitation for most users, ai seems to often decide the best solution is to \"just let the server do all the work\" <span aria-label=\"upside down\" class=\"emoji emoji-1f643\" role=\"img\" title=\"upside down\">:upside_down:</span></p>",
+      "recipient_id": 24,
+      "timestamp": 1785154551,
+      "client": "ZulipElectron",
+      "subject": "IGP- submission has been in queue for almost 24 hrs now",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Rhys Edwards",
+      "sender_email": "user145@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "https://secure.gravatar.com/avatar/ef8af63e24a3cbaa46e4c57313d58ca7?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-07-27T12:15:51.000Z"
+    }
+  ]
+}
