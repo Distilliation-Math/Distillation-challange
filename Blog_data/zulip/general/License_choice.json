@@ -1,0 +1,132 @@
+{
+  "channel": "general",
+  "channel_id": 9,
+  "topic": "License choice",
+  "message_count": 4,
+  "messages": [
+    {
+      "id": 4842,
+      "sender_id": 756,
+      "content": "<p>I started this discussion on Terry Tao's blog but I think it really belongs here (probably in a \"Foundation business\" channel if one is created).</p>\n<p>As mathematicians we don't think much about copyright: we are used to focusing on ensuring our <em>ideas</em> get shared as much as possible, while verbatim copying of our writings is not a major threat.  For the SAIR Foundation the situation is very different: the foundation might operate as a software foundry, and also release \"best practices\" and other such documents.  Since we have a semi-adversarial relationship with the current LLM industry, I think strong copyleft is the right way to restrict the use of our contributions to those who belong to the community rather than take advantage of it (this is different from ordinary mathematics at public universities, where the taxpayers pay for most of our research and deserve to benefit from the fruit including by commercializing their derivative works).</p>\n<p>Practical suggestions:</p>\n<ol>\n<li>All code developed under the auspices of the SAIR Foundation should be licensed under a strong free software license.  </li>\n<li>The software license should be the <a href=\"https://www.gnu.org/licenses/agpl-3.0.en.html\">Affero GPL v3</a>.  This license was specifically designed to ensure that providing access to a running computer program covered by the license counts as \"distributing\" the software, so that the server operator has to share the source code, including any modification they have made.</li>\n<li>Texts (working papers, how-tos, etc) should be released under <a href=\"https://creativecommons.org/licenses/by-sa/4.0/\">CC by-sa</a>.  This has become the industry standard.</li>\n<li>The Foundation should not restrict the fruit of its work to \"noncommercial\" use: it's important that participants give back to the community (as provided by the the GPL or CC license), not whether they are for-profit or non-for-profit.  Most of us are happy to be paid by our universities for our work and would not do it for free, and the problem with the LLM industry right now is not their profit motive but their specific actions.</li>\n</ol>\n<p>If the whole thing will take off there will be more details to iron out.</p>",
+      "recipient_id": 24,
+      "timestamp": 1789943762,
+      "client": "website",
+      "subject": "License choice",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Lior Silberman",
+      "sender_email": "user756@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "/user_avatars/5/fec7472fc9542525984b34b63f8799cb0c88ee93.png",
+      "content_type": "text/html",
+      "date": "2026-09-20T22:36:02.000Z"
+    },
+    {
+      "id": 4856,
+      "sender_id": 732,
+      "content": "<p>Another license choice is OpenMDW that Linux Foundation starts to adopt and promote for open source/weight model distribution: <a href=\"https://github.com/OpenMDW/openmdw\">https://github.com/OpenMDW/openmdw</a></p>",
+      "recipient_id": 24,
+      "timestamp": 1789997824,
+      "client": "website",
+      "subject": "License choice",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Zhipeng Huang",
+      "sender_email": "user732@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "/user_avatars/5/efce2d12642f808df5bda2cbd8b5429c8c478a82.png",
+      "content_type": "text/html",
+      "date": "2026-09-21T13:37:04.000Z"
+    },
+    {
+      "id": 4920,
+      "sender_id": 756,
+      "content": "<p>OpenMDW is <em>highly permissive</em>, so it has exactly the same problems as the BSD/MIT/Apache license family: nothing would stop an AI company from taking the community efforts and incorporating them into their products without sharing any of their work back to the community.</p>\n<p>The only requirement under OpenMDW is that anyone who incorporates covered materials has to be open about that fact.  That's about <em>attribution</em> not sharing, and will cause the same problems as the <a href=\"https://www.gnu.org/licenses/bsd.html\">BSD advertizing clause</a>.</p>",
+      "recipient_id": 24,
+      "timestamp": 1790103544,
+      "client": "website",
+      "subject": "License choice",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 653
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 732
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Lior Silberman",
+      "sender_email": "user756@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "/user_avatars/5/fec7472fc9542525984b34b63f8799cb0c88ee93.png",
+      "content_type": "text/html",
+      "date": "2026-09-22T18:59:04.000Z"
+    },
+    {
+      "id": 4985,
+      "sender_id": 32,
+      "content": "<p>Thanks for the feedback <span class=\"user-mention\" data-user-id=\"756\">@Lior Silberman</span>.  We'll be using AGPLv3 for the code coming out of stage 2 of the IGP24 competition (which we still need to give details about...)</p>",
+      "recipient_id": 24,
+      "timestamp": 1790392402,
+      "client": "ZulipElectron",
+      "subject": "License choice",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "heart",
+          "emoji_code": "2764",
+          "reaction_type": "unicode_emoji",
+          "user_id": 756
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "David Roe",
+      "sender_email": "user32@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "https://secure.gravatar.com/avatar/f6565f72d98131a571535ec6d4d03454?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-09-26T03:13:22.000Z"
+    }
+  ]
+}
