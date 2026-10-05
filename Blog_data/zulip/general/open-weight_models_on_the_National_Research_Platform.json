@@ -1,0 +1,34 @@
+{
+  "channel": "general",
+  "channel_id": 9,
+  "topic": "open-weight models on the National Research Platform",
+  "message_count": 1,
+  "messages": [
+    {
+      "id": 4897,
+      "sender_id": 653,
+      "content": "<p>For those who are in the US, I'm wondering if anyone has used the resources of <a href=\"https://nrp.ai/\">https://nrp.ai/</a> and if so what was your experience.</p>",
+      "recipient_id": 24,
+      "timestamp": 1790050205,
+      "client": "ZulipElectron",
+      "subject": "open-weight models on the National Research Platform",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Mahrud Sayrafi",
+      "sender_email": "user653@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "/user_avatars/5/565fd0e83d93957fd5c8503cb190d5d829d2dd14.png",
+      "content_type": "text/html",
+      "date": "2026-09-22T04:10:05.000Z"
+    }
+  ]
+}
