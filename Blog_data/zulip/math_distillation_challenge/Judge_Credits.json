@@ -1,0 +1,60 @@
+{
+  "channel": "Math Distillation Challenge - equational theories",
+  "channel_id": 13,
+  "topic": "Judge Credits",
+  "message_count": 2,
+  "messages": [
+    {
+      "id": 3933,
+      "sender_id": 323,
+      "content": "<p>Thank you for enabling me to use the Judge feature.  I believe I only had 10-12 total credits that did not refresh with the judge.  Currently I have exhausted my allotment in the error scenarios from last week. Is it possible to refresh our credit usage on the judge so we can test  prior to final submission?</p>",
+      "recipient_id": 43,
+      "timestamp": 1787746109,
+      "client": "website",
+      "subject": "Judge Credits",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Christopher Brock",
+      "sender_email": "user323@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "https://secure.gravatar.com/avatar/d963525380fd5095b6277261738dc4cd?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-08-26T12:08:29.000Z"
+    },
+    {
+      "id": 3948,
+      "sender_id": 25,
+      "content": "<p><span class=\"user-mention\" data-user-id=\"323\">@Christopher Brock</span> Thanks for the feedback. Let's DM for more details.</p>",
+      "recipient_id": 43,
+      "timestamp": 1787779539,
+      "client": "ZulipElectron",
+      "subject": "Judge Credits",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-08-26T21:25:39.000Z"
+    }
+  ]
+}

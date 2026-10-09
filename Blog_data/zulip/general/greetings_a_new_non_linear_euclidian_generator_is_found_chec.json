@@ -1,0 +1,60 @@
+{
+  "channel": "general",
+  "channel_id": 9,
+  "topic": "greetings a new non linear euclidian generator is found chec",
+  "message_count": 2,
+  "messages": [
+    {
+      "id": 5059,
+      "sender_id": 554,
+      "content": "<p>reetings a new non linear euclidian generator is found check with me at <a href=\"mailto:fredruoja6@gmail.com\">fredruoja6@gmail.com</a> (Tanzania Geniuss rank 127th) yu wont regret</p>",
+      "recipient_id": 24,
+      "timestamp": 1790961552,
+      "client": "website",
+      "subject": "greetings a new non linear euclidian generator is found chec",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "fredrick ruoja",
+      "sender_email": "user554@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "/user_avatars/5/1b0d8607be4f8d75d107c4757afd64a8e4b446e0.png",
+      "content_type": "text/html",
+      "date": "2026-10-02T17:19:12.000Z"
+    },
+    {
+      "id": 5060,
+      "sender_id": 554,
+      "content": "<p>is now in my pipeline to be released please alexander  advise where can i post it for  scutrinzing it //</p>",
+      "recipient_id": 24,
+      "timestamp": 1790961660,
+      "client": "website",
+      "subject": "greetings a new non linear euclidian generator is found chec",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "fredrick ruoja",
+      "sender_email": "user554@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "/user_avatars/5/1b0d8607be4f8d75d107c4757afd64a8e4b446e0.png",
+      "content_type": "text/html",
+      "date": "2026-10-02T17:21:00.000Z"
+    }
+  ]
+}
