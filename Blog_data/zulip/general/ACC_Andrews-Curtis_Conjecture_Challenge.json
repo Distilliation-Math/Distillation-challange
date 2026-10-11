@@ -1,0 +1,60 @@
+{
+  "channel": "general",
+  "channel_id": 9,
+  "topic": "ACC (Andrews-Curtis Conjecture Challenge)",
+  "message_count": 2,
+  "messages": [
+    {
+      "id": 4893,
+      "sender_id": 308,
+      "content": "<p>Curious if this Andrews–Curtis Conjecture (ACC) Challenge related to the Caltech mathathon? I see Caltech is a co-organizer for the competition.</p>",
+      "recipient_id": 24,
+      "timestamp": 1790041355,
+      "client": "website",
+      "subject": "ACC (Andrews-Curtis Conjecture Challenge)",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "∆",
+      "sender_email": "user308@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "https://secure.gravatar.com/avatar/308902067c7f4ac37e90104941868a80?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-09-22T01:42:35.000Z"
+    },
+    {
+      "id": 4928,
+      "sender_id": 47,
+      "content": "<p>It is not related! Yes sergei gukov and his postdoc lucas are the official organizers and Sergei is a organizer of the mathathon, but these two are independent!</p>",
+      "recipient_id": 24,
+      "timestamp": 1790128486,
+      "client": "ZulipElectron",
+      "subject": "ACC (Andrews-Curtis Conjecture Challenge)",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Robert Joseph George",
+      "sender_email": "user47@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "https://secure.gravatar.com/avatar/7d61288edf145c37b2bb72a6ef9faf82?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-09-23T01:54:46.000Z"
+    }
+  ]
+}
