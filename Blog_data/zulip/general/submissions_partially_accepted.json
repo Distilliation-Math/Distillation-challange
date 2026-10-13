@@ -1,0 +1,219 @@
+{
+  "channel": "general",
+  "channel_id": 9,
+  "topic": "submissions partially accepted",
+  "message_count": 7,
+  "messages": [
+    {
+      "id": 3214,
+      "sender_id": 428,
+      "content": "<p>Hello. Hope everyone is doing well. I have a quick question regarding submissions. I have three submissions from July 6 that only have been partially accepted and scored. This is the first time during the competition that submissions have stalled midway through acceptance. It's been more than 12 hours so I was wondering if someone could please advise on how to handle. Screenshot attached. </p>\n<p><a href=\"/user_uploads/5/86/qdrJqJViuUJQom1DtvD-DVcT/galois_submissionsstalled_20260707.jpg\">galois_submissionsstalled_20260707.jpg</a><br>\nThanks and good luck to everyone.</p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/5/86/qdrJqJViuUJQom1DtvD-DVcT/galois_submissionsstalled_20260707.jpg\" title=\"galois_submissionsstalled_20260707.jpg\"><img data-original-content-type=\"image/jpeg\" data-original-dimensions=\"1100x388\" src=\"/user_uploads/thumbnail/5/86/qdrJqJViuUJQom1DtvD-DVcT/galois_submissionsstalled_20260707.jpg/840x560.webp\"></a></div>",
+      "recipient_id": 24,
+      "timestamp": 1783441358,
+      "client": "website",
+      "subject": "submissions partially accepted",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Paul Chavez",
+      "sender_email": "user428@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "https://secure.gravatar.com/avatar/8bdf9952f2d781cabe931f74e96f795f?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-07-07T16:22:38.000Z"
+    },
+    {
+      "id": 3215,
+      "sender_id": 439,
+      "content": "<p>I'm guessing that a large number of the competitors in this competition are using some form of AI (It's the middle part of SAIR after all) to help them. I've been using Claude, which has been very helpful in working out hairy low level details, but really needs \"big idea\" prompting to get it going. For example, just today I had to give it four fairly high level algorithmic ideas and references to to get it unstuck. Is this similar to the experience of others?</p>",
+      "recipient_id": 24,
+      "timestamp": 1783456464,
+      "client": "website",
+      "subject": "submissions partially accepted",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 145
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Victor Miller",
+      "sender_email": "user439@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "https://secure.gravatar.com/avatar/1585f2a4b289d1a55918a443ef4791f5?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-07-07T20:34:24.000Z"
+    },
+    {
+      "id": 3220,
+      "sender_id": 145,
+      "content": "<p><span class=\"user-mention\" data-user-id=\"439\">@Victor Miller</span> <br>\nYep pretty much in the exact same situation here, if you have claude fable usage highly reccomend that, almost all of my best poly's came from fable and every time i let opus touch my program things turned into a mess and a while bunch of stuff broke! It's scary how much better fable is compared to opus. Sadly i have hit my weekly usage cap on claude so i'm at a bit of a dead end right now sadly for a few days. Whats your team name on the leaderboard? I find that most of the time opus seems to pretty much always want to do towers+wreaths unless you hand feed it some more interesting ideas.</p>",
+      "recipient_id": 24,
+      "timestamp": 1783496970,
+      "client": "ZulipElectron",
+      "subject": "submissions partially accepted",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Rhys Edwards",
+      "sender_email": "user145@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "https://secure.gravatar.com/avatar/ef8af63e24a3cbaa46e4c57313d58ca7?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-07-08T07:49:30.000Z"
+    },
+    {
+      "id": 3260,
+      "sender_id": 439,
+      "content": "<p><span class=\"user-mention\" data-user-id=\"145\">@Rhys Edwards</span> I'm only using Opus 4.8. I found that it's great at grungy low-level (and even higher level) programming. It understands a lot of the literature, but it really needed a good kick with more fundamental mathematical/algorithmic ideas to get it unstuck.  I felt like it was a very able grad student  who was able to run with ideas once it was given them.</p>",
+      "recipient_id": 24,
+      "timestamp": 1783520398,
+      "client": "website",
+      "subject": "submissions partially accepted",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Victor Miller",
+      "sender_email": "user439@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "https://secure.gravatar.com/avatar/1585f2a4b289d1a55918a443ef4791f5?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-07-08T14:19:58.000Z"
+    },
+    {
+      "id": 3261,
+      "sender_id": 145,
+      "content": "<p><span class=\"user-mention\" data-user-id=\"439\">@Victor Miller</span>  I'm just on the cheapest pro claude plan but the last few days they bought back fable and have given everyone a bunch of usage, i'm pretty sure you should be able to use fable until the 12th, works in claude code ect</p>",
+      "recipient_id": 24,
+      "timestamp": 1783520554,
+      "client": "ZulipElectron",
+      "subject": "submissions partially accepted",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Rhys Edwards",
+      "sender_email": "user145@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "https://secure.gravatar.com/avatar/ef8af63e24a3cbaa46e4c57313d58ca7?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-07-08T14:22:34.000Z"
+    },
+    {
+      "id": 3262,
+      "sender_id": 439,
+      "content": "<p><span class=\"user-mention\" data-user-id=\"145\">@Rhys Edwards</span> I was really running up the Claude bills on my personal account. I have Claude available for a company I consult with (for now unlimited :-)) but it's just Opus 4.8.</p>",
+      "recipient_id": 24,
+      "timestamp": 1783520679,
+      "client": "website",
+      "subject": "submissions partially accepted",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Victor Miller",
+      "sender_email": "user439@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "https://secure.gravatar.com/avatar/1585f2a4b289d1a55918a443ef4791f5?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-07-08T14:24:39.000Z"
+    },
+    {
+      "id": 3263,
+      "sender_id": 145,
+      "content": "<p>Oh you would be surprised how much usage you can get just out of the pro plan! Only annoying thing is hitting to 5 hour usage cap but theres no token cost when using the plan its all just under the once a month payment of like $25 they would be losing so much money on people like me <span aria-label=\"sweat smile\" class=\"emoji emoji-1f605\" role=\"img\" title=\"sweat smile\">:sweat_smile:</span></p>",
+      "recipient_id": 24,
+      "timestamp": 1783521068,
+      "client": "ZulipElectron",
+      "subject": "submissions partially accepted",
+      "topic_links": [],
+      "last_edit_timestamp": 1783521087,
+      "edit_history": [
+        {
+          "user_id": 145,
+          "timestamp": 1783521087,
+          "prev_content": "Oh you would be suprised how much usage you can get just out of the pro plan! Only annoying thing is hitting to 5 hour usage cap but theres no token cost when using the plan its all just under the once a month payment of like $25 they would be losing so much money on people like me :sweat_smile:",
+          "prev_rendered_content": "<p>Oh you would be suprised how much usage you can get just out of the pro plan! Only annoying thing is hitting to 5 hour usage cap but theres no token cost when using the plan its all just under the once a month payment of like $25 they would be losing so much money on people like me <span aria-label=\"sweat smile\" class=\"emoji emoji-1f605\" role=\"img\" title=\"sweat smile\">:sweat_smile:</span></p>"
+        }
+      ],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "rolling_on_the_floor_laughing",
+          "emoji_code": "1f923",
+          "reaction_type": "unicode_emoji",
+          "user_id": 439
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 428
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Rhys Edwards",
+      "sender_email": "user145@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "https://secure.gravatar.com/avatar/ef8af63e24a3cbaa46e4c57313d58ca7?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-07-08T14:31:08.000Z"
+    }
+  ]
+}

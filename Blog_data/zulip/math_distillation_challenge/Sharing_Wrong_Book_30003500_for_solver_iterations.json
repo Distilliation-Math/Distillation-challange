@@ -1,0 +1,59 @@
+{
+  "channel": "Math Distillation Challenge - equational theories",
+  "channel_id": 13,
+  "topic": "Sharing Wrong Book 3000/3500 for solver iterations",
+  "message_count": 1,
+  "messages": [
+    {
+      "id": 4246,
+      "sender_id": 118,
+      "content": "<p>Hi everyone — we’d like to share <strong>Wrong Book 3000 and Wrong Book 3500</strong>, the problem collections that guided most of our solver iterations during Stage 2.</p>\n<p>We used these collections to identify weaknesses in proof search, countermodel construction, and Lean proof generation, then revisited them as the solver improved. Solved cases stayed in the collections as regression tests.</p>\n<p>The repository is available here:<br>\n<a href=\"https://github.com/YanbiaoLab/equational-challenges\">YanbiaoLab/equational-challenges</a></p>\n<p>It includes:</p>\n<ul>\n<li>Two frozen problem sets: 2,983 problems in “3000” (a historical name) and 3,500 in “3500”, sharing a 2,500-problem prefix.</li>\n<li><strong>3,412 public Lean certificates</strong> across 3,983 unique directed problems, with recorded Judge-v3-repl acceptance.</li>\n<li>Curation details and instructions for checking the proofs locally.</li>\n</ul>\n<p>“Wrong Book” refers to failures under particular solver versions and resource budgets. These are development collections; the remaining cases are not necessarily mathematically open.</p>\n<p>We hope they’ll be useful for others developing equational reasoning solvers, investigating failure cases, or looking for problems to work on. Additional proofs, countermodels, corrections, and comparisons of approaches are very welcome!</p>\n<p>— Bing, team <a href=\"http://yanbiao.ai\">yanbiao.ai</a></p>",
+      "recipient_id": 43,
+      "timestamp": 1789137944,
+      "client": "website",
+      "subject": "Sharing Wrong Book 3000/3500 for solver iterations",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "tada",
+          "emoji_code": "1f389",
+          "reaction_type": "unicode_emoji",
+          "user_id": 496
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 25
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 551
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 335
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Bing Wu",
+      "sender_email": "user118@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "Math Distillation Challenge - equational theories",
+      "type": "stream",
+      "stream_id": 13,
+      "avatar_url": "/user_avatars/5/8c99a8a6c86e5c227091ae31b3eb4ac3f55cae64.png",
+      "content_type": "text/html",
+      "date": "2026-09-11T14:45:44.000Z"
+    }
+  ]
+}
