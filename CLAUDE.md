@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 SAIR Mathematics Distillation Challenge -- Equational Theories Stage 1. Build a compact prompt+cheatsheet (max 10,240 bytes) that maximizes LLM correctness on "Does Equation 1 imply Equation 2 over all magmas?" (TRUE/FALSE). The submission is one complete prompt containing `{{ equation1 }}` and `{{ equation2 }}` placeholders; the harness sends it as the only user message (no system prompt).
 
-**Status:** Stage 1 closed 2026-04-20 23:59 AoE; `cheatsheets/v7.4_10KB_cheatsheet.md` was selected as the submission. Last commit 2026-04-22 (post-deadline hard5 and non-official runs). README: Stage 2 (May 2026) requires counterexamples, Lean proofs, or calibrated probabilities. Team: Andrea (architecture/infra/compute), Riccardo (methodology/platform/submission), Tommaso (research/math). `meeting_notes/` are in Italian and record most design decisions.
+**Status:** Stage 1 closed 2026-04-20 23:59 AoE; `cheatsheets/v7.4_10KB_cheatsheet.md` was selected as the submission. Post-deadline hard5 and non-official runs followed on 2026-04-21. **Paused since 2026-10-19:** the intel-refresh workflow is disabled (`gh workflow enable sair-intel-refresh.yml` resumes it). README: Stage 2 (May 2026) requires counterexamples, Lean proofs, or calibrated probabilities. Team: Andrea (architecture/infra/compute), Riccardo (methodology/platform/submission), Tommaso (research/math). `meeting_notes/` are in Italian and record most design decisions.
 
 ## Commands
 
@@ -32,7 +32,7 @@ python3 scripts/refresh_sair_intel.py                                   # Zulip 
 
 ## Architecture
 
-**Path casing:** git, `config/models.yaml`, every script, and CI use `Training_data/`, `Extra_training_data/`, `Research/`, `Blog_data/`. On this Mac they show up lowercase (case-insensitive filesystem, `core.ignorecase=true`). Always write the capitalized form: lowercase paths break on Linux and in CI.
+**Path casing:** git, `config/models.yaml`, every script, and CI use `Training_data/`, `Extra_training_data/`, `Research/`, `Blog_data/`. The Mac's case-insensitive filesystem (`core.ignorecase=true`) also resolves lowercase paths, which hid a lowercase on-disk copy until 2026-10-19. Always write the capitalized form: lowercase paths break on Linux and in CI.
 
 **`eval_harness.py`** (single file, async aiohttp): load JSONL → substitute `{{ equation1 }}`/`{{ equation2 }}` (spaced or not) → OpenRouter or local Ollama → `parse_verdict` → CSV + JSON.
 - **Parameter precedence** (`config/models.yaml`): `defaults` < per-model `params` < `official_params` (only with `--official-mode`). CLI `--temperature`/`--max-tokens` only overwrite `defaults`, so they are **silently ignored** for gpt-oss-120b, gemma-4-31b, and gpt-oss-20b, which set both in `params`. Edit models.yaml instead. `--concurrency` is likewise replaced by `official_params.concurrency` (gpt-oss-120b: 7), or capped at 3 whenever a reasoning effort is sent.
@@ -69,7 +69,7 @@ python3 scripts/refresh_sair_intel.py                                   # Zulip 
 - PDFs: write a `render.py` beside the data that imports `scripts/report_pdf.py` (skill: `generating-result-pdfs`). Do not add new `gen_pdf.py` copies.
 
 **Automation:**
-- `.github/workflows/sair-intel-refresh.yml` runs the refresh every 48h and force-updates one rolling PR on the fixed branch `sair-intel-refresh`. Never reintroduce a per-run branch suffix: it opened a new PR every run (90+ piled up unmerged). Local `Blog_data/` only reflects merged refreshes; the last was 2026-04-20.
+- `.github/workflows/sair-intel-refresh.yml` is **disabled** since 2026-10-19 (re-enable: `gh workflow enable sair-intel-refresh.yml`). When enabled, it runs the refresh every 48h and force-updates one rolling PR on the fixed branch `sair-intel-refresh`. Never reintroduce a per-run branch suffix: it opened a new PR every run (90+ piled up unmerged). Local `Blog_data/` only reflects merged refreshes; the last (PR #107) covers community data up to 2026-10-19.
 - Entry points into the community data: `Blog_data/cheatsheets/INDEX.md` and `Blog_data/zulip/INDEX.md`.
 - Project agents in `.claude/agents/`:
   - `opus-solver`: raw Opus reasoning with no cheatsheet
@@ -86,7 +86,7 @@ v7.4, official mode, `results/20260419_v7.4/`, 0 parse errors:
 | gpt-oss-120b | 81.2% | 72.5% | 64.0% | 68.3% | 40.4% | 93.7% |
 | gemma-4-31b | 79.7% | 71.5% | 64.0% | 67.9% | 42.6% | 90.9% |
 
-- **Pre-edit version:** that sweep scored the 10,220-byte version from b35cc1f (`git show b35cc1f:cheatsheets/v7.4_10KB_cheatsheet.md`). Commit 1da98ff later edited the file down to 10,212 bytes, and `20260421_v7.4_*` used the edited file.
+- **Pre-edit version:** that sweep scored the 10,220-byte version from b35cc1f (`git show b35cc1f:cheatsheets/v7.4_10KB_cheatsheet.md`). Commit 1da98ff later edited the file down to 10,212 bytes, and `20260421_v7.4_*` used the edited file. That edit left the §2.8 C5 example inconsistent (Eq1 `x = (y*(z*x)*z)*z` vs `P = (y*(z*x))*z`). v7.4 is frozen as the submitted artifact: do not edit it; iterate in a new version file.
 - **Other v7.4 runs:**
   - `20260419_v7.4_run2/`: a repeat run
   - `20260421_v7.4_hard5/`: gpt 66.1%, gemma 63.3%

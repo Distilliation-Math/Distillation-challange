@@ -12,6 +12,8 @@ A [magma](https://en.wikipedia.org/wiki/Magma_(algebra)) is a set with a single 
 
 **Stage 1** asks for a TRUE/FALSE verdict only. **Stage 2** (May 2026) will require counterexamples, Lean proofs, or calibrated probabilities.
 
+**Project status (Oct 2026):** Stage 1 is closed and v7.4 was selected as the submission (see [Results](#results)). The repository is paused: the community-intel workflow is disabled (`gh workflow enable sair-intel-refresh.yml` resumes it). [CLAUDE.md](CLAUDE.md) holds the up-to-date technical notes for picking the work back up.
+
 ## Team
 
 | Member | Role |
@@ -45,7 +47,10 @@ A [magma](https://en.wikipedia.org/wiki/Magma_(algebra)) is a set with a single 
 │   ├── 20260417_v5.5_official_run3/       # v5.5 official-mode sweep (prior baseline)
 │   ├── 20260419_v7.1_andrea/              # v7.1 official-mode sweep
 │   ├── 20260419_v7.4/                     # v7.4 official-mode sweep (current best)
+│   ├── 20260419_v7.4_run2/                # v7.4 repeat run (run-to-run variance)
 │   ├── 20260420_v7.5/                     # v7.5 official-mode sweep (regression test)
+│   ├── 20260421_v7.4_hard5/               # post-deadline: v7.4 on Hard5 (order-5)
+│   ├── 20260421_v7.4_non_official/        # post-deadline: v7.4 with reasoning_effort=high
 │   └── Opus_research/                     # All Opus-thread work (see note below)
 │       ├── 20260411_opus-hard1/           # opus-solver raw-reasoning runs on hard1
 │       ├── 20260413_v.Opus-1_official/    # v.Opus-1 cheatsheet sweep
@@ -55,24 +60,24 @@ A [magma](https://en.wikipedia.org/wiki/Magma_(algebra)) is a set with a single 
 ├── scripts/
 │   ├── report_pdf.py          # Shared PDF report helper (see .claude/skills/generating-result-pdfs/)
 │   ├── run_opus_benchmark.py  # Opus-solver benchmark driver (spawns claude -p --agent opus-solver)
-│   └── refresh_sair_intel.py  # SAIR Zulip + contributor-network sync (48h workflow)
+│   └── refresh_sair_intel.py  # SAIR Zulip + contributor-network sync (48h workflow, disabled since Oct 2026)
 ├── analysis/
 │   └── error_taxonomy.py     # Failure-mode classifier for result JSONs
-├── tests/                    # Pytest suite (parse_verdict, official_overrides, opus_agents)
-├── training_data/            # Official problem sets (JSONL)
+├── tests/                    # Plain-assert scripts, run each with python3 (parse_verdict, official_overrides, opus_agents)
+├── Training_data/            # Official problem sets (JSONL)
 │   ├── normal.jsonl          # 1000 problems (500 TRUE / 500 FALSE)
 │   ├── hard1.jsonl           # 69 problems (deduplicated hard set)
 │   ├── hard2.jsonl           # 200 problems (100 TRUE / 100 FALSE)
 │   └── hard3.jsonl           # 400 problems (195 TRUE / 205 FALSE)
-├── extra_training_data/      # Community-contributed datasets
-│   ├── SAIRCommunityBench_v1.jsonl         # 199 problems (order 4-6, harder distribution)
+├── Extra_training_data/      # Community-contributed datasets
+│   ├── SAIRCommunityBench_v1.jsonl         # 200 problems (order 4-6, harder distribution)
 │   ├── Hard5_order5.jsonl                  # 654 problems (order-5 equations)
-│   ├── full_2000_equations.jsonl           # 1999 problems (full community set)
-│   └── verification_data_with_citations.jsonl  # 199 problems with Lean proof citations
-├── research/
+│   ├── full_2000_equations.jsonl           # 2000 problems (full community set)
+│   └── verification_data_with_citations.jsonl  # 200 problems with Lean proof citations
+├── Research/
 │   ├── equations.txt         # All 4694 equational laws
 │   └── Raw_implication_graph.csv  # Per-equation implication statistics
-├── blog_data/                # Community intelligence (see blog_data/README.md)
+├── Blog_data/                # Community intelligence (see Blog_data/README.md)
 │   ├── cheatsheets/          # Community cheatsheets from SAIR contributor network
 │   └── zulip/                # Zulip thread dumps, organized by stream
 ├── meeting_notes/            # Team meeting notes (Meetings_Notes_DD-MM-YY.md)
@@ -266,4 +271,6 @@ v4_10KB_cheatsheet.md (8.8KB) evaluated on all 7 models x hard1/hard2/hard3 via 
 | Apr 19 | v7.1 official-mode sweep: step-2.8 motif expansion, feature-vector discipline | Done |
 | Apr 19 | v7.2–v7.4 iteration: motif tuning, hard-stop experiments, C1 guard | Done |
 | Apr 20 | v7.5 regression test (asymmetric hard-stop); v7.4 selected as submission | Done |
-| **Apr 20** | **Submission deadline (23:59 AoE)** | |
+| **Apr 20** | **Submission deadline (23:59 AoE)** | Closed (v7.4 selected) |
+| Apr 21 | Post-deadline v7.4 runs: Hard5 + non-official (reasoning_effort=high) | Done |
+| Oct 19 | Repo paused: project audit, CLAUDE.md refresh, intel-refresh workflow disabled | Done |
