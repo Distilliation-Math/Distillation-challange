@@ -2,7 +2,7 @@
   "channel": "general",
   "channel_id": 9,
   "topic": "greetings",
-  "message_count": 5,
+  "message_count": 13,
   "messages": [
     {
       "id": 22,
@@ -186,6 +186,256 @@
       "avatar_url": "/user_avatars/5/0b0ddbd15134130c80532d7497d809f8aae03dde.png",
       "content_type": "text/html",
       "date": "2026-04-16T01:03:58.000Z"
+    },
+    {
+      "id": 1904,
+      "sender_id": 134,
+      "content": "<p><a href=\"/user_uploads/5/7f/QlYyLLnwdK-FqX-_vyXmggLF/image.png\">image.png</a><br>\nfever dream</p>\n<div class=\"message_inline_image\"><a href=\"/user_uploads/5/7f/QlYyLLnwdK-FqX-_vyXmggLF/image.png\" title=\"image.png\"><img data-original-content-type=\"image/png\" data-original-dimensions=\"437x1024\" src=\"/user_uploads/thumbnail/5/7f/QlYyLLnwdK-FqX-_vyXmggLF/image.png/840x560.webp\"></a></div>",
+      "recipient_id": 24,
+      "timestamp": 1777936013,
+      "client": "website",
+      "subject": "greetings",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 25
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Alex Meiburg",
+      "sender_email": "user134@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "https://secure.gravatar.com/avatar/fa7e9ca1d9249db03849e44977e3cc5f?d=identicon&version=1",
+      "content_type": "text/html",
+      "date": "2026-05-04T23:06:53.000Z"
+    },
+    {
+      "id": 3903,
+      "sender_id": 554,
+      "content": "<p>hello mathematicians</p>",
+      "recipient_id": 24,
+      "timestamp": 1787554128,
+      "client": "website",
+      "subject": "greetings",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 25
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 727
+        },
+        {
+          "emoji_name": "wave",
+          "emoji_code": "1f44b",
+          "reaction_type": "unicode_emoji",
+          "user_id": 908
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "fredrick ruoja",
+      "sender_email": "user554@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "/user_avatars/5/1b0d8607be4f8d75d107c4757afd64a8e4b446e0.png",
+      "content_type": "text/html",
+      "date": "2026-08-24T06:48:48.000Z"
+    },
+    {
+      "id": 4800,
+      "sender_id": 741,
+      "content": "<p>greetings!</p>",
+      "recipient_id": 24,
+      "timestamp": 1789903385,
+      "client": "website",
+      "subject": "greetings",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Aurélien Bocquet",
+      "sender_email": "user741@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "/user_avatars/5/28b26f586e80939b750412692553d4b24be45b60.png",
+      "content_type": "text/html",
+      "date": "2026-09-20T11:23:05.000Z"
+    },
+    {
+      "id": 4960,
+      "sender_id": 781,
+      "content": "<p>Hi I'm Kunal, I helped make the site <a href=\"https://prove2.me\">https://prove2.me</a> <span aria-label=\"wave\" class=\"emoji emoji-1f44b\" role=\"img\" title=\"wave\">:wave:</span></p>",
+      "recipient_id": 24,
+      "timestamp": 1790269690,
+      "client": "ZulipElectron",
+      "subject": "greetings",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "wave",
+          "emoji_code": "1f44b",
+          "reaction_type": "unicode_emoji",
+          "user_id": 908
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Kunal Marwaha",
+      "sender_email": "user781@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "/user_avatars/5/286206f1d12da4f6c00e4c1b9bab84fa4fec0991.png",
+      "content_type": "text/html",
+      "date": "2026-09-24T17:08:10.000Z"
+    },
+    {
+      "id": 5172,
+      "sender_id": 791,
+      "content": "<p>Hi my name is Mike, does anyone think that given recent developments linear algebra has a deeper underpinning within mathematics?</p>",
+      "recipient_id": 24,
+      "timestamp": 1791575419,
+      "client": "website",
+      "subject": "greetings",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Michael Hunter",
+      "sender_email": "user791@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "/user_avatars/5/2bd73590f238ae2bf871f9354b7e200fbf6eb688.png",
+      "content_type": "text/html",
+      "date": "2026-10-09T19:50:19.000Z"
+    },
+    {
+      "id": 5240,
+      "sender_id": 844,
+      "content": "<p>Greetings to all! I'm very happy to see this great initiative</p>",
+      "recipient_id": 24,
+      "timestamp": 1792091911,
+      "client": "website",
+      "subject": "greetings",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Tamio-Vesa Nakajima",
+      "sender_email": "user844@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "/user_avatars/5/3014bacf8ec84b7241285b1ba398858fad63dbc7.png",
+      "content_type": "text/html",
+      "date": "2026-10-15T19:18:31.000Z"
+    },
+    {
+      "id": 5342,
+      "sender_id": 886,
+      "content": "<p><span class=\"user-mention silent\" data-user-id=\"791\">Michael Hunter</span> <a href=\"#narrow/channel/9-general/topic/greetings/near/5172\">said</a>:</p>\n<blockquote>\n<p>Hi my name is Mike, does anyone think that given recent developments linear algebra has a deeper underpinning within mathematics?</p>\n</blockquote>\n<p>Linear Algebra is one of the cornerstones of mathematics.</p>",
+      "recipient_id": 24,
+      "timestamp": 1792199552,
+      "client": "website",
+      "subject": "greetings",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "ling le",
+      "sender_email": "user886@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "/user_avatars/5/41c7e08fc04038d688435a7f8ed8b53897cdca47.png",
+      "content_type": "text/html",
+      "date": "2026-10-17T01:12:32.000Z"
+    },
+    {
+      "id": 5536,
+      "sender_id": 878,
+      "content": "<p>Hi everyone, I am Shengtong, a math phd at Stanford and MTS at SpaceX (prev. Cursor).</p>\n<p>I am currently trying to learn the intricacy of large scale model training, but i am very excited about open models, and maybe one day I would have enough skills to help out...</p>\n<p>(A long time, I used to be active on the Erdos problem website as KoishiChan, but that is something of the past...)</p>",
+      "recipient_id": 24,
+      "timestamp": 1792376941,
+      "client": "website",
+      "subject": "greetings",
+      "topic_links": [],
+      "last_edit_timestamp": 1792377027,
+      "edit_history": [
+        {
+          "user_id": 878,
+          "timestamp": 1792377027,
+          "prev_content": "Hi everyone, I am Shengtong, a math phd at Stanford and MTS at SpaceX (prev. Cursor).\n\nI am currently trying to learn the intricacy of large scale model training, but i am very excited about open models, and maybe one day I would have enough skills to help out...",
+          "prev_rendered_content": "<p>Hi everyone, I am Shengtong, a math phd at Stanford and MTS at SpaceX (prev. Cursor).</p>\n<p>I am currently trying to learn the intricacy of large scale model training, but i am very excited about open models, and maybe one day I would have enough skills to help out...</p>"
+        }
+      ],
+      "is_me_message": false,
+      "reactions": [],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "Shengtong Zhang",
+      "sender_email": "user878@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "/user_avatars/5/86a459beff03ea0f7aa628e47146e641b1b7ca4f.png",
+      "content_type": "text/html",
+      "date": "2026-10-19T02:29:01.000Z"
     }
   ]
 }

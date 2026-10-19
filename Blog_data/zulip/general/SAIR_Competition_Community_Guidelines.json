@@ -1,0 +1,59 @@
+{
+  "channel": "general",
+  "channel_id": 9,
+  "topic": "SAIR Competition Community Guidelines",
+  "message_count": 1,
+  "messages": [
+    {
+      "id": 3171,
+      "sender_id": 25,
+      "content": "<p>SAIR Competition Community Guidelines</p>\n<p>To maintain a respectful and professional environment for everyone, please follow these basic guidelines:</p>\n<ol>\n<li>Technical discussions are welcome, but personal attacks, harassment, threats, or abusive language are not acceptable.</li>\n<li>Please keep posts relevant to the competition, mathematics, AI, and related technical discussion. Judgements about relevance will be made by competition organizers and Zulip administrators.</li>\n<li>Please keep public discussions reasonably concise. If you would like to have a longer debate, please consider moving it to a separate topic so the main channels remain easy for everyone to follow.</li>\n<li>Moderators may remove posts that violate these guidelines or disrupt the community.</li>\n<li>Repeated or serious violations may result in removal from the community.</li>\n</ol>",
+      "recipient_id": 24,
+      "timestamp": 1783370765,
+      "client": "ZulipElectron",
+      "subject": "SAIR Competition Community Guidelines",
+      "topic_links": [],
+      "is_me_message": false,
+      "reactions": [
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 28
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 145
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 473
+        },
+        {
+          "emoji_name": "+1",
+          "emoji_code": "1f44d",
+          "reaction_type": "unicode_emoji",
+          "user_id": 362
+        }
+      ],
+      "submessages": [],
+      "flags": [
+        "read",
+        "historical"
+      ],
+      "sender_full_name": "YZ",
+      "sender_email": "user25@zulip.sair.foundation",
+      "sender_realm_str": "",
+      "display_recipient": "general",
+      "type": "stream",
+      "stream_id": 9,
+      "avatar_url": "/user_avatars/5/4a96bf68716b42a5445a114149cc3dcd6314b33c.png",
+      "content_type": "text/html",
+      "date": "2026-07-06T20:46:05.000Z"
+    }
+  ]
+}
